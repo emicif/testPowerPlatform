@@ -591,7 +591,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "\n\nSet(varvaiprodotti,true);\nSet(varcomunicazioni,false);\nSet(varstock,false);\nSet(vardpc,false);\nSet(varsostenibilita,false);\nSet(varreporting,false);\nSet(varlistini,false);\nSet(varkitprodotti,false);",
+            "InvariantScript": "\r\n\r\nSet(varvaiprodotti,true);\r\nSet(varcomunicazioni,false);\r\nSet(varstock,false);\r\nSet(vardpc,false);\r\nSet(varsostenibilita,false);\r\nSet(varreporting,false);\r\nSet(varlistini,false);\r\nSet(varkitprodotti,false);",
             "Property": "OnSelect",
             "RuleProviderType": "User"
           }
@@ -958,7 +958,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "\n\nSet(varvaiprodotti,false);\nSet(varcomunicazioni,true);\nSet(varstock,false);\nSet(vardpc,false);\nSet(varsostenibilita,false);\nSet(varreporting,false);\nSet(varlistini,false);\nSet(varkitprodotti,false);",
+            "InvariantScript": "\r\n\r\nSet(varvaiprodotti,false);\r\nSet(varcomunicazioni,true);\r\nSet(varstock,false);\r\nSet(vardpc,false);\r\nSet(varsostenibilita,false);\r\nSet(varreporting,false);\r\nSet(varlistini,false);\r\nSet(varkitprodotti,false);",
             "Property": "OnSelect",
             "RuleProviderType": "User"
           }
@@ -1304,7 +1304,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "\nSet(varvaiprodotti,false);\nSet(varcomunicazioni,false);\nSet(varstock,true);\nSet(vardpc,false);\nSet(varsostenibilita,false);\nSet(varreporting,false);\nSet(varlistini,false);\nSet(varkitprodotti,false);",
+            "InvariantScript": "\r\nSet(varvaiprodotti,false);\r\nSet(varcomunicazioni,false);\r\nSet(varstock,true);\r\nSet(vardpc,false);\r\nSet(varsostenibilita,false);\r\nSet(varreporting,false);\r\nSet(varlistini,false);\r\nSet(varkitprodotti,false);",
             "Property": "OnSelect",
             "RuleProviderType": "User"
           }
@@ -1650,7 +1650,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "\n\nSet(varvaiprodotti,false);\nSet(varcomunicazioni,false);\nSet(varstock,false);\nSet(vardpc,true);\nSet(varsostenibilita,false);\nSet(varreporting,false);\nSet(varlistini,false);\nSet(varkitprodotti,false);",
+            "InvariantScript": "\r\n\r\nSet(varvaiprodotti,false);\r\nSet(varcomunicazioni,false);\r\nSet(varstock,false);\r\nSet(vardpc,true);\r\nSet(varsostenibilita,false);\r\nSet(varreporting,false);\r\nSet(varlistini,false);\r\nSet(varkitprodotti,false);",
             "Property": "OnSelect",
             "RuleProviderType": "User"
           }
@@ -2003,7 +2003,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "\nSet(varvaiprodotti,false);\nSet(varcomunicazioni,false);\nSet(varstock,false);\nSet(vardpc,false);\nSet(varsostenibilita,true);\nSet(varreporting,false);\nSet(varlistini,false);\nSet(varkitprodotti,false);",
+            "InvariantScript": "\r\nSet(varvaiprodotti,false);\r\nSet(varcomunicazioni,false);\r\nSet(varstock,false);\r\nSet(vardpc,false);\r\nSet(varsostenibilita,true);\r\nSet(varreporting,false);\r\nSet(varlistini,false);\r\nSet(varkitprodotti,false);",
             "Property": "OnSelect",
             "RuleProviderType": "User"
           }
@@ -2349,7 +2349,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "\n\nSet(varvaiprodotti,false);\nSet(varcomunicazioni,false);\nSet(varstock,false);\nSet(vardpc,false);\nSet(varsostenibilita,false);\nSet(varreporting,true);\nSet(varlistini,false);\nSet(varkitprodotti,false);",
+            "InvariantScript": "\r\n\r\nSet(varvaiprodotti,false);\r\nSet(varcomunicazioni,false);\r\nSet(varstock,false);\r\nSet(vardpc,false);\r\nSet(varsostenibilita,false);\r\nSet(varreporting,true);\r\nSet(varlistini,false);\r\nSet(varkitprodotti,false);",
             "Property": "OnSelect",
             "RuleProviderType": "User"
           }
@@ -2695,7 +2695,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "Set(varvaiprodotti,false);\nSet(varcomunicazioni,false);\nSet(varstock,false);\nSet(vardpc,false);\nSet(varsostenibilita,false);\nSet(varreporting,false);\nSet(varlistini,true);\nSet(varkitprodotti,false);",
+            "InvariantScript": "Set(varvaiprodotti,false);\r\nSet(varcomunicazioni,false);\r\nSet(varstock,false);\r\nSet(vardpc,false);\r\nSet(varsostenibilita,false);\r\nSet(varreporting,false);\r\nSet(varlistini,true);\r\nSet(varkitprodotti,false);",
             "Property": "OnSelect",
             "RuleProviderType": "User"
           }
@@ -3041,7 +3041,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "\nSet(varvaiprodotti,false);\nSet(varcomunicazioni,false);\nSet(varstock,false);\nSet(vardpc,false);\nSet(varsostenibilita,false);\nSet(varreporting,false);\nSet(varlistini,false);\nSet(varkitprodotti,true);",
+            "InvariantScript": "\r\nSet(varvaiprodotti,false);\r\nSet(varcomunicazioni,false);\r\nSet(varstock,false);\r\nSet(vardpc,false);\r\nSet(varsostenibilita,false);\r\nSet(varreporting,false);\r\nSet(varlistini,false);\r\nSet(varkitprodotti,true);",
             "Property": "OnSelect",
             "RuleProviderType": "User"
           }
@@ -7705,7 +7705,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638612310028699936",
+    "LastModifiedTimestamp": "638612207308707334",
     "Name": "Footer",
     "Rules": [
       {
@@ -7740,7 +7740,7 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "varreporting\n",
+        "InvariantScript": "varreporting\r\n",
         "Property": "Navigazione_reporting",
         "RuleProviderType": "System"
       },
@@ -7885,7 +7885,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638612310028699936",
+  "LastModifiedTimestamp": "638612207308707334",
   "Name": "efbbf927d6d442779509ed7e92c16576",
   "OverridableProperties": {},
   "Version": "1.0"

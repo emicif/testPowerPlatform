@@ -1,0 +1,33 @@
+Homepage As screen:
+    BackgroundImage: ='sfondo home'
+    OnVisible: |
+        =
+
+    Header_1 As Header:
+
+    Image3 As image:
+        Height: =267
+        Image: ='value, access'
+        OnSelect: =Navigate(Value_Access_Heor)
+        Width: =482
+        X: =75
+        Y: =258
+        ZIndex: =2
+
+    Image4 As image:
+        Height: =267
+        Image: ='politiche farmaceutiche'
+        Width: =482
+        X: =440
+        Y: =258
+        ZIndex: =3
+
+    Image5 As image:
+        Height: =267
+        Image: ='area commerciale'
+        OnSelect: =Navigate(Area_Commerciale)
+        Width: =482
+        X: =809
+        Y: =258
+        ZIndex: =4
+

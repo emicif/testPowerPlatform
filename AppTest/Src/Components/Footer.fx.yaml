@@ -1,0 +1,351 @@
+Footer As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =72
+    Navigazione_comunicazioni: =varcomunicazioni
+    Navigazione_DPC: =vardpc
+    Navigazione_kitprodotti: =varkitprodotti
+    Navigazione_listini: =varlistini
+    Navigazione_reporting: |
+        =varreporting
+    Navigazione_sostenibilita: =varsostenibilita
+    Navigazione_stockout: =varstock
+    NavigazioneVaiAiProdotti: =varvaiprodotti
+    Width: =1365
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    ImageFooterBackground As image:
+        Height: =72
+        Image: ='NVS-background-footer-2'
+        Width: =1366
+        ZIndex: =1
+
+    ImageVaiProdottiWhite As image:
+        Height: =52
+        Image: ='prodotti-icon-footer'
+        Visible: =!varvaiprodotti
+        Width: =162
+        Y: =10
+        ZIndex: =2
+
+    ImageComunicazioniWhite As image:
+        Height: =52
+        Image: ='comunicazioni-icon-footer'
+        Visible: =!varcomunicazioni
+        Width: =172
+        X: =163
+        Y: =10
+        ZIndex: =3
+
+    ImageStockWhite As image:
+        Height: =52
+        Image: ='stockout-icon-footer'
+        Visible: =!varstock
+        Width: =172
+        X: =337
+        Y: =10
+        ZIndex: =4
+
+    ImageDPCWhite As image:
+        Height: =52
+        Image: ='DPC-icon-footer'
+        Visible: =!vardpc
+        Width: =172
+        X: =511
+        Y: =10
+        ZIndex: =5
+
+    ImageSostenibilitaWhite As image:
+        Height: =52
+        Image: ='sostenibilità-icon-footer'
+        Visible: =!varsostenibilita
+        Width: =172
+        X: =684
+        Y: =10
+        ZIndex: =6
+
+    ImageReportingWhite As image:
+        Height: =52
+        Image: ='reporting-icon-footer'
+        Visible: =!varreporting
+        Width: =172
+        X: =858
+        Y: =10
+        ZIndex: =7
+
+    ImageListiniWhite As image:
+        Height: =52
+        Image: ='listini-icon-footer'
+        Visible: =!varlistini
+        Width: =172
+        X: =1032
+        Y: =10
+        ZIndex: =8
+
+    ImageKitProdottiWhite As image:
+        Height: =52
+        Image: ='kit-icon-footer'
+        Visible: =!varkitprodotti
+        Width: =162
+        X: =1204
+        Y: =10
+        ZIndex: =9
+
+    ImageVaiProdottiSelected As image:
+        Height: =52
+        Image: =VaiProdottiSelected
+        Visible: =varvaiprodotti
+        Width: =162
+        Y: =10
+        ZIndex: =10
+
+    ImageComunicazioniSelected As image:
+        Height: =52
+        Image: =ComunicazioniSelected
+        Visible: =varcomunicazioni
+        Width: =172
+        X: =163
+        Y: =10
+        ZIndex: =11
+
+    ImageStockSelected As image:
+        Height: =52
+        Image: =StockoutSelected
+        Visible: =varstock
+        Width: =172
+        X: =337
+        Y: =10
+        ZIndex: =12
+
+    ImageDPCSelected As image:
+        Height: =52
+        Image: =DPCSelected
+        Visible: =vardpc
+        Width: =172
+        X: =511
+        Y: =10
+        ZIndex: =13
+
+    ImageSostenibilitaSelected As image:
+        Height: =52
+        Image: =SostenibilitaSelected
+        Visible: =varsostenibilita
+        Width: =172
+        X: =684
+        Y: =10
+        ZIndex: =14
+
+    ImageReportingSelected As image:
+        Height: =52
+        Image: =ReportingSelected
+        Visible: =varreporting
+        Width: =172
+        X: =858
+        Y: =10
+        ZIndex: =15
+
+    ImageListiniSelected As image:
+        Height: =52
+        Image: =ListiniSelected
+        Visible: =varlistini
+        Width: =172
+        X: =1032
+        Y: =10
+        ZIndex: =16
+
+    ImageKitProdottiSelected As image:
+        Height: =52
+        Image: =KitProdottiSelected
+        Visible: =varkitprodotti
+        Width: =162
+        X: =1204
+        Y: =10
+        ZIndex: =17
+
+    ButtonKitProdotti As button:
+        Color: =Color.Transparent
+        DisabledBorderColor: =Color.Transparent
+        DisabledColor: =Color.Transparent
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =72
+        HoverFill: =Color.Transparent
+        OnSelect: |-
+            =
+            Set(varvaiprodotti,false);
+            Set(varcomunicazioni,false);
+            Set(varstock,false);
+            Set(vardpc,false);
+            Set(varsostenibilita,false);
+            Set(varreporting,false);
+            Set(varlistini,false);
+            Set(varkitprodotti,true);
+        Text: =""
+        Width: =161
+        X: =1204
+        ZIndex: =18
+
+    ButtonListini As button:
+        Color: =Color.Transparent
+        DisabledBorderColor: =Color.Transparent
+        DisabledColor: =Color.Transparent
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =72
+        HoverFill: =Color.Transparent
+        OnSelect: |-
+            =Set(varvaiprodotti,false);
+            Set(varcomunicazioni,false);
+            Set(varstock,false);
+            Set(vardpc,false);
+            Set(varsostenibilita,false);
+            Set(varreporting,false);
+            Set(varlistini,true);
+            Set(varkitprodotti,false);
+        Text: =""
+        Width: =173
+        X: =1031
+        ZIndex: =19
+
+    ButtonReporting As button:
+        Color: =Color.Transparent
+        DisabledBorderColor: =Color.Transparent
+        DisabledColor: =Color.Transparent
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =72
+        HoverFill: =Color.Transparent
+        OnSelect: |-
+            =
+            
+            Set(varvaiprodotti,false);
+            Set(varcomunicazioni,false);
+            Set(varstock,false);
+            Set(vardpc,false);
+            Set(varsostenibilita,false);
+            Set(varreporting,true);
+            Set(varlistini,false);
+            Set(varkitprodotti,false);
+        Text: =""
+        Width: =173
+        X: =857
+        ZIndex: =20
+
+    ButtonSostenibilita As button:
+        Color: =Color.Transparent
+        DisabledBorderColor: =Color.Transparent
+        DisabledColor: =Color.Transparent
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =72
+        HoverFill: =Color.Transparent
+        OnSelect: |-
+            =
+            Set(varvaiprodotti,false);
+            Set(varcomunicazioni,false);
+            Set(varstock,false);
+            Set(vardpc,false);
+            Set(varsostenibilita,true);
+            Set(varreporting,false);
+            Set(varlistini,false);
+            Set(varkitprodotti,false);
+        Text: =""
+        Width: =172
+        X: =683
+        ZIndex: =21
+
+    ButtonVaiProdotti As button:
+        Color: =Color.Transparent
+        DisabledBorderColor: =Color.Transparent
+        DisabledColor: =Color.Transparent
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =72
+        HoverFill: =Color.Transparent
+        OnSelect: |-
+            =
+            
+            Set(varvaiprodotti,true);
+            Set(varcomunicazioni,false);
+            Set(varstock,false);
+            Set(vardpc,false);
+            Set(varsostenibilita,false);
+            Set(varreporting,false);
+            Set(varlistini,false);
+            Set(varkitprodotti,false);
+        Text: =""
+        Width: =162
+        ZIndex: =22
+
+    ButtonComunicazioni As button:
+        Color: =Color.Transparent
+        DisabledBorderColor: =Color.Transparent
+        DisabledColor: =Color.Transparent
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =72
+        HoverFill: =Color.Transparent
+        OnSelect: |-
+            =
+            
+            Set(varvaiprodotti,false);
+            Set(varcomunicazioni,true);
+            Set(varstock,false);
+            Set(vardpc,false);
+            Set(varsostenibilita,false);
+            Set(varreporting,false);
+            Set(varlistini,false);
+            Set(varkitprodotti,false);
+        Text: =""
+        Width: =172
+        X: =163
+        ZIndex: =23
+
+    ButtonDPC As button:
+        Color: =Color.Transparent
+        DisabledBorderColor: =Color.Transparent
+        DisabledColor: =Color.Transparent
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =72
+        HoverFill: =Color.Transparent
+        OnSelect: |-
+            =
+            
+            Set(varvaiprodotti,false);
+            Set(varcomunicazioni,false);
+            Set(varstock,false);
+            Set(vardpc,true);
+            Set(varsostenibilita,false);
+            Set(varreporting,false);
+            Set(varlistini,false);
+            Set(varkitprodotti,false);
+        Text: =""
+        Width: =173
+        X: =511
+        ZIndex: =24
+
+    ButtonStock As button:
+        Color: =Color.Transparent
+        DisabledBorderColor: =Color.Transparent
+        DisabledColor: =Color.Transparent
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =72
+        HoverFill: =Color.Transparent
+        OnSelect: |-
+            =
+            Set(varvaiprodotti,false);
+            Set(varcomunicazioni,false);
+            Set(varstock,true);
+            Set(vardpc,false);
+            Set(varsostenibilita,false);
+            Set(varreporting,false);
+            Set(varlistini,false);
+            Set(varkitprodotti,false);
+        Text: =""
+        Width: =172
+        X: =337
+        ZIndex: =25
+

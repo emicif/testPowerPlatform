@@ -1,0 +1,292 @@
+Screen2 As screen:
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =80
+        Y: =80
+        ZIndex: =7
+
+        Rectangle11 As rectangle:
+            Height: =672
+            Visible: =galleryTest
+            Width: =1326
+            X: =40
+            Y: =40
+            ZIndex: =2
+
+        "Gallery1_1 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
+            DelayItemLoading: =true
+            Height: =337
+            Items: =Drugs
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =392
+            Visible: =galleryTest
+            Width: =1298
+            X: =40
+            Y: =141
+            ZIndex: =3
+
+            Image7_1 As image:
+                Height: =296
+                Image: =First(ThisItem.Allegati).Value
+                ImagePosition: =ImagePosition.Fill
+                OnSelect: =Select(Parent)
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Width: =Parent.TemplateWidth - 32
+                X: =(Parent.TemplateWidth / 2) - (Self.Width / 2)
+                Y: =16
+                ZIndex: =1
+
+            Subtitle1_1 As label:
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Indicazioni
+                VerticalAlign: =VerticalAlign.Top
+                Width: =
+                X: =
+                Y: =315
+                ZIndex: =3
+
+        Icon3 As icon.Cancel:
+            Icon: =Icon.Cancel
+            OnSelect: =Set(galleryTest, false)
+            Visible: =galleryTest
+            X: =1274
+            Y: =60
+            ZIndex: =4
+
+    Icon8 As icon.View:
+        Icon: =Icon.View
+        OnSelect: =Set(galleryTest, true)
+        X: =1234
+        Y: =680
+        ZIndex: =8
+
+    Image7 As image:
+        Height: =106
+        Image: =prova
+        Width: =898
+        X: =264
+        Y: =662
+        ZIndex: =10
+
+    Icon5 As icon.Add:
+        Icon: =Icon.Add
+        OnSelect: |-
+            =Set(galleryTest, false);
+            Set(formTest, true)
+        X: =436
+        Y: =683
+        ZIndex: =11
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =80
+        Y: =80
+        ZIndex: =12
+
+        Button3 As button:
+            Height: =30
+            OnSelect: |-
+                =Patch(
+                    Drugs, 
+                    Defaults(Drugs),
+                    {
+                        Titolo: DataCardValue7.Text
+                     //   Allegati: DataCardValue5
+                    }
+                );
+                
+                
+                
+                SubmitForm(Form1);
+                
+                ResetForm(Form1);
+                
+                Set(formTest, false)
+            Text: ="Pulsante"
+            Visible: =formTest
+            X: =558
+            Y: =483
+            ZIndex: =1
+
+        Rectangle12 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =253
+            Visible: =formTest
+            Width: =1258
+            X: =108
+            Y: =112
+            ZIndex: =5
+
+        Form1 As form:
+            DataSource: =Drugs
+            DefaultMode: =FormMode.New
+            Height: =381
+            Visible: =formTest
+            Width: =1244
+            X: =60
+            Y: =60
+            ZIndex: =6
+
+            Titolo_DataCard2 As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Title"
+                Default: =ThisItem.Titolo
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@Drugs],DataSourceInfo.DisplayName,Titolo)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =350
+                MaxLength: =DataSourceInfo([@Drugs], DataSourceInfo.MaxLength, Titolo)
+                Required: =false
+                Update: =DataCardValue7.Text
+                Width: =414
+                X: =1
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey9 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue7 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey9.Y + DataCardKey9.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage8 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue7.Y + DataCardValue7.Height
+                    ZIndex: =3
+
+                StarVisible8 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey9.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey9.Y
+                    ZIndex: =4
+
+            Allegati_DataCard1 As typedDataCard.attachmentsEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="{Attachments}"
+                Default: =ThisItem.Allegati
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@Drugs],DataSourceInfo.DisplayName,Allegati)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =172
+                Required: =false
+                Update: =DataCardValue5.Attachments
+                Width: =414
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+                DataCardKey7 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue5 As attachments:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DisplayMode: =Parent.DisplayMode
+                    IsInDataCard: =true
+                    Items: =Parent.Default
+                    PaddingBottom: =5
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage7 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue5.Y + DataCardValue5.Height
+                    ZIndex: =3
+
+                StarVisible7 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey7.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey7.Y
+                    ZIndex: =4
+
+        Icon6 As icon.Cancel:
+            Height: =49
+            Icon: =Icon.Cancel
+            OnSelect: =Set(formTest, false)
+            Visible: =formTest
+            X: =1170
+            Y: =60
+            ZIndex: =7
+
+        Icon8_1 As icon.View:
+            Icon: =Icon.View
+            OnSelect: =Set(galleryTest, true)
+            Visible: =formTest
+            X: =832
+            Y: =248
+            ZIndex: =9
+

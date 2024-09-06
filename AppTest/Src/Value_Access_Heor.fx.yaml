@@ -1,0 +1,88 @@
+Value_Access_Heor As screen:
+    BackgroundImage: =sfondo_value_access_heor
+    Fill: =RGBA(0, 0, 0, 0)
+
+    Header_17 As Header:
+
+    Container3 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(4,96,169,0.9)
+        Height: =676
+        Width: =1365
+        Y: =92
+        ZIndex: =2
+
+    Container4 As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =397
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        Width: =1191
+        X: =(Value_Access_Heor. Width - Container4. Width) / 2
+        Y: =290
+        ZIndex: =3
+
+        BrandTa_icon As image:
+            Height: =Container4.Height
+            Image: =BrandTA_Icon
+            Width: =(Container4.Width/4) - 10
+            ZIndex: =1
+
+        AifaHta_icon As image:
+            Height: =Container4.Height
+            Image: ='AIFA-HTA_Icon'
+            Width: =(Container4.Width/4) - 10
+            ZIndex: =2
+
+        PRCommunity_icon As image:
+            Height: =Container4.Height
+            Image: =PRCommunity_Icon
+            Width: =(Container4.Width/4) - 10
+            ZIndex: =3
+
+        Cia_icon As image:
+            Height: =Container4.Height
+            Image: =CIA_Icon
+            Width: =(Container4.Width/4) - 10
+            ZIndex: =4
+
+    Container5 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DropShadow: =DropShadow.None
+        Height: =154
+        Width: =1275
+        X: =(Value_Access_Heor. Width - Container5. Width) / 2
+        Y: =111
+        ZIndex: =4
+
+        Titolo_14 As label:
+            Color: =RGBA(241, 244, 249, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Size: =16
+            Text: ="Value, Access & HEOR"
+            Width: =273
+            X: =60
+            Y: =20
+            ZIndex: =1
+
+        backHome_15 As image:
+            Height: =40
+            Image: =Expand_down_light
+            OnSelect: =Navigate(Homepage)
+            Width: =36.05
+            X: =16
+            Y: =20
+            ZIndex: =2
+
+        Sottotitolo_1 As label:
+            Color: =RGBA(241, 244, 249, 1)
+            Font: =Font.Lato
+            Height: =58
+            Size: =12
+            Text: ="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            Width: =1241
+            X: =16
+            Y: =60
+            ZIndex: =3
+

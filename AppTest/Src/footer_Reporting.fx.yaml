@@ -1,0 +1,132 @@
+footer_Reporting As screen:
+    BackgroundImage: ='sfondo home'
+    OnVisible: =
+
+    Header_12 As Header:
+
+    Footer_12 As Footer:
+        Y: =696
+        ZIndex: =5
+
+    backHome_10 As image:
+        Height: =40
+        Image: =Expand_down_light
+        OnSelect: =Navigate(Area_Commerciale)
+        Width: =36.05
+        X: =136
+        Y: =116
+        ZIndex: =6
+
+    TitoloFarmaco_2 As label:
+        Color: =RGBA(241, 244, 249, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: ="Reporting"
+        Width: =273
+        X: =171
+        Y: =116
+        ZIndex: =7
+
+    ToggleStockout_12 As toggleSwitch:
+        Default: =Footer_12.Navigazione_stockout
+        OnChange: =If(varstock,Navigate(footer_stockout,ScreenTransition.Fade))
+        Visible: =false
+        X: =411
+        Y: =32
+        ZIndex: =13
+
+    ToggleDPC_12 As toggleSwitch:
+        Default: =Footer_12.Navigazione_DPC
+        OnChange: =If(vardpc,Navigate(footer_DPC,ScreenTransition.Fade))
+        Visible: =false
+        X: =431
+        Y: =52
+        ZIndex: =14
+
+    ToggleComunicazioni_12 As toggleSwitch:
+        Default: =Footer_12.Navigazione_comunicazioni
+        OnChange: =If(varcomunicazioni,Navigate(footer_comunicazioni,ScreenTransition.Fade))
+        Visible: =false
+        X: =471
+        Y: =92
+        ZIndex: =15
+
+    ToggleSostenibilita_12 As toggleSwitch:
+        Default: =Footer_12.Navigazione_sostenibilita
+        OnChange: =If(varsostenibilita,Navigate(footer_sostenibilita,ScreenTransition.Fade))
+        Visible: =false
+        X: =491
+        Y: =112
+        ZIndex: =16
+
+    ToggleListini_12 As toggleSwitch:
+        Default: =Footer_12.Navigazione_listini
+        OnChange: =If(varlistini,Navigate(footer_listini,ScreenTransition.Fade))
+        Visible: =false
+        X: =511
+        Y: =132
+        ZIndex: =17
+
+    Container1_1 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =271
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        Width: =577
+        X: =(App.Width - Container1_1.Width)/2
+        Y: =258
+        ZIndex: =18
+
+        "'Image-vendite' As image":
+            Height: =250
+            Image: ='NVS-vendite-img'
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: |-
+                =Launch("https://qs-guided-eu-prd.novartis.net/analytics/sense/app/e407fb16-0358-4b18-a188-454c680826c9/sheet/79484f22-c279-45c4-8574-30a0d71e160a/state/analysis")
+            Width: =250
+            ZIndex: =1
+
+        "'Image-ordini' As image":
+            Height: =250
+            Image: ='NVS-ordini-img'
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: |-
+                =Launch("https://qs-guided-eu-prd.novartis.net/analytics/sense/app/2e473d99-8eba-47fb-bf27-654035bce75e")
+            Width: =250
+            ZIndex: =3
+
+    ToggleVaiProdotti_12 As toggleSwitch:
+        Default: =Footer_12.NavigazioneVaiAiProdotti
+        OnChange: =If(varvaiprodotti,Navigate(footer_vaiProdotti,ScreenTransition.Fade))
+        Visible: =false
+        X: =531
+        Y: =152
+        ZIndex: =19
+
+    ToggleReporting_12 As toggleSwitch:
+        Default: =Footer_12.Navigazione_reporting
+        OnChange: =If(varreporting,Navigate(footer_Reporting,ScreenTransition.Fade))
+        Visible: =false
+        X: =551
+        Y: =172
+        ZIndex: =20
+
+    ToggleKitProdotti_12 As toggleSwitch:
+        Default: =Footer_12.Navigazione_kitprodotti
+        OnChange: =If(varkitprodotti,Navigate(footer_kitProdotti,ScreenTransition.Fade))
+        Visible: =false
+        X: =571
+        Y: =192
+        ZIndex: =21
+
+    ButtonHome_12 As button:
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =92
+        HoverFill: =Color.Transparent
+        OnSelect: =Navigate(Homepage)
+        PressedFill: =Color.Transparent
+        Text: =
+        Width: =284
+        ZIndex: =23
+

@@ -1,0 +1,50 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2024-04-23T16:44:04.0560000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{FilenameWithExtension}": "Nome file con estensione",
+      "{FullPath}": "Percorso completo",
+      "{Identifier}": "Identificatore",
+      "{IsCheckedOut}": "Estratto",
+      "{IsFolder}": "Cartella",
+      "{Link}": "Collegamento a elemento",
+      "{ModerationComment}": "Commenti associati all'approvazione del contenuto della voce di elenco",
+      "{ModerationStatus}": "Stato di approvazione del contenuto",
+      "{Name}": "Nome",
+      "{Path}": "Percorso cartella",
+      "{Thumbnail}": "Miniatura",
+      "{TriggerWindowEndToken}": "Token della conclusione dell'intervallo del trigger",
+      "{TriggerWindowStartToken}": "Token dell'avvio dell'intervallo del trigger",
+      "{VersionNumber}": "Numero versione",
+      "Author": "Autore",
+      "Author#Claims": "Autore Claims",
+      "CheckoutUser": "Estratto da",
+      "CheckoutUser#Claims": "Estratto da Claims",
+      "ComplianceAssetId": "ID risorsa conformità",
+      "Created": "Data/ora creazione",
+      "Drugs": "Drugs",
+      "Drugs#Id": "Drugs Id",
+      "Editor": "Modificato da",
+      "Editor#Claims": "Modificato da Claims",
+      "hiddenPath": "hiddenPath",
+      "ID": "ID",
+      "isFolder": "isFolder",
+      "Modified": "Data/ora modifica",
+      "OData__ColorTag": "Tag colore",
+      "OData__DisplayName": "Riservatezza",
+      "OData__ExtendedDescription": "Descrizione",
+      "Title": "Titolo"
+    },
+    "DatasetName": "https://mindthehead.sharepoint.com/sites/MTH-NVS",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Documents",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

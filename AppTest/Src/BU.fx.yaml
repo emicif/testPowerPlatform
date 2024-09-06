@@ -1,0 +1,182 @@
+BU As screen:
+    BackgroundImage: ='sfondo home'
+    OnVisible: =
+
+    "glryBusinessArea As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver5.0'":
+        BorderStyle: =BorderStyle.None
+        DelayItemLoading: =true
+        Fill: =RGBA(255, 255, 255, 0)
+        Height: =445
+        Items: |-
+            =Filter(
+                TherapeuticArea, 
+                BusinessArea_ID.Value = varBusinessArea,
+                Titolo
+            )
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: |+
+            =Navigate(Business_Area_Farmaci);
+            
+            Set(varTerapeuticArea, ThisItem.Titolo)
+            
+            
+            
+            
+        TemplatePadding: =4
+        TemplateSize: =409
+        Width: =1123
+        WrapCount: =3
+        X: =119
+        Y: =212
+        ZIndex: =1
+
+        Label8 As label:
+            Align: =Align.Center
+            Color: =textColorBlu
+            FontWeight: =FontWeight.Semibold
+            Height: =79
+            OnSelect: =Select(Parent)
+            Size: =22
+            Text: |+
+                =ThisItem.Titolo
+                
+                
+            Width: =276
+            X: =26
+            Y: =288
+            ZIndex: =2
+
+        Label10 As label:
+            OnSelect: =Select(Parent)
+            Text: |
+                =ThisItem.ImgText
+            X: =60
+            Y: =60
+            ZIndex: =5
+
+        Image13 As image:
+            Height: =300
+            Image: |-
+                =If(
+                    ThisItem.Titolo = "Solid Tumors", iconSolidTumors,
+                    ThisItem.Titolo = "Hematology", iconHematology,
+                    ThisItem.Titolo = "Mature Brands & Rest of Portfolio", iconMature,
+                    ThisItem.Titolo = "Neuroscience", iconNeuroscience,
+                    ThisItem.Titolo = "Immuno", iconImmuno,
+                    ThisItem.Titolo = "Essentials", iconEssentials,
+                    ThisItem.Titolo = "Cardio-Metabolic", iconCardioMetabolic,
+                    ThisItem.Titolo = "Gene Therapies", iconGeneTherapies,
+                    ThisItem.Titolo = "ADACAP", iconADACAP
+                
+                    
+                  //  iconDefault
+                )
+            OnSelect: =Select(Parent)
+            Width: =300
+            X: =40
+            Y: =67
+            ZIndex: =6
+
+    Header_14 As Header:
+        ZIndex: =3
+
+    Footer_14 As Footer:
+        Y: =696
+        ZIndex: =4
+
+    backHome_12 As image:
+        Height: =38
+        Image: =Expand_down_light
+        OnSelect: =Navigate(footer_vaiProdotti)
+        Width: =36
+        X: =136
+        Y: =118
+        ZIndex: =5
+
+    Titolo_11 As label:
+        Color: =RGBA(241, 244, 249, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =64
+        Size: =16
+        Text: =varBusinessArea & " - Business Area" 
+        Width: =420
+        X: =171
+        Y: =105
+        ZIndex: =6
+
+    ToggleStockout_14 As toggleSwitch:
+        Default: =Footer_14.Navigazione_stockout
+        OnChange: =If(varstock,Navigate(footer_stockout,ScreenTransition.Fade))
+        Visible: =false
+        X: =411
+        Y: =32
+        ZIndex: =18
+
+    ToggleDPC_14 As toggleSwitch:
+        Default: =Footer_14.Navigazione_DPC
+        OnChange: =If(vardpc,Navigate(footer_DPC,ScreenTransition.Fade))
+        Visible: =false
+        X: =431
+        Y: =52
+        ZIndex: =19
+
+    ToggleComunicazioni_14 As toggleSwitch:
+        Default: =Footer_14.Navigazione_comunicazioni
+        OnChange: =If(varcomunicazioni,Navigate(footer_comunicazioni,ScreenTransition.Fade))
+        Visible: =false
+        X: =471
+        Y: =92
+        ZIndex: =20
+
+    ToggleSostenibilita_14 As toggleSwitch:
+        Default: =Footer_14.Navigazione_sostenibilita
+        OnChange: =If(varsostenibilita,Navigate(footer_sostenibilita,ScreenTransition.Fade))
+        Visible: =false
+        X: =491
+        Y: =112
+        ZIndex: =21
+
+    ToggleListini_14 As toggleSwitch:
+        Default: =Footer_14.Navigazione_listini
+        OnChange: =If(varlistini,Navigate(footer_listini,ScreenTransition.Fade))
+        Visible: =false
+        X: =511
+        Y: =132
+        ZIndex: =22
+
+    ToggleVaiProdotti_14 As toggleSwitch:
+        Default: =Footer_11.NavigazioneVaiAiProdotti
+        OnChange: =If(varvaiprodotti,Navigate(footer_vaiProdotti,ScreenTransition.Fade))
+        Visible: =false
+        X: =531
+        Y: =152
+        ZIndex: =23
+
+    ToggleReporting_14 As toggleSwitch:
+        Default: =Footer_14.Navigazione_reporting
+        OnChange: =If(varreporting,Navigate(footer_Reporting,ScreenTransition.Fade))
+        Visible: =false
+        X: =551
+        Y: =172
+        ZIndex: =24
+
+    ToggleKitProdotti_14 As toggleSwitch:
+        Default: =Footer_14.Navigazione_kitprodotti
+        OnChange: =If(varkitprodotti,Navigate(footer_kitProdotti,ScreenTransition.Fade))
+        Visible: =false
+        X: =571
+        Y: =192
+        ZIndex: =25
+
+    ButtonHome_3 As button:
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =92
+        HoverFill: =Color.Transparent
+        OnSelect: =Navigate(Homepage)
+        PressedFill: =Color.Transparent
+        Text: =
+        Width: =288
+        ZIndex: =26
+

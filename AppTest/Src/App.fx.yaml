@@ -1,0 +1,76 @@
+App As appinfo:
+    BackEnabled: =true
+    OnStart: |+
+        =Set(textColorBlu, ColorValue("#002068"));
+        //Set(textColorAzzurro; ColorValue("#04609A"));;
+        Set(backgroundColorGrey, "F2F2F4");
+        
+        Set( NameExtAllegato , "");
+        
+        Set(
+            AreaSelected,
+            LookUp(
+                Drugs,
+                Titolo = Titolo
+            ).Titolo
+        );
+        
+        Set(
+            AreaSelectedDocumentLibrary,
+            LookUp(
+                Drugs,
+                DocumentLibrary = DocumentLibrary
+            ).DocumentLibrary
+        );
+        
+        //in NVS inserire  "Shared Documents/"
+        Set(
+            varFolderPath,
+            "Documents/"
+        );
+        
+        Set(
+            varFolderPathTarget,
+            "Documents/Target/"
+        );
+        
+        Set(
+            varFolderPathListini,
+            "Listini/"
+        );
+        
+        Set(
+            varBusinessArea,
+            ""
+        );
+        
+        
+        Set(varIsFolder, 1);
+        Set(varCurrentLevel, 0);
+        Set(searchQuery,"");
+        
+        
+        ClearCollect(colFolderHistory, {FolderPath: "Documents/"});
+        
+        //variabili per navigare nel footer
+        Set(varvaiprodotti,false);
+        Set(varcomunicazioni,false);
+        Set(varstock,false);
+        Set(vardpc,false);
+        Set(varsostenibilita,false);
+        Set(varreporting,false);
+        Set(varlistini,false);
+        Set(varkitprodotti,false);
+        
+        Set(varSaluto, "IT");
+        
+        
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

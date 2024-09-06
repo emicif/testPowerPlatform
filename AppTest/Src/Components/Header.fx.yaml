@@ -1,0 +1,39 @@
+Header As CanvasComponent:
+    Fill: =RGBA(255, 255, 255, 255)
+    Height: =92
+    Width: =1365
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    "'Logo-NVS-Header' As image":
+        Height: =92
+        Image: ='Logo-NVS'
+        OnSelect: =
+        PaddingLeft: =30
+        PaddingRight: =30
+        Width: =281
+        ZIndex: =1
+
+    "'Logo-Value-Header' As image":
+        Height: =92
+        Image: ='Logo-Value'
+        Width: =142
+        X: =Header.X + ((Header.Width - 'Logo-Value-Header'.Width)/2)
+        ZIndex: =2
+
+    WelcomeUser As label:
+        Align: =Align.Right
+        Color: =RGBA(0, 32, 104, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =92
+        PaddingBottom: =0
+        PaddingLeft: =30
+        PaddingRight: =30
+        PaddingTop: =0
+        Text: ="Ciao, " & User().FullName
+        Width: |
+            =300
+        X: =1065
+        ZIndex: =3
+

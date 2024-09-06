@@ -1,0 +1,170 @@
+{
+  "00b60bbd-9aa0-4b65-9d7b-bd5c0488aa58": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Flussi di logica",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "50b38312-3aaa-491f-b136-d62fa5b82c0b": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowDisplayName": {
+          "value": "NVSPdf - Kymriah"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "9845208a-3fcc-45b4-9ccd-c34b87ca6c51"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
+        },
+        "workflowDisplayName": {
+          "value": "NVSPdf - Kymriah"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "9845208a-3fcc-45b4-9ccd-c34b87ca6c51"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "NVSPdf-Kymriah"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
+    },
+    "dependents": [],
+    "id": "00b60bbd-9aa0-4b65-9d7b-bd5c0488aa58"
+  },
+  "039acdde-7578-433e-b029-285158466b05": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Flussi di logica",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "50b38312-3aaa-491f-b136-d62fa5b82c0b": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowDisplayName": {
+          "value": "NVS - PDF"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "75c63336-7e15-4bdd-97e6-7dffd689db20"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
+        },
+        "workflowDisplayName": {
+          "value": "NVS - PDF"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "75c63336-7e15-4bdd-97e6-7dffd689db20"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "NVS-PDF"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
+    },
+    "dependents": [],
+    "id": "039acdde-7578-433e-b029-285158466b05"
+  },
+  "50b38312-3aaa-491f-b136-d62fa5b82c0b": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://mindthehead.sharepoint.com/sites/MTH-NVS": {
+        "dataSources": {
+          "Beovu - Kit Prodotto": {
+            "tableName": "1fa9917e-f4ea-4a6b-a3b2-ae1f3c9b6557"
+          },
+          "Comunicazioni_1": {
+            "tableName": "ebeafc53-be9a-43c2-8e38-16d53df08fe5"
+          },
+          "DocumentiAreaCommerciale": {
+            "tableName": "61d6afef-cd1b-43ba-a300-83005c1a3c26"
+          },
+          "Documents": {
+            "tableName": "eaf37326-117f-4cd2-a111-c20ae685c838"
+          },
+          "DPC": {
+            "tableName": "fad913fa-20bf-42fe-9bc0-d2d239fa4ac6"
+          },
+          "Drugs": {
+            "tableName": "d83c74a6-d944-4e58-a3c1-fac4cf261b4c"
+          },
+          "Kymriah - Kit Prodotto": {
+            "tableName": "ac70bc35-eebf-4da1-ac5a-d924ace673eb"
+          },
+          "Lang": {
+            "tableName": "c280bf1f-a474-4433-8acc-dd96c3b6f753"
+          },
+          "Listini": {
+            "tableName": "6e7571da-76cc-46d9-8476-a595e3a539d9"
+          },
+          "News": {
+            "tableName": "59ba34f9-44e7-4204-9324-679f0dc8db3b"
+          },
+          "Sostenibilità": {
+            "tableName": "c65f684f-1e6f-4ae4-a3d1-7dc6e58493b6"
+          },
+          "Stockout": {
+            "tableName": "cac7ed08-e4e4-480f-9c29-cb278a6afbff"
+          },
+          "TherapeuticArea": {
+            "tableName": "7f2f73fb-a971-4922-aabd-3b18944048b9"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Drugs",
+      "Documents",
+      "News",
+      "DocumentiAreaCommerciale",
+      "Stockout",
+      "DPC",
+      "Comunicazioni_1",
+      "Sostenibilità",
+      "Listini",
+      "Lang",
+      "TherapeuticArea",
+      "Kymriah - Kit Prodotto",
+      "Beovu - Kit Prodotto"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "039acdde-7578-433e-b029-285158466b05",
+      "00b60bbd-9aa0-4b65-9d7b-bd5c0488aa58"
+    ],
+    "id": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
+  }
+}

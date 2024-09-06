@@ -1,0 +1,316 @@
+footer_kitProdotti As screen:
+    BackgroundImage: ='sfondo home'
+    OnVisible: =
+
+    Header_13 As Header:
+
+    Footer_13 As Footer:
+        Y: =696
+        ZIndex: =2
+
+    backHome_11 As image:
+        Height: =31.61
+        Image: =Expand_down_light
+        OnSelect: =Navigate(Homepage)
+        Width: =36.05
+        X: =59
+        Y: =111
+        ZIndex: =3
+
+    Titolo_10 As label:
+        Color: =RGBA(241, 244, 249, 1)
+        FontWeight: =FontWeight.Bold
+        OnSelect: =Navigate(Homepage)
+        Size: =16
+        Text: ="Kit Prodotti"
+        Width: =273
+        X: =95
+        Y: =107
+        ZIndex: =4
+
+    Button1_5 As button:
+        DisabledFill: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =479
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =19
+        RadiusBottomRight: =19
+        RadiusTopLeft: =19
+        RadiusTopRight: =19
+        TabIndex: =1
+        Text: =""
+        Width: =1095
+        X: =(App.Width - Button1_5.Width)/2
+        Y: =188
+        ZIndex: =5
+
+    "Gallery_Farmaci_kitProdotti As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =346
+        Items: =Filter(Drugs,StartsWith(Titolo,searchQuery))
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =74
+        Width: =994
+        X: =188
+        Y: =280
+        ZIndex: =6
+
+        Title15_3 As label:
+            Height: =20
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Titolo
+            VerticalAlign: =VerticalAlign.Top
+            Width: =298
+            X: =50
+            Y: =19
+            ZIndex: =2
+
+        Separator15_7 As rectangle:
+            Fill: =RGBA(202, 202, 202, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Rectangle18_3 As rectangle:
+            Height: =Parent.TemplateHeight - Separator15_7.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =0
+            ZIndex: =6
+
+        Label1_5 As label:
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Indicazioni
+            X: =410
+            Y: =21
+            ZIndex: =9
+
+        Image18_3 As image:
+            Height: =50
+            Image: ='dpc-icon'
+            OnSelect: |-
+                =//Select(Parent)
+                Set(varvaiprodotti,false);
+                Set(varcomunicazioni,false);
+                Set(varstock,false);
+                Set(vardpc,false);
+                Set(varsostenibilita,false);
+                Set(varreporting,false);
+                Set(varlistini,false);
+                Set(varkitprodotti,false);
+                Set(
+                   areaSelected,
+                   ThisItem.Titolo
+                );
+                
+                Navigate(Kit_Prodotto)
+            Width: =66
+            X: =902
+            Y: =11
+            ZIndex: =10
+
+        Separator15_8 As rectangle:
+            Fill: =RGBA(202, 202, 202, 1)
+            Height: =74
+            OnSelect: =Select(Parent)
+            Width: =1
+            X: =378
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =11
+
+        Separator15_9 As rectangle:
+            Fill: =RGBA(202, 202, 202, 1)
+            Height: =74
+            OnSelect: =Select(Parent)
+            Width: =1
+            X: =848
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =12
+
+    Label4_3 As label:
+        FontWeight: =FontWeight.Bold
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =14
+        Text: ="Elenco Prodotti"
+        X: =237
+        Y: =240
+        ZIndex: =7
+
+    Separator15_6 As rectangle:
+        Fill: =RGBA(202, 202, 202, 1)
+        Height: =1
+        OnSelect: =
+        TabIndex: |
+            =1
+        Width: =994
+        X: =188
+        Y: =279
+        ZIndex: =8
+
+    Image25_8 As image:
+        Height: =18
+        Image: ='arrow-down'
+        Width: =21
+        X: =301
+        Y: =251
+        ZIndex: =9
+
+    Image25_10 As image:
+        Height: =18
+        Image: ='arrow-down'
+        Width: =21
+        X: =1014
+        Y: =251
+        ZIndex: =10
+
+    Label5_5 As label:
+        FontWeight: =FontWeight.Bold
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =14
+        Text: ="Indicazioni"
+        Width: =225
+        X: =603
+        Y: =240
+        ZIndex: =11
+
+    Image25_9 As image:
+        Height: =18
+        Image: ='arrow-down'
+        Width: =21
+        X: =741
+        Y: =251
+        ZIndex: =12
+
+    ToggleSostenibilita_13 As toggleSwitch:
+        Default: =Footer_13.Navigazione_sostenibilita
+        OnChange: =If(varsostenibilita,Navigate(footer_sostenibilita,ScreenTransition.Fade))
+        Visible: =false
+        X: =491
+        Y: =112
+        ZIndex: =13
+
+    ToggleListini_13 As toggleSwitch:
+        Default: =Footer_13.Navigazione_listini
+        OnChange: =If(varlistini,Navigate(footer_listini,ScreenTransition.Fade))
+        Visible: =false
+        X: =511
+        Y: =132
+        ZIndex: =14
+
+    ToggleVaiProdotti_13 As toggleSwitch:
+        Default: =Footer_13.NavigazioneVaiAiProdotti
+        OnChange: =If(varvaiprodotti,Navigate(footer_vaiProdotti,ScreenTransition.Fade))
+        Visible: =false
+        X: =531
+        Y: =152
+        ZIndex: =15
+
+    ToggleReporting_13 As toggleSwitch:
+        Default: =Footer_13.Navigazione_reporting
+        OnChange: =If(varreporting,Navigate(footer_Reporting,ScreenTransition.Fade))
+        Visible: =false
+        X: =551
+        Y: =172
+        ZIndex: =16
+
+    ToggleKitProdotti_13 As toggleSwitch:
+        Default: =Footer_13.Navigazione_kitprodotti
+        OnChange: =If(varkitprodotti,Navigate(footer_kitProdotti,ScreenTransition.Fade))
+        Visible: =false
+        X: =571
+        Y: =192
+        ZIndex: =17
+
+    Searchbar_farmaci As text:
+        BorderColor: =RGBA(202, 202, 202, 1)
+        BorderThickness: =1
+        Default: |
+            =""
+        DelayOutput: =true
+        FontWeight: =FontWeight.Bold
+        HintText: ="Cerca"
+        OnChange: =Set(searchQuery,Searchbar_farmaci.Text)
+        RadiusBottomLeft: =40
+        RadiusBottomRight: =40
+        RadiusTopLeft: =40
+        RadiusTopRight: =40
+        X: =864
+        Y: =211
+        ZIndex: =18
+
+    "'search-icon' As icon.Search":
+        Height: =21
+        Icon: =Icon.Search
+        OnSelect: =Set(searchQuery,Searchbar_farmaci.Text)
+        Visible: =If(IsBlank(searchQuery),true,false)
+        Width: =30
+        X: =1140
+        Y: =220
+        ZIndex: =19
+
+    "'unsearch-icon' As icon.Cancel":
+        Height: =21
+        Icon: =Icon.Cancel
+        OnSelect: |
+            =Set(searchQuery,"") &
+            Reset(Searchbar_farmaci)
+        Visible: =If(IsBlank(searchQuery),false,true)
+        Width: =28
+        X: =1141
+        Y: =220
+        ZIndex: =20
+
+    ToggleDPC_13 As toggleSwitch:
+        Default: =Footer_13.Navigazione_DPC
+        OnChange: =If(vardpc,Navigate(footer_DPC,ScreenTransition.Fade))
+        Visible: =false
+        X: =451
+        Y: =72
+        ZIndex: =21
+
+    ToggleStockout_13 As toggleSwitch:
+        Default: =Footer_13.Navigazione_stockout
+        OnChange: =If(varstock,Navigate(footer_stockout,ScreenTransition.Fade))
+        Visible: =false
+        X: =431
+        Y: =52
+        ZIndex: =22
+
+    ToggleComunicazioni_13 As toggleSwitch:
+        Default: =Footer_13.Navigazione_comunicazioni
+        OnChange: =If(varcomunicazioni,Navigate(footer_comunicazioni,ScreenTransition.Fade))
+        Visible: =false
+        X: =471
+        Y: =92
+        ZIndex: =23
+
+    ButtonHome_14 As button:
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =92
+        HoverFill: =Color.Transparent
+        OnSelect: =Navigate(Homepage)
+        PressedFill: =Color.Transparent
+        Text: =
+        Width: =278
+        ZIndex: =25
+

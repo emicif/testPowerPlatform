@@ -1,0 +1,414 @@
+footer_sostenibilita As screen:
+    BackgroundImage: ='sfondo home'
+    OnVisible: =
+
+    Header_9 As Header:
+
+    Footer_9 As Footer:
+        Y: =696
+        ZIndex: =2
+
+    Button2_2 As button:
+        Align: =Align.Right
+        Color: =RGBA(0,	32,	104, 1)
+        DisabledFill: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =81
+        OnSelect: |-
+            =Launch("https://share.novartis.net/sites/HCO/SitePages/Report%20MEA%20per%20account.aspx")
+        PaddingLeft: =10
+        PaddingRight: =80
+        RadiusBottomLeft: =19
+        RadiusBottomRight: =19
+        RadiusTopLeft: =19
+        RadiusTopRight: =19
+        Text: =""
+        Width: =399
+        X: =828
+        Y: =163
+        ZIndex: =3
+
+    Image1_2 As image:
+        Height: =39
+        Image: ='dpc-icon'
+        Width: =42
+        X: =841
+        Y: =184
+        ZIndex: =4
+
+    Image16_2 As image:
+        Height: =30
+        Image: =Arrow_right_long_light
+        Width: =50
+        X: =1161
+        Y: =191
+        ZIndex: =5
+
+    backHome_7 As image:
+        Height: =31.61
+        Image: =Expand_down_light
+        OnSelect: =Navigate(Homepage)
+        Width: =36.05
+        X: =59
+        Y: =111
+        ZIndex: =6
+
+    Titolo_8 As label:
+        Color: =RGBA(241, 244, 249, 1)
+        FontWeight: =FontWeight.Bold
+        OnSelect: =Navigate(Homepage)
+        Size: =16
+        Text: ="Sostenibilità"
+        Width: =273
+        X: =95
+        Y: =107
+        ZIndex: =7
+
+    Button1_3 As button:
+        Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =394
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =19
+        RadiusBottomRight: =19
+        RadiusTopLeft: =19
+        RadiusTopRight: =19
+        TabIndex: =1
+        Text: =""
+        Width: =1095
+        X: =(App.Width - Button1_3.Width)/2
+        Y: =273
+        ZIndex: =8
+
+    "Gallery5_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =263
+        Items: =Sostenibilità
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =59
+        Width: =994
+        X: =188
+        Y: =364
+        ZIndex: =9
+
+        Title15_1 As label:
+            Height: =20
+            OnSelect: |
+                =Set(
+                    NameExtAllegato,
+                    Last(
+                        Split(
+                            ThisItem.'Nome file con estensione',
+                            "."
+                        )
+                    ).Value
+                );
+                If(
+                    NameExtAllegato = "pdf",
+                    Set(
+                        pdf_v_sostenibilita,
+                        'NVS-PDF'.Run(ThisItem.Identificatore).pdf
+                    );
+                    Set(
+                        isPDFviewSostenibilita,
+                        true
+                    ),
+                    If(
+                        NameExtAllegato = "xlsx" || NameExtAllegato = "eml",
+                        Launch(ThisItem.'Collegamento a elemento')
+                    )
+                );
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Nome
+            VerticalAlign: =VerticalAlign.Top
+            Width: =298
+            X: =50
+            Y: =19
+            ZIndex: =2
+
+        Separator15_2 As rectangle:
+            Fill: =RGBA(202, 202, 202, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Rectangle18_1 As rectangle:
+            Height: =Parent.TemplateHeight - Separator15_2.Height
+            OnSelect: |+
+                =Set( NameExtAllegato , Last(Split(ThisItem.'Nome file con estensione', ".")).Value);
+                            
+                
+                If( NameExtAllegato = "pdf",
+                        Set(pdf_v, 'NVS-PDF'.Run(ThisItem.Identificatore).pdf);
+                        Set(isPDFviewSostenibilita, true),
+                        If( NameExtAllegato = "xlsx" || NameExtAllegato = "eml",
+                          Launch(ThisItem.'Collegamento a elemento')
+                        )
+                    
+                );
+                
+            Visible: =ThisItem.IsSelected
+            Width: =0
+            ZIndex: =6
+
+        Label1_1 As label:
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Autore.DisplayName
+            X: =755
+            Y: =9
+            ZIndex: =7
+
+        Image18_1 As image:
+            Height: =40
+            Image: ='menu-icon'
+            OnSelect: |
+                =Set(
+                    NameExtAllegato,
+                    Last(
+                        Split(
+                            ThisItem.'Nome file con estensione',
+                            "."
+                        )
+                    ).Value
+                );
+                If(
+                    NameExtAllegato = "pdf",
+                    Set(
+                        pdf_v_sostenibilita,
+                        'NVS-PDF'.Run(ThisItem.Identificatore).pdf
+                    );
+                    Set(
+                        isPDFviewSostenibilita,
+                        true
+                    ),
+                    If(
+                        NameExtAllegato = "xlsx" || NameExtAllegato = "eml",
+                        Launch(ThisItem.'Collegamento a elemento')
+                    )
+                );
+            Width: =25
+            X: =12
+            Y: =9
+            ZIndex: =8
+
+        Label1_2 As label:
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Data/ora modifica'
+            X: =381
+            Y: =9
+            ZIndex: =9
+
+    Label4_1 As label:
+        FontWeight: =FontWeight.Semibold
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =14
+        Text: ="Nome"
+        X: =239
+        Y: =325
+        ZIndex: =10
+
+    Label5_1 As label:
+        FontWeight: =FontWeight.Semibold
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =14
+        Text: ="Autore"
+        X: =941
+        Y: =324
+        ZIndex: =11
+
+    Separator15_3 As rectangle:
+        Fill: =RGBA(202, 202, 202, 1)
+        Height: =1
+        OnSelect: =
+        TabIndex: |
+            =1
+        Width: =994
+        X: =188
+        Y: =364
+        ZIndex: =12
+
+    Label6_1 As label:
+        Color: =RGBA(0,	32,	104, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =24
+        OnSelect: |-
+            =Launch("https://share.novartis.net/sites/HCO/SitePages/Report%20MEA%20per%20account.aspx")
+        Size: =14
+        Text: ="Vai ai dati MEA per Account"
+        Width: =280
+        X: =899
+        Y: =194
+        ZIndex: =13
+
+    Image25_1 As image:
+        Height: =18
+        Image: ='arrow-down'
+        Width: =21
+        X: =303
+        Y: =336
+        ZIndex: =14
+
+    Image25_3 As image:
+        Height: =18
+        Image: ='arrow-down'
+        Width: =21
+        X: =1014
+        Y: =335
+        ZIndex: =15
+
+    Label5_2 As label:
+        FontWeight: =FontWeight.Semibold
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =14
+        Text: ="Data/ora Modifica"
+        Width: =225
+        X: =569
+        Y: =324
+        ZIndex: =16
+
+    Image25_4 As image:
+        Height: =18
+        Image: ='arrow-down'
+        Width: =21
+        X: =741
+        Y: =336
+        ZIndex: =17
+
+    ToggleSostenibilita_9 As toggleSwitch:
+        Default: =Footer_9.Navigazione_sostenibilita
+        OnChange: =If(varsostenibilita,Navigate(footer_sostenibilita,ScreenTransition.Fade))
+        Visible: =false
+        X: =491
+        Y: =112
+        ZIndex: =18
+
+    ToggleListini_9 As toggleSwitch:
+        Default: =Footer_9.Navigazione_listini
+        OnChange: =If(varlistini,Navigate(footer_listini,ScreenTransition.Fade))
+        Visible: =false
+        X: =511
+        Y: =132
+        ZIndex: =19
+
+    ToggleVaiProdotti_9 As toggleSwitch:
+        Default: =Footer_9.NavigazioneVaiAiProdotti
+        OnChange: =If(varvaiprodotti,Navigate(footer_vaiProdotti,ScreenTransition.Fade))
+        Visible: =false
+        X: =531
+        Y: =152
+        ZIndex: =20
+
+    ToggleReporting_9 As toggleSwitch:
+        Default: =Footer_9.Navigazione_reporting
+        OnChange: =If(varreporting,Navigate(footer_Reporting,ScreenTransition.Fade))
+        Visible: =false
+        X: =551
+        Y: =172
+        ZIndex: =21
+
+    ToggleKitProdotti_9 As toggleSwitch:
+        Default: =Footer_9.Navigazione_kitprodotti
+        OnChange: =If(varkitprodotti,Navigate(footer_kitProdotti,ScreenTransition.Fade))
+        Visible: =false
+        X: =571
+        Y: =192
+        ZIndex: =22
+
+    ToggleComunicazioni_9 As toggleSwitch:
+        Default: =Footer_9.Navigazione_comunicazioni
+        OnChange: =If(varcomunicazioni,Navigate(footer_comunicazioni,ScreenTransition.Fade))
+        Visible: =false
+        X: =471
+        Y: =92
+        ZIndex: =23
+
+    ToggleDPC_9 As toggleSwitch:
+        Default: =Footer_9.Navigazione_DPC
+        OnChange: =If(vardpc,Navigate(footer_DPC,ScreenTransition.Fade))
+        Visible: =false
+        X: =451
+        Y: =72
+        ZIndex: =24
+
+    ToggleStockout_9 As toggleSwitch:
+        Default: =Footer_9.Navigazione_stockout
+        OnChange: =If(varstock,Navigate(footer_stockout,ScreenTransition.Fade))
+        Visible: =false
+        X: =431
+        Y: =52
+        ZIndex: =25
+
+    ButtonHome_11 As button:
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =92
+        HoverFill: =Color.Transparent
+        OnSelect: =Navigate(Homepage)
+        PressedFill: =Color.Transparent
+        Text: =
+        Width: =276
+        ZIndex: =26
+
+    grpPDFview_3 As group:
+        Height: =5
+        Width: =5
+        X: =120
+        Y: =120
+        ZIndex: =27
+
+        Rectangle1_3 As rectangle:
+            Height: =570
+            Visible: =isPDFviewSostenibilita
+            Width: =1198
+            X: =110
+            Y: =100
+            ZIndex: =28
+
+        PdfViewer1_3 As pdfViewer:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Document: =pdf_v_sostenibilita
+            Fill: =RGBA(0, 0, 0, 0.5)
+            Height: =514
+            ShowControls: =true
+            Visible: =isPDFviewSostenibilita
+            Width: =1198
+            X: =110
+            Y: =156
+            ZIndex: =29
+
+        Icon1_3 As icon.Cancel:
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(isPDFviewSostenibilita, false)
+            Visible: =isPDFviewSostenibilita
+            Width: =30
+            X: =1266
+            Y: =117
+            ZIndex: =30
+

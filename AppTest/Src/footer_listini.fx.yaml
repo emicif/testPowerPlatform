@@ -1,0 +1,413 @@
+footer_listini As screen:
+    BackgroundImage: ='sfondo home'
+    OnVisible: |
+        =
+
+    Header_10 As Header:
+
+    Footer_10 As Footer:
+        Y: =696
+        ZIndex: =2
+
+    backHome_8 As image:
+        Height: =31.61
+        Image: =Expand_down_light
+        OnSelect: =Navigate(Homepage)
+        Width: =36.05
+        X: =59
+        Y: =111
+        ZIndex: =3
+
+    Titolo_9 As label:
+        Color: =RGBA(241, 244, 249, 1)
+        FontWeight: =FontWeight.Bold
+        OnSelect: =Navigate(Homepage)
+        Size: =16
+        Text: ="Listini"
+        Width: =273
+        X: =95
+        Y: =107
+        ZIndex: =4
+
+    Button1_4 As button:
+        Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =479
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =19
+        RadiusBottomRight: =19
+        RadiusTopLeft: =19
+        RadiusTopRight: =19
+        TabIndex: =1
+        Text: =""
+        Width: =1095
+        X: =(App.Width - Button1_4.Width)/2
+        Y: =188
+        ZIndex: =5
+
+    "Gallery5_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =346
+        Items: |-
+            =
+            Filter(
+                Listini, 
+                'Percorso cartella' = varFolderPathListini)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =59
+        Width: =994
+        X: =188
+        Y: =280
+        ZIndex: =6
+
+        Title15_2 As label:
+            Height: =20
+            OnSelect: |+
+                =If(
+                    ThisItem.isFolder,
+                    Set(varFolderPathListini, ThisItem.'Percorso cartella' & ThisItem.Nome & "/");
+                        Set(varCurrentLevel, varIsFolder) // Imposta il livello corrente
+                
+                );
+                Set(
+                    NameExtAllegato,
+                    Last(
+                        Split(
+                            ThisItem.'Nome file con estensione',
+                            "."
+                        )
+                    ).Value
+                );
+                If( ThisItem.isFolder = 0,
+                    If(
+                        NameExtAllegato = "pdf",
+                        Set(
+                            pdf_v_listini,
+                            'NVS-PDF'.Run(ThisItem.Identificatore).pdf
+                        );
+                        Set(
+                            isPDFviewListini,
+                            true
+                        ),
+                        If(
+                            NameExtAllegato = "xlsx" || NameExtAllegato = "eml",
+                            Launch(ThisItem.'Collegamento a elemento')
+                        )
+                    )
+                );
+                
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Nome
+            VerticalAlign: =VerticalAlign.Top
+            Width: =298
+            X: =50
+            Y: =19
+            ZIndex: =2
+
+        Separator15_4 As rectangle:
+            Fill: =RGBA(202, 202, 202, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Rectangle18_2 As rectangle:
+            Height: =Parent.TemplateHeight - Separator15_4.Height
+            OnSelect: |
+                =Set(
+                    NameExtAllegato,
+                    Last(
+                        Split(
+                            ThisItem.'Nome file con estensione',
+                            "."
+                        )
+                    ).Value
+                );
+                If(
+                    NameExtAllegato = "pdf",
+                    Set(
+                        pdf_v_listini,
+                        'NVS-PDF'.Run(ThisItem.Identificatore).pdf
+                    );
+                    Set(
+                        isPDFviewListini,
+                        true
+                    ),
+                    If(
+                        NameExtAllegato = "xlsx" || NameExtAllegato = "eml",
+                        Launch(ThisItem.'Collegamento a elemento')
+                    )
+                );
+            Visible: =ThisItem.IsSelected
+            Width: =0
+            ZIndex: =6
+
+        Label1_3 As label:
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Autore.DisplayName
+            X: =755
+            Y: =9
+            ZIndex: =7
+
+        Image18_2 As image:
+            Height: =40
+            Image: =If(ThisItem.isFolder, 'icon-folder', 'menu-icon')
+            OnSelect: |
+                =Set(
+                    NameExtAllegato,
+                    Last(
+                        Split(
+                            ThisItem.'Nome file con estensione',
+                            "."
+                        )
+                    ).Value
+                );
+                If(
+                    NameExtAllegato = "pdf",
+                    Set(
+                        pdf_v_listini,
+                        'NVS-PDF'.Run(ThisItem.Identificatore).pdf
+                    );
+                    Set(
+                        isPDFviewListini,
+                        true
+                    ),
+                    If(
+                        NameExtAllegato = "xlsx" || NameExtAllegato = "eml",
+                        Launch(ThisItem.'Collegamento a elemento')
+                    )
+                );
+            Width: =25
+            X: =12
+            Y: =9
+            ZIndex: =8
+
+        Label1_4 As label:
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Data/ora modifica'
+            X: =381
+            Y: =9
+            ZIndex: =9
+
+    Label4_2 As label:
+        FontWeight: =FontWeight.Semibold
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =14
+        Text: ="Nome"
+        X: =237
+        Y: =240
+        ZIndex: =7
+
+    Label5_3 As label:
+        FontWeight: =FontWeight.Semibold
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =14
+        Text: ="Autore"
+        X: =940
+        Y: =240
+        ZIndex: =8
+
+    Separator15_5 As rectangle:
+        Fill: =RGBA(202, 202, 202, 1)
+        Height: =1
+        OnSelect: =
+        TabIndex: |
+            =1
+        Width: =994
+        X: =188
+        Y: =279
+        ZIndex: =9
+
+    Image25_5 As image:
+        Height: =18
+        Image: ='arrow-down'
+        Width: =21
+        X: =301
+        Y: =251
+        ZIndex: =10
+
+    Image25_6 As image:
+        Height: =18
+        Image: ='arrow-down'
+        Width: =21
+        X: =1014
+        Y: =251
+        ZIndex: =11
+
+    Label5_4 As label:
+        FontWeight: =FontWeight.Semibold
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =14
+        Text: ="Data/ora Modifica"
+        Width: =225
+        X: =570
+        Y: =240
+        ZIndex: =12
+
+    Image25_7 As image:
+        Height: =18
+        Image: ='arrow-down'
+        Width: =21
+        X: =741
+        Y: =251
+        ZIndex: =13
+
+    ToggleSostenibilita_10 As toggleSwitch:
+        Default: =Footer_10.Navigazione_sostenibilita
+        OnChange: =If(varsostenibilita,Navigate(footer_sostenibilita,ScreenTransition.Fade))
+        Visible: =false
+        X: =491
+        Y: =112
+        ZIndex: =14
+
+    ToggleListini_10 As toggleSwitch:
+        Default: =Footer_10.Navigazione_listini
+        OnChange: =If(varlistini,Navigate(footer_listini,ScreenTransition.Fade))
+        Visible: =false
+        X: =511
+        Y: =132
+        ZIndex: =15
+
+    ToggleVaiProdotti_10 As toggleSwitch:
+        Default: =Footer_10.NavigazioneVaiAiProdotti
+        OnChange: =If(varvaiprodotti,Navigate(footer_vaiProdotti,ScreenTransition.Fade))
+        Visible: =false
+        X: =531
+        Y: =152
+        ZIndex: =16
+
+    ToggleReporting_10 As toggleSwitch:
+        Default: =Footer_10.Navigazione_reporting
+        OnChange: =If(varreporting,Navigate(footer_Reporting,ScreenTransition.Fade))
+        Visible: =false
+        X: =551
+        Y: =172
+        ZIndex: =17
+
+    ToggleKitProdotti_10 As toggleSwitch:
+        Default: =Footer_10.Navigazione_kitprodotti
+        OnChange: =If(varkitprodotti,Navigate(footer_kitProdotti,ScreenTransition.Fade))
+        Visible: =false
+        X: =571
+        Y: =192
+        ZIndex: =18
+
+    ToggleComunicazioni_10 As toggleSwitch:
+        Default: =Footer_10.Navigazione_comunicazioni
+        OnChange: =If(varcomunicazioni,Navigate(footer_comunicazioni,ScreenTransition.Fade))
+        Visible: =false
+        X: =471
+        Y: =92
+        ZIndex: =19
+
+    ToggleDPC_10 As toggleSwitch:
+        Default: =Footer_10.Navigazione_DPC
+        OnChange: =If(vardpc,Navigate(footer_DPC,ScreenTransition.Fade))
+        Visible: =false
+        X: =451
+        Y: =72
+        ZIndex: =20
+
+    ToggleStockout_10 As toggleSwitch:
+        Default: =Footer_10.Navigazione_stockout
+        OnChange: =If(varstock,Navigate(footer_stockout,ScreenTransition.Fade))
+        Visible: =false
+        X: =431
+        Y: =52
+        ZIndex: =21
+
+    ButtonHome_13 As button:
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =92
+        HoverFill: =Color.Transparent
+        OnSelect: =Navigate(Homepage)
+        PressedFill: =Color.Transparent
+        Text: =
+        Width: =272
+        ZIndex: =23
+
+    grpPDFview_Listini As group:
+        Height: =5
+        Width: =5
+        X: =120
+        Y: =120
+        ZIndex: =24
+
+        Rectangle1_5 As rectangle:
+            Height: =570
+            Visible: =isPDFviewListini
+            Width: =1198
+            X: =110
+            Y: =100
+            ZIndex: =25
+
+        PdfViewer1_5 As pdfViewer:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Document: =pdf_v_listini
+            Fill: =RGBA(0, 0, 0, 0.5)
+            Height: =514
+            ShowControls: =true
+            Visible: =isPDFviewListini
+            Width: =1198
+            X: =110
+            Y: =156
+            ZIndex: =26
+
+        Icon1_5 As icon.Cancel:
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(isPDFviewListini, false)
+            Visible: =isPDFviewListini
+            Width: =30
+            X: =1266
+            Y: =117
+            ZIndex: =27
+
+    Icon4 As icon.BackArrow:
+        Height: =24
+        Icon: =Icon.BackArrow
+        OnSelect: |+
+            =Set(
+                varFolderPathListini, 
+                Concat(
+                    FirstN(
+                        Split(varFolderPathListini, "/"), 
+                        CountRows(Split(varFolderPathListini, "/"))-2),
+                        Value,
+                        "/")
+                        & "/")
+            
+        Visible: |-
+            =If(
+                varFolderPathListini = "Listini/",
+                false,
+                true)
+        Width: =24
+        X: =188
+        Y: =248
+        ZIndex: =28
+

@@ -1,0 +1,186 @@
+Home_Prodotto As screen:
+    BackgroundImage: ='sfondo home'
+    OnVisible: =
+
+    Header_3 As Header:
+
+    Footer_3 As Footer:
+        Y: =696
+        ZIndex: =5
+
+    backHome_1 As image:
+        Height: =40
+        Image: =Expand_down_light
+        OnSelect: =Navigate(Area_Commerciale)
+        Width: =36.05
+        X: =136
+        Y: =116
+        ZIndex: =6
+
+    TitoloFarmaco As label:
+        Color: =RGBA(241, 244, 249, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: =areaSelected
+        Width: =273
+        X: =171
+        Y: =116
+        ZIndex: =7
+
+    Image19 As image:
+        Height: =219
+        Image: ='icona-KitProdotto'
+        OnSelect: |-
+            =//Set(AreaSelectedDocumentLibrary; AreaSelected);;
+            Navigate(Kit_Prodotto)
+        Width: =210
+        X: =164
+        Y: =306
+        ZIndex: =8
+
+    Image20 As image:
+        Height: =219
+        Image: ='Icona-comunicazioni'
+        OnSelect: =Navigate(Comunicazioni)
+        Width: =210
+        X: =472
+        Y: =306
+        ZIndex: =9
+
+    Image21 As image:
+        Height: =219
+        Image: ='icona-target'
+        OnSelect: =Navigate(Target)
+        Width: =210
+        X: =783
+        Y: =306
+        ZIndex: =10
+
+    Image22 As image:
+        Height: =219
+        Image: ='Icona-centriAttivi'
+        OnSelect: |+
+            =Set(sharinglink, "Documents%252fnovartis-centriattivi-Kymraih.pdf");
+            Set(varPDFUrl, 'NVSPdf-Kymriah'.Run(sharinglink).pdf);
+            Set(popupPDFUrl, true)
+            
+        Visible: =If(areaSelected = "Kymriah", true)
+        Width: =210
+        X: =1066
+        Y: =306
+        ZIndex: =11
+
+    ToggleStockout_3 As toggleSwitch:
+        Default: =Footer_3.Navigazione_stockout
+        OnChange: =If(varstock,Navigate(footer_stockout,ScreenTransition.Fade))
+        Visible: =false
+        X: =411
+        Y: =32
+        ZIndex: =13
+
+    ToggleDPC_3 As toggleSwitch:
+        Default: =Footer_3.Navigazione_DPC
+        OnChange: =If(vardpc,Navigate(footer_DPC,ScreenTransition.Fade))
+        Visible: =false
+        X: =431
+        Y: =52
+        ZIndex: =14
+
+    ToggleComunicazioni_3 As toggleSwitch:
+        Default: =Footer_3.Navigazione_comunicazioni
+        OnChange: =If(varcomunicazioni,Navigate(footer_comunicazioni,ScreenTransition.Fade))
+        Visible: =false
+        X: =471
+        Y: =92
+        ZIndex: =15
+
+    ToggleSostenibilita_3 As toggleSwitch:
+        Default: =Footer_3.Navigazione_sostenibilita
+        OnChange: =If(varsostenibilita,Navigate(footer_sostenibilita,ScreenTransition.Fade))
+        Visible: =false
+        X: =491
+        Y: =112
+        ZIndex: =16
+
+    ToggleListini_3 As toggleSwitch:
+        Default: =Footer_3.Navigazione_listini
+        OnChange: =If(varlistini,Navigate(footer_listini,ScreenTransition.Fade))
+        Visible: =false
+        X: =511
+        Y: =132
+        ZIndex: =17
+
+    ToggleVaiProdotti_3 As toggleSwitch:
+        Default: =Footer_3.NavigazioneVaiAiProdotti
+        OnChange: =If(varvaiprodotti,Navigate(footer_vaiProdotti,ScreenTransition.Fade))
+        Visible: =false
+        X: =531
+        Y: =152
+        ZIndex: =18
+
+    ToggleReporting_3 As toggleSwitch:
+        Default: =Footer_3.Navigazione_reporting
+        OnChange: =If(varreporting,Navigate(footer_Reporting,ScreenTransition.Fade))
+        Visible: =false
+        X: =551
+        Y: =172
+        ZIndex: =19
+
+    ToggleKitProdotti_3 As toggleSwitch:
+        Default: =Footer_3.Navigazione_kitprodotti
+        OnChange: =If(varkitprodotti,Navigate(footer_kitProdotti,ScreenTransition.Fade))
+        Visible: =false
+        X: =571
+        Y: =192
+        ZIndex: =20
+
+    grpPDFview_1 As group:
+        Height: =5
+        Width: =5
+        X: =120
+        Y: =120
+        ZIndex: =24
+
+        Rectangle1_1 As rectangle:
+            Height: =570
+            Visible: =popupPDFUrl
+            Width: =1198
+            X: =110
+            Y: =100
+            ZIndex: =22
+
+        PdfViewer1_1 As pdfViewer:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            DisplayMode: =DisplayMode.View
+            Document: =varPDFUrl
+            Fill: =RGBA(0, 0, 0, 0.5)
+            Height: =530
+            ShowControls: =true
+            Visible: =popupPDFUrl
+            Width: =1198
+            X: =110
+            Y: =140
+            ZIndex: =23
+
+        Icon1_1 As icon.Cancel:
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(popupPDFUrl, false)
+            Visible: =popupPDFUrl
+            Width: =30
+            X: =1263
+            Y: =107
+            ZIndex: =25
+
+    ButtonHome_1 As button:
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =92
+        HoverFill: =Color.Transparent
+        OnSelect: =Navigate(Homepage)
+        PressedFill: =Color.Transparent
+        Text: =
+        Width: =280
+        ZIndex: =26
+

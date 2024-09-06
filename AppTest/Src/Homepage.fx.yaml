@@ -4,7 +4,7 @@ Homepage As screen:
         =
 
     Header_1 As Header:
-        Fill: =RGBA(255, 255, 255, 0)
+        Fill: =RGBA(255, 255, 255, 1)
 
     Image3 As image:
         Height: =267

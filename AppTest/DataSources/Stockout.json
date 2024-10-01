@@ -7,6 +7,8 @@
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
+      "{DriveId}": "ID unità",
+      "{DriveItemId}": "ID elemento unità",
       "{FilenameWithExtension}": "Nome file con estensione",
       "{FullPath}": "Percorso completo",
       "{Identifier}": "Identificatore",

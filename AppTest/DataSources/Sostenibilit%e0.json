@@ -3,10 +3,12 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2024-04-23T16:44:04.0560000Z",
+      "LastChangedTimeString": "2024-07-03T16:41:56.3710000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
+      "{DriveId}": "ID unità",
+      "{DriveItemId}": "ID elemento unità",
       "{FilenameWithExtension}": "Nome file con estensione",
       "{FullPath}": "Percorso completo",
       "{Identifier}": "Identificatore",

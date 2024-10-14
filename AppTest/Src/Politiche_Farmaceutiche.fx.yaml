@@ -117,6 +117,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Sardegna"
                     Width: =66
                     X: =120
                     Y: =387
@@ -138,6 +139,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Sicilia"
                     Width: =142
                     X: =324
                     Y: =555
@@ -159,6 +161,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Basilicata"
                     Width: =48
                     X: =466
                     Y: =387
@@ -180,6 +183,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Calabria"
                     Width: =75
                     X: =471
                     Y: =450
@@ -201,6 +205,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Puglia"
                     Width: =88
                     X: =482
                     Y: =333
@@ -222,6 +227,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Campania"
                     Width: =46
                     X: =388
                     Y: =354
@@ -243,6 +249,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Molise"
                     Width: =34
                     X: =388
                     Y: =333
@@ -264,6 +271,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Abruzzo"
                     Width: =28
                     X: =360
                     Y: =284
@@ -285,6 +293,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Lazio"
                     Width: =48
                     X: =300
                     Y: =304
@@ -305,6 +314,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Marche"
                     Width: =24
                     X: =336
                     Y: =224
@@ -326,6 +336,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Umbria"
                     Width: =24
                     X: =300
                     Y: =244
@@ -347,6 +358,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Toscana"
                     Width: =74
                     X: =214
                     Y: =204
@@ -367,6 +379,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Emilia Romagna"
                     Width: =112
                     X: =188
                     Y: =144
@@ -388,6 +401,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Liguria"
                     Width: =76
                     X: =120
                     Y: =164
@@ -408,6 +422,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Friuli Venezia Giulia"
                     Width: =40
                     X: =308
                     Y: =50
@@ -429,6 +444,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Veneto"
                     Width: =48
                     X: =252
                     Y: =80
@@ -450,6 +466,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Trentino Alto Adige"
                     Width: =26
                     X: =226
                     Y: =28
@@ -471,6 +488,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Valle D'Aosta"
                     Width: =26
                     X: =80
                     Y: =80
@@ -491,6 +509,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Lombardia"
                     Width: =70
                     X: =156
                     Y: =90
@@ -512,6 +531,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Piemonte"
                     Width: =40
                     X: =88
                     Y: =120
@@ -533,6 +553,7 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
+                    Tooltip: ="Bolzano"
                     Width: =15
                     X: =260
                     Y: =40

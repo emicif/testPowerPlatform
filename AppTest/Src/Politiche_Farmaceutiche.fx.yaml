@@ -28,9 +28,9 @@ Politiche_Farmaceutiche As screen:
                 LayoutMinWidth: =250
                 ZIndex: =2
 
-                Image10 As image:
+                Image_mappa_italia As image:
                     Height: =672
-                    Image: =mappa_italia_nvs
+                    Image: ='mappa_italia_nvs'
                     Width: =679
                     ZIndex: =1
 

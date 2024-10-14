@@ -1,0 +1,46 @@
+Show_Regione_Politiche As screen:
+    BackgroundImage: =sfondo_italia
+    Fill: =RGBA(4,96,169,0.9)
+
+    Container13 As groupContainer.verticalAutoLayoutContainer:
+        Height: =676
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =40
+        PaddingLeft: =40
+        PaddingRight: =40
+        PaddingTop: =40
+        Width: =1366
+        Y: =92
+        ZIndex: =1
+
+        Container14 As groupContainer.horizontalAutoLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =1
+
+            backHome_17 As image:
+                Height: =40
+                Image: =Expand_down_light
+                OnSelect: =Navigate(Politiche_Farmaceutiche)
+                Width: =36.05
+                X: =136
+                Y: =116
+                ZIndex: =1
+
+            Titolo_16 As label:
+                AutoHeight: =true
+                Color: =RGBA(241, 244, 249, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Bold
+                Size: =16
+                Text: =VarNomeRegione
+                Width: =400
+                X: =172
+                Y: =116
+                ZIndex: =2
+
+    Header_19 As Header:
+        ZIndex: =2
+

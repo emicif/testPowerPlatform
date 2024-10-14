@@ -465,7 +465,8 @@ Politiche_Farmaceutiche As screen:
                     Fill: =RGBA(0, 0, 0, 0)
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
-                    OnSelect: =Navigate('Homepage')
+                    OnSelect: |-
+                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Lombardia"})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -485,7 +486,8 @@ Politiche_Farmaceutiche As screen:
                     Height: =44
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
-                    OnSelect: =Navigate('Homepage')
+                    OnSelect: |-
+                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Piemonte"})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100

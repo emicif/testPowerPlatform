@@ -22,7 +22,8 @@ Politiche_Farmaceutiche As screen:
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                PaddingTop: =40
+                PaddingLeft: =50
+                PaddingTop: =30
                 ZIndex: =1
 
                 backHome_16 As image:
@@ -36,7 +37,9 @@ Politiche_Farmaceutiche As screen:
 
                 Container10 As groupContainer.verticalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
-                    FillPortions: =0
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    Height: =160
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250

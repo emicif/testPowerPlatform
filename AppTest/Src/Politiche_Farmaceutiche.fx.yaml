@@ -1,0 +1,14 @@
+Politiche_Farmaceutiche As screen:
+    BackgroundImage: ='sfondo_politiche_farmaceutiche'
+    ImagePosition: =ImagePosition.Fill
+
+    Container3_1 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(4,96,169,0.9)
+        Height: =676
+        Width: =1365
+        Y: =92
+        ZIndex: =1
+
+    Header_18 As Header:
+        ZIndex: =2
+

@@ -18,6 +18,7 @@ Homepage As screen:
     Image4 As image:
         Height: =267
         Image: ='politiche farmaceutiche'
+        OnSelect: =Navigate(Politiche_Farmaceutiche)
         Width: =482
         X: =440
         Y: =258

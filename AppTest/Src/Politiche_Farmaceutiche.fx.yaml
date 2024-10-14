@@ -17,6 +17,8 @@ Politiche_Farmaceutiche As screen:
             ZIndex: =2
 
             Container9 As groupContainer.horizontalAutoLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DropShadow: =DropShadow.None
                 Height: =100
                 LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
@@ -36,13 +38,10 @@ Politiche_Farmaceutiche As screen:
                     ZIndex: =1
 
                 Container10 As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
                     BorderColor: =RGBA(0, 0, 0, 0)
                     DropShadow: =DropShadow.None
                     Height: =160
                     LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =100
-                    LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     ZIndex: =3
 
@@ -62,6 +61,7 @@ Politiche_Farmaceutiche As screen:
                         Color: =RGBA(241, 244, 249, 1)
                         Font: =Font.Lato
                         Height: =62
+                        PaddingTop: =0
                         Size: =12
                         Text: ="Clicca sulla mappa per accedere alle singole regioni"
                         Width: =500

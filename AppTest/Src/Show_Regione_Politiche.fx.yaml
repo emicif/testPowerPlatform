@@ -8,8 +8,8 @@ Show_Regione_Politiche As screen:
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         PaddingBottom: =40
-        PaddingLeft: =40
-        PaddingRight: =40
+        PaddingLeft: =60
+        PaddingRight: =60
         PaddingTop: =40
         Width: =1366
         Y: =92
@@ -19,7 +19,7 @@ Show_Regione_Politiche As screen:
             AlignInContainer: =AlignInContainer.Start
             DropShadow: =DropShadow.None
             FillPortions: =0
-            Height: =100
+            Height: =80
             LayoutMinHeight: =20
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -50,6 +50,7 @@ Show_Regione_Politiche As screen:
             BorderColor: =RGBA(0, 0, 0, 0)
             DropShadow: =DropShadow.None
             FillPortions: =0
+            Height: =300
             LayoutGap: =30
             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
             LayoutMinHeight: =100

@@ -47,6 +47,7 @@ Show_Regione_Politiche As screen:
                 ZIndex: =2
 
         Container16 As groupContainer.horizontalAutoLayoutContainer:
+            BorderColor: =RGBA(0, 0, 0, 0)
             DropShadow: =DropShadow.None
             FillPortions: =0
             LayoutGap: =30
@@ -84,26 +85,89 @@ Show_Regione_Politiche As screen:
                     Y: =ImageMappaRegionale.Y
                     ZIndex: =2
 
-            ButtonListing As button:
-                Color: =RGBA(0, 0, 0, 1)
-                Fill: =RGBA(255, 255, 255, 1)
-                FillPortions: =1
-                Text: ="Listing"
-                ZIndex: =4
+            ContainerListing As groupContainer.manualLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DropShadow: =DropShadow.None
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =7
 
-            ButtonAcquisti As button:
-                Color: =RGBA(0, 0, 0, 1)
-                Fill: =RGBA(255, 255, 255, 1)
-                FillPortions: =1
-                Text: ="Acquisti"
-                ZIndex: =5
+                ImageListing As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Height: =ContainerListing.Height
+                    Image: =img_pulsante_listing
+                    Width: =ContainerListing.Width
+                    X: =ContainerListing.X
+                    Y: =ContainerListing.Y
+                    ZIndex: =1
 
-            ButtonReti As button:
-                Color: =RGBA(0, 0, 0, 1)
-                Fill: =RGBA(255, 255, 255, 1)
-                FillPortions: =1
-                Text: ="Reti e PDTA"
-                ZIndex: =6
+                ButtonListing As button:
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =ImageListing.Height
+                    HoverFill: =ColorFade(Self.Fill, -20%)
+                    Text: =
+                    Width: =ImageListing.Width
+                    X: =ImageListing.X
+                    Y: =ImageListing.Y
+                    ZIndex: =2
+
+            ContainerAcquisti As groupContainer.manualLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DropShadow: =DropShadow.None
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =8
+
+                ImageAcquisti As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Height: =ContainerAcquisti.Height
+                    Image: =img_pulsante_acquisti
+                    Width: =ContainerAcquisti.Width
+                    X: =ContainerAcquisti.X
+                    Y: =ContainerAcquisti.Y
+                    ZIndex: =1
+
+                ButtonAcquisti As button:
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =ImageAcquisti.Height
+                    HoverFill: =ColorFade(Self.Fill, -20%)
+                    Text: =
+                    Width: =ImageAcquisti.Width
+                    X: =ImageAcquisti.X
+                    Y: =ImageAcquisti.Y
+                    ZIndex: =2
+
+            ContainerReti As groupContainer.manualLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DropShadow: =DropShadow.None
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =9
+
+                ImageReti As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Height: =ContainerReti.Height
+                    Image: =img_pulsante_reti
+                    Width: =ContainerReti.Width
+                    X: =ContainerReti.X
+                    Y: =ContainerReti.Y
+                    ZIndex: =1
+
+                ButtonReti As button:
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =ImageReti.Height
+                    HoverFill: =ColorFade(Self.Fill, -20%)
+                    Text: =
+                    Width: =ImageReti.Width
+                    X: =ImageReti.X
+                    Y: =ImageReti.Y
+                    ZIndex: =2
 
     Header_19 As Header:
         ZIndex: =2

@@ -3,6 +3,7 @@ Show_Regione_Politiche As screen:
     Fill: =RGBA(4,96,169,0.9)
 
     Container13 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.None
         Height: =676
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
@@ -16,6 +17,7 @@ Show_Regione_Politiche As screen:
 
         Container14 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.Start
+            DropShadow: =DropShadow.None
             FillPortions: =0
             Height: =100
             LayoutMinHeight: =20

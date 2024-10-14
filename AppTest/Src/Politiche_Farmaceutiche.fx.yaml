@@ -34,6 +34,25 @@ Politiche_Farmaceutiche As screen:
                     Width: =679
                     ZIndex: =1
 
+                ButtonSardegna As button:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Color: =RGBA(0, 0, 0, 0)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =60
+                    HoverColor: =RGBA(0, 0, 0, 0)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    RadiusBottomLeft: =100
+                    RadiusBottomRight: =100
+                    RadiusTopLeft: =100
+                    RadiusTopRight: =100
+                    Text: =
+                    Width: =54
+                    X: =129
+                    Y: =408
+                    ZIndex: =2
+
     Header_18 As Header:
         ZIndex: =2
 

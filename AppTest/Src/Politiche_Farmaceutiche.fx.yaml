@@ -16,14 +16,55 @@ Politiche_Farmaceutiche As screen:
             Y: =3
             ZIndex: =2
 
-            Container8 As groupContainer.verticalAutoLayoutContainer:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                DropShadow: =DropShadow.None
-                LayoutDirection: =LayoutDirection.Vertical
+            Container9 As groupContainer.horizontalAutoLayoutContainer:
+                Height: =100
+                LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                PaddingTop: =40
                 ZIndex: =1
+
+                backHome_16 As image:
+                    Height: =40
+                    Image: =Expand_down_light
+                    OnSelect: =Navigate(Homepage)
+                    Width: =36.05
+                    X: =136
+                    Y: =116
+                    ZIndex: =1
+
+                Container10 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =3
+
+                    Titolo_15 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(241, 244, 249, 1)
+                        Font: =Font.Lato
+                        FontWeight: =FontWeight.Bold
+                        Size: =16
+                        Text: ="Politiche Farmaceutiche Regionali"
+                        Width: =400
+                        X: =172
+                        Y: =116
+                        ZIndex: =1
+
+                    Sottotitolo_2 As label:
+                        Color: =RGBA(241, 244, 249, 1)
+                        Font: =Font.Lato
+                        Height: =62
+                        Size: =12
+                        Text: ="Clicca sulla mappa per accedere alle singole regioni"
+                        Width: =500
+                        X: =143
+                        Y: =156
+                        ZIndex: =2
 
             Container7 As groupContainer.manualLayoutContainer:
                 BorderColor: =RGBA(0, 0, 0, 0)

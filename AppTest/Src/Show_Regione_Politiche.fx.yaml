@@ -45,6 +45,7 @@ Show_Regione_Politiche As screen:
                 ZIndex: =2
 
         Container16 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.None
             FillPortions: =0
             LayoutGap: =30
             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween

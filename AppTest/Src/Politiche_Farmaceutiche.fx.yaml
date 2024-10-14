@@ -40,7 +40,7 @@ Politiche_Farmaceutiche As screen:
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledFill: =RGBA(0, 0, 0, 0)
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =60
+                    Height: =124
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     RadiusBottomLeft: =100
@@ -48,9 +48,9 @@ Politiche_Farmaceutiche As screen:
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Text: =
-                    Width: =54
-                    X: =129
-                    Y: =408
+                    Width: =48
+                    X: =138
+                    Y: =387
                     ZIndex: =2
 
     Header_18 As Header:

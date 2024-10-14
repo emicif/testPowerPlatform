@@ -69,8 +69,6 @@ Show_Regione_Politiche As screen:
                     Height: =ContainerMappaRegionale.Height
                     Image: =varImgRegione
                     Width: =ContainerMappaRegionale.Width
-                    X: =ContainerMappaRegionale.X
-                    Y: =ContainerMappaRegionale.Y
                     ZIndex: =1
 
                 ButtonMappaRegionale As button:
@@ -97,8 +95,10 @@ Show_Regione_Politiche As screen:
                     Height: =ContainerListing.Height
                     Image: =img_pulsante_listing
                     Width: =ContainerListing.Width
-                    X: =ContainerListing.X
-                    Y: =ContainerListing.Y
+                    X: |
+                        =0
+                    Y: |
+                        =0
                     ZIndex: =1
 
                 ButtonListing As button:
@@ -125,8 +125,6 @@ Show_Regione_Politiche As screen:
                     Height: =ContainerAcquisti.Height
                     Image: =img_pulsante_acquisti
                     Width: =ContainerAcquisti.Width
-                    X: =ContainerAcquisti.X
-                    Y: =ContainerAcquisti.Y
                     ZIndex: =1
 
                 ButtonAcquisti As button:
@@ -153,8 +151,6 @@ Show_Regione_Politiche As screen:
                     Height: =ContainerReti.Height
                     Image: =img_pulsante_reti
                     Width: =ContainerReti.Width
-                    X: =ContainerReti.X
-                    Y: =ContainerReti.Y
                     ZIndex: =1
 
                 ButtonReti As button:

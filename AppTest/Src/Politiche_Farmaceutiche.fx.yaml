@@ -1,5 +1,5 @@
 Politiche_Farmaceutiche As screen:
-    BackgroundImage: ='sfondo_politiche_farmaceutiche'
+    BackgroundImage: =sfondo_politiche_farmaceutiche
     ImagePosition: =ImagePosition.Fill
 
     Container3_1 As groupContainer.manualLayoutContainer:
@@ -97,7 +97,7 @@ Politiche_Farmaceutiche As screen:
                 Image_mappa_italia As image:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     Height: =672
-                    Image: ='mappa_italia_nvs'
+                    Image: =mappa_italia_nvs
                     Width: =679
                     ZIndex: =1
 
@@ -111,7 +111,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Sardegna", varImgRegione: img_pulsante_sardegna})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Sardegna", varImgRegione: img_pulsante_sardegna})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -133,7 +133,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Sicilia", varImgRegione: img_pulsante_sicilia})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Sicilia", varImgRegione: img_pulsante_sicilia})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -155,7 +155,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Basilicata", varImgRegione: img_pulsante_basilicata})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Basilicata", varImgRegione: img_pulsante_basilicata})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -177,7 +177,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Calabria", varImgRegione: img_pulsante_calabria})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Calabria", varImgRegione: img_pulsante_calabria})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -199,7 +199,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Puglia", varImgRegione: img_pulsante_puglia})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Puglia", varImgRegione: img_pulsante_puglia})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -221,7 +221,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Campania", varImgRegione: img_pulsante_campania})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Campania", varImgRegione: img_pulsante_campania})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -243,7 +243,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Molise", varImgRegione: img_pulsante_molise})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Molise", varImgRegione: img_pulsante_molise})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -265,7 +265,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Abruzzo", varImgRegione: img_pulsante_abruzzo})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Abruzzo", varImgRegione: img_pulsante_abruzzo})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -287,7 +287,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Lazio", varImgRegione: img_pulsante_lazio})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Lazio", varImgRegione: img_pulsante_lazio})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -308,7 +308,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Marche", varImgRegione: img_pulsante_marche})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Marche", varImgRegione: img_pulsante_marche})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -330,7 +330,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Umbria", varImgRegione: img_pulsante_umbria})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Umbria", varImgRegione: img_pulsante_umbria})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -352,7 +352,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Toscana", varImgRegione: img_pulsante_toscana})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Toscana", varImgRegione: img_pulsante_toscana})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -373,7 +373,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Emilia Romagna", varImgRegione: img_pulsante_emilia})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Emilia Romagna", varImgRegione: img_pulsante_emilia})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -395,7 +395,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Liguria", varImgRegione: img_pulsante_liguria})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Liguria", varImgRegione: img_pulsante_liguria})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -416,7 +416,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Friuli Venezia Giulia", varImgRegione: img_pulsante_friuli})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Friuli Venezia Giulia", varImgRegione: img_pulsante_friuli})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -438,7 +438,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Veneto", varImgRegione: img_pulsante_veneto})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Veneto", varImgRegione: img_pulsante_veneto})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -460,7 +460,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Trentino Alto Adige", varImgRegione: img_pulsante_trentino})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Trentino Alto Adige", varImgRegione: img_pulsante_trentino})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -482,7 +482,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Valle D'Aosta", varImgRegione: img_pulsante_aosta})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Valle D'Aosta", varImgRegione: img_pulsante_aosta})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -503,7 +503,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Lombardia", varImgRegione: img_pulsante_lombardia})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Lombardia", varImgRegione: img_pulsante_lombardia})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -525,7 +525,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Piemonte", varImgRegione: img_pulsante_piemonte})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Piemonte", varImgRegione: img_pulsante_piemonte})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100
@@ -547,7 +547,7 @@ Politiche_Farmaceutiche As screen:
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
-                        =Navigate('Show_Regione_Politiche',ScreenTransition.Fade,{VarNomeRegione: "Bolzano", varImgRegione: img_pulsante_trentino})
+                        =Navigate(Show_Regione_Politiche,ScreenTransition.Fade,{VarNomeRegione: "Bolzano", varImgRegione: img_pulsante_trentino})
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
                     RadiusTopLeft: =100

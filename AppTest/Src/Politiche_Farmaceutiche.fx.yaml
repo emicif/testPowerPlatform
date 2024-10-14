@@ -9,6 +9,31 @@ Politiche_Farmaceutiche As screen:
         Y: =92
         ZIndex: =1
 
+        Container6 As groupContainer.horizontalAutoLayoutContainer:
+            Height: =672
+            LayoutMode: =LayoutMode.Auto
+            Width: =1358
+            Y: =3
+            ZIndex: =2
+
+            Container8 As groupContainer.verticalAutoLayoutContainer:
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =1
+
+            Container7 As groupContainer.manualLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =2
+
+                Image10 As image:
+                    Height: =672
+                    Image: =mappa_italia_nvs
+                    Width: =679
+                    ZIndex: =1
+
     Header_18 As Header:
         ZIndex: =2
 

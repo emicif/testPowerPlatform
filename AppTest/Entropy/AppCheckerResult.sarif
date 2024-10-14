@@ -10583,36 +10583,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.mappa_italia_nvs"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.mappa_italia_nvs",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "mappa_italia_nvs",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Kit_Prodotto.ToggleVaiProdotti_4.Default"
                 }
               ],

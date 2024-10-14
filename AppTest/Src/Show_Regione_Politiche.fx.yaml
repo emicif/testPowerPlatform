@@ -15,7 +15,10 @@ Show_Regione_Politiche As screen:
         ZIndex: =1
 
         Container14 As groupContainer.horizontalAutoLayoutContainer:
-            LayoutMinHeight: =100
+            AlignInContainer: =AlignInContainer.Start
+            FillPortions: =0
+            Height: =100
+            LayoutMinHeight: =20
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             ZIndex: =1
@@ -40,6 +43,64 @@ Show_Regione_Politiche As screen:
                 X: =172
                 Y: =116
                 ZIndex: =2
+
+        Container16 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            LayoutGap: =30
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            ContainerMappaRegionale As groupContainer.manualLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DropShadow: =DropShadow.None
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =1
+
+                ImageMappaRegionale As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Height: =ContainerMappaRegionale.Height
+                    Image: =varImgRegione
+                    Width: =ContainerMappaRegionale.Width
+                    X: =ContainerMappaRegionale.X
+                    Y: =ContainerMappaRegionale.Y
+                    ZIndex: =1
+
+                ButtonMappaRegionale As button:
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =ImageMappaRegionale.Height
+                    HoverFill: =ColorFade(Self.Fill, -20%)
+                    Text: =
+                    Width: =ImageMappaRegionale.Width
+                    X: =ImageMappaRegionale.X
+                    Y: =ImageMappaRegionale.Y
+                    ZIndex: =2
+
+            ButtonListing As button:
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                Text: ="Listing"
+                ZIndex: =4
+
+            ButtonAcquisti As button:
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                Text: ="Acquisti"
+                ZIndex: =5
+
+            ButtonReti As button:
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                Text: ="Reti e PDTA"
+                ZIndex: =6
 
     Header_19 As Header:
         ZIndex: =2

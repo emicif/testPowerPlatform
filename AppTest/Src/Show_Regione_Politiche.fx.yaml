@@ -39,7 +39,7 @@ Show_Regione_Politiche As screen:
                 Color: =RGBA(241, 244, 249, 1)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Bold
-                Size: =16
+                Size: =20
                 Text: =VarNomeRegione
                 Width: =400
                 X: =172
@@ -182,6 +182,13 @@ Show_Regione_Politiche As screen:
             RadiusTopRight: =19
             ZIndex: =3
 
+            Label11 As label:
+                Color: =RGBA(0,32,104,1)
+                FontWeight: =FontWeight.Bold
+                Size: =16
+                Text: ="Ultime News"
+                ZIndex: =1
+
             "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DelayItemLoading: =true
@@ -193,7 +200,7 @@ Show_Regione_Politiche As screen:
                 ShowScrollbar: =false
                 TemplatePadding: =0
                 TemplateSize: =104
-                ZIndex: =1
+                ZIndex: =2
 
                 Image10 As image:
                     Height: =72

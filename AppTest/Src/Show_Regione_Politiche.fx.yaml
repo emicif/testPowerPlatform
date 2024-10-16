@@ -176,6 +176,10 @@ Show_Regione_Politiche As screen:
             PaddingLeft: =20
             PaddingRight: =20
             PaddingTop: =20
+            RadiusBottomLeft: =19
+            RadiusBottomRight: =19
+            RadiusTopLeft: =19
+            RadiusTopRight: =19
             ZIndex: =3
 
             "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":

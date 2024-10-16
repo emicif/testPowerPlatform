@@ -202,21 +202,23 @@ Show_Regione_Politiche As screen:
                 ZIndex: =2
 
                 Image10 As image:
-                    Height: =72
+                    Height: =86
                     Image: =ThisItem.Immagine
+                    ImagePosition: =ImagePosition.Stretch
                     OnSelect: =Select(Parent)
                     RadiusBottomLeft: =8
                     RadiusBottomRight: =8
                     RadiusTopLeft: =8
                     RadiusTopRight: =8
-                    Width: =72
+                    Width: =87
                     X: =16
                     Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                     ZIndex: =1
 
                 Title4 As label:
-                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =Self.Size * 1.8
+                    Color: =RGBA(97, 97, 97, 1)
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Bold, FontWeight.Semibold)
+                    Height: =25
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
@@ -224,13 +226,14 @@ Show_Regione_Politiche As screen:
                     PaddingTop: =0
                     Text: =ThisItem.Titolo
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =Parent.TemplateWidth - 173
-                    X: =103
+                    Width: =1007
+                    X: =129
                     Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle4.Size * 1.8)) / 2
                     ZIndex: =2
 
                 Subtitle4 As label:
-                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Color: =RGBA(97, 97, 97, 1)
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Lighter)
                     Height: =Self.Size * 1.8
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0

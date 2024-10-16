@@ -5,6 +5,10 @@ App As appinfo:
         //Set(textColorAzzurro; ColorValue("#04609A"));;
         Set(backgroundColorGrey, "F2F2F4");
         
+        Set(VarPopUpInfoRegioneVisible, false);
+        Set(VarNomeRegione, Blank());
+        Set(varImgRegione, Blank());
+        
         Set( NameExtAllegato , "");
         
         Set(

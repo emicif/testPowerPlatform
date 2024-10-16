@@ -19,7 +19,7 @@ Show_Regione_Politiche As screen:
             AlignInContainer: =AlignInContainer.Start
             DropShadow: =DropShadow.None
             FillPortions: =0
-            Height: =80
+            Height: =60
             LayoutMinHeight: =20
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -172,10 +172,10 @@ Show_Regione_Politiche As screen:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            PaddingBottom: =20
+            PaddingBottom: =10
             PaddingLeft: =20
             PaddingRight: =20
-            PaddingTop: =20
+            PaddingTop: =10
             RadiusBottomLeft: =19
             RadiusBottomRight: =19
             RadiusTopLeft: =19
@@ -192,6 +192,7 @@ Show_Regione_Politiche As screen:
             "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DelayItemLoading: =true
+                Height: =Container8.Height - Label11.Height - 20
                 Items: =Sort(Filter(News, Regione.Value = VarNomeRegione || Regione.Value = Blank() ),'Data/ora modifica', SortOrder.Descending)
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =150

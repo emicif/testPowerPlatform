@@ -194,10 +194,9 @@ Show_Regione_Politiche As screen:
                 DelayItemLoading: =true
                 Items: =Sort(Filter(News, Regione.Value = VarNomeRegione || Regione.Value = Blank() ),'Data/ora modifica', SortOrder.Descending)
                 Layout: =Layout.Vertical
-                LayoutMinHeight: =287
+                LayoutMinHeight: =150
                 LayoutMinWidth: =320
                 LoadingSpinner: =LoadingSpinner.Data
-                ShowScrollbar: =false
                 TemplatePadding: =0
                 TemplateSize: =104
                 ZIndex: =2

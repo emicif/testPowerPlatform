@@ -79,6 +79,7 @@ Show_Regione_Politiche As screen:
                     Height: =ImageMappaRegionale.Height
                     HoverFill: =ColorFade(Self.Fill, -20%)
                     OnSelect: =Navigate(SSR_Mappa_Regionale)
+                    PressedFill: =Self.Fill
                     Text: =
                     Width: =ImageMappaRegionale.Width
                     X: =ImageMappaRegionale.X

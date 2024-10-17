@@ -48,22 +48,76 @@ SSR_Mappa_Regionale As screen:
                     Y: =3
                     ZIndex: =1
 
-                Label13 As label:
-                    Text: ="Testo"
-                    X: =126
-                    Y: =90
-                    ZIndex: =2
+                Container21 As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =ButtonContainerMappaR.Height
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingBottom: =10
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    PaddingTop: =10
+                    Width: =ButtonContainerMappaR.Width
+                    X: =ButtonContainerMappaR.X
+                    Y: =ButtonContainerMappaR.Y
+                    ZIndex: =5
 
-                Label14 As label:
-                    Text: ="Testo"
-                    X: =126
-                    Y: =40
-                    ZIndex: =3
+                    Container22 As groupContainer.verticalAutoLayoutContainer:
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =50
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =1
 
-                Image14 As image:
-                    X: =12
-                    Y: =30
-                    ZIndex: =4
+                        Container24 As groupContainer.horizontalAutoLayoutContainer:
+                            FillPortions: =0
+                            LayoutMinHeight: =10
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            ZIndex: =4
+
+                            Image14 As image:
+                                FillPortions: =1
+                                Height: =40
+                                Image: =NVS_AziendeSanitarie_Icon
+                                LayoutMinWidth: =5
+                                Width: =48
+                                X: =12
+                                Y: =30
+                                ZIndex: =1
+
+                            Container27 As groupContainer.manualLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Start
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                DropShadow: =DropShadow.None
+                                LayoutMinHeight: =10
+                                LayoutMinWidth: =250
+                                ZIndex: =4
+
+                                Label14 As label:
+                                    AutoHeight: =true
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =34
+                                    PaddingBottom: =0
+                                    PaddingTop: =0
+                                    Text: ="Numero Aziende Sanitarie"
+                                    Width: =Parent.Width
+                                    Y: =42
+                                    ZIndex: =1
+
+                                Label13 As label:
+                                    FontWeight: =FontWeight.Bold
+                                    PaddingBottom: =0
+                                    PaddingTop: =0
+                                    Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Numero Aziende Sanitarie'
+                                    Width: =Parent.Width
+                                    Y: =2
+                                    ZIndex: =2
+
+                    Container23 As groupContainer.verticalAutoLayoutContainer:
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =2
 
             ButtonContGovFar As button:
                 DisabledBorderColor: =RGBA(255, 255, 255, 1)

@@ -10913,6 +10913,186 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.NVS_Arnas_Icon"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.NVS_Arnas_Icon",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "NVS_Arnas_Icon",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.NVS_AziendeOspedaliere_Icon"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.NVS_AziendeOspedaliere_Icon",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "NVS_AziendeOspedaliere_Icon",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.NVS_EntiEcclesiastici_Icon"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.NVS_EntiEcclesiastici_Icon",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "NVS_EntiEcclesiastici_Icon",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.NVS_Ircss_Icon"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.NVS_Ircss_Icon",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "NVS_Ircss_Icon",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.NVS_NumeroASL_Icon"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.NVS_NumeroASL_Icon",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "NVS_NumeroASL_Icon",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.NVS_OspedalitaPrivata_Icon"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.NVS_OspedalitaPrivata_Icon",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "NVS_OspedalitaPrivata_Icon",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "BU.ToggleVaiProdotti_14.Default"
                 }
               ],

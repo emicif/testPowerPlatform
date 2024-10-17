@@ -3,10 +3,10 @@ SSR_Mappa_Regionale As screen:
     Fill: =RGBA(4,96,169,0.9)
 
     Container11 As groupContainer.horizontalAutoLayoutContainer:
-        Height: =676
+        Height: =SSR_Mappa_Regionale.Height - Header_20.Height - Container14_1.Height
         LayoutMode: =LayoutMode.Auto
         Width: =1366
-        Y: =92
+        Y: =154
         ZIndex: =1
 
         Container17 As groupContainer.verticalAutoLayoutContainer:
@@ -23,13 +23,13 @@ SSR_Mappa_Regionale As screen:
             PaddingLeft: =80
             PaddingRight: =20
             PaddingTop: =40
-            ZIndex: =1
+            ZIndex: =2
 
             ButtonContainerMappaR As button:
                 DisabledFill: =RGBA(255, 255, 255, 1)
                 DisplayMode: =DisplayMode.Disabled
                 Fill: =RGBA(255, 255, 255, 1)
-                FillPortions: =1
+                FillPortions: =3
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20
@@ -44,7 +44,7 @@ SSR_Mappa_Regionale As screen:
                 DisabledFill: =RGBA(255, 255, 255, 1)
                 DisplayMode: =DisplayMode.Disabled
                 Fill: =RGBA(255, 255, 255, 1)
-                FillPortions: =1
+                FillPortions: =2
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20
@@ -58,8 +58,37 @@ SSR_Mappa_Regionale As screen:
             DropShadow: =DropShadow.None
             LayoutMinHeight: =100
             LayoutMinWidth: =250
+            ZIndex: =3
+
+    Container14_1 As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =62
+        LayoutMode: =LayoutMode.Auto
+        Width: =560
+        Y: =92
+        ZIndex: =2
+
+        backHome_18 As image:
+            Height: =40
+            Image: =Expand_down_light
+            OnSelect: =Navigate(Politiche_Farmaceutiche)
+            Width: =36.05
+            X: =136
+            Y: =116
+            ZIndex: =1
+
+        Titolo_17 As label:
+            AutoHeight: =true
+            Color: =RGBA(241, 244, 249, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Size: =20
+            Text: =VarNomeRegione
+            Width: =400
+            X: =172
+            Y: =116
             ZIndex: =2
 
     Header_20 As Header:
-        ZIndex: =2
+        ZIndex: =3
 

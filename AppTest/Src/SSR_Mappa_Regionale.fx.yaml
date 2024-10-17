@@ -65,6 +65,7 @@ SSR_Mappa_Regionale As screen:
         Height: =62
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =Container17.PaddingLeft
         Width: =560
         Y: =92
         ZIndex: =2

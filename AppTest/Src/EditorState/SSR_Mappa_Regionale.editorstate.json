@@ -139,7 +139,7 @@
       "MetaDataIDKey": "",
       "Name": "backHome_18",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1751,7 +1751,7 @@
       "MetaDataIDKey": "",
       "Name": "ContainerTitolo",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1916,7 +1916,7 @@
       "MetaDataIDKey": "",
       "Name": "Header_20",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2212,7 +2212,7 @@
       "MetaDataIDKey": "",
       "Name": "Titolo_17",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

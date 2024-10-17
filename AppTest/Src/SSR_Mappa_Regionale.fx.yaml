@@ -4,10 +4,10 @@ SSR_Mappa_Regionale As screen:
 
     Container11 As groupContainer.horizontalAutoLayoutContainer:
         DropShadow: =DropShadow.None
-        Height: =SSR_Mappa_Regionale.Height - Header_20.Height - ContainerTitolo.Height
+        Height: =574
         LayoutMode: =LayoutMode.Auto
         Width: =1366
-        Y: =154
+        Y: =174
         ZIndex: =1
 
         Container17 As groupContainer.verticalAutoLayoutContainer:

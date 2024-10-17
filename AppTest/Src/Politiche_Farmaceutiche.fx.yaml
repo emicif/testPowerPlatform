@@ -606,54 +606,81 @@ Politiche_Farmaceutiche As screen:
 
     PopUpInfoRegione As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =130
+        Height: =260
         Visible: =VarPopUpInfoRegioneVisible
-        Width: =212
+        Width: =262
         X: =495
         Y: =288
         ZIndex: =3
 
-    IconChiudiPopUp As icon.Cancel:
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =20
-        Icon: =Icon.Cancel
-        OnSelect: |
-            =Set(VarPopUpInfoRegioneVisible, false);
-            Set(VarNomeRegione, Blank());
-            Set(varImgRegione, Blank())
-        Visible: =VarPopUpInfoRegioneVisible
-        Width: =17
-        X: =690
-        Y: =288
-        ZIndex: =4
-
-    Container11 As groupContainer.verticalAutoLayoutContainer:
+    ContainerPopUpInfo As groupContainer.verticalAutoLayoutContainer:
+        Height: =PopUpInfoRegione.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
-        X: =40
-        Y: =40
+        PaddingLeft: =5
+        PaddingRight: =5
+        Width: =PopUpInfoRegione.Width
+        X: =PopUpInfoRegione.X
+        Y: =PopUpInfoRegione.Y
         ZIndex: =6
 
-        TitoloPopUpInfo As label:
-            Fill: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Text: =VarNomeRegione
-            Visible: =VarPopUpInfoRegioneVisible
-            X: =495
-            Y: =288
+        Container15 As groupContainer.horizontalAutoLayoutContainer:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =TitoloPopUpInfo.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMinHeight: |
+                =TitoloPopUpInfo.Height
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: |
+                =Parent.Width
             ZIndex: =1
+
+            TitoloPopUpInfo As label:
+                Fill: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =15
+                Text: =VarNomeRegione
+                Visible: =VarPopUpInfoRegioneVisible
+                X: =495
+                Y: =288
+                ZIndex: =1
+
+            IconChiudiPopUp As icon.Cancel:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =20
+                Icon: =Icon.Cancel
+                OnSelect: |
+                    =Set(VarPopUpInfoRegioneVisible, false);
+                    Set(VarNomeRegione, Blank());
+                    Set(varImgRegione, Blank())
+                Visible: =VarPopUpInfoRegioneVisible
+                Width: =17
+                X: =690
+                Y: =288
+                ZIndex: =2
 
         LabelAPM As label:
             Fill: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
+            FontWeight: =FontWeight.Semibold
+            Height: =30
             Text: |-
                 ="APM:"
             Visible: =VarPopUpInfoRegioneVisible
             X: =495
             Y: =288
-            ZIndex: =2
+            ZIndex: =3
 
         ListaAPM As label:
-            Text: =
-            ZIndex: =3
+            Height: =Parent.Height - Container15.Height -LabelAPM.Height - 5
+            LineHeight: =1
+            Overflow: =Overflow.Scroll
+            Text: =Substitute(LookUp('Mappa Nazionale', Titolo = VarNomeRegione).APM, ",", Char(10))
+            Visible: =VarPopUpInfoRegioneVisible
+            Width: =Parent.Width - 10
+            ZIndex: =4
 

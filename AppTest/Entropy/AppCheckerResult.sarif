@@ -8694,49 +8694,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Politiche_Farmaceutiche.IconChiudiPopUp.AccessibleLabel"
+                  "fullyQualifiedName": "Politiche_Farmaceutiche.ContainerPopUpInfo.Container15.IconChiudiPopUp.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Politiche_Farmaceutiche.IconChiudiPopUp.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Politiche_Farmaceutiche",
-                "type": "Politiche_Farmaceutiche.IconChiudiPopUp"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Politiche_Farmaceutiche.IconChiudiPopUp.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Politiche_Farmaceutiche.IconChiudiPopUp.TabIndex",
+                  "fullyQualifiedName": "Politiche_Farmaceutiche.ContainerPopUpInfo.Container15.IconChiudiPopUp.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Politiche_Farmaceutiche",
-                "type": "Politiche_Farmaceutiche.IconChiudiPopUp"
+                "type": "Politiche_Farmaceutiche.ContainerPopUpInfo.Container15.IconChiudiPopUp"
               }
             }
           ],
@@ -8748,6 +8718,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Politiche_Farmaceutiche.ContainerPopUpInfo.Container15.IconChiudiPopUp.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Politiche_Farmaceutiche.ContainerPopUpInfo.Container15.IconChiudiPopUp.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Politiche_Farmaceutiche",
+                "type": "Politiche_Farmaceutiche.ContainerPopUpInfo.Container15.IconChiudiPopUp"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
         },
         {
           "locations": [

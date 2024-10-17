@@ -48,8 +48,8 @@ SSR_Mappa_Regionale As screen:
                     Y: =3
                     ZIndex: =1
 
-                Container21 As groupContainer.horizontalAutoLayoutContainer:
-                    Height: =ButtonContainerMappaR.Height
+                ContainerCardMappaReg As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =ButtonContainerMappaR.Height - Titolo_MappaReg.Height
                     LayoutMode: =LayoutMode.Auto
                     PaddingBottom: =10
                     PaddingLeft: =10
@@ -57,55 +57,69 @@ SSR_Mappa_Regionale As screen:
                     PaddingTop: =10
                     Width: =ButtonContainerMappaR.Width
                     X: =ButtonContainerMappaR.X
-                    Y: =ButtonContainerMappaR.Y
+                    Y: =ButtonContainerMappaR.Y + Titolo_MappaReg.Height
                     ZIndex: =5
 
-                    Container22 As groupContainer.verticalAutoLayoutContainer:
+                    ContainerVerticaleMappaReg As groupContainer.verticalAutoLayoutContainer:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        DropShadow: =DropShadow.None
                         LayoutDirection: =LayoutDirection.Vertical
                         LayoutMinHeight: =50
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
                         ZIndex: =1
 
-                        Container24 As groupContainer.horizontalAutoLayoutContainer:
+                        ContainerListaMappaRegionale As groupContainer.horizontalAutoLayoutContainer:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            DropShadow: =DropShadow.None
                             FillPortions: =0
-                            Height: =Image14.Height
-                            LayoutMinHeight: =10
+                            Height: =ContainerDataMR.Height
+                            LayoutMinHeight: |
+                                =
+                                70
                             LayoutMinWidth: =250
                             LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
                             ZIndex: =4
 
-                            Image14 As image:
+                            IconaMRSSR As image:
+                                AlignInContainer: =AlignInContainer.Center
                                 FillPortions: =1
-                                Height: =Container27.Height
+                                Height: =40
                                 Image: =NVS_AziendeSanitarie_Icon
-                                LayoutMinWidth: =5
+                                LayoutMinWidth: =30
                                 Width: =48
                                 X: =12
                                 Y: =30
                                 ZIndex: =1
 
-                            Container27 As groupContainer.manualLayoutContainer:
+                            ContainerDataMR As groupContainer.manualLayoutContainer:
                                 AlignInContainer: =AlignInContainer.Start
                                 BorderColor: =RGBA(0, 0, 0, 0)
                                 DropShadow: =DropShadow.None
-                                Height: =Label14.Height + Label13.Height
+                                FillPortions: =6
+                                Height: =TitoloMappaLista.Height + dataMappaLista.Height
                                 LayoutMinHeight: =10
-                                LayoutMinWidth: =250
+                                LayoutMinWidth: =10
                                 ZIndex: =4
 
-                                Label13 As label:
+                                dataMappaLista As label:
+                                    Color: =RGBA(0, 32, 104, 1)
                                     FontWeight: =FontWeight.Bold
                                     Height: =27
                                     PaddingBottom: =0
                                     PaddingTop: =0
                                     Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Numero Aziende Sanitarie'
                                     Width: =Parent.Width
-                                    Y: =22
+                                    Y: =TitoloMappaLista.Height
                                     ZIndex: =1
 
-                                Label14 As label:
+                                TitoloMappaLista As label:
                                     AutoHeight: =true
+                                    Color: =RGBA(0, 32, 104, 1)
                                     FontWeight: =FontWeight.Bold
                                     Height: =34
                                     PaddingBottom: =0
@@ -114,12 +128,206 @@ SSR_Mappa_Regionale As screen:
                                     Width: =Parent.Width
                                     ZIndex: =2
 
+                        ContainerListaMappaRegionale_1 As groupContainer.horizontalAutoLayoutContainer:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            DropShadow: =DropShadow.None
+                            FillPortions: =0
+                            Height: =ContainerDataMR_1.Height
+                            LayoutMinHeight: |
+                                =
+                                70
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            ZIndex: =5
+
+                            IconaMRSSR_1 As image:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =1
+                                Height: =40
+                                Image: =NVS_NumeroASL_Icon
+                                LayoutMinWidth: =30
+                                Width: =48
+                                X: =12
+                                Y: =30
+                                ZIndex: =1
+
+                            ContainerDataMR_1 As groupContainer.manualLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Start
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                DropShadow: =DropShadow.None
+                                FillPortions: =6
+                                Height: =TitoloMappaLista_1.Height + dataMappaLista_1.Height
+                                LayoutMinHeight: =10
+                                LayoutMinWidth: =10
+                                ZIndex: =4
+
+                                dataMappaLista_1 As label:
+                                    Color: =RGBA(0, 32, 104, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =27
+                                    PaddingBottom: =0
+                                    PaddingTop: =0
+                                    Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Numero ASL_ASP'
+                                    Width: =Parent.Width
+                                    Y: =TitoloMappaLista_1.Height
+                                    ZIndex: =1
+
+                                TitoloMappaLista_1 As label:
+                                    AutoHeight: =true
+                                    Color: =RGBA(0, 32, 104, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =34
+                                    PaddingBottom: =0
+                                    PaddingTop: =0
+                                    Text: ="Numero ASL/ASP"
+                                    Width: =Parent.Width
+                                    ZIndex: =2
+
+                        ContainerListaMappaRegionale_2 As groupContainer.horizontalAutoLayoutContainer:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            DropShadow: =DropShadow.None
+                            FillPortions: =0
+                            Height: =ContainerDataMR_2.Height
+                            LayoutMinHeight: |
+                                =
+                                70
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            ZIndex: =6
+
+                            IconaMRSSR_2 As image:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =1
+                                Height: =40
+                                Image: =NVS_Arnas_Icon
+                                LayoutMinWidth: =30
+                                Width: =48
+                                X: =12
+                                Y: =30
+                                ZIndex: =1
+
+                            ContainerDataMR_2 As groupContainer.manualLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Start
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                DropShadow: =DropShadow.None
+                                FillPortions: =6
+                                Height: =TitoloMappaLista_2.Height + dataMappaLista_2.Height
+                                LayoutMinHeight: =10
+                                LayoutMinWidth: =10
+                                ZIndex: =4
+
+                                dataMappaLista_2 As label:
+                                    Color: =RGBA(0, 32, 104, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =27
+                                    PaddingBottom: =0
+                                    PaddingTop: =0
+                                    Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).ARNAS
+                                    Width: =Parent.Width
+                                    Y: =TitoloMappaLista_2.Height
+                                    ZIndex: =1
+
+                                TitoloMappaLista_2 As label:
+                                    AutoHeight: =true
+                                    Color: =RGBA(0, 32, 104, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =34
+                                    PaddingBottom: =0
+                                    PaddingTop: =0
+                                    Text: ="ARNAS"
+                                    Width: =Parent.Width
+                                    ZIndex: =2
+
+                        ContainerListaMappaRegionale_3 As groupContainer.horizontalAutoLayoutContainer:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            DropShadow: =DropShadow.None
+                            FillPortions: =0
+                            Height: =ContainerDataMR_3.Height
+                            LayoutMinHeight: |
+                                =
+                                70
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            ZIndex: =7
+
+                            IconaMRSSR_3 As image:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =1
+                                Height: =40
+                                Image: =NVS_Ircss_Icon
+                                LayoutMinWidth: =30
+                                Width: =48
+                                X: =12
+                                Y: =30
+                                ZIndex: =1
+
+                            ContainerDataMR_3 As groupContainer.manualLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Start
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                DropShadow: =DropShadow.None
+                                FillPortions: =6
+                                Height: =TitoloMappaLista_3.Height + dataMappaLista_3.Height
+                                LayoutMinHeight: =10
+                                LayoutMinWidth: =10
+                                ZIndex: =4
+
+                                dataMappaLista_3 As label:
+                                    Color: =RGBA(0, 32, 104, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =27
+                                    PaddingBottom: =0
+                                    PaddingTop: =0
+                                    Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).IRCSS
+                                    Width: =Parent.Width
+                                    Y: =TitoloMappaLista_3.Height
+                                    ZIndex: =1
+
+                                TitoloMappaLista_3 As label:
+                                    AutoHeight: =true
+                                    Color: =RGBA(0, 32, 104, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =34
+                                    PaddingBottom: =0
+                                    PaddingTop: =0
+                                    Text: ="IRCSS"
+                                    Width: =Parent.Width
+                                    ZIndex: =2
+
                     Container23 As groupContainer.verticalAutoLayoutContainer:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        DropShadow: =DropShadow.None
                         LayoutDirection: =LayoutDirection.Vertical
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
                         ZIndex: =2
+
+                Titolo_MappaReg As label:
+                    Color: =RGBA(0, 32, 104, 1)
+                    FontWeight: =FontWeight.Bold
+                    PaddingBottom: =10
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    PaddingTop: =10
+                    Size: =15
+                    Text: |-
+                        ="Mappa Regionale
+                        "
+                    Width: =ContainerMRInterno.Width
+                    Y: =3
+                    ZIndex: =6
 
             ButtonContGovFar As button:
                 DisabledBorderColor: =RGBA(255, 255, 255, 1)

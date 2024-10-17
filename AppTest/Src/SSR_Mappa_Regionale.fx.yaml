@@ -1,0 +1,6 @@
+SSR_Mappa_Regionale As screen:
+    BackgroundImage: =sfondo_italia
+    Fill: =RGBA(4,96,169,0.9)
+
+    Header_20 As Header:
+

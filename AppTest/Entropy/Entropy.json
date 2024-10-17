@@ -1,7 +1,7 @@
 {
   "ComponentIndexes": {
-    "Footer": 20,
-    "Header": 21
+    "Footer": 21,
+    "Header": 22
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
@@ -267,6 +267,7 @@
     "Header_18": 403,
     "Header_19": 676,
     "Header_2": 82,
+    "Header_20": 761,
     "Header_3": 710,
     "Header_4": 471,
     "Header_5": 192,
@@ -566,6 +567,7 @@
     "Sottotitolo": 92,
     "Sottotitolo_1": 75,
     "Sottotitolo_2": 411,
+    "SSR_Mappa_Regionale": 760,
     "StarVisible7": 735,
     "StarVisible8": 740,
     "Subtitle1_1": 750,
@@ -768,7 +770,7 @@
   "DoesTestStepsMetadataExist": true,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/17/2024 13:17:52",
+  "HeaderLastSavedDateTimeUTC": "10/17/2024 13:18:54",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "00b60bbd-9aa0-4b65-9d7b-bd5c0488aa58": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/052ab811b1524dcfa26d523e0edc471b\"",
@@ -1339,6 +1341,7 @@
     "Header_18": {},
     "Header_19": {},
     "Header_2": {},
+    "Header_20": {},
     "Header_3": {},
     "Header_4": {},
     "Header_5": {},
@@ -1638,6 +1641,7 @@
     "Sottotitolo": {},
     "Sottotitolo_1": {},
     "Sottotitolo_2": {},
+    "SSR_Mappa_Regionale": {},
     "StarVisible7": {},
     "StarVisible8": {},
     "Subtitle1_1": {},
@@ -2102,6 +2106,7 @@
     "Header_18": 635,
     "Header_19": 676,
     "Header_2": 4,
+    "Header_20": 676,
     "Header_3": 43,
     "Header_4": 64,
     "Header_5": 304,
@@ -2401,6 +2406,7 @@
     "Sottotitolo": 14,
     "Sottotitolo_1": 629,
     "Sottotitolo_2": 643,
+    "SSR_Mappa_Regionale": 0,
     "StarVisible7": 601,
     "StarVisible8": 606,
     "Subtitle1_1": 618,
@@ -2705,7 +2711,7 @@
       "datepicker": 2,
       "dropdown": 2,
       "efbbf927d6d442779509ed7e92c16576": 16,
-      "fece840278224a3bac591c14e512d2b6": 20,
+      "fece840278224a3bac591c14e512d2b6": 21,
       "form": 2,
       "formViewer": 1,
       "gallery": 16,

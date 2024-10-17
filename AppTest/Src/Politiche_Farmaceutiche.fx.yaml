@@ -689,6 +689,7 @@ Politiche_Farmaceutiche As screen:
             ZIndex: =4
 
         ButtonVaiRegione As button:
+            Align: =Align.Left
             Color: =RGBA(56, 96, 178, 1)
             Fill: =RGBA(0, 0, 0, 0)
             HoverColor: =Self.Color
@@ -697,5 +698,6 @@ Politiche_Farmaceutiche As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Vai alla pagina"
             Underline: =true
+            Width: =Parent.Width - 10
             ZIndex: =5
 

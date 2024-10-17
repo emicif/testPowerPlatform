@@ -78,7 +78,7 @@ Show_Regione_Politiche As screen:
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =ImageMappaRegionale.Height
                     HoverFill: =ColorFade(Self.Fill, -20%)
-                    OnSelect: =
+                    OnSelect: =Navigate(SSR_Mappa_Regionale)
                     Text: =
                     Width: =ImageMappaRegionale.Width
                     X: =ImageMappaRegionale.X

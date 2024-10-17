@@ -10,6 +10,8 @@ SSR_Mappa_Regionale As screen:
         ZIndex: =1
 
         Container17 As groupContainer.verticalAutoLayoutContainer:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DropShadow: =DropShadow.None
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutGap: =40
@@ -18,7 +20,7 @@ SSR_Mappa_Regionale As screen:
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingBottom: =40
-            PaddingLeft: =40
+            PaddingLeft: =80
             PaddingRight: =20
             PaddingTop: =40
             ZIndex: =1
@@ -33,6 +35,7 @@ SSR_Mappa_Regionale As screen:
                 RadiusTopLeft: =20
                 RadiusTopRight: =20
                 Text: =
+                Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
                 ZIndex: =1
 
             ButtonContGovFar As button:
@@ -47,9 +50,12 @@ SSR_Mappa_Regionale As screen:
                 RadiusTopLeft: =20
                 RadiusTopRight: =20
                 Text: =
+                Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
                 ZIndex: =2
 
         Container18 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DropShadow: =DropShadow.None
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             ZIndex: =2

@@ -622,6 +622,8 @@ Politiche_Farmaceutiche As screen:
         ZIndex: =4
 
     ContainerPopUpInfo As groupContainer.verticalAutoLayoutContainer:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DropShadow: =DropShadow.None
         Height: =ButtonContainerPopUpInfo.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
@@ -629,6 +631,7 @@ Politiche_Farmaceutiche As screen:
         PaddingLeft: =10
         PaddingRight: =10
         PaddingTop: =10
+        Visible: =VarPopUpInfoRegioneVisible
         Width: =ButtonContainerPopUpInfo.Width
         X: =ButtonContainerPopUpInfo.X
         Y: =ButtonContainerPopUpInfo.Y
@@ -712,6 +715,7 @@ Politiche_Farmaceutiche As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Vai alla pagina"
             Underline: =true
+            Visible: =VarPopUpInfoRegioneVisible
             Width: |
                 =Parent.Width - 20
             ZIndex: =5

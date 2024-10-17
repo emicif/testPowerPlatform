@@ -325,9 +325,23 @@ SSR_Mappa_Regionale As screen:
                     Text: |-
                         ="Mappa Regionale
                         "
-                    Width: =ContainerMRInterno.Width
+                    Width: =ContainerMRInterno.Width - IconaLuogo.Width
+                    X: =IconaLuogo.X + IconaLuogo.Width
                     Y: =3
                     ZIndex: =6
+
+                IconaLuogo As image:
+                    Height: |
+                        =40
+                    Image: ='.PositionIcon'
+                    PaddingBottom: =5
+                    PaddingLeft: =10
+                    PaddingTop: =5
+                    Width: |+
+                        =40
+                        
+                    Y: =3
+                    ZIndex: =7
 
             ButtonContGovFar As button:
                 DisabledBorderColor: =RGBA(255, 255, 255, 1)

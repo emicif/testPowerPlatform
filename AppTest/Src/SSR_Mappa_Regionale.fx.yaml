@@ -3,6 +3,7 @@ SSR_Mappa_Regionale As screen:
     Fill: =RGBA(4,96,169,0.9)
 
     Container11 As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.None
         Height: =SSR_Mappa_Regionale.Height - Header_20.Height - ContainerTitolo.Height
         LayoutMode: =LayoutMode.Auto
         Width: =1366
@@ -61,12 +62,13 @@ SSR_Mappa_Regionale As screen:
             ZIndex: =3
 
     ContainerTitolo As groupContainer.horizontalAutoLayoutContainer:
+        BorderColor: =RGBA(0, 0, 0, 0)
         DropShadow: =DropShadow.None
-        Height: =62
+        Height: =Titolo_17.Height + 40
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutMode: =LayoutMode.Auto
         PaddingLeft: =Container17.PaddingLeft
-        Width: =560
+        Width: =Parent.Width
         Y: =92
         ZIndex: =2
 
@@ -81,12 +83,14 @@ SSR_Mappa_Regionale As screen:
 
         Titolo_17 As label:
             AutoHeight: =true
+            BorderColor: =RGBA(0, 0, 0, 0)
             Color: =RGBA(241, 244, 249, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Size: =20
-            Text: =VarNomeRegione
-            Width: =400
+            Text: =" Mappa Regionale SSR/ "  & VarNomeRegione
+            Width: =Parent.Width
             X: =172
             Y: =116
             ZIndex: =2

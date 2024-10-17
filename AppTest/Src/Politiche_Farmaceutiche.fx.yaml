@@ -640,6 +640,7 @@ Politiche_Farmaceutiche As screen:
             ZIndex: =1
 
             TitoloPopUpInfo As label:
+                AutoHeight: =true
                 Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =30
@@ -680,7 +681,9 @@ Politiche_Farmaceutiche As screen:
                 =Parent.Height - Container15.Height -LabelAPM.Height - ButtonVaiRegione.Height - 10
             LineHeight: =1
             Overflow: =Overflow.Scroll
-            Text: =Substitute(LookUp('Mappa Nazionale', Titolo = VarNomeRegione).APM, ",", Char(10))
+            Text: |-
+                =//Substitute(LookUp('Mappa Nazionale'; Titolo = VarNomeRegione).APM; ","; Char(10))
+                LookUp('Mappa Nazionale', Titolo = VarNomeRegione).APM
             Visible: =VarPopUpInfoRegioneVisible
             Width: =Parent.Width - 10
             ZIndex: =4
@@ -690,6 +693,7 @@ Politiche_Farmaceutiche As screen:
             Fill: =RGBA(0, 0, 0, 0)
             HoverColor: =Self.Color
             HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =Navigate(Show_Regione_Politiche)
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Vai alla pagina"
             Underline: =true

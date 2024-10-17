@@ -3,7 +3,7 @@ SSR_Mappa_Regionale As screen:
     Fill: =RGBA(4,96,169,0.9)
 
     Container11 As groupContainer.horizontalAutoLayoutContainer:
-        Height: =SSR_Mappa_Regionale.Height - Header_20.Height - Container14_1.Height
+        Height: =SSR_Mappa_Regionale.Height - Header_20.Height - ContainerTitolo.Height
         LayoutMode: =LayoutMode.Auto
         Width: =1366
         Y: =154
@@ -60,9 +60,10 @@ SSR_Mappa_Regionale As screen:
             LayoutMinWidth: =250
             ZIndex: =3
 
-    Container14_1 As groupContainer.horizontalAutoLayoutContainer:
+    ContainerTitolo As groupContainer.horizontalAutoLayoutContainer:
         DropShadow: =DropShadow.None
         Height: =62
+        LayoutAlignItems: =LayoutAlignItems.Center
         LayoutMode: =LayoutMode.Auto
         Width: =560
         Y: =92
@@ -71,7 +72,7 @@ SSR_Mappa_Regionale As screen:
         backHome_18 As image:
             Height: =40
             Image: =Expand_down_light
-            OnSelect: =Navigate(Politiche_Farmaceutiche)
+            OnSelect: =Navigate(Show_Regione_Politiche)
             Width: =36.05
             X: =136
             Y: =116

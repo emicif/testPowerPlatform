@@ -23,21 +23,47 @@ SSR_Mappa_Regionale As screen:
             PaddingBottom: =40
             PaddingLeft: =80
             PaddingRight: =20
-            PaddingTop: =40
             ZIndex: =2
 
-            ButtonContainerMappaR As button:
-                DisabledFill: =RGBA(255, 255, 255, 1)
-                DisplayMode: =DisplayMode.Disabled
-                Fill: =RGBA(255, 255, 255, 1)
+            ContainerMRInterno As groupContainer.manualLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DropShadow: =DropShadow.None
                 FillPortions: =3
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Text: =
+                LayoutMinHeight: =50
+                LayoutMinWidth: =250
                 Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
                 ZIndex: =1
+
+                ButtonContainerMappaR As button:
+                    DisabledFill: =RGBA(255, 255, 255, 1)
+                    DisplayMode: =DisplayMode.Disabled
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Text: =
+                    Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                    Y: =3
+                    ZIndex: =1
+
+                Label13 As label:
+                    Text: ="Testo"
+                    X: =126
+                    Y: =90
+                    ZIndex: =2
+
+                Label14 As label:
+                    Text: ="Testo"
+                    X: =126
+                    Y: =40
+                    ZIndex: =3
+
+                Image14 As image:
+                    X: =12
+                    Y: =30
+                    ZIndex: =4
 
             ButtonContGovFar As button:
                 DisabledBorderColor: =RGBA(255, 255, 255, 1)
@@ -52,7 +78,7 @@ SSR_Mappa_Regionale As screen:
                 RadiusTopRight: =20
                 Text: =
                 Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
-                ZIndex: =2
+                ZIndex: =3
 
         Container18 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)

@@ -2,5 +2,58 @@ SSR_Mappa_Regionale As screen:
     BackgroundImage: =sfondo_italia
     Fill: =RGBA(4,96,169,0.9)
 
+    Container11 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =676
+        LayoutMode: =LayoutMode.Auto
+        Width: =1366
+        Y: =92
+        ZIndex: =1
+
+        Container17 As groupContainer.verticalAutoLayoutContainer:
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =40
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =40
+            PaddingLeft: =40
+            PaddingRight: =20
+            PaddingTop: =40
+            ZIndex: =1
+
+            ButtonContainerMappaR As button:
+                DisabledFill: =RGBA(255, 255, 255, 1)
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =
+                ZIndex: =1
+
+            ButtonContGovFar As button:
+                DisabledBorderColor: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(255, 255, 255, 1)
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =
+                ZIndex: =2
+
+        Container18 As groupContainer.manualLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            ZIndex: =2
+
     Header_20 As Header:
+        ZIndex: =2
 

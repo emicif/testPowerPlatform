@@ -72,91 +72,113 @@ SSR_Mappa_Regionale As screen:
                             AlignInContainer: =AlignInContainer.Center
                             BorderColor: =RGBA(0, 0, 0, 0)
                             DropShadow: =DropShadow.None
-                            FillPortions: =0
                             Height: =TitoloMappaLista.Height + dataMappaLista.Height
                             LayoutMinHeight: =10
                             LayoutMinWidth: =10
                             Width: =Parent.Width
                             ZIndex: =1
 
-                            dataMappaLista As label:
-                                Color: =RGBA(0, 32, 104, 1)
-                                FontWeight: =FontWeight.Bold
-                                Height: =27
-                                PaddingBottom: =0
-                                PaddingTop: =0
-                                Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Numero Aziende Sanitarie'
+                            ContaineVertInterno As groupContainer.verticalAutoLayoutContainer:
+                                Height: =62
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMode: =LayoutMode.Auto
                                 Width: =Parent.Width - IconaMRSSR.Width
                                 X: =48
-                                Y: =TitoloMappaLista.Y + TitoloMappaLista.Height
                                 ZIndex: =1
 
-                            TitoloMappaLista As label:
-                                AutoHeight: =true
-                                Color: =RGBA(0, 32, 104, 1)
-                                FontWeight: =FontWeight.Bold
-                                Height: =34
-                                PaddingBottom: =0
-                                PaddingTop: =0
-                                Text: ="Numero Aziende Sanitarie"
-                                Width: =Parent.Width - IconaMRSSR.Width
-                                X: =48
-                                ZIndex: =2
+                                TitoloMappaLista As label:
+                                    AutoHeight: =true
+                                    Color: =RGBA(0, 32, 104, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =34
+                                    PaddingBottom: =0
+                                    PaddingTop: =0
+                                    Text: ="Numero Aziende Sanitarie"
+                                    Width: =Parent.Width - IconaMRSSR.Width
+                                    X: =48
+                                    ZIndex: =4
+
+                                dataMappaLista As label:
+                                    AutoHeight: =true
+                                    Color: =RGBA(0, 32, 104, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =27
+                                    PaddingBottom: =0
+                                    PaddingRight: =1
+                                    PaddingTop: =0
+                                    Size: =11
+                                    Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Numero Aziende Sanitarie'
+                                    Width: =Parent.Width - IconaMRSSR.Width
+                                    X: =48
+                                    Y: =TitoloMappaLista.Y + TitoloMappaLista.Height
+                                    ZIndex: =5
 
                             IconaMRSSR As image:
                                 Height: =40
                                 Image: =NVS_AziendeSanitarie_Icon
                                 Width: =48
                                 Y: =Parent.Height/2 - Self.Height/2
-                                ZIndex: =3
+                                ZIndex: =4
 
                         ContainerDataMR_1 As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.Center
                             BorderColor: =RGBA(0, 0, 0, 0)
                             DropShadow: =DropShadow.None
-                            FillPortions: =0
                             Height: =TitoloMappaLista_1.Height + dataMappaLista_1.Height
                             LayoutMinHeight: =10
                             LayoutMinWidth: =10
                             Width: =Parent.Width
                             ZIndex: =2
 
-                            dataMappaLista_1 As label:
-                                Color: =RGBA(0, 32, 104, 1)
-                                FontWeight: =FontWeight.Bold
-                                Height: =27
-                                PaddingBottom: =0
-                                PaddingTop: =0
-                                Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Numero ASL_ASP'
+                            ContaineVertInterno_1 As groupContainer.verticalAutoLayoutContainer:
+                                Height: =62
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMode: =LayoutMode.Auto
                                 Width: =Parent.Width - IconaMRSSR_1.Width
                                 X: =48
-                                Y: =TitoloMappaLista_1.Y + TitoloMappaLista_1.Height
-                                ZIndex: =1
+                                ZIndex: =3
 
-                            TitoloMappaLista_1 As label:
-                                AutoHeight: =true
-                                Color: =RGBA(0, 32, 104, 1)
-                                FontWeight: =FontWeight.Bold
-                                Height: =34
-                                PaddingBottom: =0
-                                PaddingTop: =0
-                                Text: ="Numero ASL/ASP"
-                                Width: =Parent.Width - IconaMRSSR_1.Width
-                                X: =48
-                                ZIndex: =2
+                                TitoloMappaLista_1 As label:
+                                    AutoHeight: =true
+                                    Color: =RGBA(0, 32, 104, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =34
+                                    PaddingBottom: =0
+                                    PaddingTop: =0
+                                    Text: ="Numero ASL/ASP"
+                                    VerticalAlign: =VerticalAlign.Top
+                                    Width: =Parent.Width - IconaMRSSR_1.Width
+                                    X: =48
+                                    Y: =11
+                                    ZIndex: =1
+
+                                dataMappaLista_1 As label:
+                                    AutoHeight: =true
+                                    Color: =RGBA(0, 32, 104, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =27
+                                    PaddingBottom: =0
+                                    PaddingTop: =0
+                                    Size: =11
+                                    Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Numero ASL_ASP'
+                                    Width: =Parent.Width - IconaMRSSR_1.Width
+                                    X: =48
+                                    Y: =33
+                                    ZIndex: =3
 
                             IconaMRSSR_1 As image:
                                 Height: =40
                                 Image: =NVS_NumeroASL_Icon
                                 Width: =48
                                 Y: =Parent.Height/2 - Self.Height/2
-                                ZIndex: =3
+                                ZIndex: =4
 
                         ContainerDataMR_2 As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.Center
                             BorderColor: =RGBA(0, 0, 0, 0)
                             DropShadow: =DropShadow.None
-                            FillPortions: =0
                             Height: =TitoloMappaLista_2.Height + dataMappaLista_2.Height
                             LayoutMinHeight: =10
                             LayoutMinWidth: =10
@@ -164,10 +186,12 @@ SSR_Mappa_Regionale As screen:
                             ZIndex: =4
 
                             dataMappaLista_2 As label:
+                                AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
                                 FontWeight: =FontWeight.Bold
                                 Height: =27
                                 PaddingBottom: =0
+                                PaddingRight: =1
                                 PaddingTop: =0
                                 Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).ARNAS
                                 Width: =Parent.Width - IconaMRSSR_2.Width
@@ -198,7 +222,6 @@ SSR_Mappa_Regionale As screen:
                             AlignInContainer: =AlignInContainer.Center
                             BorderColor: =RGBA(0, 0, 0, 0)
                             DropShadow: =DropShadow.None
-                            FillPortions: =0
                             Height: =TitoloMappaLista_3.Height + dataMappaLista_3.Height
                             LayoutMinHeight: =10
                             LayoutMinWidth: =10
@@ -206,11 +229,13 @@ SSR_Mappa_Regionale As screen:
                             ZIndex: =6
 
                             dataMappaLista_3 As label:
+                                AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
                                 FontWeight: =FontWeight.Bold
                                 Height: =27
                                 PaddingBottom: =0
                                 PaddingTop: =0
+                                Size: =11
                                 Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).IRCSS
                                 Width: =Parent.Width - IconaMRSSR_3.Width
                                 X: =48
@@ -257,11 +282,14 @@ SSR_Mappa_Regionale As screen:
                             ZIndex: =1
 
                             dataMappaLista_4 As label:
+                                AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
                                 FontWeight: =FontWeight.Bold
                                 Height: =27
                                 PaddingBottom: =0
+                                PaddingRight: =1
                                 PaddingTop: =0
+                                Size: =11
                                 Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Aziende Ospedaliere Universitarie'
                                 Width: =Parent.Width - IconaMRSSR_4.Width
                                 X: =48
@@ -292,18 +320,23 @@ SSR_Mappa_Regionale As screen:
                             BorderColor: =RGBA(0, 0, 0, 0)
                             DropShadow: =DropShadow.None
                             FillPortions: =0
-                            Height: =TitoloMappaLista_5.Height + dataMappaLista_5.Height
+                            Height: =If(TitoloMappaLista_5.Height + dataMappaLista_5.Height > IconaMRSSR_5.Height, TitoloMappaLista_5.Height + dataMappaLista_5.Height, IconaMRSSR_5.Height)
                             LayoutMinHeight: =10
                             LayoutMinWidth: =10
+                            PaddingBottom: =5
+                            PaddingTop: =5
                             Width: =Parent.Width
                             ZIndex: =2
 
                             dataMappaLista_5 As label:
+                                AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
                                 FontWeight: =FontWeight.Bold
                                 Height: =27
                                 PaddingBottom: =0
+                                PaddingRight: =1
                                 PaddingTop: =0
+                                Size: =11
                                 Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Enti Ecclesiastici'
                                 Width: =Parent.Width - IconaMRSSR_5.Width
                                 X: =48
@@ -316,6 +349,7 @@ SSR_Mappa_Regionale As screen:
                                 FontWeight: =FontWeight.Bold
                                 Height: =34
                                 PaddingBottom: =0
+                                PaddingRight: =1
                                 PaddingTop: =0
                                 Text: ="Enti Ecclesiastici"
                                 Width: =Parent.Width - IconaMRSSR_5.Width
@@ -326,7 +360,7 @@ SSR_Mappa_Regionale As screen:
                                 Height: =40
                                 Image: =NVS_NumeroASL_Icon
                                 Width: =48
-                                Y: =9
+                                Y: =Parent.Height/2 - Self.Height/2
                                 ZIndex: =3
 
                         ContainerDataMR_6 As groupContainer.manualLayoutContainer:
@@ -343,6 +377,10 @@ SSR_Mappa_Regionale As screen:
                             LinkMappaLista As htmlViewer:
                                 AutoHeight: =true
                                 HtmlText: ="<a href='"& LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Ospedalita Privata Convenzionata'&"'>Strutture Sanitarie Private Accreditate</a>"
+                                PaddingBottom: =1
+                                PaddingRight: =1
+                                PaddingTop: =1
+                                Size: =11
                                 Width: =Parent.Width - IconaMRSSR_6.Width
                                 X: =48
                                 Y: =42
@@ -354,10 +392,11 @@ SSR_Mappa_Regionale As screen:
                                 FontWeight: =FontWeight.Bold
                                 Height: =34
                                 PaddingBottom: =0
+                                PaddingRight: =1
                                 PaddingTop: =0
                                 Text: ="Ospedalità Privata Convenzionata"
                                 Width: =Parent.Width - IconaMRSSR_6.Width
-                                X: =40
+                                X: =48
                                 Y: |
                                     =
                                 ZIndex: =2

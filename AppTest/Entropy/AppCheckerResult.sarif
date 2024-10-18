@@ -10913,66 +10913,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.NVS_AziendeOspedaliere_Icon"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.NVS_AziendeOspedaliere_Icon",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "NVS_AziendeOspedaliere_Icon",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.NVS_EntiEcclesiastici_Icon"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.NVS_EntiEcclesiastici_Icon",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "NVS_EntiEcclesiastici_Icon",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Comunicazioni.glry_ultimenews_1.Title3_1.Y"
                 }
               ],

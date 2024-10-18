@@ -185,38 +185,47 @@ SSR_Mappa_Regionale As screen:
                             Width: =Parent.Width
                             ZIndex: =4
 
-                            dataMappaLista_2 As label:
-                                AutoHeight: =true
-                                Color: =RGBA(0, 32, 104, 1)
-                                FontWeight: =FontWeight.Bold
-                                Height: =27
-                                PaddingBottom: =0
-                                PaddingRight: =1
-                                PaddingTop: =0
-                                Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).ARNAS
+                            ContaineVertInterno_2 As groupContainer.verticalAutoLayoutContainer:
+                                Height: =62
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMode: =LayoutMode.Auto
                                 Width: =Parent.Width - IconaMRSSR_2.Width
                                 X: =48
-                                Y: =TitoloMappaLista_2.Y + TitoloMappaLista_2.Height
                                 ZIndex: =1
 
-                            TitoloMappaLista_2 As label:
-                                AutoHeight: =true
-                                Color: =RGBA(0, 32, 104, 1)
-                                FontWeight: =FontWeight.Bold
-                                Height: =34
-                                PaddingBottom: =0
-                                PaddingTop: =0
-                                Text: ="ARNAS"
-                                Width: =Parent.Width - IconaMRSSR_2.Width
-                                X: =48
-                                ZIndex: =2
+                                TitoloMappaLista_2 As label:
+                                    AutoHeight: =true
+                                    Color: =RGBA(0, 32, 104, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =34
+                                    PaddingBottom: =0
+                                    PaddingTop: =0
+                                    Text: ="ARNAS"
+                                    Width: =Parent.Width - IconaMRSSR_2.Width
+                                    X: =48
+                                    ZIndex: =4
+
+                                dataMappaLista_2 As label:
+                                    AutoHeight: =true
+                                    Color: =RGBA(0, 32, 104, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =27
+                                    PaddingBottom: =0
+                                    PaddingRight: =1
+                                    PaddingTop: =0
+                                    Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).ARNAS
+                                    Width: =Parent.Width - IconaMRSSR_2.Width
+                                    X: =48
+                                    Y: =TitoloMappaLista_2.Y + TitoloMappaLista_2.Height
+                                    ZIndex: =5
 
                             IconaMRSSR_2 As image:
                                 Height: =40
                                 Image: =NVS_Arnas_Icon
                                 Width: =48
                                 Y: =Parent.Height/2 - Self.Height/2
-                                ZIndex: =3
+                                ZIndex: =4
 
                         ContainerDataMR_3 As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.Center
@@ -310,7 +319,7 @@ SSR_Mappa_Regionale As screen:
 
                             IconaMRSSR_4 As image:
                                 Height: =40
-                                Image: =NVS_AziendeSanitarie_Icon
+                                Image: =NVS_AziendeOspedaliere_Icon
                                 Width: =48
                                 Y: =IconaMRSSR.Y
                                 ZIndex: =3
@@ -358,7 +367,7 @@ SSR_Mappa_Regionale As screen:
 
                             IconaMRSSR_5 As image:
                                 Height: =40
-                                Image: =NVS_NumeroASL_Icon
+                                Image: =NVS_EntiEcclesiastici_Icon
                                 Width: =48
                                 Y: =Parent.Height/2 - Self.Height/2
                                 ZIndex: =3

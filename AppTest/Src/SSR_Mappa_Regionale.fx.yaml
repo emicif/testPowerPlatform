@@ -237,38 +237,47 @@ SSR_Mappa_Regionale As screen:
                             Width: =Parent.Width
                             ZIndex: =6
 
-                            dataMappaLista_3 As label:
-                                AutoHeight: =true
-                                Color: =RGBA(0, 32, 104, 1)
-                                FontWeight: =FontWeight.Bold
-                                Height: =27
-                                PaddingBottom: =0
-                                PaddingTop: =0
-                                Size: =11
-                                Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).IRCSS
+                            ContaineVertInterno_3 As groupContainer.verticalAutoLayoutContainer:
+                                Height: =62
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMode: =LayoutMode.Auto
                                 Width: =Parent.Width - IconaMRSSR_3.Width
                                 X: =48
-                                Y: =TitoloMappaLista_3.Y + TitoloMappaLista_3.Height
                                 ZIndex: =1
 
-                            TitoloMappaLista_3 As label:
-                                AutoHeight: =true
-                                Color: =RGBA(0, 32, 104, 1)
-                                FontWeight: =FontWeight.Bold
-                                Height: =34
-                                PaddingBottom: =0
-                                PaddingTop: =0
-                                Text: ="IRCSS"
-                                Width: =Parent.Width - IconaMRSSR_3.Width
-                                X: =48
-                                ZIndex: =2
+                                TitoloMappaLista_3 As label:
+                                    AutoHeight: =true
+                                    Color: =RGBA(0, 32, 104, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =34
+                                    PaddingBottom: =0
+                                    PaddingTop: =0
+                                    Text: ="IRCSS"
+                                    Width: =Parent.Width - IconaMRSSR_3.Width
+                                    X: =48
+                                    ZIndex: =1
+
+                                dataMappaLista_3 As label:
+                                    AutoHeight: =true
+                                    Color: =RGBA(0, 32, 104, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =27
+                                    PaddingBottom: =0
+                                    PaddingTop: =0
+                                    Size: =11
+                                    Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).IRCSS
+                                    Width: =Parent.Width - IconaMRSSR_3.Width
+                                    X: =48
+                                    Y: =TitoloMappaLista_3.Y + TitoloMappaLista_3.Height
+                                    ZIndex: =2
 
                             IconaMRSSR_3 As image:
                                 Height: =40
                                 Image: =NVS_Ircss_Icon
                                 Width: =48
                                 Y: =Parent.Height/2 - Self.Height/2
-                                ZIndex: =3
+                                ZIndex: =4
 
                     ContainerVerticaleMappaReg_1 As groupContainer.verticalAutoLayoutContainer:
                         BorderColor: =RGBA(0, 0, 0, 0)

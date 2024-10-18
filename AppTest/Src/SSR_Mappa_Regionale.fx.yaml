@@ -79,6 +79,8 @@ SSR_Mappa_Regionale As screen:
                             ZIndex: =1
 
                             ContaineVertInterno As groupContainer.verticalAutoLayoutContainer:
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                DropShadow: =DropShadow.None
                                 Height: =62
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -135,6 +137,8 @@ SSR_Mappa_Regionale As screen:
                             ZIndex: =2
 
                             ContaineVertInterno_1 As groupContainer.verticalAutoLayoutContainer:
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                DropShadow: =DropShadow.None
                                 Height: =62
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -192,6 +196,8 @@ SSR_Mappa_Regionale As screen:
                             ZIndex: =4
 
                             ContaineVertInterno_2 As groupContainer.verticalAutoLayoutContainer:
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                DropShadow: =DropShadow.None
                                 Height: =62
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -247,6 +253,8 @@ SSR_Mappa_Regionale As screen:
                             ZIndex: =6
 
                             ContaineVertInterno_3 As groupContainer.verticalAutoLayoutContainer:
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                DropShadow: =DropShadow.None
                                 Height: =62
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -292,8 +300,10 @@ SSR_Mappa_Regionale As screen:
                                 ZIndex: =4
 
                     Container20 As groupContainer.manualLayoutContainer:
-                        AlignInContainer: =AlignInContainer.SetByContainer
-                        Height: =ContainerDataMR_4.Height + ContainerDataMR_5.Height + ContainerDataMR_6.Height
+                        AlignInContainer: =AlignInContainer.Start
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        DropShadow: =DropShadow.None
+                        Height: =Parent.Height
                         LayoutMinHeight: =100
                         LayoutMinWidth: =250
                         ZIndex: =4
@@ -315,7 +325,7 @@ SSR_Mappa_Regionale As screen:
                                 Size: =11
                                 Width: =Parent.Width - IconaMRSSR_6.Width
                                 X: =48
-                                Y: =34
+                                Y: =TitoloMappaLista_6.Height
                                 ZIndex: =1
 
                             TitoloMappaLista_6 As label:
@@ -345,7 +355,7 @@ SSR_Mappa_Regionale As screen:
                         ContainerDataMR_5 As groupContainer.manualLayoutContainer:
                             BorderColor: =RGBA(0, 0, 0, 0)
                             DropShadow: =DropShadow.None
-                            Height: =If(TitoloMappaLista_5.Height + dataMappaLista_5.Height > IconaMRSSR_5.Height, TitoloMappaLista_5.Height + dataMappaLista_5.Height, IconaMRSSR_5.Height)
+                            Height: =TitoloMappaLista_5.Height + dataMappaLista_5.Height
                             PaddingBottom: =5
                             PaddingTop: =5
                             Width: =Parent.Width
@@ -410,7 +420,7 @@ SSR_Mappa_Regionale As screen:
                                 Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Aziende Ospedaliere Universitarie'
                                 Width: =Parent.Width - IconaMRSSR_4.Width
                                 X: =48
-                                Y: =TitoloMappaLista_4.Y + TitoloMappaLista_4.Height
+                                Y: =TitoloMappaLista_4.Height
                                 ZIndex: =1
 
                             TitoloMappaLista_4 As label:

@@ -66,7 +66,7 @@ SSR_Mappa_Regionale As screen:
                         LayoutMinHeight: =55
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
-                        ZIndex: =1
+                        ZIndex: =2
 
                         ContainerDataMR As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.Center
@@ -163,7 +163,7 @@ SSR_Mappa_Regionale As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            ZIndex: =4
+                            ZIndex: =3
 
                             IconaMRSSR_2 As image:
                                 AlignInContainer: =AlignInContainer.Center
@@ -271,7 +271,7 @@ SSR_Mappa_Regionale As screen:
                         LayoutMinHeight: =55
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
-                        ZIndex: =2
+                        ZIndex: =3
 
                         ContainerDataMR_7 As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.Center

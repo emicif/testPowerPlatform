@@ -771,16 +771,21 @@ SSR_Mappa_Regionale As screen:
                 DropShadow: =DropShadow.None
                 Height: =ButtonContGovSan.Height - Titolo_GovSan.Height
                 LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =20
                 LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                 LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =40
                 PaddingLeft: =40
-                Width: =Parent.Width - Parent.PaddingRight - Self.PaddingLeft
-                X: =40
+                PaddingTop: =40
+                Width: |
+                    =Parent.Width - Parent.PaddingRight 
                 Y: =ButtonContGovSan.Y + Titolo_GovSan.Height
                 ZIndex: =2
 
                 ButtonPresidente As button:
-                    Text: ="Pulsante"
+                    Text: |-
+                        =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente) & Char(10) &
+                        "Presidente"
                     ZIndex: =2
 
             Titolo_GovSan As label:

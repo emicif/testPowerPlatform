@@ -513,7 +513,7 @@ SSR_Mappa_Regionale As screen:
                         LayoutDirection: =LayoutDirection.Vertical
                         LayoutJustifyContent: =LayoutJustifyContent.Center
                         LayoutMinHeight: =100
-                        LayoutMinWidth: =250
+                        LayoutMinWidth: =40
                         LayoutMode: =LayoutMode.Auto
                         Width: =Parent.Width - IconaMRSSR.Width
                         X: =48
@@ -533,7 +533,12 @@ SSR_Mappa_Regionale As screen:
                                 PaddingRight: =1
                                 PaddingTop: =0
                                 Size: =11
-                                Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Numero Aziende Sanitarie'
+                                Text: |-
+                                    =If(
+                                        LookUp('Governance Farmaceutica', Regione.Value = VarNomeRegione).PTR = true,
+                                        "Sì",
+                                        "No"
+                                    )
                                 Width: =Parent.Width
                                 Y: =TitoloPTR.Y + TitoloPTR.Height
                                 ZIndex: =1
@@ -546,7 +551,7 @@ SSR_Mappa_Regionale As screen:
                                 PaddingBottom: =0
                                 PaddingTop: =0
                                 Size: =12
-                                Text: ="Numero Aziende Sanitarie"
+                                Text: ="PTR"
                                 Width: =Parent.Width
                                 Y: =40
                                 ZIndex: =2
@@ -556,7 +561,7 @@ SSR_Mappa_Regionale As screen:
                             LayoutMinWidth: =250
                             ZIndex: =7
 
-                            dataPTR_1 As label:
+                            dataCommissione As label:
                                 AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
                                 FontWeight: =FontWeight.Bold
@@ -565,12 +570,17 @@ SSR_Mappa_Regionale As screen:
                                 PaddingRight: =1
                                 PaddingTop: =0
                                 Size: =11
-                                Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Numero Aziende Sanitarie'
+                                Text: |-
+                                    =If(
+                                        LookUp('Governance Farmaceutica', Regione.Value = VarNomeRegione).Commissione = true,
+                                        "Sì",
+                                        "No"
+                                    )
                                 Width: =Parent.Width
-                                Y: =TitoloPTR_1.Y + TitoloPTR_1.Height
+                                Y: =TitoloCommissione.Y + TitoloCommissione.Height
                                 ZIndex: =1
 
-                            TitoloPTR_1 As label:
+                            TitoloCommissione As label:
                                 AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
                                 FontWeight: =FontWeight.Bold
@@ -578,7 +588,7 @@ SSR_Mappa_Regionale As screen:
                                 PaddingBottom: =0
                                 PaddingTop: =0
                                 Size: =12
-                                Text: ="Numero Aziende Sanitarie"
+                                Text: ="Commissione"
                                 Width: =Parent.Width
                                 Y: =40
                                 ZIndex: =2
@@ -591,7 +601,7 @@ SSR_Mappa_Regionale As screen:
                         LayoutDirection: =LayoutDirection.Vertical
                         LayoutJustifyContent: =LayoutJustifyContent.Center
                         LayoutMinHeight: =100
-                        LayoutMinWidth: =250
+                        LayoutMinWidth: =40
                         LayoutMode: =LayoutMode.Auto
                         Width: =Parent.Width - IconaMRSSR.Width
                         X: =48
@@ -602,7 +612,7 @@ SSR_Mappa_Regionale As screen:
                             LayoutMinWidth: =250
                             ZIndex: =1
 
-                            dataPTR_2 As label:
+                            dataVincolante As label:
                                 AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
                                 FontWeight: =FontWeight.Bold
@@ -611,12 +621,17 @@ SSR_Mappa_Regionale As screen:
                                 PaddingRight: =1
                                 PaddingTop: =0
                                 Size: =11
-                                Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Numero Aziende Sanitarie'
+                                Text: |-
+                                    =If(
+                                        LookUp('Governance Farmaceutica', Regione.Value = VarNomeRegione).Vincolante = true,
+                                        "Sì",
+                                        "No"
+                                    )
                                 Width: =Parent.Width
-                                Y: =TitoloPTR_2.Y + TitoloPTR_2.Height
+                                Y: =TitoloVincolante.Y + TitoloVincolante.Height
                                 ZIndex: =1
 
-                            TitoloPTR_2 As label:
+                            TitoloVincolante As label:
                                 AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
                                 FontWeight: =FontWeight.Bold
@@ -624,7 +639,7 @@ SSR_Mappa_Regionale As screen:
                                 PaddingBottom: =0
                                 PaddingTop: =0
                                 Size: =12
-                                Text: ="Numero Aziende Sanitarie"
+                                Text: ="Vincolante"
                                 Width: =Parent.Width
                                 Y: =40
                                 ZIndex: =2
@@ -634,7 +649,7 @@ SSR_Mappa_Regionale As screen:
                             LayoutMinWidth: =250
                             ZIndex: =2
 
-                            dataPTR_3 As label:
+                            dataTipPront As label:
                                 AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
                                 FontWeight: =FontWeight.Bold
@@ -643,12 +658,12 @@ SSR_Mappa_Regionale As screen:
                                 PaddingRight: =1
                                 PaddingTop: =0
                                 Size: =11
-                                Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Numero Aziende Sanitarie'
+                                Text: =LookUp('Governance Farmaceutica', Regione.Value = VarNomeRegione).'Tipologia Prontuario'
                                 Width: =Parent.Width
-                                Y: =TitoloPTR_3.Y + TitoloPTR_3.Height
+                                Y: =TitoloTipPront.Y + TitoloTipPront.Height
                                 ZIndex: =1
 
-                            TitoloPTR_3 As label:
+                            TitoloTipPront As label:
                                 AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
                                 FontWeight: =FontWeight.Bold
@@ -656,7 +671,7 @@ SSR_Mappa_Regionale As screen:
                                 PaddingBottom: =0
                                 PaddingTop: =0
                                 Size: =12
-                                Text: ="Numero Aziende Sanitarie"
+                                Text: ="Tipologia Prontuario"
                                 Width: =Parent.Width
                                 Y: =40
                                 ZIndex: =2
@@ -694,7 +709,7 @@ SSR_Mappa_Regionale As screen:
             BorderColor: =RGBA(0, 0, 0, 0)
             DropShadow: =DropShadow.None
             LayoutMinHeight: =100
-            LayoutMinWidth: =250
+            LayoutMinWidth: =40
             ZIndex: =3
 
     ContainerTitolo As groupContainer.horizontalAutoLayoutContainer:

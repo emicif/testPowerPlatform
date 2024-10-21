@@ -124,6 +124,9 @@
           "Governance Farmaceutica": {
             "tableName": "a07d1c3c-014c-4dce-981d-0a2ff8bd7ffa"
           },
+          "Governance Sanitaria Regionale": {
+            "tableName": "852e1950-3427-4f50-b82b-de280c2bd1a6"
+          },
           "Kymriah - Kit Prodotto": {
             "tableName": "ac70bc35-eebf-4da1-ac5a-d924ace673eb"
           },
@@ -170,7 +173,8 @@
       "Beovu - Kit Prodotto",
       "Mappa Nazionale",
       "Mappa Regionale",
-      "Governance Farmaceutica"
+      "Governance Farmaceutica",
+      "Governance Sanitaria Regionale"
     ],
     "dependencies": {},
     "dependents": [

@@ -839,7 +839,7 @@
   "DoesTestStepsMetadataExist": true,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/21/2024 12:45:53",
+  "HeaderLastSavedDateTimeUTC": "10/21/2024 12:57:27",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "00b60bbd-9aa0-4b65-9d7b-bd5c0488aa58": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/052ab811b1524dcfa26d523e0edc471b\"",
@@ -1057,7 +1057,7 @@
   },
   "OrderDataSource": {
     "Beovu - Kit Prodotto": 2,
-    "colFolderHistory": 21,
+    "colFolderHistory": 22,
     "ComboBoxSample": 3,
     "Comunicazioni_1": 4,
     "CustomGallerySample": 5,
@@ -1067,6 +1067,7 @@
     "DropDownSample": 9,
     "Drugs": 10,
     "Governance Farmaceutica": 20,
+    "Governance Sanitaria Regionale": 21,
     "Kymriah - Kit Prodotto": 11,
     "Lang": 12,
     "Listini": 13,

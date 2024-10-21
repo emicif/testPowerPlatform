@@ -658,7 +658,11 @@ SSR_Mappa_Regionale As screen:
                                 PaddingRight: =1
                                 PaddingTop: =0
                                 Size: =11
-                                Text: =LookUp('Governance Farmaceutica', Regione.Value = VarNomeRegione).'Tipologia Prontuario'
+                                Text: |
+                                    =If(!IsBlank(DropdownTipPront.Selected.Value),
+                                    DropdownTipPront.Selected.Value,
+                                    "Nessuna"
+                                    )
                                 Width: =Parent.Width
                                 Y: =TitoloTipPront.Y + TitoloTipPront.Height
                                 ZIndex: =1
@@ -675,6 +679,13 @@ SSR_Mappa_Regionale As screen:
                                 Width: =Parent.Width
                                 Y: =40
                                 ZIndex: =2
+
+                            DropdownTipPront As dropdown:
+                                Items: =LookUp('Governance Farmaceutica', Regione.Value = VarNomeRegione).'Tipologia Prontuario'
+                                Visible: =false
+                                X: =61
+                                Y: =60
+                                ZIndex: =3
 
                 Titolo_GovFarm As label:
                     Color: =RGBA(0, 32, 104, 1)

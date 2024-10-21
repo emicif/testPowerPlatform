@@ -767,12 +767,21 @@ SSR_Mappa_Regionale As screen:
                 ZIndex: =1
 
             ContainerGovSanInterno As groupContainer.verticalAutoLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DropShadow: =DropShadow.None
                 Height: =ButtonContGovSan.Height - Titolo_GovSan.Height
                 LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                 LayoutMode: =LayoutMode.Auto
-                Width: =Parent.Width - Parent.PaddingRight
+                PaddingLeft: =40
+                Width: =Parent.Width - Parent.PaddingRight - Self.PaddingLeft
+                X: =40
                 Y: =ButtonContGovSan.Y + Titolo_GovSan.Height
                 ZIndex: =2
+
+                ButtonPresidente As button:
+                    Text: ="Pulsante"
+                    ZIndex: =2
 
             Titolo_GovSan As label:
                 Color: =RGBA(0, 32, 104, 1)
@@ -794,11 +803,9 @@ SSR_Mappa_Regionale As screen:
                     =40
                 Image: =IconGovSan
                 PaddingBottom: =5
-                PaddingLeft: =10
+                PaddingLeft: =30
                 PaddingTop: =5
-                Width: |+
-                    =40
-                    
+                Width: =80
                 X: |
                     =0
                 Y: |

@@ -471,7 +471,6 @@ SSR_Mappa_Regionale As screen:
                     Width: |+
                         =40
                         
-                    Y: =3
                     ZIndex: =7
 
             ContainerGovFarm As groupContainer.manualLayoutContainer:
@@ -740,7 +739,6 @@ SSR_Mappa_Regionale As screen:
                     Width: |+
                         =40
                         
-                    Y: =3
                     ZIndex: =4
 
         ContainerGovSanitaria As groupContainer.manualLayoutContainer:
@@ -803,7 +801,8 @@ SSR_Mappa_Regionale As screen:
                     
                 X: |
                     =0
-                Y: =3
+                Y: |
+                    =0
                 ZIndex: =4
 
     ContainerTitolo As groupContainer.horizontalAutoLayoutContainer:

@@ -758,7 +758,7 @@ SSR_Mappa_Regionale As screen:
                 DisabledFill: =RGBA(255, 255, 255, 1)
                 DisplayMode: =DisplayMode.Disabled
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =Parent.Height - 30
+                Height: =Parent.Height - 20
                 PaddingBottom: =20
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
@@ -778,7 +778,7 @@ SSR_Mappa_Regionale As screen:
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowY: =LayoutOverflow.Scroll
                 PaddingBottom: =19
-                PaddingLeft: =10
+                PaddingLeft: =40
                 PaddingTop: =10
                 Width: |
                     =Parent.Width - Parent.PaddingRight 

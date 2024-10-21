@@ -800,6 +800,7 @@ SSR_Mappa_Regionale As screen:
                         Fill: |
                             =RGBA(0, 32, 104, 1)
                         Height: =Parent.Height
+                        HoverFill: =Self.Color
                         PaddingBottom: =1
                         PaddingLeft: =1
                         PaddingRight: =1
@@ -842,9 +843,11 @@ SSR_Mappa_Regionale As screen:
                     ZIndex: =5
 
                     ButtonPresidente_2 As button:
-                        Fill: |
-                            =RGBA(0, 32, 104, 1)
+                        Fill: |+
+                            =RGBA(4, 96, 154, 1)
+                            
                         Height: =Parent.Height
+                        HoverFill: =Self.Color
                         PaddingBottom: =1
                         PaddingLeft: =1
                         PaddingRight: =1
@@ -871,7 +874,7 @@ SSR_Mappa_Regionale As screen:
                         FontWeight: =FontWeight.Semibold
                         PaddingBottom: =1
                         Size: =16
-                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, 'DG Salute')
                         Width: =Parent.Width
                         ZIndex: =3
 
@@ -887,8 +890,9 @@ SSR_Mappa_Regionale As screen:
                     ZIndex: =6
 
                     ButtonPresidente_3 As button:
-                        Fill: |
-                            =RGBA(0, 32, 104, 1)
+                        Fill: |+
+                            =RGBA(4, 96, 154, 1)
+                            
                         Height: =Parent.Height
                         PaddingBottom: =1
                         PaddingLeft: =1
@@ -916,7 +920,7 @@ SSR_Mappa_Regionale As screen:
                         FontWeight: =FontWeight.Semibold
                         PaddingBottom: =1
                         Size: =16
-                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, 'Assessorato Salute')
                         Width: =Parent.Width
                         ZIndex: =3
 
@@ -932,8 +936,9 @@ SSR_Mappa_Regionale As screen:
                     ZIndex: =7
 
                     ButtonPresidente_4 As button:
-                        Fill: |
-                            =RGBA(0, 32, 104, 1)
+                        Fill: |+
+                            =RGBA(143,45,222,1)
+                            
                         Height: =Parent.Height
                         PaddingBottom: =1
                         PaddingLeft: =1
@@ -961,7 +966,7 @@ SSR_Mappa_Regionale As screen:
                         FontWeight: =FontWeight.Semibold
                         PaddingBottom: =1
                         Size: =16
-                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, 'Programmazione Ospedaliera')
                         Width: =Parent.Width
                         ZIndex: =3
 
@@ -977,8 +982,7 @@ SSR_Mappa_Regionale As screen:
                     ZIndex: =8
 
                     ButtonPresidente_5 As button:
-                        Fill: |
-                            =RGBA(0, 32, 104, 1)
+                        Fill: =RGBA(143,45,222,1)
                         Height: =Parent.Height
                         PaddingBottom: =1
                         PaddingLeft: =1
@@ -1006,7 +1010,7 @@ SSR_Mappa_Regionale As screen:
                         FontWeight: =FontWeight.Semibold
                         PaddingBottom: =1
                         Size: =16
-                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione,'Programmazione Territoriale')
                         Width: =Parent.Width
                         ZIndex: =3
 
@@ -1023,7 +1027,7 @@ SSR_Mappa_Regionale As screen:
 
                     ButtonPresidente_6 As button:
                         Fill: |
-                            =RGBA(0, 32, 104, 1)
+                            =RGBA(143,45,222,1)
                         Height: =Parent.Height
                         PaddingBottom: =1
                         PaddingLeft: =1
@@ -1051,7 +1055,7 @@ SSR_Mappa_Regionale As screen:
                         FontWeight: =FontWeight.Semibold
                         PaddingBottom: =1
                         Size: =16
-                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, 'Programmazione e controllo del SSR')
                         Width: =Parent.Width
                         ZIndex: =3
 
@@ -1068,7 +1072,7 @@ SSR_Mappa_Regionale As screen:
 
                     ButtonPresidente_7 As button:
                         Fill: |
-                            =RGBA(0, 32, 104, 1)
+                            =RGBA(143,45,222,1)
                         Height: =Parent.Height
                         PaddingBottom: =1
                         PaddingLeft: =1
@@ -1096,7 +1100,7 @@ SSR_Mappa_Regionale As screen:
                         FontWeight: =FontWeight.Semibold
                         PaddingBottom: =1
                         Size: =16
-                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione,'Azienda Zero')
                         Width: =Parent.Width
                         ZIndex: =3
 
@@ -1108,12 +1112,13 @@ SSR_Mappa_Regionale As screen:
                     Height: =LabelNome_8.Height + LabelRuolo_8.Height
                     LayoutMinHeight: =100
                     LayoutMinWidth: =20
+                    Visible: =false
                     Width: =350
                     ZIndex: =11
 
                     ButtonPresidente_8 As button:
                         Fill: |
-                            =RGBA(0, 32, 104, 1)
+                            =RGBA(143,45,222,1)
                         Height: =Parent.Height
                         PaddingBottom: =1
                         PaddingLeft: =1
@@ -1141,7 +1146,7 @@ SSR_Mappa_Regionale As screen:
                         FontWeight: =FontWeight.Semibold
                         PaddingBottom: =1
                         Size: =16
-                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, 'Piano Socio Sanitario')
                         Width: =Parent.Width
                         ZIndex: =3
 
@@ -1153,12 +1158,12 @@ SSR_Mappa_Regionale As screen:
                     Height: =LabelNome_9.Height + LabelRuolo_9.Height
                     LayoutMinHeight: =100
                     LayoutMinWidth: =20
+                    Visible: =false
                     Width: =350
                     ZIndex: =12
 
                     ButtonPresidente_9 As button:
-                        Fill: |
-                            =RGBA(0, 32, 104, 1)
+                        Fill: =RGBA(143,45,222,1)
                         Height: =Parent.Height
                         PaddingBottom: =1
                         PaddingLeft: =1
@@ -1186,7 +1191,7 @@ SSR_Mappa_Regionale As screen:
                         FontWeight: =FontWeight.Semibold
                         PaddingBottom: =1
                         Size: =16
-                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, 'Servizio Farmaceutico')
                         Width: =Parent.Width
                         ZIndex: =3
 

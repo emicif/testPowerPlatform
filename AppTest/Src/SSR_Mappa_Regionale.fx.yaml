@@ -782,11 +782,48 @@ SSR_Mappa_Regionale As screen:
                 Y: =ButtonContGovSan.Y + Titolo_GovSan.Height
                 ZIndex: =2
 
-                ButtonPresidente As button:
-                    Text: |-
-                        =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente) & Char(10) &
-                        "Presidente"
-                    ZIndex: =2
+                ContainerButtonNome_1 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Start
+                    FillPortions: =0
+                    Height: =LabelNome_1.Height + LabelRuolo_1.Height
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =20
+                    Width: =400
+                    ZIndex: =4
+
+                    ButtonPresidente_1 As button:
+                        Fill: |
+                            =RGBA(0, 32, 104, 1)
+                        Height: =Parent.Height
+                        PaddingBottom: =1
+                        PaddingLeft: =1
+                        PaddingRight: =1
+                        PaddingTop: =1
+                        Text: =
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    LabelRuolo_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Lighter
+                        PaddingBottom: =1
+                        PaddingTop: =1
+                        Text: ="PRESIDENTE"
+                        Width: =Parent.Width
+                        Y: =LabelNome_1.Height
+                        ZIndex: =2
+
+                    LabelNome_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Size: =16
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Width: =Parent.Width
+                        ZIndex: =3
 
             Titolo_GovSan As label:
                 Color: =RGBA(0, 32, 104, 1)

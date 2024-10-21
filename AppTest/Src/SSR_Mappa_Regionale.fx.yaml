@@ -498,7 +498,14 @@ SSR_Mappa_Regionale As screen:
                     Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
                     ZIndex: =1
 
-                Titolo_MappaReg_1 As label:
+                Container19 As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =ButtonContGovFar.Height - Titolo_GovFarm.Height
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =ButtonContGovFar.Width
+                    Y: =ButtonContGovFar.Y + Titolo_GovFarm.Height
+                    ZIndex: =2
+
+                Titolo_GovFarm As label:
                     Color: =RGBA(0, 32, 104, 1)
                     FontWeight: =FontWeight.Bold
                     PaddingBottom: =10
@@ -509,12 +516,12 @@ SSR_Mappa_Regionale As screen:
                     Text: |-
                         ="Governance Farmaceutica
                         "
-                    Width: =ContainerGovFarm.Width - IconaLuogo_1.Width
-                    X: =IconaLuogo_1.X + IconaLuogo_1.Width
+                    Width: =ContainerGovFarm.Width - IconaAgenda.Width
+                    X: =IconaAgenda.X + IconaAgenda.Width
                     Y: =3
                     ZIndex: =3
 
-                IconaLuogo_1 As image:
+                IconaAgenda As image:
                     Height: |
                         =40
                     Image: =IconaGovernance

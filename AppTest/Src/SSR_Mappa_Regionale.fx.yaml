@@ -498,12 +498,168 @@ SSR_Mappa_Regionale As screen:
                     Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
                     ZIndex: =1
 
-                Container19 As groupContainer.horizontalAutoLayoutContainer:
+                RowGov_1 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
                     Height: =ButtonContGovFar.Height - Titolo_GovFarm.Height
                     LayoutMode: =LayoutMode.Auto
                     Width: =ButtonContGovFar.Width
                     Y: =ButtonContGovFar.Y + Titolo_GovFarm.Height
                     ZIndex: =2
+
+                    ContaineVertInterno_4 As groupContainer.verticalAutoLayoutContainer:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        DropShadow: =DropShadow.None
+                        Height: =62
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width - IconaMRSSR.Width
+                        X: =48
+                        ZIndex: =1
+
+                        ContainerPTR As groupContainer.manualLayoutContainer:
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            ZIndex: =6
+
+                            dataPTR As label:
+                                AutoHeight: =true
+                                Color: =RGBA(0, 32, 104, 1)
+                                FontWeight: =FontWeight.Bold
+                                Height: =27
+                                PaddingBottom: =0
+                                PaddingRight: =1
+                                PaddingTop: =0
+                                Size: =11
+                                Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Numero Aziende Sanitarie'
+                                Width: =Parent.Width
+                                Y: =TitoloPTR.Y + TitoloPTR.Height
+                                ZIndex: =1
+
+                            TitoloPTR As label:
+                                AutoHeight: =true
+                                Color: =RGBA(0, 32, 104, 1)
+                                FontWeight: =FontWeight.Bold
+                                Height: =34
+                                PaddingBottom: =0
+                                PaddingTop: =0
+                                Size: =12
+                                Text: ="Numero Aziende Sanitarie"
+                                Width: =Parent.Width
+                                Y: =40
+                                ZIndex: =2
+
+                        ContainerCommissione As groupContainer.manualLayoutContainer:
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            ZIndex: =7
+
+                            dataPTR_1 As label:
+                                AutoHeight: =true
+                                Color: =RGBA(0, 32, 104, 1)
+                                FontWeight: =FontWeight.Bold
+                                Height: =27
+                                PaddingBottom: =0
+                                PaddingRight: =1
+                                PaddingTop: =0
+                                Size: =11
+                                Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Numero Aziende Sanitarie'
+                                Width: =Parent.Width
+                                Y: =TitoloPTR_1.Y + TitoloPTR_1.Height
+                                ZIndex: =1
+
+                            TitoloPTR_1 As label:
+                                AutoHeight: =true
+                                Color: =RGBA(0, 32, 104, 1)
+                                FontWeight: =FontWeight.Bold
+                                Height: =34
+                                PaddingBottom: =0
+                                PaddingTop: =0
+                                Size: =12
+                                Text: ="Numero Aziende Sanitarie"
+                                Width: =Parent.Width
+                                Y: =40
+                                ZIndex: =2
+
+                    ContaineVertInterno_5 As groupContainer.verticalAutoLayoutContainer:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        DropShadow: =DropShadow.None
+                        FillPortions: =2
+                        Height: =62
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width - IconaMRSSR.Width
+                        X: =48
+                        ZIndex: =2
+
+                        ContainerVincolante As groupContainer.manualLayoutContainer:
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            ZIndex: =1
+
+                            dataPTR_2 As label:
+                                AutoHeight: =true
+                                Color: =RGBA(0, 32, 104, 1)
+                                FontWeight: =FontWeight.Bold
+                                Height: =27
+                                PaddingBottom: =0
+                                PaddingRight: =1
+                                PaddingTop: =0
+                                Size: =11
+                                Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Numero Aziende Sanitarie'
+                                Width: =Parent.Width
+                                Y: =TitoloPTR_2.Y + TitoloPTR_2.Height
+                                ZIndex: =1
+
+                            TitoloPTR_2 As label:
+                                AutoHeight: =true
+                                Color: =RGBA(0, 32, 104, 1)
+                                FontWeight: =FontWeight.Bold
+                                Height: =34
+                                PaddingBottom: =0
+                                PaddingTop: =0
+                                Size: =12
+                                Text: ="Numero Aziende Sanitarie"
+                                Width: =Parent.Width
+                                Y: =40
+                                ZIndex: =2
+
+                        ContainerTipPront As groupContainer.manualLayoutContainer:
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            ZIndex: =2
+
+                            dataPTR_3 As label:
+                                AutoHeight: =true
+                                Color: =RGBA(0, 32, 104, 1)
+                                FontWeight: =FontWeight.Bold
+                                Height: =27
+                                PaddingBottom: =0
+                                PaddingRight: =1
+                                PaddingTop: =0
+                                Size: =11
+                                Text: =LookUp('Mappa Regionale', Regione.Value = VarNomeRegione).'Numero Aziende Sanitarie'
+                                Width: =Parent.Width
+                                Y: =TitoloPTR_3.Y + TitoloPTR_3.Height
+                                ZIndex: =1
+
+                            TitoloPTR_3 As label:
+                                AutoHeight: =true
+                                Color: =RGBA(0, 32, 104, 1)
+                                FontWeight: =FontWeight.Bold
+                                Height: =34
+                                PaddingBottom: =0
+                                PaddingTop: =0
+                                Size: =12
+                                Text: ="Numero Aziende Sanitarie"
+                                Width: =Parent.Width
+                                Y: =40
+                                ZIndex: =2
 
                 Titolo_GovFarm As label:
                     Color: =RGBA(0, 32, 104, 1)

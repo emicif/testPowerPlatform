@@ -16,16 +16,17 @@ SSR_Mappa_Regionale As screen:
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutGap: =40
-            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            PaddingBottom: =40
+            PaddingBottom: =30
             PaddingLeft: =80
             PaddingRight: =20
             ZIndex: =2
 
             ContainerMRInterno As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DropShadow: =DropShadow.None
                 FillPortions: =3
@@ -458,7 +459,6 @@ SSR_Mappa_Regionale As screen:
                         "
                     Width: =ContainerMRInterno.Width - IconaLuogo.Width
                     X: =IconaLuogo.X + IconaLuogo.Width
-                    Y: =3
                     ZIndex: =6
 
                 IconaLuogo As image:
@@ -475,6 +475,7 @@ SSR_Mappa_Regionale As screen:
                     ZIndex: =7
 
             ContainerGovFarm As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DropShadow: =DropShadow.None
                 FillPortions: =2
@@ -498,7 +499,7 @@ SSR_Mappa_Regionale As screen:
                     Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
                     ZIndex: =1
 
-                RowGov_1 As groupContainer.horizontalAutoLayoutContainer:
+                RowGovData As groupContainer.horizontalAutoLayoutContainer:
                     DropShadow: =DropShadow.None
                     Height: =ButtonContGovFar.Height - Titolo_GovFarm.Height
                     LayoutMode: =LayoutMode.Auto
@@ -727,7 +728,6 @@ SSR_Mappa_Regionale As screen:
                         "
                     Width: =ContainerGovFarm.Width - IconaAgenda.Width
                     X: =IconaAgenda.X + IconaAgenda.Width
-                    Y: =3
                     ZIndex: =3
 
                 IconaAgenda As image:
@@ -743,12 +743,68 @@ SSR_Mappa_Regionale As screen:
                     Y: =3
                     ZIndex: =4
 
-        Container18 As groupContainer.manualLayoutContainer:
+        ContainerGovSanitaria As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)
             DropShadow: =DropShadow.None
-            LayoutMinHeight: =100
+            LayoutMinHeight: =20
             LayoutMinWidth: =40
+            PaddingBottom: =30
+            PaddingRight: =80
             ZIndex: =3
+
+            ButtonContGovSan As button:
+                DisabledBorderColor: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(255, 255, 255, 1)
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height - 30
+                PaddingBottom: =30
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =
+                Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                ZIndex: =1
+
+            Titolo_GovSan As label:
+                Color: =RGBA(0, 32, 104, 1)
+                FontWeight: =FontWeight.Bold
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                Size: =15
+                Text: |-
+                    ="Governance Sanitaria Regionale/Organigramma
+                    "
+                Width: =ContainerGovSanitaria.Width - IconaGovSan.Width - Parent.PaddingRight
+                X: =IconaGovSan.X + IconaGovSan.Width
+                ZIndex: =2
+
+            IconaGovSan As image:
+                Height: |
+                    =40
+                Image: =IconGovSan
+                PaddingBottom: =5
+                PaddingLeft: =10
+                PaddingTop: =5
+                Width: |+
+                    =40
+                    
+                X: |
+                    =0
+                Y: =3
+                ZIndex: =3
+
+            ContainerGovSanInterno As groupContainer.verticalAutoLayoutContainer:
+                Height: =ButtonContGovSan.Height - Titolo_GovSan.Height
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMode: =LayoutMode.Auto
+                X: =60
+                Y: =ButtonContGovSan.Y + Titolo_GovSan.Height
+                ZIndex: =4
 
     ContainerTitolo As groupContainer.horizontalAutoLayoutContainer:
         BorderColor: =RGBA(0, 0, 0, 0)

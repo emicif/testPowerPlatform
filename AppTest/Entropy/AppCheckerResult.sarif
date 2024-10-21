@@ -10673,19 +10673,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SSR_Mappa_Regionale.Container11.Container17.ContainerGovFarm.RowGov_1.ContaineVertInterno_5.ContainerTipPront.DropdownTipPront.AccessibleLabel"
+                  "fullyQualifiedName": "SSR_Mappa_Regionale.Container11.Container17.ContainerGovFarm.RowGovData.ContaineVertInterno_5.ContainerTipPront.DropdownTipPront.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SSR_Mappa_Regionale.Container11.Container17.ContainerGovFarm.RowGov_1.ContaineVertInterno_5.ContainerTipPront.DropdownTipPront.AccessibleLabel",
+                  "fullyQualifiedName": "SSR_Mappa_Regionale.Container11.Container17.ContainerGovFarm.RowGovData.ContaineVertInterno_5.ContainerTipPront.DropdownTipPront.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SSR_Mappa_Regionale",
-                "type": "SSR_Mappa_Regionale.Container11.Container17.ContainerGovFarm.RowGov_1.ContaineVertInterno_5.ContainerTipPront.DropdownTipPront"
+                "type": "SSR_Mappa_Regionale.Container11.Container17.ContainerGovFarm.RowGovData.ContaineVertInterno_5.ContainerTipPront.DropdownTipPront"
               }
             }
           ],

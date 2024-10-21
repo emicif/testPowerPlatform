@@ -21,7 +21,7 @@ SSR_Mappa_Regionale As screen:
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingBottom: =30
-            PaddingLeft: =80
+            PaddingLeft: =70
             PaddingRight: =20
             ZIndex: =2
 
@@ -453,7 +453,7 @@ SSR_Mappa_Regionale As screen:
                     PaddingLeft: =10
                     PaddingRight: =10
                     PaddingTop: =10
-                    Size: =15
+                    Size: =16
                     Text: |-
                         ="Mappa Regionale
                         "
@@ -471,6 +471,7 @@ SSR_Mappa_Regionale As screen:
                     Width: |+
                         =40
                         
+                    Y: =Titolo_MappaReg.Height/2 - Self.Height/2
                     ZIndex: =7
 
             ContainerGovFarm As groupContainer.manualLayoutContainer:
@@ -721,7 +722,7 @@ SSR_Mappa_Regionale As screen:
                     PaddingLeft: =10
                     PaddingRight: =10
                     PaddingTop: =10
-                    Size: =15
+                    Size: =17
                     Text: |-
                         ="Governance Farmaceutica
                         "
@@ -739,6 +740,7 @@ SSR_Mappa_Regionale As screen:
                     Width: |+
                         =40
                         
+                    Y: =Titolo_GovFarm.Height/2 - Self.Height/2
                     ZIndex: =4
 
         ContainerGovSanitaria As groupContainer.manualLayoutContainer:
@@ -747,7 +749,7 @@ SSR_Mappa_Regionale As screen:
             LayoutMinHeight: =20
             LayoutMinWidth: =40
             PaddingBottom: =30
-            PaddingRight: =80
+            PaddingRight: =70
             ZIndex: =3
 
             ButtonContGovSan As button:
@@ -775,7 +777,7 @@ SSR_Mappa_Regionale As screen:
                 LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                 LayoutMode: =LayoutMode.Auto
                 PaddingBottom: =40
-                PaddingLeft: =40
+                PaddingLeft: =10
                 PaddingTop: =40
                 Width: |
                     =Parent.Width - Parent.PaddingRight 
@@ -788,7 +790,7 @@ SSR_Mappa_Regionale As screen:
                     Height: =LabelNome_1.Height + LabelRuolo_1.Height
                     LayoutMinHeight: =100
                     LayoutMinWidth: =20
-                    Width: =400
+                    Width: =350
                     ZIndex: =4
 
                     ButtonPresidente_1 As button:
@@ -808,7 +810,6 @@ SSR_Mappa_Regionale As screen:
                         AutoHeight: =true
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Lighter
-                        PaddingBottom: =1
                         PaddingTop: =1
                         Text: ="PRESIDENTE"
                         Width: =Parent.Width
@@ -820,19 +821,21 @@ SSR_Mappa_Regionale As screen:
                         AutoHeight: =true
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Semibold
+                        PaddingBottom: =1
                         Size: =16
                         Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
                         Width: =Parent.Width
                         ZIndex: =3
 
             Titolo_GovSan As label:
+                AutoHeight: =true
                 Color: =RGBA(0, 32, 104, 1)
                 FontWeight: =FontWeight.Bold
                 PaddingBottom: =10
                 PaddingLeft: =10
                 PaddingRight: =10
                 PaddingTop: =10
-                Size: =15
+                Size: =17
                 Text: |-
                     ="Governance Sanitaria Regionale/Organigramma
                     "
@@ -845,13 +848,13 @@ SSR_Mappa_Regionale As screen:
                     =40
                 Image: =IconGovSan
                 PaddingBottom: =5
-                PaddingLeft: =30
+                PaddingLeft: =10
                 PaddingTop: =5
-                Width: =80
+                Width: =50
                 X: |
                     =0
                 Y: |
-                    =0
+                    =Titolo_GovSan.Height/2 - Self.Height/2
                 ZIndex: =4
 
     ContainerTitolo As groupContainer.horizontalAutoLayoutContainer:

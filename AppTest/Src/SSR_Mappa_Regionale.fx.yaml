@@ -768,6 +768,14 @@ SSR_Mappa_Regionale As screen:
                 Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
                 ZIndex: =1
 
+            ContainerGovSanInterno As groupContainer.verticalAutoLayoutContainer:
+                Height: =ButtonContGovSan.Height - Titolo_GovSan.Height
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width - Parent.PaddingRight
+                Y: =ButtonContGovSan.Y + Titolo_GovSan.Height
+                ZIndex: =2
+
             Titolo_GovSan As label:
                 Color: =RGBA(0, 32, 104, 1)
                 FontWeight: =FontWeight.Bold
@@ -781,7 +789,7 @@ SSR_Mappa_Regionale As screen:
                     "
                 Width: =ContainerGovSanitaria.Width - IconaGovSan.Width - Parent.PaddingRight
                 X: =IconaGovSan.X + IconaGovSan.Width
-                ZIndex: =2
+                ZIndex: =3
 
             IconaGovSan As image:
                 Height: |
@@ -796,14 +804,6 @@ SSR_Mappa_Regionale As screen:
                 X: |
                     =0
                 Y: =3
-                ZIndex: =3
-
-            ContainerGovSanInterno As groupContainer.verticalAutoLayoutContainer:
-                Height: =ButtonContGovSan.Height - Titolo_GovSan.Height
-                LayoutDirection: =LayoutDirection.Vertical
-                LayoutMode: =LayoutMode.Auto
-                X: =60
-                Y: =ButtonContGovSan.Y + Titolo_GovSan.Height
                 ZIndex: =4
 
     ContainerTitolo As groupContainer.horizontalAutoLayoutContainer:

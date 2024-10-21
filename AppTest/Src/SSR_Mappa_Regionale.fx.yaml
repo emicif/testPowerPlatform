@@ -773,12 +773,13 @@ SSR_Mappa_Regionale As screen:
                 DropShadow: =DropShadow.None
                 Height: =ButtonContGovSan.Height - Titolo_GovSan.Height
                 LayoutDirection: =LayoutDirection.Vertical
-                LayoutGap: =20
+                LayoutGap: =10
                 LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                 LayoutMode: =LayoutMode.Auto
-                PaddingBottom: =40
+                LayoutOverflowY: =LayoutOverflow.Scroll
+                PaddingBottom: =19
                 PaddingLeft: =10
-                PaddingTop: =40
+                PaddingTop: =10
                 Width: |
                     =Parent.Width - Parent.PaddingRight 
                 Y: =ButtonContGovSan.Y + Titolo_GovSan.Height
@@ -786,6 +787,8 @@ SSR_Mappa_Regionale As screen:
 
                 ContainerButtonNome_1 As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.Start
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
                     FillPortions: =0
                     Height: =LabelNome_1.Height + LabelRuolo_1.Height
                     LayoutMinHeight: =100
@@ -817,6 +820,366 @@ SSR_Mappa_Regionale As screen:
                         ZIndex: =2
 
                     LabelNome_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Semibold
+                        PaddingBottom: =1
+                        Size: =16
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Width: =Parent.Width
+                        ZIndex: =3
+
+                ContainerButtonNome_2 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Start
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =LabelNome_2.Height + LabelRuolo_2.Height
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =20
+                    Width: =350
+                    ZIndex: =5
+
+                    ButtonPresidente_2 As button:
+                        Fill: |
+                            =RGBA(0, 32, 104, 1)
+                        Height: =Parent.Height
+                        PaddingBottom: =1
+                        PaddingLeft: =1
+                        PaddingRight: =1
+                        PaddingTop: =1
+                        Text: =
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    LabelRuolo_2 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Lighter
+                        PaddingTop: =1
+                        Text: ="DG SALUTE"
+                        Width: =Parent.Width
+                        Y: =LabelNome_2.Height
+                        ZIndex: =2
+
+                    LabelNome_2 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Semibold
+                        PaddingBottom: =1
+                        Size: =16
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Width: =Parent.Width
+                        ZIndex: =3
+
+                ContainerButtonNome_3 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Start
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =LabelNome_3.Height + LabelRuolo_3.Height
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =20
+                    Width: =350
+                    ZIndex: =6
+
+                    ButtonPresidente_3 As button:
+                        Fill: |
+                            =RGBA(0, 32, 104, 1)
+                        Height: =Parent.Height
+                        PaddingBottom: =1
+                        PaddingLeft: =1
+                        PaddingRight: =1
+                        PaddingTop: =1
+                        Text: =
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    LabelRuolo_3 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Lighter
+                        PaddingTop: =1
+                        Text: ="ASSESSORATO SALUTE"
+                        Width: =Parent.Width
+                        Y: =LabelNome_3.Height
+                        ZIndex: =2
+
+                    LabelNome_3 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Semibold
+                        PaddingBottom: =1
+                        Size: =16
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Width: =Parent.Width
+                        ZIndex: =3
+
+                ContainerButtonNome_4 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Start
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =LabelNome_4.Height + LabelRuolo_4.Height
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =20
+                    Width: =350
+                    ZIndex: =7
+
+                    ButtonPresidente_4 As button:
+                        Fill: |
+                            =RGBA(0, 32, 104, 1)
+                        Height: =Parent.Height
+                        PaddingBottom: =1
+                        PaddingLeft: =1
+                        PaddingRight: =1
+                        PaddingTop: =1
+                        Text: =
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    LabelRuolo_4 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Lighter
+                        PaddingTop: =1
+                        Text: ="PROGR. OSPEDALIERA"
+                        Width: =Parent.Width
+                        Y: =LabelNome_4.Height
+                        ZIndex: =2
+
+                    LabelNome_4 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Semibold
+                        PaddingBottom: =1
+                        Size: =16
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Width: =Parent.Width
+                        ZIndex: =3
+
+                ContainerButtonNome_5 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Start
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =LabelNome_5.Height + LabelRuolo_5.Height
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =20
+                    Width: =350
+                    ZIndex: =8
+
+                    ButtonPresidente_5 As button:
+                        Fill: |
+                            =RGBA(0, 32, 104, 1)
+                        Height: =Parent.Height
+                        PaddingBottom: =1
+                        PaddingLeft: =1
+                        PaddingRight: =1
+                        PaddingTop: =1
+                        Text: =
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    LabelRuolo_5 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Lighter
+                        PaddingTop: =1
+                        Text: ="PROGR. TERRITORIALE"
+                        Width: =Parent.Width
+                        Y: =LabelNome_5.Height
+                        ZIndex: =2
+
+                    LabelNome_5 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Semibold
+                        PaddingBottom: =1
+                        Size: =16
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Width: =Parent.Width
+                        ZIndex: =3
+
+                ContainerButtonNome_6 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Start
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =LabelNome_6.Height + LabelRuolo_6.Height
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =20
+                    Width: =350
+                    ZIndex: =9
+
+                    ButtonPresidente_6 As button:
+                        Fill: |
+                            =RGBA(0, 32, 104, 1)
+                        Height: =Parent.Height
+                        PaddingBottom: =1
+                        PaddingLeft: =1
+                        PaddingRight: =1
+                        PaddingTop: =1
+                        Text: =
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    LabelRuolo_6 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Lighter
+                        PaddingTop: =1
+                        Text: ="PROGR. E CONTR. DEL SSR"
+                        Width: =Parent.Width
+                        Y: =LabelNome_6.Height
+                        ZIndex: =2
+
+                    LabelNome_6 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Semibold
+                        PaddingBottom: =1
+                        Size: =16
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Width: =Parent.Width
+                        ZIndex: =3
+
+                ContainerButtonNome_7 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Start
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =LabelNome_7.Height + LabelRuolo_7.Height
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =20
+                    Width: =350
+                    ZIndex: =10
+
+                    ButtonPresidente_7 As button:
+                        Fill: |
+                            =RGBA(0, 32, 104, 1)
+                        Height: =Parent.Height
+                        PaddingBottom: =1
+                        PaddingLeft: =1
+                        PaddingRight: =1
+                        PaddingTop: =1
+                        Text: =
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    LabelRuolo_7 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Lighter
+                        PaddingTop: =1
+                        Text: ="AZIENDA ZERO"
+                        Width: =Parent.Width
+                        Y: =LabelNome_7.Height
+                        ZIndex: =2
+
+                    LabelNome_7 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Semibold
+                        PaddingBottom: =1
+                        Size: =16
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Width: =Parent.Width
+                        ZIndex: =3
+
+                ContainerButtonNome_8 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Start
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =LabelNome_8.Height + LabelRuolo_8.Height
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =20
+                    Width: =350
+                    ZIndex: =11
+
+                    ButtonPresidente_8 As button:
+                        Fill: |
+                            =RGBA(0, 32, 104, 1)
+                        Height: =Parent.Height
+                        PaddingBottom: =1
+                        PaddingLeft: =1
+                        PaddingRight: =1
+                        PaddingTop: =1
+                        Text: =
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    LabelRuolo_8 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Lighter
+                        PaddingTop: =1
+                        Text: ="PIANO SOCIO SANITARIO"
+                        Width: =Parent.Width
+                        Y: =LabelNome_8.Height
+                        ZIndex: =2
+
+                    LabelNome_8 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Semibold
+                        PaddingBottom: =1
+                        Size: =16
+                        Text: =LookUp('Governance Sanitaria Regionale', Regione.Value = VarNomeRegione, Presidente)
+                        Width: =Parent.Width
+                        ZIndex: =3
+
+                ContainerButtonNome_9 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Start
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =LabelNome_9.Height + LabelRuolo_9.Height
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =20
+                    Width: =350
+                    ZIndex: =12
+
+                    ButtonPresidente_9 As button:
+                        Fill: |
+                            =RGBA(0, 32, 104, 1)
+                        Height: =Parent.Height
+                        PaddingBottom: =1
+                        PaddingLeft: =1
+                        PaddingRight: =1
+                        PaddingTop: =1
+                        Text: =
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    LabelRuolo_9 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Lighter
+                        PaddingTop: =1
+                        Text: ="SERVIZIO FARMACEUTICO"
+                        Width: =Parent.Width
+                        Y: =LabelNome_9.Height
+                        ZIndex: =2
+
+                    LabelNome_9 As label:
                         Align: =Align.Center
                         AutoHeight: =true
                         Color: =RGBA(255, 255, 255, 1)

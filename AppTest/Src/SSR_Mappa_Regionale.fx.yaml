@@ -20,7 +20,7 @@ SSR_Mappa_Regionale As screen:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            PaddingBottom: =30
+            PaddingBottom: =20
             PaddingLeft: =70
             PaddingRight: =20
             ZIndex: =2
@@ -748,7 +748,7 @@ SSR_Mappa_Regionale As screen:
             DropShadow: =DropShadow.None
             LayoutMinHeight: =20
             LayoutMinWidth: =40
-            PaddingBottom: =30
+            PaddingBottom: =20
             PaddingRight: =70
             ZIndex: =3
 
@@ -759,7 +759,7 @@ SSR_Mappa_Regionale As screen:
                 DisplayMode: =DisplayMode.Disabled
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height - 30
-                PaddingBottom: =30
+                PaddingBottom: =20
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20

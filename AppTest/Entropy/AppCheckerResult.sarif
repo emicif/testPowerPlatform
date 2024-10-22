@@ -504,9 +504,9 @@
                 },
                 "region": {
                   "charLength": 19,
-                  "charOffset": 56,
+                  "charOffset": 57,
                   "snippet": {
-                    "text": "'Percorso completo'"
+                    "text": "'Percorso cartella'"
                   }
                 }
               },
@@ -519,7 +519,7 @@
           ],
           "message": {
             "arguments": [
-              "Percorso completo"
+              "Percorso cartella"
             ],
             "id": "issue"
           },
@@ -544,7 +544,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 76,
+                  "charOffset": 77,
                   "snippet": {
                     "text": "="
                   }

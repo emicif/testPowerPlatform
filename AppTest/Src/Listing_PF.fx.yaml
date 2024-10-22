@@ -29,17 +29,18 @@ Listing_PF As screen:
                     =SortByColumns(
                         Filter(
                             Documents,
-                           'Percorso completo' = "Documents/Politiche Farmaceutiche/Procedura e Modulistica/" & VarNomeRegione &" - Procedura e Modulistica"
+                            'Percorso cartella' = "Documents/Politiche Farmaceutiche/Procedura e Modulistica/"& VarNomeRegione & " - Procedura e Modulistica/"
                         ),
                         "{IsFolder}",
                         SortOrder.Descending,
                         "{Name}",
-                        SortOrder.Ascending
+                        SortOrder.Ascending  
                     )
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
-                TemplateSize: =104
+                TemplateSize: =125
+                Width: =817
                 X: =40
                 ZIndex: =1
 
@@ -55,22 +56,21 @@ Listing_PF As screen:
                     VerticalAlign: =VerticalAlign.Top
                     Width: =Parent.TemplateWidth - 173
                     X: =103
-                    Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle1.Size * 1.8)) / 2
                     ZIndex: =2
 
                 Subtitle1 As label:
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =Self.Size * 1.8
+                    Height: =67
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Text: =ThisItem.'Data/ora modifica'
+                    Text: =ThisItem.'Percorso cartella'
                     VerticalAlign: =VerticalAlign.Top
                     Width: =Title1.Width
                     X: =Title1.X
-                    Y: =Title1.Y + Title1.Height
+                    Y: =32
                     ZIndex: =3
 
                 NextArrow1 As icon.ChevronRight:

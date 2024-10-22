@@ -2,7 +2,12 @@ Listing_PF As screen:
     BackgroundImage: =sfondo_italia
     Fill: =RGBA(4,96,169,0.9)
 
-    Header_21 As Header:
+    Container18 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =Parent.Height - Header_21.Height - ContainerTitolo_1.Height
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        Y: =Header_21.Height + ContainerTitolo_1.Height
+        ZIndex: =1
 
     ContainerTitolo_1 As groupContainer.horizontalAutoLayoutContainer:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -37,4 +42,7 @@ Listing_PF As screen:
             X: =172
             Y: =116
             ZIndex: =2
+
+    Header_21 As Header:
+        ZIndex: =3
 

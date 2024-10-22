@@ -26,9 +26,15 @@ Listing_PF As screen:
                 DelayItemLoading: =true
                 Height: =554
                 Items: |-
-                    =Filter(
-                        Documents,
-                       hiddenPath = varFolderPathPFProceduraMod && Regione.Value = VarNomeRegione
+                    =SortByColumns(
+                        Filter(
+                            Documents,
+                           'Percorso completo' = "Documents/Politiche Farmaceutiche/Procedura e Modulistica/" & VarNomeRegione &" - Procedura e Modulistica"
+                        ),
+                        "{IsFolder}",
+                        SortOrder.Descending,
+                        "{Name}",
+                        SortOrder.Ascending
                     )
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data

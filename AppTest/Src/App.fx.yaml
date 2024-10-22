@@ -44,6 +44,17 @@ App As appinfo:
         );
         
         Set(
+            varFolderPathPFProceduraMod,
+            "Documents/PoliticheFarmaceutiche/ProcMod"
+        );
+        Set(
+            RegioneSelectedDocumentLibrary,
+            LookUp(
+                Drugs,
+                DocumentLibrary = DocumentLibrary
+            ).DocumentLibrary
+        );
+        Set(
             varBusinessArea,
             ""
         );

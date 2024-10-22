@@ -110,6 +110,8 @@ Show_Regione_Politiche As screen:
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =ImageListing.Height
                     HoverFill: =ColorFade(Self.Fill, -20%)
+                    OnSelect: =Navigate(Listing_PF)
+                    PressedFill: =Self.Fill
                     Text: =
                     Width: =ImageListing.Width
                     X: =ImageListing.X
@@ -136,6 +138,7 @@ Show_Regione_Politiche As screen:
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =ImageAcquisti.Height
                     HoverFill: =ColorFade(Self.Fill, -20%)
+                    PressedFill: =Self.Fill
                     Text: =
                     Width: =ImageAcquisti.Width
                     X: =ImageAcquisti.X
@@ -162,6 +165,7 @@ Show_Regione_Politiche As screen:
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =ImageReti.Height
                     HoverFill: =ColorFade(Self.Fill, -20%)
+                    PressedFill: =Self.Fill
                     Text: =
                     Width: =ImageReti.Width
                     X: =ImageReti.X

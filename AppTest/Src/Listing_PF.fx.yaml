@@ -1,0 +1,40 @@
+Listing_PF As screen:
+    BackgroundImage: =sfondo_italia
+    Fill: =RGBA(4,96,169,0.9)
+
+    Header_21 As Header:
+
+    ContainerTitolo_1 As groupContainer.horizontalAutoLayoutContainer:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DropShadow: =DropShadow.None
+        Height: =Titolo_18.Height + 40
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =Container17.PaddingLeft
+        Width: =Parent.Width
+        Y: =Header_21.Height
+        ZIndex: =2
+
+        backHome_19 As image:
+            Height: =40
+            Image: =Expand_down_light
+            OnSelect: =Navigate(Show_Regione_Politiche)
+            Width: =36.05
+            X: =136
+            Y: =116
+            ZIndex: =1
+
+        Titolo_18 As label:
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(241, 244, 249, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Size: =20
+            Text: ="Listing/ "  & VarNomeRegione
+            Width: =Parent.Width
+            X: =172
+            Y: =116
+            ZIndex: =2
+

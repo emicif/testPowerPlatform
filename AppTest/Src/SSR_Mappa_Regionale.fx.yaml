@@ -1253,7 +1253,7 @@ SSR_Mappa_Regionale As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Size: =20
-            Text: =" Mappa Regionale SSR/ "  & VarNomeRegione
+            Text: ="Mappa Regionale SSR/ "  & VarNomeRegione
             Width: =Parent.Width
             X: =172
             Y: =116

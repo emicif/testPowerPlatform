@@ -10,7 +10,6 @@ App As appinfo:
         Set(varImgRegione, Blank());
         
         Set( NameExtAllegato , "");
-        Set( NameExtAllegatoListReg , "");
         
         Set(
             AreaSelected,

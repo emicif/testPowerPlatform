@@ -27,6 +27,7 @@ Listing_PF As screen:
             Button4 As button:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
+                HoverFill: =Color.White
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20

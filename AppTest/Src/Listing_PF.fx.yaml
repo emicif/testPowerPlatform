@@ -46,7 +46,8 @@ Listing_PF As screen:
                         // get the current location for the selected folder
                         Set(
                            varFolderPathPFProceduraModRegione,
-                            LabelPercorsoCartella.Text & LabelTitolo.Text & "/"
+                           LabelPercorsoCompleto.Text & "/"
+                            //LabelPercorsoCartella.Text & LabelTitolo.Text & "/"
                         ),
                     
                     // open the file a new browser tab
@@ -153,6 +154,15 @@ Listing_PF As screen:
                     X: =40
                     Y: =61
                     ZIndex: =9
+
+                LabelPercorsoCompleto As label:
+                    Height: =57
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Percorso completo'
+                    Width: =745
+                    X: =52
+                    Y: =20
+                    ZIndex: =10
 
         Container21 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)

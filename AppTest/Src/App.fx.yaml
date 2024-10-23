@@ -49,6 +49,11 @@ App As appinfo:
         );
         
         Set(
+            varBreadCrumbs,
+        []
+        );
+        
+        Set(
             RegioneSelectedDocumentLibrary,
             LookUp(
                 Drugs,

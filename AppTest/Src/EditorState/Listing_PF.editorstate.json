@@ -3961,7 +3961,7 @@
       "MetaDataIDKey": "",
       "Name": "LabelNomeFileExt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4539,7 +4539,7 @@
       "MetaDataIDKey": "",
       "Name": "LabelPercorsoCompleto",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6530,7 +6530,7 @@
       "MetaDataIDKey": "%TemplateBrowseGallerySeparator1.ID%",
       "Name": "Separator1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7232,7 +7232,7 @@
       "MetaDataIDKey": "",
       "Name": "ToggleIsFolder",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

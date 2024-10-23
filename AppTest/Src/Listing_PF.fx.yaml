@@ -38,7 +38,7 @@ Listing_PF As screen:
             "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DelayItemLoading: =true
-                Height: =510
+                Height: =498
                 Items: |-
                     =SortByColumns(
                         Filter(
@@ -191,7 +191,7 @@ Listing_PF As screen:
                     ZIndex: =10
 
             IconBack As icon.BackArrow:
-                Height: =24
+                Height: =40
                 Icon: =Icon.BackArrow
                 OnSelect: |
                     = Set(
@@ -203,12 +203,15 @@ Listing_PF As screen:
                                 Value,
                             "/")
                     & "/")
+                PaddingBottom: =5
+                PaddingTop: =5
                 Visible: |-
                     =If(
                         varFolderPathPFProceduraModRegione = "Documents/Politiche Farmaceutiche/Procedura e Modulistica/" & VarNomeRegione & " - Procedura e Modulistica/",
                         false,
                         true)
-                Width: =24
+                Width: =40
+                X: =Gallery1.X
                 ZIndex: =3
 
         Container21 As groupContainer.manualLayoutContainer:

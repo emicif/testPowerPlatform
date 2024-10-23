@@ -203,7 +203,7 @@ Listing_PF As screen:
                             If( NameExtAllegato = "pdf",
                                 Set(pdf_v_listing_regione, 'NVS-PDF'.Run(ThisItem.Identificatore).pdf);
                                 Set(isPDFviewListingRegione, true),
-                                If( NameExtAllegato = "xlsx" || NameExtAllegato = "eml",
+                                If( NameExtAllegato = "xlsx" || NameExtAllegato = "eml" || NameExtAllegato = "pptx",
                                   Launch(ThisItem.'Collegamento a elemento')
                                 )
                             )

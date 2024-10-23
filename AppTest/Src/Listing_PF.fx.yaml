@@ -22,33 +22,6 @@ Listing_PF As screen:
             LayoutMinWidth: =250
             ZIndex: =1
 
-            "Gallery6 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
-                DelayItemLoading: =true
-                Height: =290
-                Items: =varBreadCrumbs
-                Layout: =Layout.Vertical
-                LoadingSpinner: =LoadingSpinner.Data
-                TemplatePadding: =0
-                TemplateSize: =80
-                Visible: =!IsEmpty(varBreadCrumbs)
-                Width: =857
-                ZIndex: =1
-
-                Title1 As label:
-                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =Self.Size * 1.8
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Text: =ThisItem.Value
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =Parent.TemplateWidth - 86
-                    X: =16
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                    ZIndex: =1
-
             "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 DelayItemLoading: =true
                 Height: =488
@@ -75,7 +48,8 @@ Listing_PF As screen:
                            varFolderPathPFProceduraModRegione,
                            LabelPercorsoCompleto.Text & "/"
                             //LabelPercorsoCartella.Text & LabelTitolo.Text & "/"
-                        ),
+                        );
+                        Set(varBreadCrumbs,Split(Left(varFolderPathPFProceduraModRegione, Len(varFolderPathPFProceduraModRegione)-1), "/"));
                     
                     // open the file a new browser tab
                     
@@ -84,7 +58,7 @@ Listing_PF As screen:
                 TemplatePadding: =0
                 TemplateSize: =125
                 Width: =857
-                Y: =Gallery6.Height
+                Y: =Gallery7.Height
                 ZIndex: =1
 
                 ModificatoDa As label:
@@ -195,13 +169,31 @@ Listing_PF As screen:
                     Y: =20
                     ZIndex: =10
 
-                BreadCrumb As label:
-                    OnSelect: =Set(varBreadCrumbs,Split(Left(varFolderPathPFProceduraModRegione, Len(varFolderPathPFProceduraModRegione)-1), "/"))
-                    Text: ="indietro"
-                    Visible: =false
-                    X: =60
-                    Y: =60
-                    ZIndex: =11
+            "Gallery7 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
+                DelayItemLoading: =true
+                Height: =30
+                Items: =varBreadCrumbs
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =Min(440, Self.Height - 60)
+                Visible: =!IsEmpty(varBreadCrumbs)
+                ZIndex: =2
+
+                Title6 As label:
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.Value
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.TemplateWidth - 64
+                    X: =32
+                    Y: |
+                        =0
+                    ZIndex: =2
 
         Container21 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -224,7 +216,13 @@ Listing_PF As screen:
         backHome_19 As image:
             Height: =40
             Image: =Expand_down_light
-            OnSelect: =Navigate(Show_Regione_Politiche)
+            OnSelect: |
+                =If(
+                    IsEmpty(varBreadCrumbs),
+                    Navigate(Show_Regione_Politiche),
+                    Set(varFolderPathPFProceduraModRegione, "Documents/Politiche Farmaceutiche/Procedura e Modulistica/" & VarNomeRegione & " - Procedura e Modulistica/");
+                    Set(varBreadCrumbs,[])
+                )
             Width: =36.05
             X: =136
             Y: =116

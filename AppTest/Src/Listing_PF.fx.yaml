@@ -24,10 +24,21 @@ Listing_PF As screen:
             LayoutMinWidth: =250
             ZIndex: =1
 
+            Button4 As button:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =
+                Width: =Parent.Width
+                ZIndex: =1
+
             "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DelayItemLoading: =true
-                Height: =530
+                Height: =510
                 Items: |-
                     =SortByColumns(
                         Filter(
@@ -61,20 +72,23 @@ Listing_PF As screen:
                         Notify("File", NotificationType.Information)
                     )
                 TemplatePadding: =0
-                TemplateSize: =125
-                Width: =857
+                TemplateSize: =80
+                Width: =813
+                X: =Parent.Width/2 - Self.Width/2
                 Y: =IconBack.Height
-                ZIndex: =1
+                ZIndex: =2
 
                 ModificatoDa As label:
+                    AutoHeight: =true
                     Height: =69
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.'Modificato da'.DisplayName
                     X: =597
-                    Y: =8
+                    Y: =Rectangle13.Height/2 - Self.Height/2
                     ZIndex: =1
 
                 LabelTitolo As label:
+                    AutoHeight: =true
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                     Height: =59
                     OnSelect: =Select(Parent)
@@ -85,11 +99,12 @@ Listing_PF As screen:
                     Text: =ThisItem.Nome
                     VerticalAlign: =VerticalAlign.Top
                     Width: =268
-                    X: =52
-                    Y: =8
+                    X: =61
+                    Y: =Rectangle13.Height/2 - Self.Height/2
                     ZIndex: =2
 
                 DataModifica As label:
+                    AutoHeight: =true
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                     Height: =59
                     OnSelect: =Select(Parent)
@@ -101,7 +116,7 @@ Listing_PF As screen:
                     VerticalAlign: =VerticalAlign.Top
                     Width: =208
                     X: =351
-                    Y: =8
+                    Y: =Rectangle13.Height/2 - Self.Height/2
                     ZIndex: =3
 
                 NextArrow1 As icon.ChevronRight:
@@ -132,6 +147,8 @@ Listing_PF As screen:
                     ZIndex: =5
 
                 Rectangle13 As rectangle:
+                    BorderColor: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
                     Height: =Parent.TemplateHeight - Separator1.Height
                     OnSelect: =Select(Parent)
                     Visible: =ThisItem.IsSelected
@@ -139,12 +156,12 @@ Listing_PF As screen:
                     ZIndex: =6
 
                 IconaFileFolder As icon.DocumentwithContent:
-                    Color: =If(ToggleIsFolder.Value= true, RGBA(227,184,11,1), RGBA(255, 255, 255, 1))
-                    Height: =49
+                    Color: =If(ToggleIsFolder.Value= true, RGBA(227,184,11,1), RGBA(0,32,104,1))
+                    Height: =29
                     Icon: =If(ToggleIsFolder.Value= true, Icon.Folder, Icon.DocumentWithContent)
                     OnSelect: =Select(Parent)
-                    Width: =56
-                    Y: =28
+                    Width: =40
+                    Y: =Rectangle13.Height/2 - Self.Height/2
                     ZIndex: =7
 
                 ToggleIsFolder As toggleSwitch:
@@ -162,7 +179,6 @@ Listing_PF As screen:
                     Visible: =false
                     Width: =777
                     X: =40
-                    Y: =61
                     ZIndex: =9
 
                 LabelPercorsoCompleto As label:
@@ -172,7 +188,6 @@ Listing_PF As screen:
                     Visible: =false
                     Width: =745
                     X: =52
-                    Y: =20
                     ZIndex: =10
 
             IconBack As icon.BackArrow:
@@ -194,7 +209,7 @@ Listing_PF As screen:
                         false,
                         true)
                 Width: =24
-                ZIndex: =2
+                ZIndex: =3
 
         Container21 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)

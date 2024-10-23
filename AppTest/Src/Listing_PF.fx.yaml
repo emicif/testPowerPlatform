@@ -24,7 +24,7 @@ Listing_PF As screen:
 
             "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 DelayItemLoading: =true
-                Height: =488
+                Height: =519
                 Items: |-
                     =SortByColumns(
                         Filter(
@@ -58,7 +58,7 @@ Listing_PF As screen:
                 TemplatePadding: =0
                 TemplateSize: =125
                 Width: =857
-                Y: =Gallery7.Height
+                Y: =33
                 ZIndex: =1
 
                 ModificatoDa As label:

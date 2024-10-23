@@ -49,8 +49,7 @@ Listing_PF As screen:
                         Set(
                            varFolderPathPFProceduraModRegione,
                            LabelPercorsoCompleto.Text & "/"
-                        );
-                        Set(varBreadCrumbs,Split(Left(varFolderPathPFProceduraModRegione, Len(varFolderPathPFProceduraModRegione)-1), "/"))
+                        )
                         
                         ,
                     
@@ -121,7 +120,8 @@ Listing_PF As screen:
                     ZIndex: =4
 
                 Separator1 As rectangle:
-                    Height: =8
+                    Fill: =RGBA(230,230,230,1)
+                    Height: =1
                     OnSelect: =Select(Parent)
                     Width: =Parent.TemplateWidth
                     Y: =Parent.TemplateHeight - Self.Height
@@ -171,6 +171,27 @@ Listing_PF As screen:
                     Y: =20
                     ZIndex: =10
 
+            IconBack As icon.BackArrow:
+                Height: =24
+                Icon: =Icon.BackArrow
+                OnSelect: |
+                    = Set(
+                        varFolderPathPFProceduraModRegione,
+                        Concat(
+                            FirstN(
+                                Split(varFolderPathPFProceduraModRegione, "/"), 
+                                CountRows(Split(varFolderPathPFProceduraModRegione, "/"))-2),
+                                Value,
+                            "/")
+                    & "/")
+                Visible: |-
+                    =If(
+                        varFolderPathPFProceduraModRegione = "Documents/Politiche Farmaceutiche/Procedura e Modulistica/",
+                        false,
+                        true)
+                Width: =24
+                ZIndex: =2
+
         Container21 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)
             DropShadow: =DropShadow.None
@@ -192,23 +213,9 @@ Listing_PF As screen:
         backHome_19 As image:
             Height: =40
             Image: =Expand_down_light
-            OnSelect: |
-                =If(
-                    IsEmpty(varBreadCrumbs),
-                    Navigate(Show_Regione_Politiche),
-                    Set(varFolderPathPFProceduraModRegione, "Documents/Politiche Farmaceutiche/Procedura e Modulistica/" & VarNomeRegione & " - Procedura e Modulistica/");
-                    Set(
-                    varFolderPathPFProceduraModRegione,
-                    Concat(
-                        FirstN(
-                            Split(varFolderPathPFProceduraModRegione, "/"), 
-                            CountRows(Split(varFolderPathPFProceduraModRegione, "/"))-1),
-                            Value,
-                        "/")
-                    & "/")
+            OnSelect: |+
+                =Navigate(Show_Regione_Politiche)
                 
-                
-                )
             Width: =36.05
             X: =136
             Y: =116

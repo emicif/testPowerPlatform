@@ -169,64 +169,6 @@ Listing_PF As screen:
                     Y: =20
                     ZIndex: =10
 
-            "Gallery7 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
-                DelayItemLoading: =true
-                DisplayMode: =DisplayMode.View
-                Height: =65
-                Items: =varBreadCrumbs
-                LoadingSpinner: =LoadingSpinner.Data
-                Selectable: =false
-                ShowScrollbar: =false
-                TemplatePadding: =0
-                TemplateSize: =TitoloBreadCrumb.Width - TitoloBreadCrumb.Height
-                Visible: =!IsEmpty(varBreadCrumbs)
-                Width: =Parent.Width
-                WrapCount: =0
-                ZIndex: =2
-
-                TitoloBreadCrumb As label:
-                    AutoHeight: =true
-                    DisplayMode: =DisplayMode.View
-                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Size: =13
-                    Text: =ThisItem.Value & "/"
-                    Width: =HtmlTitoloWidth.Height
-                    Wrap: =false
-                    X: =1
-                    Y: |
-                        =0
-                    ZIndex: =2
-
-                HtmlTitoloWidth As htmlViewer:
-                    AutoHeight: =true
-                    Font: =TitoloBreadCrumb.Font
-                    HtmlText: |-
-                        =$"<div style='
-                            display: inline-block;
-                            margin: 0px 30px;
-                            position: relative;
-                            transform: rotate(90deg);
-                            transform-origin: top left;
-                            white-space: nowrap;
-                            '
-                        >
-                            {TitoloBreadCrumb.Text}
-                        </div>"
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Size: =TitoloBreadCrumb.Size
-                    Visible: =false
-                    Y: =30
-                    ZIndex: =3
-
         Container21 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)
             DropShadow: =DropShadow.None

@@ -59,18 +59,11 @@ Listing_PF As screen:
                         ToggleIsFolder.Value = true
                         
                         ,
-                    
                         // get the current location for the selected folder
                         Set(
                            varFolderPathPFProceduraModRegione,
                            LabelPercorsoCompleto.Text & "/"
                         )
-                        
-                        ,
-                    
-                    // open the file a new browser tab
-                    
-                        Notify("File", NotificationType.Information)
                     )
                 TemplatePadding: =0
                 TemplateSize: =80
@@ -84,6 +77,8 @@ Listing_PF As screen:
                     Height: =69
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.'Modificato da'.DisplayName
+                    Tooltip: =ThisItem.'Modificato da'.DisplayName
+                    Wrap: =false
                     X: =DataModifica.X + DataModifica.Width + 20
                     Y: =Rectangle13.Height/2 - Self.Height/2
                     ZIndex: =1
@@ -97,9 +92,12 @@ Listing_PF As screen:
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    Size: =13
                     Text: =ThisItem.Nome
+                    Tooltip: =ThisItem.Nome
                     VerticalAlign: =VerticalAlign.Top
                     Width: =250
+                    Wrap: =false
                     X: =IconaFileFolder.Width
                     Y: =Parent.TemplateHeight/2 - Self.Height/2
                     ZIndex: =2
@@ -114,8 +112,10 @@ Listing_PF As screen:
                     PaddingRight: =0
                     PaddingTop: =0
                     Text: =ThisItem.'Data/ora modifica'
+                    Tooltip: =ThisItem.'Data/ora modifica'
                     VerticalAlign: =VerticalAlign.Top
                     Width: =208
+                    Wrap: =false
                     X: =LabelTitolo.X + LabelTitolo.Width + 30
                     Y: =Rectangle13.Height/2 - Self.Height/2
                     ZIndex: =3
@@ -146,8 +146,8 @@ Listing_PF As screen:
                                     
                         If( ToggleIsFolder.Value = false,
                             If( NameExtAllegato = "pdf",
-                                Set(pdf_v, 'NVS-PDF'.Run(ThisItem.Identificatore).pdf);
-                                Set(isPDFview, true),
+                                Set(pdf_v_listing_regione, 'NVS-PDF'.Run(ThisItem.Identificatore).pdf);
+                                Set(isPDFviewListingRegione, true),
                                 If( NameExtAllegato = "xlsx" || NameExtAllegato = "eml",
                                   Launch(ThisItem.'Collegamento a elemento')
                                 )
@@ -326,7 +326,7 @@ Listing_PF As screen:
 
         Rectangle1_6 As rectangle:
             Height: =570
-            Visible: =isPDFview
+            Visible: =isPDFviewListingRegione
             Width: =1198
             X: =110
             Y: =100
@@ -334,11 +334,11 @@ Listing_PF As screen:
 
         PdfViewer1_6 As pdfViewer:
             BorderColor: =RGBA(0, 0, 0, 1)
-            Document: =pdf_v
+            Document: =pdf_v_listing_regione
             Fill: =RGBA(0, 0, 0, 0.5)
             Height: =514
             ShowControls: =true
-            Visible: =isPDFview
+            Visible: =isPDFviewListingRegione
             Width: =1198
             X: =110
             Y: =156
@@ -347,8 +347,8 @@ Listing_PF As screen:
         Icon1_6 As icon.Cancel:
             Height: =30
             Icon: =Icon.Cancel
-            OnSelect: =Set(isPDFview, false)
-            Visible: =isPDFview
+            OnSelect: =Set(isPDFviewListingRegione, false)
+            Visible: =isPDFviewListingRegione
             Width: =30
             X: =1266
             Y: =117

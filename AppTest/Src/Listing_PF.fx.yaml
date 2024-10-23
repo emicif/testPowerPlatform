@@ -199,6 +199,13 @@ Listing_PF As screen:
                 X: =Parent.Width/2 - Self.Width/2
                 ZIndex: =5
 
+                Separator1_1 As rectangle:
+                    Fill: =RGBA(230,230,230,1)
+                    Height: =1
+                    Width: =Parent.Width
+                    Y: =Parent.Height - 1
+                    ZIndex: =1
+
                 NomePM As label:
                     AutoHeight: =true
                     FontWeight: =FontWeight.Semibold
@@ -206,7 +213,7 @@ Listing_PF As screen:
                     Text: ="Nome"
                     X: =LabelTitolo.X
                     Y: =Parent.Height/2 - Self.Height/2
-                    ZIndex: =1
+                    ZIndex: =2
 
                 DataModPM As label:
                     AutoHeight: =true
@@ -216,7 +223,7 @@ Listing_PF As screen:
                     Text: ="Data/Ora Modifica"
                     X: =DataModifica.X
                     Y: =Parent.Height/2 - Self.Height/2
-                    ZIndex: =2
+                    ZIndex: =3
 
                 ModByPM As label:
                     AutoHeight: =true
@@ -225,7 +232,7 @@ Listing_PF As screen:
                     Text: ="Modificato da"
                     X: =ModificatoDa.X
                     Y: =Parent.Height/2 - Self.Height/2
-                    ZIndex: =3
+                    ZIndex: =4
 
                 DownloadPM As label:
                     AutoHeight: =true
@@ -236,7 +243,7 @@ Listing_PF As screen:
                     Width: =111
                     X: =ModificatoDa.X + ModificatoDa.Width + 10
                     Y: =Parent.Height/2 - Self.Height/2
-                    ZIndex: =4
+                    ZIndex: =5
 
                 IconBack As icon.BackArrow:
                     Fill: =RGBA(255, 255, 255, 1)
@@ -261,7 +268,7 @@ Listing_PF As screen:
                             true)
                     Width: =40
                     Y: =Parent.Height/2 - Self.Height/2
-                    ZIndex: =5
+                    ZIndex: =6
 
         Container21 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)

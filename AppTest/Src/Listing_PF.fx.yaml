@@ -204,8 +204,8 @@ Listing_PF As screen:
                             Split(varFolderPathPFProceduraModRegione, "/"), 
                             CountRows(Split(varFolderPathPFProceduraModRegione, "/"))-1),
                             Value,
-                            "/")
-                            & "/")
+                        "/")
+                    & "/")
                 
                 
                 )

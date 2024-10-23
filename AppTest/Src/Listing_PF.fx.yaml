@@ -52,7 +52,7 @@ Listing_PF As screen:
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Text: =ThisItem.Nome
+                    Text: =ThisItem.Cartella
                     VerticalAlign: =VerticalAlign.Top
                     Width: =Parent.TemplateWidth - 173
                     X: =103
@@ -75,7 +75,10 @@ Listing_PF As screen:
 
                 NextArrow1 As icon.ChevronRight:
                     AccessibleLabel: =Self.Tooltip
+                    BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(166, 166, 166, 1)
+                    DisabledBorderColor: =RGBA(56, 56, 56, 1)
+                    DisabledColor: =RGBA(119, 119, 119, 1)
                     Height: =50
                     Icon: =Icon.ChevronRight
                     OnSelect: =Select(Parent)
@@ -103,20 +106,28 @@ Listing_PF As screen:
                     Width: =4
                     ZIndex: =6
 
-                IconaFileOfolder As icon.DocumentwithContent:
-                    Color: =If(ThisItem.isFolder, RGBA(227,184,11,1), RGBA(255, 255, 255, 1))
+                IconaFolder As icon.DocumentwithContent:
+                    Color: =RGBA(227,184,11,1)
                     Height: =49
-                    Icon: |-
-                        =If(
-                            ThisItem.isFolder,
-                             Icon.Folder, 
-                             Icon.DocumentWithContent
-                        ) 
+                    Icon: |
+                        =Icon.Folder
                     OnSelect: =Select(Parent)
+                    Visible: =ThisItem.isFolder
                     Width: =56
                     X: =4
                     Y: =28
                     ZIndex: =7
+
+                IconaFile As icon.DocumentwithContent:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Height: =49
+                    Icon: =Icon.DocumentWithContent
+                    OnSelect: =Select(Parent)
+                    Visible: =!ThisItem.isFolder
+                    Width: =56
+                    X: =40
+                    Y: =40
+                    ZIndex: =8
 
         Container21 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)

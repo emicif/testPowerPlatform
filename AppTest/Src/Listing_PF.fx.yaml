@@ -22,9 +22,36 @@ Listing_PF As screen:
             LayoutMinWidth: =250
             ZIndex: =1
 
+            "Gallery6 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+                DelayItemLoading: =true
+                Height: =290
+                Items: =varBreadCrumbs
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =80
+                Visible: =!IsEmpty(varBreadCrumbs)
+                Width: =857
+                ZIndex: =1
+
+                Title1 As label:
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.Value
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.TemplateWidth - 86
+                    X: =16
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =1
+
             "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 DelayItemLoading: =true
-                Height: =554
+                Height: =488
                 Items: |-
                     =SortByColumns(
                         Filter(
@@ -56,8 +83,8 @@ Listing_PF As screen:
                     )
                 TemplatePadding: =0
                 TemplateSize: =125
-                Width: =817
-                Y: =Gallery4.Height
+                Width: =857
+                Y: =Gallery6.Height
                 ZIndex: =1
 
                 ModificatoDa As label:
@@ -171,64 +198,10 @@ Listing_PF As screen:
                 BreadCrumb As label:
                     OnSelect: =Set(varBreadCrumbs,Split(Left(varFolderPathPFProceduraModRegione, Len(varFolderPathPFProceduraModRegione)-1), "/"))
                     Text: ="indietro"
+                    Visible: =false
                     X: =60
                     Y: =60
                     ZIndex: =11
-
-            "Gallery6 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-                DelayItemLoading: =true
-                Height: =554
-                Items: =varBreadCrumbs
-                Layout: =Layout.Vertical
-                LoadingSpinner: =LoadingSpinner.Data
-                TemplatePadding: =0
-                TemplateSize: =104
-                X: =40
-                ZIndex: =2
-
-                Title5 As label:
-                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =Self.Size * 1.8
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Text: =ThisItem.Value
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =Parent.TemplateWidth - 173
-                    X: =103
-                    ZIndex: =2
-
-                NextArrow4 As icon.ChevronRight:
-                    AccessibleLabel: =Self.Tooltip
-                    Color: =RGBA(166, 166, 166, 1)
-                    Height: =50
-                    Icon: =Icon.ChevronRight
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =16
-                    PaddingLeft: =16
-                    PaddingRight: =16
-                    PaddingTop: =16
-                    Tooltip: ="Visualizza dettagli elementi"
-                    Width: =50
-                    X: =Parent.TemplateWidth - Self.Width - 12
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                    ZIndex: =4
-
-                Separator8 As rectangle:
-                    Height: =8
-                    OnSelect: =Select(Parent)
-                    Width: =Parent.TemplateWidth
-                    Y: =Parent.TemplateHeight - Self.Height
-                    ZIndex: =5
-
-                Rectangle16 As rectangle:
-                    Height: =Parent.TemplateHeight - Separator8.Height
-                    OnSelect: =Select(Parent)
-                    Visible: =ThisItem.IsSelected
-                    Width: =4
-                    ZIndex: =6
 
         Container21 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)

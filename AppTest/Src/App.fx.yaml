@@ -45,7 +45,11 @@ App As appinfo:
         
         Set(
             varFolderPathPFProceduraMod,
-            "Documents/PoliticheFarmaceutiche/ProcMod"
+            "Documents/Politiche Farmaceutiche/Procedura e Modulistica/"
+        );
+        Set(
+            varFolderPathPFPMdettaglioRegione,
+           " - Procedura e Modulistica/"
         );
         Set(
             RegioneSelectedDocumentLibrary,

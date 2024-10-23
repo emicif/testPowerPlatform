@@ -41,15 +41,18 @@ Listing_PF As screen:
                 OnSelect: |-
                     =If(
                         // checks whether the gallery item is a folder or file
-                        ToggleIsFolder.Value = true,
+                        ToggleIsFolder.Value = true
+                        
+                        ,
                     
                         // get the current location for the selected folder
                         Set(
                            varFolderPathPFProceduraModRegione,
                            LabelPercorsoCompleto.Text & "/"
-                            //LabelPercorsoCartella.Text & LabelTitolo.Text & "/"
                         );
-                        Set(varBreadCrumbs,Split(Left(varFolderPathPFProceduraModRegione, Len(varFolderPathPFProceduraModRegione)-1), "/"));
+                        Set(varBreadCrumbs,Split(Left(varFolderPathPFProceduraModRegione, Len(varFolderPathPFProceduraModRegione)-1), "/"))
+                        
+                        ,
                     
                     // open the file a new browser tab
                     
@@ -58,7 +61,6 @@ Listing_PF As screen:
                 TemplatePadding: =0
                 TemplateSize: =125
                 Width: =857
-                Y: =33
                 ZIndex: =1
 
                 ModificatoDa As label:
@@ -199,8 +201,8 @@ Listing_PF As screen:
                     varFolderPathPFProceduraModRegione,
                     Concat(
                         FirstN(
-                            Split(varFolderPath, "/"), 
-                            CountRows(Split(varFolderPath, "/"))-2),
+                            Split(varFolderPathPFProceduraModRegione, "/"), 
+                            CountRows(Split(varFolderPathPFProceduraModRegione, "/"))-1),
                             Value,
                             "/")
                             & "/")

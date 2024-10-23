@@ -61,6 +61,7 @@ Listing_PF As screen:
                 ZIndex: =1
 
                 ModificatoDa As label:
+                    Height: =69
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.'Modificato da'.DisplayName
                     X: =597
@@ -69,7 +70,7 @@ Listing_PF As screen:
 
                 LabelTitolo As label:
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =Self.Size * 1.8
+                    Height: =59
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
@@ -77,13 +78,14 @@ Listing_PF As screen:
                     PaddingTop: =0
                     Text: =ThisItem.Nome
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =Parent.TemplateWidth - 173
-                    X: =103
+                    Width: =268
+                    X: =52
+                    Y: =8
                     ZIndex: =2
 
                 DataModifica As label:
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =29
+                    Height: =59
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
@@ -150,6 +152,7 @@ Listing_PF As screen:
                     Height: =47
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.'Percorso cartella'
+                    Visible: =false
                     Width: =777
                     X: =40
                     Y: =61
@@ -159,10 +162,18 @@ Listing_PF As screen:
                     Height: =57
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.'Percorso completo'
+                    Visible: =false
                     Width: =745
                     X: =52
                     Y: =20
                     ZIndex: =10
+
+                BreadCrumb As label:
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'ID risorsa conformità'
+                    X: =60
+                    Y: =60
+                    ZIndex: =11
 
         Container21 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)

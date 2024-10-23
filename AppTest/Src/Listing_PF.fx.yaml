@@ -195,7 +195,17 @@ Listing_PF As screen:
                     IsEmpty(varBreadCrumbs),
                     Navigate(Show_Regione_Politiche),
                     Set(varFolderPathPFProceduraModRegione, "Documents/Politiche Farmaceutiche/Procedura e Modulistica/" & VarNomeRegione & " - Procedura e Modulistica/");
-                    Set(varBreadCrumbs,[])
+                    Set(
+                    varFolderPathPFProceduraModRegione,
+                    Concat(
+                        FirstN(
+                            Split(varFolderPath, "/"), 
+                            CountRows(Split(varFolderPath, "/"))-2),
+                            Value,
+                            "/")
+                            & "/")
+                
+                
                 )
             Width: =36.05
             X: =136

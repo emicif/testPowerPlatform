@@ -192,6 +192,8 @@ Listing_PF As screen:
                     ZIndex: =10
 
             ContainerTitoliPM As groupContainer.manualLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DropShadow: =DropShadow.None
                 Height: =80
                 Width: =Gallery1.Width
                 X: =Parent.Width/2 - Self.Width/2

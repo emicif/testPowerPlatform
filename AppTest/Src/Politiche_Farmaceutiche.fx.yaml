@@ -711,7 +711,9 @@ Politiche_Farmaceutiche As screen:
             Fill: =RGBA(0, 0, 0, 0)
             HoverColor: =Self.Color
             HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: =Navigate(Show_Regione_Politiche)
+            OnSelect: |-
+                =Set(VarPopUpInfoRegioneVisible,false);
+                Navigate(Show_Regione_Politiche)
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Vai alla pagina"
             Underline: =true

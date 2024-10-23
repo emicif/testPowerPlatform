@@ -135,7 +135,7 @@ Listing_PF As screen:
                     PaddingTop: =16
                     Tooltip: ="Visualizza dettagli elementi"
                     Width: =50
-                    X: =ModificatoDa.X + ModificatoDa.Width + 40
+                    X: =DownloadPM.X + DownloadPM.Width/2 - Self.Width/2
                     Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                     ZIndex: =4
 
@@ -228,9 +228,11 @@ Listing_PF As screen:
                 DownloadPM As label:
                     AutoHeight: =true
                     FontWeight: =FontWeight.Semibold
+                    Height: =32
                     PaddingRight: =0
                     Text: ="Download"
-                    X: =ModificatoDa.X + ModificatoDa.Width
+                    Width: =111
+                    X: =ModificatoDa.X + ModificatoDa.Width + 10
                     Y: =Parent.Height/2 - Self.Height/2
                     ZIndex: =4
 

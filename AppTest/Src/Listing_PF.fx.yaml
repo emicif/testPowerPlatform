@@ -3,6 +3,8 @@ Listing_PF As screen:
     Fill: =RGBA(4,96,169,0.9)
 
     Container18 As groupContainer.horizontalAutoLayoutContainer:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DropShadow: =DropShadow.None
         Height: =Parent.Height - Header_21.Height - ContainerTitolo_1.Height
         LayoutGap: =20
         LayoutMode: =LayoutMode.Auto
@@ -23,6 +25,7 @@ Listing_PF As screen:
             ZIndex: =1
 
             "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                BorderColor: =RGBA(0, 0, 0, 0)
                 DelayItemLoading: =true
                 Height: =530
                 Items: |-

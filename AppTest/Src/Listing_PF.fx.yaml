@@ -29,7 +29,7 @@ Listing_PF As screen:
                     =SortByColumns(
                         Filter(
                             Documents,
-                            'Percorso cartella' = "Documents/Politiche Farmaceutiche/Procedura e Modulistica/"& VarNomeRegione & " - Procedura e Modulistica/"
+                            'Percorso cartella' = varFolderPathPFProceduraMod & VarNomeRegione & varFolderPathPFPMdettaglioRegione
                         ),
                         "{IsFolder}",
                         SortOrder.Descending,

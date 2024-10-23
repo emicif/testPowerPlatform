@@ -110,7 +110,9 @@ Show_Regione_Politiche As screen:
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =ImageListing.Height
                     HoverFill: =ColorFade(Self.Fill, -20%)
-                    OnSelect: =Navigate(Listing_PF)
+                    OnSelect: |-
+                        =Set(varFolderPathPFProceduraModRegione, "Documents/Politiche Farmaceutiche/Procedura e Modulistica/" & VarNomeRegione & " - Procedura e Modulistica/");
+                        Navigate(Listing_PF)
                     PressedFill: =Self.Fill
                     Text: =
                     Width: =ImageListing.Width

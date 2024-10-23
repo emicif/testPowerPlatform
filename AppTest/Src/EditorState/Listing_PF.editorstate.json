@@ -2366,7 +2366,7 @@
       "MetaDataIDKey": "",
       "Name": "DownloadIcon",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2627,7 +2627,7 @@
       "MetaDataIDKey": "",
       "Name": "DownloadPM",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3066,7 +3066,7 @@
       "MetaDataIDKey": "",
       "Name": "galleryTemplate4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3663,7 +3663,7 @@
       "MetaDataIDKey": "",
       "Name": "LabelPercorsoCartella",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3952,7 +3952,7 @@
       "MetaDataIDKey": "",
       "Name": "LabelPercorsoCompleto",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4623,7 +4623,7 @@
       "MetaDataIDKey": "",
       "Name": "ModByPM",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5223,7 +5223,7 @@
       "MetaDataIDKey": "",
       "Name": "NomePM",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5476,7 +5476,7 @@
       "MetaDataIDKey": "%TemplateBrowseGalleryRectangle1.ID%",
       "Name": "Rectangle13",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

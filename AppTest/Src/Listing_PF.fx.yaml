@@ -284,7 +284,7 @@ Listing_PF As screen:
                     PaddingTop: =5
                     Visible: |-
                         =If(
-                            varFolderPathPFProceduraModRegione = "Documents/Politiche Farmaceutiche/Procedura e Modulistica/" & VarNomeRegione & " - Procedura e Modulistica/",
+                            varFolderPathPFProceduraModRegione = "Documents/Politiche Farmaceutiche/Procedura e Modulistica/" & VarNomeRegioneNoSpace & " - Procedura e Modulistica/",
                             false,
                             true)
                     Width: =40

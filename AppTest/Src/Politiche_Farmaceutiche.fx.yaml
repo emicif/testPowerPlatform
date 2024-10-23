@@ -674,6 +674,7 @@ Politiche_Farmaceutiche As screen:
                 OnSelect: |
                     =Set(VarPopUpInfoRegioneVisible, false);
                     Set(VarNomeRegione, Blank());
+                    Set(VarNomeRegioneNoSpace, Blank());
                     Set(varImgRegione, Blank())
                 PaddingRight: =5
                 Visible: =VarPopUpInfoRegioneVisible
@@ -712,7 +713,8 @@ Politiche_Farmaceutiche As screen:
             HoverColor: =Self.Color
             HoverFill: =RGBA(0, 0, 0, 0)
             OnSelect: |-
-                =Set(VarPopUpInfoRegioneVisible,false);
+                =Set(VarNomeRegioneNoSpace,Substitute(VarNomeRegione," ", "-"));
+                Set(VarPopUpInfoRegioneVisible,false);
                 Navigate(Show_Regione_Politiche)
             PressedFill: =RGBA(0, 0, 0, 0)
             Text: ="Vai alla pagina"

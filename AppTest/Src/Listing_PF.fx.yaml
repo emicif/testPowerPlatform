@@ -131,25 +131,25 @@ Listing_PF As screen:
                     Icon: =If(ToggleIsFolder.Value= true, Icon.Folder, Icon.DocumentWithContent)
                     OnSelect: |
                         =If(
-                            // checks whether the gallery item is a folder or file
-                            ToggleIsFolder.Value = true    
-                            ,
+                            ToggleIsFolder.Value = true ,
                             // get the current location for the selected folder
                             Set(
                                varFolderPathPFProceduraModRegione,
                                LabelPercorsoCompleto.Text & "/"
-                            ),
-                            Set( NameExtAllegato , Last(Split(ThisItem.'Nome file con estensione', ".")).Value);
-                                    
-                        If( ToggleIsFolder.Value = false,
-                            If( NameExtAllegato = "pdf",
+                            )
+                        );
+                        If(
+                            ToggleIsFolder.Value = false,
+                            Set( NameExtAllegatoListReg , Last(Split(LabelNomeFileExt.Text, ".")).Value);
+                        
+                            If( NameExtAllegatoListReg = "pdf",
                                 Set(pdf_v_listing_regione, 'NVS-PDF'.Run(ThisItem.Identificatore).pdf);
                                 Set(isPDFviewListingRegione, true),
-                                If( NameExtAllegato = "xlsx" || NameExtAllegato = "eml",
+                                If( NameExtAllegatoListReg = "xlsx" || NameExtAllegatoListReg = "eml",
                                   Launch(ThisItem.'Collegamento a elemento')
                                 )
                             )
-                        );
+                        
                         )
                     Width: =40
                     Y: =Rectangle13.Height/2 - Self.Height/2
@@ -189,6 +189,16 @@ Listing_PF As screen:
                     X: =DownloadPM.X + DownloadPM.Width/2 - Self.Width/2
                     Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                     ZIndex: =11
+
+                LabelNomeFileExt As label:
+                    Height: =47
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Nome file con estensione'
+                    Visible: =false
+                    Width: =777
+                    X: =36
+                    Y: =33
+                    ZIndex: =12
 
             ContainerTitoliPM As groupContainer.manualLayoutContainer:
                 BorderColor: =RGBA(0, 0, 0, 0)

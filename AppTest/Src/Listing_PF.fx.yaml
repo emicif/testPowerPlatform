@@ -141,7 +141,18 @@ Listing_PF As screen:
                     Color: =If(ToggleIsFolder.Value= true, RGBA(227,184,11,1), RGBA(0,32,104,1))
                     Height: =29
                     Icon: =If(ToggleIsFolder.Value= true, Icon.Folder, Icon.DocumentWithContent)
-                    OnSelect: =Select(Parent)
+                    OnSelect: |-
+                        =Set( NameExtAllegato , Last(Split(ThisItem.'Nome file con estensione', ".")).Value);
+                                    
+                        If( ToggleIsFolder.Value = false,
+                            If( NameExtAllegato = "pdf",
+                                Set(pdf_v, 'NVS-PDF'.Run(ThisItem.Identificatore).pdf);
+                                Set(isPDFview, true),
+                                If( NameExtAllegato = "xlsx" || NameExtAllegato = "eml",
+                                  Launch(ThisItem.'Collegamento a elemento')
+                                )
+                            )
+                        );
                     Width: =40
                     Y: =Rectangle13.Height/2 - Self.Height/2
                     ZIndex: =7
@@ -305,4 +316,41 @@ Listing_PF As screen:
 
     Header_21 As Header:
         ZIndex: =3
+
+    grpPDFview_4 As group:
+        Height: =5
+        Width: =5
+        X: =120
+        Y: =120
+        ZIndex: =4
+
+        Rectangle1_6 As rectangle:
+            Height: =570
+            Visible: =isPDFview
+            Width: =1198
+            X: =110
+            Y: =100
+            ZIndex: =5
+
+        PdfViewer1_6 As pdfViewer:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Document: =pdf_v
+            Fill: =RGBA(0, 0, 0, 0.5)
+            Height: =514
+            ShowControls: =true
+            Visible: =isPDFview
+            Width: =1198
+            X: =110
+            Y: =156
+            ZIndex: =6
+
+        Icon1_6 As icon.Cancel:
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(isPDFview, false)
+            Visible: =isPDFview
+            Width: =30
+            X: =1266
+            Y: =117
+            ZIndex: =7
 

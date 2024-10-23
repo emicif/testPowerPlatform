@@ -46,7 +46,7 @@ Listing_PF As screen:
                         // get the current location for the selected folder
                         Set(
                            varFolderPathPFProceduraModRegione,
-                            LabelPercorsoCartella.Text
+                            LabelPercorsoCartella.Text & LabelTitolo.Text & "/"
                         ),
                     
                     // open the file a new browser tab

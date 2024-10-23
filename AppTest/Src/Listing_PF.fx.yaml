@@ -116,7 +116,7 @@ Listing_PF As screen:
                     Text: =ThisItem.'Data/ora modifica'
                     VerticalAlign: =VerticalAlign.Top
                     Width: =208
-                    X: =LabelTitolo.X + LabelTitolo.Width + 20
+                    X: =LabelTitolo.X + LabelTitolo.Width + 30
                     Y: =Rectangle13.Height/2 - Self.Height/2
                     ZIndex: =3
 

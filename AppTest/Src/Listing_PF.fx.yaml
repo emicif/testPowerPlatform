@@ -106,24 +106,11 @@ Listing_PF As screen:
                     Width: =4
                     ZIndex: =6
 
-                IconaFolder As icon.DocumentwithContent:
-                    Color: =RGBA(227,184,11,1)
+                IconaFileFolder As icon.DocumentwithContent:
+                    Color: =If(ToggleIsFolder.Value= true, RGBA(227,184,11,1), RGBA(255, 255, 255, 1))
                     Height: =49
-                    Icon: |
-                        =Icon.Folder
+                    Icon: =If(ToggleIsFolder.Value= true, Icon.Folder, Icon.DocumentWithContent)
                     OnSelect: =Select(Parent)
-                    Visible: =ToggleIsFolder.Value
-                    Width: =56
-                    X: =4
-                    Y: =28
-                    ZIndex: =7
-
-                IconaFile As icon.DocumentwithContent:
-                    Color: =RGBA(255, 255, 255, 1)
-                    Height: =49
-                    Icon: =Icon.DocumentWithContent
-                    OnSelect: =Select(Parent)
-                    Visible: =!ToggleIsFolder.Value
                     Width: =56
                     Y: =28
                     ZIndex: =8

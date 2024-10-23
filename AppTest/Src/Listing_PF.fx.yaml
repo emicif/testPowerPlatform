@@ -76,7 +76,7 @@ Listing_PF As screen:
                 TemplateSize: =80
                 Width: =813
                 X: =Parent.Width/2 - Self.Width/2
-                Y: =IconBack.Height
+                Y: =ContainerTitoliPM.Height
                 ZIndex: =2
 
                 ModificatoDa As label:
@@ -84,7 +84,7 @@ Listing_PF As screen:
                     Height: =69
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.'Modificato da'.DisplayName
-                    X: =597
+                    X: =DataModifica.X + DataModifica.Width + 20
                     Y: =Rectangle13.Height/2 - Self.Height/2
                     ZIndex: =1
 
@@ -99,9 +99,9 @@ Listing_PF As screen:
                     PaddingTop: =0
                     Text: =ThisItem.Nome
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =268
-                    X: =61
-                    Y: =Rectangle13.Height/2 - Self.Height/2
+                    Width: =250
+                    X: =IconaFileFolder.Width
+                    Y: =Parent.TemplateHeight/2 - Self.Height/2
                     ZIndex: =2
 
                 DataModifica As label:
@@ -116,7 +116,7 @@ Listing_PF As screen:
                     Text: =ThisItem.'Data/ora modifica'
                     VerticalAlign: =VerticalAlign.Top
                     Width: =208
-                    X: =351
+                    X: =LabelTitolo.X + LabelTitolo.Width + 20
                     Y: =Rectangle13.Height/2 - Self.Height/2
                     ZIndex: =3
 
@@ -135,7 +135,7 @@ Listing_PF As screen:
                     PaddingTop: =16
                     Tooltip: ="Visualizza dettagli elementi"
                     Width: =50
-                    X: =Parent.TemplateWidth - Self.Width - 12
+                    X: =ModificatoDa.X + ModificatoDa.Width + 40
                     Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                     ZIndex: =4
 
@@ -191,29 +191,73 @@ Listing_PF As screen:
                     X: =52
                     ZIndex: =10
 
-            IconBack As icon.BackArrow:
-                Height: =40
-                Icon: =Icon.BackArrow
-                OnSelect: |
-                    = Set(
-                        varFolderPathPFProceduraModRegione,
-                        Concat(
-                            FirstN(
-                                Split(varFolderPathPFProceduraModRegione, "/"), 
-                                CountRows(Split(varFolderPathPFProceduraModRegione, "/"))-2),
-                                Value,
-                            "/")
-                    & "/")
-                PaddingBottom: =5
-                PaddingTop: =5
-                Visible: |-
-                    =If(
-                        varFolderPathPFProceduraModRegione = "Documents/Politiche Farmaceutiche/Procedura e Modulistica/" & VarNomeRegione & " - Procedura e Modulistica/",
-                        false,
-                        true)
-                Width: =40
-                X: =Gallery1.X
-                ZIndex: =3
+            ContainerTitoliPM As groupContainer.manualLayoutContainer:
+                Height: =80
+                Width: =Gallery1.Width
+                X: =Parent.Width/2 - Self.Width/2
+                ZIndex: =5
+
+                NomePM As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Semibold
+                    PaddingLeft: =0
+                    Text: ="Nome"
+                    X: =LabelTitolo.X
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =1
+
+                DataModPM As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Semibold
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    Text: ="Data/Ora Modifica"
+                    X: =DataModifica.X
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =2
+
+                ModByPM As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Semibold
+                    PaddingLeft: =0
+                    Text: ="Modificato da"
+                    X: =ModificatoDa.X
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =3
+
+                DownloadPM As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Semibold
+                    PaddingRight: =0
+                    Text: ="Download"
+                    X: =ModificatoDa.X + ModificatoDa.Width
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =4
+
+                IconBack As icon.BackArrow:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =40
+                    Icon: =Icon.BackArrow
+                    OnSelect: |
+                        = Set(
+                            varFolderPathPFProceduraModRegione,
+                            Concat(
+                                FirstN(
+                                    Split(varFolderPathPFProceduraModRegione, "/"), 
+                                    CountRows(Split(varFolderPathPFProceduraModRegione, "/"))-2),
+                                    Value,
+                                "/")
+                        & "/")
+                    PaddingBottom: =5
+                    PaddingTop: =5
+                    Visible: |-
+                        =If(
+                            varFolderPathPFProceduraModRegione = "Documents/Politiche Farmaceutiche/Procedura e Modulistica/" & VarNomeRegione & " - Procedura e Modulistica/",
+                            false,
+                            true)
+                    Width: =40
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =5
 
         Container21 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -251,6 +295,7 @@ Listing_PF As screen:
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
+            PaddingLeft: =0
             Size: =20
             Text: ="Listing/" & VarNomeRegione
             Width: =Parent.Width

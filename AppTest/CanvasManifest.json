@@ -101,7 +101,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 1,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -156,7 +156,6 @@
     "Politiche_Farmaceutiche",
     "Show_Regione_Politiche",
     "SSR_Mappa_Regionale",
-    "Listing_PF",
-    "Acquisti_PF"
+    "Listing_PF"
   ]
 }

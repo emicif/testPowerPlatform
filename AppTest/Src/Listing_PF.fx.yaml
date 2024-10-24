@@ -2,10 +2,17 @@ Listing_PF As screen:
     BackgroundImage: =sfondo_italia
     Fill: =RGBA(4,96,169,0.9)
 
+    Container19 As groupContainer.manualLayoutContainer:
+        Height: =249
+        Width: =1306
+        X: =27
+        Y: =504
+        ZIndex: =1
+
     Container18 As groupContainer.horizontalAutoLayoutContainer:
         BorderColor: =RGBA(0, 0, 0, 0)
         DropShadow: =DropShadow.None
-        Height: =Parent.Height - Header_21.Height - ContainerTitolo_1.Height
+        Height: =330
         LayoutGap: =20
         LayoutMode: =LayoutMode.Auto
         PaddingBottom: =20
@@ -14,7 +21,7 @@ Listing_PF As screen:
         PaddingTop: =20
         Width: =Parent.Width
         Y: =Header_21.Height + ContainerTitolo_1.Height
-        ZIndex: =1
+        ZIndex: =2
 
         ContainerProcMod As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -39,7 +46,7 @@ Listing_PF As screen:
             "GalleryProcMod As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DelayItemLoading: =true
-                Height: =408
+                Height: =182
                 Items: |-
                     =SortByColumns(
                         Filter(
@@ -216,7 +223,7 @@ Listing_PF As screen:
             ContainerTitoliPM As groupContainer.manualLayoutContainer:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DropShadow: =DropShadow.None
-                Height: =80
+                Height: =40
                 Width: =Parent.Width - 20
                 X: =Parent.Width/2 - Self.Width/2
                 Y: =Titolo_ProcMod.Height
@@ -746,7 +753,7 @@ Listing_PF As screen:
         PaddingLeft: =Container17.PaddingLeft
         Width: =Parent.Width
         Y: =Header_21.Height
-        ZIndex: =2
+        ZIndex: =3
 
         backHome_19 As image:
             Height: =40
@@ -775,7 +782,7 @@ Listing_PF As screen:
             ZIndex: =2
 
     Header_21 As Header:
-        ZIndex: =3
+        ZIndex: =4
 
     grpPDFview_4 As group:
         Height: =5

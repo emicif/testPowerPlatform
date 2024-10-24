@@ -92,7 +92,6 @@ Listing_PF As screen:
                     Text: |
                         =ThisItem.Nome
                     Tooltip: =ThisItem.Nome
-                    VerticalAlign: =VerticalAlign.Top
                     Width: =220
                     Wrap: =false
                     X: =NomePM.X
@@ -110,7 +109,6 @@ Listing_PF As screen:
                     PaddingTop: =0
                     Text: =ThisItem.'Data/ora modifica'
                     Tooltip: =ThisItem.'Data/ora modifica'
-                    VerticalAlign: =VerticalAlign.Top
                     Width: =208
                     Wrap: =false
                     X: =DataModPM.X

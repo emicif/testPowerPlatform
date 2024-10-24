@@ -3,16 +3,21 @@ Listing_PF As screen:
     Fill: =RGBA(4,96,169,0.9)
 
     Container19 As groupContainer.manualLayoutContainer:
-        Height: =249
-        Width: =1306
-        X: =27
-        Y: =504
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DropShadow: =DropShadow.None
+        Height: =Parent.Height - Header_21.Height - ContainerTitolo_1.Height - Container18.Height - 20
+        PaddingBottom: =20
+        PaddingLeft: =30
+        PaddingRight: =30
+        PaddingTop: =20
+        Width: =Parent.Width
+        Y: =Header_21.Height + ContainerTitolo_1.Height + Container18.Height
         ZIndex: =1
 
     Container18 As groupContainer.horizontalAutoLayoutContainer:
         BorderColor: =RGBA(0, 0, 0, 0)
         DropShadow: =DropShadow.None
-        Height: =330
+        Height: =300
         LayoutGap: =20
         LayoutMode: =LayoutMode.Auto
         PaddingBottom: =20

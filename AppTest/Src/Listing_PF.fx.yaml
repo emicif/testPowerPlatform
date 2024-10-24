@@ -352,7 +352,7 @@ Listing_PF As screen:
                 RadiusTopLeft: =20
                 RadiusTopRight: =20
                 Text: =
-                Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                Width: =Parent.Width
                 ZIndex: =1
 
             ContainerMonSpesaInterno As groupContainer.verticalAutoLayoutContainer:
@@ -368,7 +368,7 @@ Listing_PF As screen:
                 PaddingLeft: =40
                 PaddingTop: =10
                 Width: |
-                    =Parent.Width - Parent.PaddingRight 
+                    =Parent.Width  
                 Y: =ButtonContMonSpesa.Y + Titolo_MonSpesa.Height
                 ZIndex: =2
 
@@ -792,18 +792,18 @@ Listing_PF As screen:
                 PaddingTop: =10
                 Size: =17
                 Text: ="Monitoraggio Spesa e Appropriatezza"
-                Width: =ContainerMonSpesa.Width - IconaMonSpesa.Width - Parent.PaddingRight
+                Width: =474
+                Wrap: =false
                 X: =IconaMonSpesa.X + IconaMonSpesa.Width
                 ZIndex: =3
 
             IconaMonSpesa As image:
-                Height: |
-                    =40
+                Height: =40
                 Image: =MonSpesaIcon
                 PaddingBottom: =5
                 PaddingLeft: =10
                 PaddingTop: =5
-                Width: =50
+                Width: =40
                 X: |
                     =0
                 Y: |

@@ -508,23 +508,27 @@ SSR_Mappa_Regionale As screen:
                     ZIndex: =2
 
                     ContaineVertInterno_4 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Start
                         BorderColor: =RGBA(0, 0, 0, 0)
                         DropShadow: =DropShadow.None
-                        Height: =62
+                        Height: =Parent.Height
                         LayoutDirection: =LayoutDirection.Vertical
-                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                        LayoutGap: =5
                         LayoutMinHeight: =100
                         LayoutMinWidth: =40
                         LayoutMode: =LayoutMode.Auto
+                        PaddingBottom: =5
+                        PaddingTop: =5
                         Width: =Parent.Width - IconaMRSSR.Width
                         X: =48
                         ZIndex: =1
 
                         ContainerPTR As groupContainer.manualLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Start
                             BorderColor: =RGBA(0, 0, 0, 0)
                             DropShadow: =DropShadow.None
                             FillPortions: =0
-                            Height: =TitoloPTR.Height + dataPTR.Height + 30
+                            Height: =TitoloPTR.Height + dataPTR.Height
                             LayoutMinHeight: =20
                             LayoutMinWidth: =20
                             Width: =Parent.Width
@@ -551,16 +555,17 @@ SSR_Mappa_Regionale As screen:
                                 ZIndex: =1
 
                             TitoloPTR As label:
-                                AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
                                 FontWeight: =FontWeight.Bold
                                 Height: =34
                                 PaddingBottom: =0
                                 PaddingLeft: =20
-                                PaddingTop: =20
+                                PaddingTop: =0
                                 Size: =12
                                 Text: ="PTR"
+                                VerticalAlign: =VerticalAlign.Top
                                 Width: =Parent.Width
+                                Wrap: =false
                                 Y: |
                                     =0
                                 ZIndex: =2
@@ -571,7 +576,7 @@ SSR_Mappa_Regionale As screen:
                             DropShadow: =DropShadow.None
                             FillPortions: =0
                             Height: |
-                                =TitoloCommissione.Height + dataCommissione.Height + 30
+                                =TitoloCommissione.Height + dataCommissione.Height 
                             LayoutMinHeight: =20
                             LayoutMinWidth: =20
                             Width: =Parent.Width
@@ -601,7 +606,7 @@ SSR_Mappa_Regionale As screen:
                                 AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
                                 FontWeight: =FontWeight.Bold
-                                Height: =34
+                                Height: =24
                                 PaddingBottom: =0
                                 PaddingLeft: =20
                                 PaddingTop: =0
@@ -612,29 +617,15 @@ SSR_Mappa_Regionale As screen:
                                     =0
                                 ZIndex: =2
 
-                    ContaineVertInterno_5 As groupContainer.verticalAutoLayoutContainer:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        DropShadow: =DropShadow.None
-                        FillPortions: =2
-                        Height: =62
-                        LayoutDirection: =LayoutDirection.Vertical
-                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                        LayoutMinHeight: =20
-                        LayoutMinWidth: =40
-                        LayoutMode: =LayoutMode.Auto
-                        Width: =Parent.Width - IconaMRSSR.Width
-                        X: =48
-                        ZIndex: =2
-
                         ContainerVincolante As groupContainer.manualLayoutContainer:
                             BorderColor: =RGBA(0, 0, 0, 0)
                             DropShadow: =DropShadow.None
                             FillPortions: =0
-                            Height: =TitoloVincolante.Height + dataVincolante.Height + 30
+                            Height: =TitoloVincolante.Height + dataVincolante.Height
                             LayoutMinHeight: =20
                             LayoutMinWidth: =20
                             Width: =Parent.Width
-                            ZIndex: =1
+                            ZIndex: =8
 
                             dataVincolante As label:
                                 AutoHeight: =true
@@ -642,6 +633,7 @@ SSR_Mappa_Regionale As screen:
                                 FontWeight: =FontWeight.Bold
                                 Height: =27
                                 PaddingBottom: =0
+                                PaddingLeft: =20
                                 PaddingRight: =1
                                 PaddingTop: =0
                                 Size: =11
@@ -656,23 +648,39 @@ SSR_Mappa_Regionale As screen:
                                 ZIndex: =1
 
                             TitoloVincolante As label:
-                                AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
                                 FontWeight: =FontWeight.Bold
-                                Height: =34
+                                Height: =24
                                 PaddingBottom: =0
-                                PaddingTop: =20
+                                PaddingLeft: =20
+                                PaddingTop: =0
                                 Size: =12
                                 Text: ="Vincolante"
                                 Width: =Parent.Width
                                 ZIndex: =2
+
+                    ContaineVertInterno_5 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Start
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        DropShadow: =DropShadow.None
+                        Height: =Parent.Height
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =5
+                        LayoutMinHeight: =20
+                        LayoutMinWidth: =40
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingBottom: =5
+                        PaddingTop: =5
+                        Width: =Parent.Width - IconaMRSSR.Width
+                        X: =48
+                        ZIndex: =2
 
                         ContainerTipPront As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.Start
                             BorderColor: =RGBA(0, 0, 0, 0)
                             DropShadow: =DropShadow.None
                             FillPortions: =0
-                            Height: =TitoloTipPront.Height + dataTipPront.Height + 30
+                            Height: =TitoloTipPront.Height + dataTipPront.Height  + 5
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
                             Width: =Parent.Width
@@ -697,10 +705,9 @@ SSR_Mappa_Regionale As screen:
                                 ZIndex: =1
 
                             TitoloTipPront As label:
-                                AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
                                 FontWeight: =FontWeight.Bold
-                                Height: =34
+                                Height: =24
                                 PaddingBottom: =0
                                 PaddingTop: =0
                                 Size: =12
@@ -714,6 +721,43 @@ SSR_Mappa_Regionale As screen:
                                 X: =61
                                 Y: =60
                                 ZIndex: =3
+
+                        ContainerNote As groupContainer.manualLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Start
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            DropShadow: =DropShadow.None
+                            FillPortions: =0
+                            Height: =TitoloNote.Height + dataNote.Height
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            Width: =Parent.Width
+                            ZIndex: =3
+
+                            dataNote As label:
+                                AutoHeight: =true
+                                Color: =RGBA(0, 32, 104, 1)
+                                FontWeight: =FontWeight.Bold
+                                Height: =27
+                                PaddingBottom: =0
+                                PaddingRight: =1
+                                PaddingTop: =0
+                                Size: =11
+                                Text: =LookUp('Governance Farmaceutica', Regione.Value = VarNomeRegione).Note
+                                Width: =Parent.Width
+                                Y: =TitoloNote.Y + TitoloNote.Height
+                                ZIndex: =1
+
+                            TitoloNote As label:
+                                AutoHeight: =true
+                                Color: =RGBA(0, 32, 104, 1)
+                                FontWeight: =FontWeight.Bold
+                                Height: =34
+                                PaddingBottom: =0
+                                PaddingTop: =0
+                                Size: =12
+                                Text: ="Note"
+                                Width: =Parent.Width
+                                ZIndex: =2
 
                 Titolo_GovFarm As label:
                     Color: =RGBA(0, 32, 104, 1)

@@ -142,6 +142,9 @@
           "Mappa Regionale": {
             "tableName": "625438b6-8137-40bf-8ef7-76503b1f1505"
           },
+          "Monitoraggio Spesa e Appropriatezza": {
+            "tableName": "a443d889-5277-4a04-a02e-db46993bcbab"
+          },
           "News": {
             "tableName": "59ba34f9-44e7-4204-9324-679f0dc8db3b"
           },
@@ -174,7 +177,8 @@
       "Mappa Nazionale",
       "Mappa Regionale",
       "Governance Farmaceutica",
-      "Governance Sanitaria Regionale"
+      "Governance Sanitaria Regionale",
+      "Monitoraggio Spesa e Appropriatezza"
     ],
     "dependencies": {},
     "dependents": [

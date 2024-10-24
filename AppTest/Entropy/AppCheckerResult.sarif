@@ -11313,6 +11313,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "SSR_Mappa_Regionale.Container11.ContainerGovSanitaria.ContainerGovSanInterno.ContainerPianoSocioSanitario.LabelRuolo_10.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SSR_Mappa_Regionale.Container11.ContainerGovSanitaria.ContainerGovSanInterno.ContainerPianoSocioSanitario.LabelRuolo_10.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "SSR_Mappa_Regionale",
+                "type": "SSR_Mappa_Regionale.Container11.ContainerGovSanitaria.ContainerGovSanInterno.ContainerPianoSocioSanitario.LabelRuolo_10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SSR_Mappa_Regionale.Container11.ContainerGovSanitaria.ContainerGovSanInterno.ContainerPianoSocioSanitario.LabelRuolo_10.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SSR_Mappa_Regionale.Container11.ContainerGovSanitaria.ContainerGovSanInterno.ContainerPianoSocioSanitario.LabelRuolo_10.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "SSR_Mappa_Regionale",
+                "type": "SSR_Mappa_Regionale.Container11.ContainerGovSanitaria.ContainerGovSanInterno.ContainerPianoSocioSanitario.LabelRuolo_10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.backgroundColorGrey"
                 }
               ],

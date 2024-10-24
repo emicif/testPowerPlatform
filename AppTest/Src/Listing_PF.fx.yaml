@@ -434,6 +434,8 @@ Listing_PF As screen:
                         Size: =11
                         Text: |
                             =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Commissione' 
+                        Tooltip: |
+                            =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Commissione' 
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
                         Wrap: =false
@@ -518,6 +520,7 @@ Listing_PF As screen:
                         PaddingTop: =0
                         Size: =11
                         Text: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Linee di Indirizzo'
+                        Tooltip: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Linee di Indirizzo'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
                         Wrap: =false
@@ -587,7 +590,7 @@ Listing_PF As screen:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     DropShadow: =DropShadow.None
                     FillPortions: =0
-                    Height: =60
+                    Height: =TitoloMonSpesa_6.Height + dataMonSpesa_6.Height
                     LayoutMinHeight: =20
                     LayoutMinWidth: =20
                     Width: =Parent.Width
@@ -602,6 +605,7 @@ Listing_PF As screen:
                         PaddingTop: =0
                         Size: =11
                         Text: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Budget Spesa'
+                        Tooltip: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Budget Spesa'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
                         Wrap: =false
@@ -671,24 +675,25 @@ Listing_PF As screen:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     DropShadow: =DropShadow.None
                     FillPortions: =0
-                    Height: =80
+                    Height: =TitoloMonSpesa_8.Height + dataMonSpesa_8.Height
                     LayoutMinHeight: =20
                     LayoutMinWidth: =20
                     Width: =Parent.Width
                     ZIndex: =8
 
                     dataMonSpesa_8 As label:
-                        AutoHeight: =true
                         Color: =RGBA(0, 32, 104, 1)
-                        Height: |
-                            =20
+                        Height: =38
                         PaddingBottom: =0
                         PaddingLeft: =20
-                        PaddingRight: =1
+                        PaddingRight: =0
                         PaddingTop: =0
                         Size: =11
                         Text: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Report di Spesa'
+                        Tooltip: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Report di Spesa'
+                        VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
+                        Wrap: =false
                         Y: =TitoloMonSpesa_8.Y + TitoloMonSpesa_8.Height
                         ZIndex: =1
 

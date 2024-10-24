@@ -214,12 +214,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.Items"
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.Items",
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -233,7 +233,7 @@
               "properties": {
                 "member": "Items",
                 "module": "Listing_PF",
-                "type": "Listing_PF.Container18.Container19.Gallery1"
+                "type": "Listing_PF.Container18.Container19.GalleryProcMod"
               }
             }
           ],
@@ -254,12 +254,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.Items"
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.Items",
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -273,7 +273,7 @@
               "properties": {
                 "member": "Items",
                 "module": "Listing_PF",
-                "type": "Listing_PF.Container18.Container19.Gallery1"
+                "type": "Listing_PF.Container18.Container19.GalleryProcMod"
               }
             }
           ],
@@ -1834,19 +1834,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.AccessibleLabel"
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.AccessibleLabel",
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Listing_PF",
-                "type": "Listing_PF.Container18.Container19.Gallery1"
+                "type": "Listing_PF.Container18.Container19.GalleryProcMod"
               }
             }
           ],
@@ -1864,19 +1864,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.TabIndex"
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.TabIndex",
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Listing_PF",
-                "type": "Listing_PF.Container18.Container19.Gallery1"
+                "type": "Listing_PF.Container18.Container19.GalleryProcMod"
               }
             }
           ],
@@ -1894,19 +1894,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.ToggleIsFolder.AccessibleLabel"
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.ToggleIsFolder.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.ToggleIsFolder.AccessibleLabel",
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.ToggleIsFolder.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Listing_PF",
-                "type": "Listing_PF.Container18.Container19.Gallery1.ToggleIsFolder"
+                "type": "Listing_PF.Container18.Container19.GalleryProcMod.ToggleIsFolder"
               }
             }
           ],
@@ -1924,19 +1924,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.DownloadIcon.AccessibleLabel"
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.DownloadIcon.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.DownloadIcon.AccessibleLabel",
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.DownloadIcon.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Listing_PF",
-                "type": "Listing_PF.Container18.Container19.Gallery1.DownloadIcon"
+                "type": "Listing_PF.Container18.Container19.GalleryProcMod.DownloadIcon"
               }
             }
           ],
@@ -1954,19 +1954,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.DownloadIcon.TabIndex"
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.DownloadIcon.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.DownloadIcon.TabIndex",
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.DownloadIcon.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Listing_PF",
-                "type": "Listing_PF.Container18.Container19.Gallery1.DownloadIcon"
+                "type": "Listing_PF.Container18.Container19.GalleryProcMod.DownloadIcon"
               }
             }
           ],
@@ -1984,19 +1984,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.IconaFileFolder.AccessibleLabel"
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.IconaFileFolder.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.IconaFileFolder.AccessibleLabel",
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.IconaFileFolder.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Listing_PF",
-                "type": "Listing_PF.Container18.Container19.Gallery1.IconaFileFolder"
+                "type": "Listing_PF.Container18.Container19.GalleryProcMod.IconaFileFolder"
               }
             }
           ],
@@ -2014,19 +2014,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.IconaFileFolder.TabIndex"
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.IconaFileFolder.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Listing_PF.Container18.Container19.Gallery1.IconaFileFolder.TabIndex",
+                  "fullyQualifiedName": "Listing_PF.Container18.Container19.GalleryProcMod.IconaFileFolder.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Listing_PF",
-                "type": "Listing_PF.Container18.Container19.Gallery1.IconaFileFolder"
+                "type": "Listing_PF.Container18.Container19.GalleryProcMod.IconaFileFolder"
               }
             }
           ],
@@ -11564,36 +11564,6 @@
               },
               "properties": {
                 "member": "img_pulsante_alto_adige",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.ProcModIcon"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.ProcModIcon",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "ProcModIcon",
                 "module": "App",
                 "type": "App"
               }

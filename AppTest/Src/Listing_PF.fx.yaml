@@ -219,7 +219,7 @@ Listing_PF As screen:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DropShadow: =DropShadow.None
                 Height: =80
-                Width: =GalleryProcMod.Width
+                Width: =Parent.Width - 20
                 X: =Parent.Width/2 - Self.Width/2
                 Y: =Titolo_ProcMod.Height
                 ZIndex: =5

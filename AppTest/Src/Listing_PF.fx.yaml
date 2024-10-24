@@ -76,7 +76,7 @@ Listing_PF As screen:
                     Text: =ThisItem.'Modificato da'.DisplayName
                     Tooltip: =ThisItem.'Modificato da'.DisplayName
                     Wrap: =false
-                    X: =DataModifica.X + DataModifica.Width + 20
+                    X: =ModByPM.X
                     Y: =Rectangle13.Height/2 - Self.Height/2
                     ZIndex: =1
 
@@ -95,7 +95,7 @@ Listing_PF As screen:
                     VerticalAlign: =VerticalAlign.Top
                     Width: =250
                     Wrap: =false
-                    X: =IconaFileFolder.Width
+                    X: =NomePM.X
                     Y: =Parent.TemplateHeight/2 - Self.Height/2
                     ZIndex: =2
 
@@ -113,7 +113,7 @@ Listing_PF As screen:
                     VerticalAlign: =VerticalAlign.Top
                     Width: =208
                     Wrap: =false
-                    X: =LabelTitolo.X + LabelTitolo.Width + 30
+                    X: =DataModPM.X
                     Y: =Rectangle13.Height/2 - Self.Height/2
                     ZIndex: =3
 
@@ -235,18 +235,18 @@ Listing_PF As screen:
                     FontWeight: =FontWeight.Semibold
                     PaddingLeft: =0
                     Text: ="Nome"
-                    X: =LabelTitolo.X
+                    X: =40
                     Y: =Parent.Height/2 - Self.Height/2
                     ZIndex: =2
 
                 DataModPM As label:
-                    AutoHeight: =true
                     FontWeight: =FontWeight.Semibold
+                    Height: =30
                     PaddingLeft: =0
                     PaddingRight: =0
                     Text: ="Data/Ora Modifica"
-                    Width: =168
-                    X: =DataModifica.X
+                    Width: =158
+                    X: =315
                     Y: =Parent.Height/2 - Self.Height/2
                     ZIndex: =3
 
@@ -255,7 +255,7 @@ Listing_PF As screen:
                     FontWeight: =FontWeight.Semibold
                     PaddingLeft: =0
                     Text: ="Modificato da"
-                    X: =ModificatoDa.X
+                    X: =538
                     Y: =Parent.Height/2 - Self.Height/2
                     ZIndex: =4
 

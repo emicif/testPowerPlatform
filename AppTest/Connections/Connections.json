@@ -122,7 +122,7 @@
             "tableName": "d83c74a6-d944-4e58-a3c1-fac4cf261b4c"
           },
           "Governance Farmaceutica": {
-            "tableName": "a07d1c3c-014c-4dce-981d-0a2ff8bd7ffa"
+            "tableName": "9ca7581a-c2b2-4595-a241-62409ad0f84e"
           },
           "Governance Sanitaria Regionale": {
             "tableName": "852e1950-3427-4f50-b82b-de280c2bd1a6"
@@ -176,9 +176,9 @@
       "Beovu - Kit Prodotto",
       "Mappa Nazionale",
       "Mappa Regionale",
-      "Governance Farmaceutica",
       "Governance Sanitaria Regionale",
-      "Monitoraggio Spesa e Appropriatezza"
+      "Monitoraggio Spesa e Appropriatezza",
+      "Governance Farmaceutica"
     ],
     "dependencies": {},
     "dependents": [

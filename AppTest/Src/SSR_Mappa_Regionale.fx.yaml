@@ -537,7 +537,7 @@ SSR_Mappa_Regionale As screen:
                             dataPTR As label:
                                 AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
-                                FontWeight: =FontWeight.Bold
+                                FontWeight: =FontWeight.Semibold
                                 Height: =27
                                 PaddingBottom: =0
                                 PaddingLeft: =20
@@ -557,7 +557,7 @@ SSR_Mappa_Regionale As screen:
                             TitoloPTR As label:
                                 Color: =RGBA(0, 32, 104, 1)
                                 FontWeight: =FontWeight.Bold
-                                Height: =34
+                                Height: =24
                                 PaddingBottom: =0
                                 PaddingLeft: =20
                                 PaddingTop: =0
@@ -585,7 +585,7 @@ SSR_Mappa_Regionale As screen:
                             dataCommissione As label:
                                 AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
-                                FontWeight: =FontWeight.Bold
+                                FontWeight: =FontWeight.Semibold
                                 Height: =27
                                 PaddingBottom: =0
                                 PaddingLeft: =20
@@ -630,7 +630,7 @@ SSR_Mappa_Regionale As screen:
                             dataVincolante As label:
                                 AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
-                                FontWeight: =FontWeight.Bold
+                                FontWeight: =FontWeight.Semibold
                                 Height: =27
                                 PaddingBottom: =0
                                 PaddingLeft: =20
@@ -680,7 +680,7 @@ SSR_Mappa_Regionale As screen:
                             BorderColor: =RGBA(0, 0, 0, 0)
                             DropShadow: =DropShadow.None
                             FillPortions: =0
-                            Height: =TitoloTipPront.Height + dataTipPront.Height  + 5
+                            Height: =TitoloTipPront.Height + dataTipPront.Height
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
                             Width: =Parent.Width
@@ -689,7 +689,7 @@ SSR_Mappa_Regionale As screen:
                             dataTipPront As label:
                                 AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
-                                FontWeight: =FontWeight.Bold
+                                FontWeight: =FontWeight.Semibold
                                 Height: =27
                                 PaddingBottom: =0
                                 PaddingRight: =1
@@ -734,15 +734,15 @@ SSR_Mappa_Regionale As screen:
                             ZIndex: =3
 
                             dataNote As label:
-                                AutoHeight: =true
                                 Color: =RGBA(0, 32, 104, 1)
-                                FontWeight: =FontWeight.Bold
-                                Height: =27
+                                FontWeight: =FontWeight.Semibold
+                                Height: =36
                                 PaddingBottom: =0
                                 PaddingRight: =1
                                 PaddingTop: =0
                                 Size: =11
                                 Text: =LookUp('Governance Farmaceutica', Regione.Value = VarNomeRegione).Note
+                                VerticalAlign: =VerticalAlign.Top
                                 Width: =Parent.Width
                                 Y: =TitoloNote.Y + TitoloNote.Height
                                 ZIndex: =1

@@ -360,6 +360,7 @@ Listing_PF As screen:
                 DropShadow: =DropShadow.None
                 Height: =ButtonContMonSpesa.Height - Titolo_MonSpesa.Height
                 LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =5
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowY: =LayoutOverflow.Scroll
                 Width: |
@@ -372,7 +373,7 @@ Listing_PF As screen:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     DropShadow: =DropShadow.None
                     FillPortions: =0
-                    Height: =TitoloMonSpesa_1.Height + dataMonSpesa_1.Height + 5
+                    Height: =TitoloMonSpesa_1.Height + dataMonSpesa_1.Height
                     LayoutMinHeight: =20
                     LayoutMinWidth: =20
                     Width: =Parent.Width
@@ -381,7 +382,8 @@ Listing_PF As screen:
                     dataMonSpesa_1 As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 32, 104, 1)
-                        Height: =27
+                        Height: |
+                            =20
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingRight: =1
@@ -404,8 +406,7 @@ Listing_PF As screen:
                         Height: =34
                         PaddingBottom: =0
                         PaddingLeft: =20
-                        PaddingTop: =20
-                        Size: =12
+                        PaddingTop: =0
                         Text: ="Commissione"
                         Width: =Parent.Width
                         Wrap: =false
@@ -418,16 +419,14 @@ Listing_PF As screen:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     DropShadow: =DropShadow.None
                     FillPortions: =0
-                    Height: =TitoloMonSpesa_2.Height + dataMonSpesa_2.Height + 5
+                    Height: =TitoloMonSpesa_2.Height + dataMonSpesa_2.Height
                     LayoutMinHeight: =20
                     LayoutMinWidth: =20
                     Width: =Parent.Width
                     ZIndex: =2
 
                     dataMonSpesa_2 As label:
-                        AutoHeight: =true
                         Color: =RGBA(0, 32, 104, 1)
-                        Height: =27
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingRight: =1
@@ -435,7 +434,9 @@ Listing_PF As screen:
                         Size: =11
                         Text: |
                             =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Commissione' 
+                        VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
+                        Wrap: =false
                         Y: =TitoloMonSpesa_2.Y + TitoloMonSpesa_2.Height
                         ZIndex: =1
 
@@ -446,7 +447,7 @@ Listing_PF As screen:
                         Height: =34
                         PaddingBottom: =0
                         PaddingLeft: =20
-                        PaddingTop: =20
+                        PaddingTop: =0
                         Text: ="Procedura Commissione"
                         Width: =Parent.Width
                         Y: |
@@ -458,7 +459,7 @@ Listing_PF As screen:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     DropShadow: =DropShadow.None
                     FillPortions: =0
-                    Height: =TitoloMonSpesa_3.Height + dataMonSpesa_3.Height + 5
+                    Height: =TitoloMonSpesa_3.Height + dataMonSpesa_3.Height
                     LayoutMinHeight: =20
                     LayoutMinWidth: =20
                     Width: =Parent.Width
@@ -467,7 +468,7 @@ Listing_PF As screen:
                     dataMonSpesa_3 As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 32, 104, 1)
-                        Height: =27
+                        Height: =20
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingRight: =1
@@ -490,8 +491,7 @@ Listing_PF As screen:
                         Height: =34
                         PaddingBottom: =0
                         PaddingLeft: =20
-                        PaddingTop: =20
-                        Size: =12
+                        PaddingTop: =0
                         Text: ="Linee di Indirizzo"
                         Width: =Parent.Width
                         Y: |
@@ -503,23 +503,24 @@ Listing_PF As screen:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     DropShadow: =DropShadow.None
                     FillPortions: =0
-                    Height: =TitoloMonSpesa_4.Height + dataMonSpesa_4.Height + 5
+                    Height: =TitoloMonSpesa_4.Height + dataMonSpesa_4.Height
                     LayoutMinHeight: =20
                     LayoutMinWidth: =20
                     Width: =Parent.Width
                     ZIndex: =4
 
                     dataMonSpesa_4 As label:
-                        AutoHeight: =true
                         Color: =RGBA(0, 32, 104, 1)
-                        Height: =27
+                        Height: =38
                         PaddingBottom: =0
                         PaddingLeft: =20
-                        PaddingRight: =1
+                        PaddingRight: =0
                         PaddingTop: =0
                         Size: =11
                         Text: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Linee di Indirizzo'
+                        VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
+                        Wrap: =false
                         Y: =TitoloMonSpesa_4.Y + TitoloMonSpesa_4.Height
                         ZIndex: =1
 
@@ -530,7 +531,7 @@ Listing_PF As screen:
                         Height: =34
                         PaddingBottom: =0
                         PaddingLeft: =20
-                        PaddingTop: =20
+                        PaddingTop: =0
                         Text: ="Procedura Linee di indirizzo"
                         Width: =Parent.Width
                         Y: |
@@ -542,7 +543,7 @@ Listing_PF As screen:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     DropShadow: =DropShadow.None
                     FillPortions: =0
-                    Height: =TitoloMonSpesa_5.Height + dataMonSpesa_5.Height + 5
+                    Height: =TitoloMonSpesa_1.Height + dataMonSpesa_1.Height
                     LayoutMinHeight: =20
                     LayoutMinWidth: =20
                     Width: =Parent.Width
@@ -551,7 +552,7 @@ Listing_PF As screen:
                     dataMonSpesa_5 As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 32, 104, 1)
-                        Height: =27
+                        Height: =Max(40)
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingRight: =1
@@ -574,8 +575,7 @@ Listing_PF As screen:
                         Height: =34
                         PaddingBottom: =0
                         PaddingLeft: =20
-                        PaddingTop: =20
-                        Size: =12
+                        PaddingTop: =0
                         Text: ="Budget Spesa"
                         Width: =Parent.Width
                         Y: |
@@ -587,24 +587,25 @@ Listing_PF As screen:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     DropShadow: =DropShadow.None
                     FillPortions: =0
-                    Height: =TitoloMonSpesa_6.Height + dataMonSpesa_6.Height + 5
+                    Height: =60
                     LayoutMinHeight: =20
                     LayoutMinWidth: =20
                     Width: =Parent.Width
                     ZIndex: =6
 
                     dataMonSpesa_6 As label:
-                        AutoHeight: =true
                         Color: =RGBA(0, 32, 104, 1)
-                        Height: =27
+                        Height: =38
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =11
                         Text: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Budget Spesa'
+                        VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
-                        Y: =TitoloMonSpesa_6.Y + TitoloMonSpesa_6.Height
+                        Wrap: =false
+                        Y: =22
                         ZIndex: =1
 
                     TitoloMonSpesa_6 As label:
@@ -614,7 +615,7 @@ Listing_PF As screen:
                         Height: =34
                         PaddingBottom: =0
                         PaddingLeft: =20
-                        PaddingTop: =20
+                        PaddingTop: =0
                         Text: ="Procedura Budget Spesa"
                         Width: =Parent.Width
                         Y: |
@@ -626,7 +627,7 @@ Listing_PF As screen:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     DropShadow: =DropShadow.None
                     FillPortions: =0
-                    Height: =TitoloMonSpesa_7.Height + dataMonSpesa_7.Height + 5
+                    Height: =TitoloMonSpesa_1.Height + dataMonSpesa_1.Height
                     LayoutMinHeight: =20
                     LayoutMinWidth: =20
                     Width: =Parent.Width
@@ -658,8 +659,7 @@ Listing_PF As screen:
                         Height: =34
                         PaddingBottom: =0
                         PaddingLeft: =20
-                        PaddingTop: =20
-                        Size: =12
+                        PaddingTop: =0
                         Text: ="Report di Spesa"
                         Width: =Parent.Width
                         Y: |
@@ -671,7 +671,7 @@ Listing_PF As screen:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     DropShadow: =DropShadow.None
                     FillPortions: =0
-                    Height: =TitoloMonSpesa_8.Height + dataMonSpesa_8.Height + 5
+                    Height: =80
                     LayoutMinHeight: =20
                     LayoutMinWidth: =20
                     Width: =Parent.Width
@@ -680,7 +680,8 @@ Listing_PF As screen:
                     dataMonSpesa_8 As label:
                         AutoHeight: =true
                         Color: =RGBA(0, 32, 104, 1)
-                        Height: =27
+                        Height: |
+                            =20
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingRight: =1
@@ -698,8 +699,7 @@ Listing_PF As screen:
                         Height: =34
                         PaddingBottom: =0
                         PaddingLeft: =20
-                        PaddingTop: =20
-                        Size: =12
+                        PaddingTop: =0
                         Text: ="Procedura Report di Spesa"
                         Width: =Parent.Width
                         Y: |

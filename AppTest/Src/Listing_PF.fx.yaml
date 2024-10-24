@@ -39,7 +39,7 @@ Listing_PF As screen:
             "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DelayItemLoading: =true
-                Height: =498
+                Height: =456
                 Items: |-
                     =SortByColumns(
                         Filter(
@@ -243,6 +243,7 @@ Listing_PF As screen:
                     PaddingLeft: =0
                     PaddingRight: =0
                     Text: ="Data/Ora Modifica"
+                    Width: =168
                     X: =DataModifica.X
                     Y: =Parent.Height/2 - Self.Height/2
                     ZIndex: =3

@@ -33,14 +33,13 @@ Listing_PF As screen:
                 RadiusTopRight: =20
                 Text: =
                 Width: =Parent.Width - 60
-                X: |
-                    =30
+                X: =Parent.Width/2 - Self.Width/2
                 ZIndex: =1
 
             "GalleryLI As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DelayItemLoading: =true
-                Height: =108
+                Height: =160
                 Items: |-
                     =SortByColumns(
                         Filter(
@@ -65,8 +64,8 @@ Listing_PF As screen:
                     );
                 TemplatePadding: =0
                 TemplateSize: =41
-                Width: =1223
-                X: =80
+                Width: =1228
+                X: =60
                 Y: =98
                 ZIndex: =2
 
@@ -214,9 +213,9 @@ Listing_PF As screen:
             ContainerTitoliLI As groupContainer.manualLayoutContainer:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DropShadow: =DropShadow.None
-                Height: =40
-                Width: =1306
-                X: =30
+                Height: =50
+                Width: =1216
+                X: =71
                 Y: =48
                 ZIndex: =5
 
@@ -266,7 +265,8 @@ Listing_PF As screen:
                     Text: ="Download"
                     Width: =102
                     Wrap: =false
-                    X: =1204
+                    X: |
+                        =1100
                     ZIndex: =5
 
                 IconBack_1 As icon.BackArrow:

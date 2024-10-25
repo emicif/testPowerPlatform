@@ -1192,8 +1192,8 @@ Acquisti_PF As screen:
                             Set( NameExtAllegato , Last(Split(LabelNomeFileExt_3.Text, ".")).Value);
                         
                             If( NameExtAllegato = "pdf",
-                                Set(pdf_v_listing_regione, 'NVS-PDF'.Run(ThisItem.Identificatore).pdf);
-                                Set(isPDFviewListingRegione, true),
+                                Set(pdf_v_acquisti_regione, 'NVS-PDF'.Run(ThisItem.Identificatore).pdf);
+                                Set(isPDFviewAcquistiRegione, true),
                                 If( NameExtAllegato = "xlsx" || NameExtAllegato = "eml" || NameExtAllegato = "pptx",
                                   Launch(ThisItem.'Collegamento a elemento')
                                 )

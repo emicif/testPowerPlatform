@@ -48,6 +48,10 @@ App As appinfo:
             varFolderPathPFProceduraModRegione,
             ""
         );
+        Set(
+            varFolderPathPFLIndirizzoUD,
+            ""
+        );
         
         Set(
             RegioneSelectedDocumentLibrary,

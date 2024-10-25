@@ -65,8 +65,8 @@ Listing_PF As screen:
                     );
                 TemplatePadding: =0
                 TemplateSize: =41
-                Width: =1228
-                X: =60
+                Width: =Parent.Width - 80
+                X: =Parent.Width/2 - Self.Width/2
                 Y: =98
                 ZIndex: =2
 
@@ -215,8 +215,8 @@ Listing_PF As screen:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DropShadow: =DropShadow.None
                 Height: =50
-                Width: =1216
-                X: =71
+                Width: =Parent.Width - 80
+                X: =Parent.Width/2 - Self.Width/2
                 Y: =Titolo_LineeInd.Height
                 ZIndex: =5
 
@@ -234,7 +234,7 @@ Listing_PF As screen:
                     Text: ="Nome"
                     Width: =220
                     Wrap: =false
-                    X: =137
+                    X: =50
                     Y: =9
                     ZIndex: =2
 

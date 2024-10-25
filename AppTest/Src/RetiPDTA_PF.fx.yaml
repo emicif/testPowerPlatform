@@ -78,19 +78,19 @@ RetiPDTA_PF As screen:
                     Icon: =Icon.BackArrow
                     OnSelect: |
                         = Set(
-                            varFolderPathPFCNN,
+                            varFolderPathPFretiPDTA,
                             Concat(
                                 FirstN(
-                                    Split(varFolderPathPFCNN, "/"), 
-                                    CountRows(Split(varFolderPathPFCNN, "/"))-2),
+                                    Split(varFolderPathPFretiPDTA, "/"), 
+                                    CountRows(Split(varFolderPathPFretiPDTA, "/"))-2),
                                     Value,
                                 "/")
                         & "/")
                     PaddingBottom: =5
                     PaddingTop: =5
-                    Visible: |-
+                    Visible: |
                         =If(
-                            varFolderPathPFCNN = "Documents/Politiche Farmaceutiche/CNN/" & VarNomeRegioneNoSpace & " - CNN/",
+                            varFolderPathPFretiPDTA = "Documents/Politiche Farmaceutiche/Reti e PDTA/" & VarNomeRegioneNoSpace & " - Reti e PDTA/",
                             false,
                             true)
                     Width: =40
@@ -156,7 +156,7 @@ RetiPDTA_PF As screen:
                     =SortByColumns(
                         Filter(
                             Documents,
-                            'Percorso cartella' = varFolderPathPFCNN
+                            'Percorso cartella' = varFolderPathPFretiPDTA
                         ),
                         "{IsFolder}",
                         SortOrder.Descending,
@@ -170,7 +170,7 @@ RetiPDTA_PF As screen:
                         ToggleIsFolder_4.Value = true ,
                         // get the current location for the selected folder
                         Set(
-                           varFolderPathPFCNN,
+                           varFolderPathPFretiPDTA,
                            LabelPercorsoCompleto_4.Text & "/"
                         )
                     );
@@ -290,7 +290,7 @@ RetiPDTA_PF As screen:
                             ToggleIsFolder_4.Value,
                             // get the current location for the selected folder
                             Set(
-                               varFolderPathPFCNN,
+                               varFolderPathPFretiPDTA,
                                LabelPercorsoCompleto_4.Text & "/"
                             )
                         );

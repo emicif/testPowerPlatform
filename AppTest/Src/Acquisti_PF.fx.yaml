@@ -643,6 +643,7 @@ Acquisti_PF As screen:
                         ZIndex: =35
 
                     dataMonSpesa_10 As label:
+                        AutoHeight: =true
                         Color: =RGBA(0, 32, 104, 1)
                         PaddingBottom: =0
                         PaddingLeft: =20
@@ -728,6 +729,7 @@ Acquisti_PF As screen:
                         ZIndex: =41
 
                     dataMonSpesa_12 As label:
+                        AutoHeight: =true
                         Color: =RGBA(0, 32, 104, 1)
                         Height: =38
                         PaddingBottom: =0
@@ -739,7 +741,6 @@ Acquisti_PF As screen:
                         Tooltip: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Linee di Indirizzo'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
-                        Wrap: =false
                         Y: =TitoloMonSpesa_12.Y + TitoloMonSpesa_12.Height
                         ZIndex: =42
 

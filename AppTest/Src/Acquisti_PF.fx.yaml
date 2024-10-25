@@ -51,7 +51,7 @@ Acquisti_PF As screen:
 
         Rectangle1_7 As rectangle:
             Height: =570
-            Visible: =isPDFviewListingRegione
+            Visible: =isPDFviewAcquistiRegione
             Width: =1198
             X: =110
             Y: =100
@@ -60,8 +60,8 @@ Acquisti_PF As screen:
         Icon1_7 As icon.Cancel:
             Height: =30
             Icon: =Icon.Cancel
-            OnSelect: =Set(isPDFviewListingRegione, false)
-            Visible: =isPDFviewListingRegione
+            OnSelect: =Set(isPDFviewAcquistiRegione, false)
+            Visible: =isPDFviewAcquistiRegione
             Width: =30
             X: =1266
             Y: =117
@@ -69,11 +69,11 @@ Acquisti_PF As screen:
 
         PdfViewer1_7 As pdfViewer:
             BorderColor: =RGBA(0, 0, 0, 1)
-            Document: =pdf_v_listing_regione
+            Document: =pdf_v_acquisti_regione
             Fill: =RGBA(0, 0, 0, 0.5)
             Height: =514
             ShowControls: =true
-            Visible: =isPDFviewListingRegione
+            Visible: =isPDFviewAcquistiRegione
             Width: =1198
             X: =110
             Y: =156

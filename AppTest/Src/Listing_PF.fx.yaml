@@ -1063,7 +1063,7 @@ Listing_PF As screen:
         Height: =Titolo_18.Height + 40
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutMode: =LayoutMode.Auto
-        PaddingLeft: =Container17.PaddingLeft
+        PaddingLeft: =Container18.PaddingLeft
         Width: =Parent.Width
         Y: =Header_21.Height
         ZIndex: =3

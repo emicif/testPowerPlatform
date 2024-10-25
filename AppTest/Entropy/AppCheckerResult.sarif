@@ -734,6 +734,86 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 54,
+                  "snippet": {
+                    "text": "'Percorso cartella'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Percorso cartella"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 74,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Footer.ImageStockWhite.AccessibleLabel"
                 }
               ],
@@ -11983,6 +12063,336 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.ToggleIsFolder_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.ToggleIsFolder_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.ToggleIsFolder_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.ContainerTitoliLI_2.Separator1_8.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.ContainerTitoliLI_2.Separator1_8.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.ContainerTitoliLI_2.Separator1_8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "RetiPDTA_PF.ContainerTitolo_3.backHome_21.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.ContainerTitolo_3.backHome_21.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.ContainerTitolo_3.backHome_21"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "RetiPDTA_PF.ContainerTitolo_3.backHome_21.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.ContainerTitolo_3.backHome_21.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.ContainerTitolo_3.backHome_21"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.ContainerTitoliLI_2.Separator1_8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.ContainerTitoliLI_2.Separator1_8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.ContainerTitoliLI_2.Separator1_8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.ContainerTitoliLI_2.IconBack_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.ContainerTitoliLI_2.IconBack_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.ContainerTitoliLI_2.IconBack_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.ContainerTitoliLI_2.IconBack_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.ContainerTitoliLI_2.IconBack_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.ContainerTitoliLI_2.IconBack_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "RetiPDTA_PF.Icon1_8.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.Icon1_8.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.Icon1_8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "RetiPDTA_PF.Icon1_8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.Icon1_8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.Icon1_8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Acquisti_PF.Container19_1.ContainerLineeIndirizzo_1.ContainerTitoliLI_1.IconBack_3.AccessibleLabel"
                 }
               ],
@@ -12296,6 +12706,126 @@
                 "member": "TabIndex",
                 "module": "Acquisti_PF",
                 "type": "Acquisti_PF.Container19_1.ContainerLineeIndirizzo_1.GalleryLI_1.IconaFileFolder_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.DownloadIcon_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.DownloadIcon_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.DownloadIcon_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.DownloadIcon_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.DownloadIcon_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.DownloadIcon_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.IconaFileFolder_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.IconaFileFolder_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.IconaFileFolder_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.IconaFileFolder_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.IconaFileFolder_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "RetiPDTA_PF",
+                "type": "RetiPDTA_PF.Container19_2.ContainerLineeIndirizzo_2.GalleryLI_2.IconaFileFolder_4"
               }
             }
           ],

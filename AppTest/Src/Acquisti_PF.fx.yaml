@@ -995,11 +995,11 @@ Acquisti_PF As screen:
                     Icon: =Icon.BackArrow
                     OnSelect: |
                         = Set(
-                            varFolderPathPFLIndirizzoUD,
+                            varFolderPathPFCNN,
                             Concat(
                                 FirstN(
-                                    Split(varFolderPathPFLIndirizzoUD, "/"), 
-                                    CountRows(Split(varFolderPathPFLIndirizzoUD, "/"))-2),
+                                    Split(varFolderPathPFCNN, "/"), 
+                                    CountRows(Split(varFolderPathPFCNN, "/"))-2),
                                     Value,
                                 "/")
                         & "/")
@@ -1007,7 +1007,7 @@ Acquisti_PF As screen:
                     PaddingTop: =5
                     Visible: |-
                         =If(
-                            varFolderPathPFLIndirizzoUD = "Documents/Politiche Farmaceutiche/Linee di Indirizzo - Ultimo Documento/" & VarNomeRegioneNoSpace & " - Ultimo Documento/",
+                            varFolderPathPFCNN = "Documents/Politiche Farmaceutiche/CNN/" & VarNomeRegioneNoSpace & " - CNN/",
                             false,
                             true)
                     Width: =40
@@ -1073,7 +1073,7 @@ Acquisti_PF As screen:
                     =SortByColumns(
                         Filter(
                             Documents,
-                            'Percorso cartella' = varFolderPathPFLIndirizzoUD
+                            'Percorso cartella' = varFolderPathPFCNN
                         ),
                         "{IsFolder}",
                         SortOrder.Descending,
@@ -1087,7 +1087,7 @@ Acquisti_PF As screen:
                         ToggleIsFolder_3.Value = true ,
                         // get the current location for the selected folder
                         Set(
-                           varFolderPathPFLIndirizzoUD,
+                           varFolderPathPFCNN,
                            LabelPercorsoCompleto_3.Text & "/"
                         )
                     );
@@ -1183,7 +1183,7 @@ Acquisti_PF As screen:
                             ToggleIsFolder_3.Value,
                             // get the current location for the selected folder
                             Set(
-                               varFolderPathPFLIndirizzoUD,
+                               varFolderPathPFCNN,
                                LabelPercorsoCompleto_3.Text & "/"
                             )
                         );

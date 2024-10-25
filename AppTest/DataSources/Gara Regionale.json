@@ -1,0 +1,51 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2024-07-03T16:41:56.3710000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{Attachments}": "Allegati",
+      "{Attachments}@odata.type": "{Attachments} ({Attachments}@odata.type)",
+      "{FilenameWithExtension}": "Nome file con estensione",
+      "{FullPath}": "Percorso completo",
+      "{HasAttachments}": "Con allegati",
+      "{Identifier}": "Identificatore",
+      "{IsFolder}": "Cartella",
+      "{Link}": "Collegamento a elemento",
+      "{ModerationComment}": "Commenti associati all'approvazione del contenuto della voce di elenco",
+      "{ModerationStatus}": "Stato di approvazione del contenuto",
+      "{Name}": "Nome",
+      "{Path}": "Percorso cartella",
+      "{Thumbnail}": "Miniatura",
+      "{TriggerWindowEndToken}": "Token della conclusione dell'intervallo del trigger",
+      "{TriggerWindowStartToken}": "Token dell'avvio dell'intervallo del trigger",
+      "{VersionNumber}": "Numero versione",
+      "Author": "Autore",
+      "Author#Claims": "Autore Claims",
+      "ComplianceAssetId": "ID risorsa conformità",
+      "Created": "Data/ora creazione",
+      "Editor": "Modificato da",
+      "Editor#Claims": "Modificato da Claims",
+      "GaraRegionale": "Gara Regionale",
+      "GaraRegionaleVincolanteperAcquis": "Gara Regionale Vincolante per Acquisto",
+      "GaraRegionaleVincolanteperAcquis#Id": "Gara Regionale Vincolante per Acquisto Id",
+      "GaraRegionaleVincolanteperAcquis@odata.type": "GaraRegionaleVincolanteperAcquis (GaraRegionaleVincolanteperAcquis@odata.type)",
+      "ID": "ID",
+      "Modified": "Data/ora modifica",
+      "Note": "Note",
+      "OData__ColorTag": "Tag colore",
+      "Regione": "Regione",
+      "Regione#Id": "Regione Id",
+      "Title": "Centrale di Committenza"
+    },
+    "DatasetName": "https://mindthehead.sharepoint.com/sites/MTH-NVS",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Gara Regionale",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

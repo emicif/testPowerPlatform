@@ -595,7 +595,7 @@ Acquisti_PF As screen:
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingTop: =0
-                        Text: ="Commissione"
+                        Text: ="Centrale di Committenza"
                         Width: =Parent.Width
                         Wrap: =false
                         Y: |
@@ -612,12 +612,7 @@ Acquisti_PF As screen:
                         PaddingRight: =1
                         PaddingTop: =0
                         Size: =11
-                        Text: |-
-                            =If(
-                                LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).Commissione = true,
-                                "Sì",
-                                "No"
-                            )
+                        Text: =LookUp('Gara Regionale', Regione.Value = VarNomeRegione).'Centrale di Committenza'
                         Width: =Parent.Width
                         Y: =TitoloMonSpesa_9.Y + TitoloMonSpesa_9.Height
                         ZIndex: =33
@@ -641,7 +636,7 @@ Acquisti_PF As screen:
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingTop: =0
-                        Text: ="Procedura Commissione"
+                        Text: ="Gara Regionale Vincolante per Acquisto"
                         Width: =Parent.Width
                         Y: |
                             =0
@@ -654,8 +649,12 @@ Acquisti_PF As screen:
                         PaddingRight: =1
                         PaddingTop: =0
                         Size: =11
-                        Text: |
-                            =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Commissione' 
+                        Text: |-
+                            =If(
+                                LookUp('Gara Regionale', Regione.Value = VarNomeRegione).'Gara Regionale' = true,
+                                "Sì",
+                                "No"
+                            )
                         Tooltip: |
                             =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Commissione' 
                         VerticalAlign: =VerticalAlign.Top
@@ -683,7 +682,7 @@ Acquisti_PF As screen:
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingTop: =0
-                        Text: ="Linee di Indirizzo"
+                        Text: ="Gara Regionale Vincolante per Acquisto"
                         Width: =Parent.Width
                         Y: |
                             =0
@@ -698,12 +697,7 @@ Acquisti_PF As screen:
                         PaddingRight: =1
                         PaddingTop: =0
                         Size: =11
-                        Text: |-
-                            =If(
-                                LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Linee di Indirizzo' = true,
-                                "Sì",
-                                "No"
-                            )
+                        Text: =Concat(LookUp('Gara Regionale', Regione.Value = VarNomeRegione).'Gara Regionale Vincolante per Acquisto'.Value, Value & ", ")
                         Width: =Parent.Width
                         Y: =TitoloMonSpesa_11.Y + TitoloMonSpesa_11.Height
                         ZIndex: =39
@@ -727,7 +721,7 @@ Acquisti_PF As screen:
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingTop: =0
-                        Text: ="Procedura Linee di indirizzo"
+                        Text: ="Note"
                         Width: =Parent.Width
                         Y: |
                             =0
@@ -741,183 +735,13 @@ Acquisti_PF As screen:
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =11
-                        Text: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Linee di Indirizzo'
+                        Text: =LookUp('Gara Regionale', Regione.Value = VarNomeRegione).Note
                         Tooltip: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Linee di Indirizzo'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
                         Wrap: =false
                         Y: =TitoloMonSpesa_12.Y + TitoloMonSpesa_12.Height
                         ZIndex: =42
-
-                ContainerMonSpesa_14 As groupContainer.manualLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    DropShadow: =DropShadow.None
-                    FillPortions: =0
-                    Height: =TitoloMonSpesa_9.Height + dataMonSpesa_9.Height
-                    LayoutMinHeight: =20
-                    LayoutMinWidth: =20
-                    Width: =Parent.Width
-                    ZIndex: =43
-
-                    TitoloMonSpesa_13 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        FontWeight: =FontWeight.Bold
-                        Height: =34
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingTop: =0
-                        Text: ="Budget Spesa"
-                        Width: =Parent.Width
-                        Y: |
-                            =0
-                        ZIndex: =44
-
-                    dataMonSpesa_13 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        Height: =Max(40)
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingRight: =1
-                        PaddingTop: =0
-                        Size: =11
-                        Text: |
-                            =If(
-                                LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Budget Spesa' = true,
-                                "Sì",
-                                "No"
-                            )
-                        Width: =Parent.Width
-                        Y: =TitoloMonSpesa_13.Y + TitoloMonSpesa_13.Height
-                        ZIndex: =45
-
-                ContainerMonSpesa_15 As groupContainer.manualLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    DropShadow: =DropShadow.None
-                    FillPortions: =0
-                    Height: =TitoloMonSpesa_14.Height + dataMonSpesa_14.Height
-                    LayoutMinHeight: =20
-                    LayoutMinWidth: =20
-                    Width: =Parent.Width
-                    ZIndex: =46
-
-                    TitoloMonSpesa_14 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        FontWeight: =FontWeight.Bold
-                        Height: =34
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingTop: =0
-                        Text: ="Procedura Budget Spesa"
-                        Width: =Parent.Width
-                        Y: |
-                            =0
-                        ZIndex: =47
-
-                    dataMonSpesa_14 As label:
-                        Color: =RGBA(0, 32, 104, 1)
-                        Height: =38
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =11
-                        Text: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Budget Spesa'
-                        Tooltip: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Budget Spesa'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width
-                        Wrap: =false
-                        Y: =22
-                        ZIndex: =48
-
-                ContainerMonSpesa_16 As groupContainer.manualLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    DropShadow: =DropShadow.None
-                    FillPortions: =0
-                    Height: =TitoloMonSpesa_9.Height + dataMonSpesa_9.Height
-                    LayoutMinHeight: =20
-                    LayoutMinWidth: =20
-                    Width: =Parent.Width
-                    ZIndex: =49
-
-                    TitoloMonSpesa_15 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        FontWeight: =FontWeight.Bold
-                        Height: =34
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingTop: =0
-                        Text: ="Report di Spesa"
-                        Width: =Parent.Width
-                        Y: |
-                            =0
-                        ZIndex: =50
-
-                    dataMonSpesa_15 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        Height: =27
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingRight: =1
-                        PaddingTop: =0
-                        Size: =11
-                        Text: |
-                            =If(
-                                LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Report di Spesa' = true,
-                                "Sì",
-                                "No"
-                            )
-                        Width: =Parent.Width
-                        Y: =TitoloMonSpesa_15.Y + TitoloMonSpesa_15.Height
-                        ZIndex: =51
-
-                ContainerMonSpesa_17 As groupContainer.manualLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    DropShadow: =DropShadow.None
-                    FillPortions: =0
-                    Height: =TitoloMonSpesa_16.Height + dataMonSpesa_16.Height
-                    LayoutMinHeight: =20
-                    LayoutMinWidth: =20
-                    Width: =Parent.Width
-                    ZIndex: =52
-
-                    TitoloMonSpesa_16 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        FontWeight: =FontWeight.Bold
-                        Height: =34
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingTop: =0
-                        Text: ="Procedura Report di Spesa"
-                        Width: =Parent.Width
-                        Y: |
-                            =0
-                        ZIndex: =53
-
-                    dataMonSpesa_16 As label:
-                        Color: =RGBA(0, 32, 104, 1)
-                        Height: =38
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =11
-                        Text: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Report di Spesa'
-                        Tooltip: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Report di Spesa'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width
-                        Wrap: =false
-                        Y: =TitoloMonSpesa_16.Y + TitoloMonSpesa_16.Height
-                        ZIndex: =54
 
     Container19_1 As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(0, 0, 0, 0)

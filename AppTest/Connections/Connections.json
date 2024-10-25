@@ -106,6 +106,9 @@
           "Beovu - Kit Prodotto": {
             "tableName": "1fa9917e-f4ea-4a6b-a3b2-ae1f3c9b6557"
           },
+          "CNN": {
+            "tableName": "ff5070b8-129e-4b5a-8d89-dc13bdf94ebb"
+          },
           "Comunicazioni_1": {
             "tableName": "ebeafc53-be9a-43c2-8e38-16d53df08fe5"
           },
@@ -120,6 +123,9 @@
           },
           "Drugs": {
             "tableName": "d83c74a6-d944-4e58-a3c1-fac4cf261b4c"
+          },
+          "Gara Regionale": {
+            "tableName": "e9adeeb3-13f9-4ad2-b2f3-8b816cbdf832"
           },
           "Governance Farmaceutica": {
             "tableName": "9ca7581a-c2b2-4595-a241-62409ad0f84e"
@@ -178,7 +184,9 @@
       "Mappa Regionale",
       "Governance Sanitaria Regionale",
       "Monitoraggio Spesa e Appropriatezza",
-      "Governance Farmaceutica"
+      "Governance Farmaceutica",
+      "Gara Regionale",
+      "CNN"
     ],
     "dependencies": {},
     "dependents": [

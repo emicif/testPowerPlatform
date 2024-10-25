@@ -90,7 +90,7 @@ RetiPDTA_PF As screen:
                     PaddingTop: =5
                     Visible: |
                         =If(
-                            varFolderPathPFretiPDTA = "Documents/Politiche Farmaceutiche/Reti e PDTA/" & VarNomeRegioneNoSpace & " - Reti e PDTA/",
+                            varFolderPathPFretiPDTA = "Documents/Politiche Farmaceutiche/Reti e PDTA/Reti e PDTA  - " & VarNomeRegioneNoSpace & "/",
                             false,
                             true)
                     Width: =40

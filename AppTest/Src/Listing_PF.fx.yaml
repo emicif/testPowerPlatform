@@ -40,7 +40,7 @@ Listing_PF As screen:
             "GalleryLI As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DelayItemLoading: =true
-                Height: =146
+                Height: =108
                 Items: |-
                     =SortByColumns(
                         Filter(
@@ -64,10 +64,10 @@ Listing_PF As screen:
                         )
                     );
                 TemplatePadding: =0
-                TemplateSize: =80
+                TemplateSize: =41
                 Width: =1223
                 X: =80
-                Y: =60
+                Y: =98
                 ZIndex: =2
 
                 ModificatoDa_1 As label:
@@ -217,7 +217,7 @@ Listing_PF As screen:
                 Height: =40
                 Width: =1306
                 X: =30
-                Y: =Titolo_LineeInd.Height
+                Y: =48
                 ZIndex: =5
 
                 Separator1_2 As rectangle:
@@ -234,8 +234,8 @@ Listing_PF As screen:
                     Text: ="Nome"
                     Width: =220
                     Wrap: =false
-                    X: =40
-                    Y: =Parent.Height/2 - Self.Height/2
+                    X: =137
+                    Y: =9
                     ZIndex: =2
 
                 DataModPM_1 As label:
@@ -245,7 +245,7 @@ Listing_PF As screen:
                     PaddingRight: =0
                     Text: ="Data/Ora Modifica"
                     Wrap: =false
-                    X: =280
+                    X: =435
                     Y: =Parent.Height/2 - Self.Height/2
                     ZIndex: =3
 
@@ -255,8 +255,8 @@ Listing_PF As screen:
                     PaddingLeft: =0
                     Text: ="Modificato da"
                     Wrap: =false
-                    X: =330
-                    Y: =Parent.Height/2 - Self.Height/2
+                    X: =884
+                    Y: =3
                     ZIndex: =4
 
                 DownloadPM_1 As label:
@@ -266,8 +266,7 @@ Listing_PF As screen:
                     Text: ="Download"
                     Width: =102
                     Wrap: =false
-                    X: =378
-                    Y: =Parent.Height/2 - Self.Height/2
+                    X: =1204
                     ZIndex: =5
 
                 IconBack_1 As icon.BackArrow:
@@ -306,7 +305,7 @@ Listing_PF As screen:
                 Size: =17
                 Text: ="Linee di indirizzo - Ultimo Documento"
                 Width: =ContainerMonSpesa.Width - IconaLineeInd.Width - Parent.PaddingRight
-                X: =36
+                X: =162
                 ZIndex: =6
 
             IconaLineeInd As image:
@@ -317,9 +316,8 @@ Listing_PF As screen:
                 PaddingLeft: =10
                 PaddingTop: =5
                 Width: =50
-                X: =ContainerTitoliLI.X
-                Y: |
-                    =Titolo_LineeInd.Height/2 - Self.Height/2
+                X: =41
+                Y: =8
                 ZIndex: =7
 
     Container18 As groupContainer.horizontalAutoLayoutContainer:
@@ -359,7 +357,7 @@ Listing_PF As screen:
             "GalleryProcMod As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DelayItemLoading: =true
-                Height: =182
+                Height: =156
                 Items: |-
                     =SortByColumns(
                         Filter(

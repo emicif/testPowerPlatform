@@ -22,7 +22,7 @@ Acquisti_PF As screen:
             FontWeight: =FontWeight.Bold
             PaddingLeft: =0
             Size: =20
-            Text: ="Listing/" & VarNomeRegione
+            Text: ="Acquisti/" & VarNomeRegione
             Width: =Parent.Width
             X: =172
             Y: =116

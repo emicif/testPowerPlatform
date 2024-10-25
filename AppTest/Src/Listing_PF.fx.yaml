@@ -93,7 +93,7 @@ Listing_PF As screen:
                     Text: |
                         =ThisItem.Nome
                     Tooltip: =ThisItem.Nome
-                    Width: =220
+                    Width: =500
                     Wrap: =false
                     X: =NomePM_1.X
                     Y: =Parent.TemplateHeight/2 - Self.Height/2
@@ -235,7 +235,7 @@ Listing_PF As screen:
                     Width: =220
                     Wrap: =false
                     X: =50
-                    Y: =9
+                    Y: =Parent.Height/2 - Self.Height/2
                     ZIndex: =2
 
                 DataModPM_1 As label:
@@ -244,19 +244,19 @@ Listing_PF As screen:
                     PaddingLeft: =0
                     PaddingRight: =0
                     Text: ="Data/Ora Modifica"
+                    Width: =200
                     Wrap: =false
-                    X: =435
+                    X: =600
                     Y: =Parent.Height/2 - Self.Height/2
                     ZIndex: =3
 
                 ModByPM_1 As label:
-                    AutoHeight: =true
                     FontWeight: =FontWeight.Semibold
                     PaddingLeft: =0
                     Text: ="Modificato da"
                     Wrap: =false
                     X: =884
-                    Y: =3
+                    Y: =Parent.Height/2 - Self.Height/2
                     ZIndex: =4
 
                 DownloadPM_1 As label:
@@ -268,6 +268,7 @@ Listing_PF As screen:
                     Wrap: =false
                     X: |
                         =1100
+                    Y: =Parent.Height/2 - Self.Height/2
                     ZIndex: =5
 
                 IconBack_1 As icon.BackArrow:

@@ -424,7 +424,7 @@ RetiPDTA_PF As screen:
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingTop: =0
-                        Text: ="Centrale di Committenza"
+                        Text: ="PDTA"
                         Width: =Parent.Width
                         Wrap: =false
                         Y: |
@@ -441,7 +441,12 @@ RetiPDTA_PF As screen:
                         PaddingRight: =1
                         PaddingTop: =0
                         Size: =11
-                        Text: =LookUp('Gara Regionale', Regione.Value = VarNomeRegione).'Centrale di Committenza'
+                        Text: |-
+                            =If(
+                                LookUp(PDTA, Regione.Value = VarNomeRegione).PDTA = true,
+                                "Sì",
+                                "No"
+                            )
                         Width: =Parent.Width
                         Y: =TitoloMonSpesa_13.Y + TitoloMonSpesa_13.Height
                         ZIndex: =10
@@ -465,7 +470,7 @@ RetiPDTA_PF As screen:
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingTop: =0
-                        Text: ="Gara Regionale Vincolante per Acquisto"
+                        Text: ="Tipologia PDTA"
                         Width: =Parent.Width
                         Y: |
                             =0
@@ -479,17 +484,11 @@ RetiPDTA_PF As screen:
                         PaddingRight: =1
                         PaddingTop: =0
                         Size: =11
-                        Text: |-
-                            =If(
-                                LookUp('Gara Regionale', Regione.Value = VarNomeRegione).'Gara Regionale' = true,
-                                "Sì",
-                                "No"
-                            )
+                        Text: =Concat(LookUp(PDTA, Regione.Value = VarNomeRegione).'Tipologia PDTA'.Value, Value & ", ")
                         Tooltip: |
                             =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Commissione' 
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
-                        Wrap: =false
                         Y: =TitoloMonSpesa_14.Y + TitoloMonSpesa_14.Height
                         ZIndex: =13
 
@@ -512,7 +511,7 @@ RetiPDTA_PF As screen:
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingTop: =0
-                        Text: ="Gara Regionale Vincolante per Acquisto"
+                        Text: ="Note"
                         Width: =Parent.Width
                         Y: |
                             =0
@@ -527,51 +526,10 @@ RetiPDTA_PF As screen:
                         PaddingRight: =1
                         PaddingTop: =0
                         Size: =11
-                        Text: =Concat(LookUp('Gara Regionale', Regione.Value = VarNomeRegione).'Gara Regionale Vincolante per Acquisto'.Value, Value & ", ")
+                        Text: =LookUp(PDTA, Regione.Value = VarNomeRegione).Note
                         Width: =Parent.Width
                         Y: =TitoloMonSpesa_15.Y + TitoloMonSpesa_15.Height
                         ZIndex: =16
-
-                ContainerMonSpesa_32 As groupContainer.manualLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    DropShadow: =DropShadow.None
-                    FillPortions: =0
-                    Height: =TitoloMonSpesa_16.Height + dataMonSpesa_16.Height
-                    LayoutMinHeight: =20
-                    LayoutMinWidth: =20
-                    Width: =Parent.Width
-                    ZIndex: =17
-
-                    TitoloMonSpesa_16 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        FontWeight: =FontWeight.Bold
-                        Height: =34
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingTop: =0
-                        Text: ="Note"
-                        Width: =Parent.Width
-                        Y: |
-                            =0
-                        ZIndex: =18
-
-                    dataMonSpesa_16 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        Height: =38
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =11
-                        Text: =LookUp('Gara Regionale', Regione.Value = VarNomeRegione).Note
-                        Tooltip: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Linee di Indirizzo'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width
-                        Y: =TitoloMonSpesa_16.Y + TitoloMonSpesa_16.Height
-                        ZIndex: =19
 
         ContainerMonSpesa_25 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -664,7 +622,7 @@ RetiPDTA_PF As screen:
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingTop: =0
-                        Text: ="Regione accetta CNN"
+                        Text: ="Reti"
                         Width: =Parent.Width
                         Wrap: =false
                         Y: |
@@ -683,7 +641,7 @@ RetiPDTA_PF As screen:
                         Size: =11
                         Text: |-
                             =If(
-                                LookUp('CNN', Regione.Value = VarNomeRegione).'Regione accetta CNN' = true,
+                                LookUp('Reti', Regione.Value = VarNomeRegione).Reti = true,
                                 "Sì",
                                 "No"
                             )
@@ -710,7 +668,7 @@ RetiPDTA_PF As screen:
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingTop: =0
-                        Text: ="Normativa Regionale"
+                        Text: ="Tipologia Reti"
                         Width: =Parent.Width
                         Y: |
                             =0
@@ -724,17 +682,11 @@ RetiPDTA_PF As screen:
                         PaddingRight: =1
                         PaddingTop: =0
                         Size: =11
-                        Text: |-
-                            =If(
-                                LookUp('CNN', Regione.Value = VarNomeRegione).'Normativa Regionale' = true,
-                                "Sì",
-                                "No"
-                            )
+                        Text: =Concat(LookUp(Reti, Regione.Value = VarNomeRegione).'Tipologia Reti'.Value, Value & ", ")
                         Tooltip: |
                             =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Commissione' 
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
-                        Wrap: =false
                         Y: =TitoloMonSpesa_24.Y + TitoloMonSpesa_24.Height
                         ZIndex: =30
 
@@ -757,7 +709,7 @@ RetiPDTA_PF As screen:
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingTop: =0
-                        Text: ="Commissione Regionale"
+                        Text: ="Note"
                         Width: =Parent.Width
                         Y: |
                             =0
@@ -772,146 +724,10 @@ RetiPDTA_PF As screen:
                         PaddingRight: =1
                         PaddingTop: =0
                         Size: =11
-                        Text: |-
-                            =If(
-                                LookUp('CNN', Regione.Value = VarNomeRegione).'Commissione Regionale' = true,
-                                "Sì",
-                                "No"
-                            )
+                        Text: =LookUp(Reti, Regione.Value = VarNomeRegione).Note
                         Width: =Parent.Width
                         Y: =TitoloMonSpesa_25.Y + TitoloMonSpesa_25.Height
                         ZIndex: =33
-
-                ContainerMonSpesa_29 As groupContainer.manualLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    DropShadow: =DropShadow.None
-                    FillPortions: =0
-                    Height: =TitoloMonSpesa_26.Height + dataMonSpesa_26.Height
-                    LayoutMinHeight: =20
-                    LayoutMinWidth: =20
-                    Width: =Parent.Width
-                    ZIndex: =34
-
-                    TitoloMonSpesa_26 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        FontWeight: =FontWeight.Bold
-                        Height: =34
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingTop: =0
-                        Text: ="Commissione Locale"
-                        Width: =Parent.Width
-                        Y: |
-                            =0
-                        ZIndex: =35
-
-                    dataMonSpesa_26 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        Height: =38
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =11
-                        Text: |-
-                            =If(
-                                LookUp('CNN', Regione.Value = VarNomeRegione).'Commissione Locale' = true,
-                                "Sì",
-                                "No"
-                            )
-                        Tooltip: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Linee di Indirizzo'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width
-                        Y: =TitoloMonSpesa_26.Y + TitoloMonSpesa_26.Height
-                        ZIndex: =36
-
-                ContainerMonSpesa_30 As groupContainer.manualLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    DropShadow: =DropShadow.None
-                    FillPortions: =0
-                    Height: =TitoloMonSpesa_23.Height + dataMonSpesa_23.Height
-                    LayoutMinHeight: =20
-                    LayoutMinWidth: =20
-                    Width: =Parent.Width
-                    ZIndex: =37
-
-                    TitoloMonSpesa_27 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        FontWeight: =FontWeight.Bold
-                        Height: =34
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingTop: =0
-                        Text: ="Normativa campioni in CNN"
-                        Width: =Parent.Width
-                        Y: |
-                            =0
-                        ZIndex: =38
-
-                    dataMonSpesa_27 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        Height: =Max(40)
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingRight: =1
-                        PaddingTop: =0
-                        Size: =11
-                        Text: |-
-                            =If(
-                                LookUp('CNN', Regione.Value = VarNomeRegione).'Normativa campioni in CNN' = true,
-                                "Sì",
-                                "No"
-                            )
-                        Width: =Parent.Width
-                        Y: =TitoloMonSpesa_27.Y + TitoloMonSpesa_27.Height
-                        ZIndex: =39
-
-                ContainerMonSpesa_31 As groupContainer.manualLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    DropShadow: =DropShadow.None
-                    FillPortions: =0
-                    Height: =TitoloMonSpesa_28.Height + dataMonSpesa_28.Height
-                    LayoutMinHeight: =20
-                    LayoutMinWidth: =20
-                    Width: =Parent.Width
-                    ZIndex: =40
-
-                    TitoloMonSpesa_28 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        FontWeight: =FontWeight.Bold
-                        Height: =34
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingTop: =0
-                        Text: ="Note"
-                        Width: =Parent.Width
-                        Y: |
-                            =0
-                        ZIndex: =41
-
-                    dataMonSpesa_28 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        Height: =38
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =11
-                        Text: =LookUp(CNN, Regione.Value = VarNomeRegione).Note
-                        Tooltip: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Budget Spesa'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width
-                        Y: =22
-                        ZIndex: =42
 
     ContainerTitolo_3 As groupContainer.horizontalAutoLayoutContainer:
         BorderColor: =RGBA(0, 0, 0, 0)

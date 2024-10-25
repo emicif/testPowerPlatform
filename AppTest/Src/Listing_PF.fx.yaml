@@ -305,8 +305,8 @@ Listing_PF As screen:
                 PaddingTop: =10
                 Size: =17
                 Text: ="Linee di indirizzo - Ultimo Documento"
-                Width: =ContainerMonSpesa.Width - IconaLineeInd.Width - Parent.PaddingRight
-                X: =162
+                Width: =Parent.Width - IconaLineeInd.Width - 80
+                X: =IconaLineeInd.X + IconaLineeInd.Width
                 ZIndex: =6
 
             IconaLineeInd As image:
@@ -317,7 +317,7 @@ Listing_PF As screen:
                 PaddingLeft: =10
                 PaddingTop: =5
                 Width: =50
-                X: =41
+                X: =40
                 Y: =8
                 ZIndex: =7
 

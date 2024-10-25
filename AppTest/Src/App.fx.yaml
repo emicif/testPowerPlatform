@@ -52,6 +52,10 @@ App As appinfo:
             varFolderPathPFLIndirizzoUD,
             ""
         );
+        Set(
+            varFolderPathPFCNN,
+            ""
+        );
         
         Set(
             RegioneSelectedDocumentLibrary,

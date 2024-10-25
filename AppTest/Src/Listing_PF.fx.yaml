@@ -76,7 +76,7 @@ Listing_PF As screen:
                     Text: =ThisItem.'Modificato da'.DisplayName
                     Tooltip: =ThisItem.'Modificato da'.DisplayName
                     Wrap: =false
-                    X: =330
+                    X: =ModByPM_1.X
                     Y: =Rectangle13_1.Height/2 - Self.Height/2
                     ZIndex: =1
 
@@ -111,7 +111,7 @@ Listing_PF As screen:
                     Tooltip: =ThisItem.'Data/ora modifica'
                     Width: =208
                     Wrap: =false
-                    X: =272
+                    X: =DataModPM_1.X
                     Y: =Rectangle13_1.Height/2 - Self.Height/2
                     ZIndex: =3
 
@@ -167,7 +167,7 @@ Listing_PF As screen:
                         //Download($"https://mindthehead.sharepoint.com/sites/MTH-NVS/{ThisItem.'Percorso completo'}")
                     Visible: =!ToggleIsFolder_1.Value
                     Width: =35
-                    X: =445
+                    X: =DownloadPM_1.X + DownloadPM_1.Width/2 - Self.Width/2
                     Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                     ZIndex: =9
 

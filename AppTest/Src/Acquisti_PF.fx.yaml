@@ -153,11 +153,13 @@ Acquisti_PF As screen:
             ContainerMonSpesaInterno_2 As groupContainer.verticalAutoLayoutContainer:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DropShadow: =DropShadow.None
-                Height: =ButtonContMonSpesa_2.Height - Titolo_MonSpesa_2.Height
+                Height: =ButtonContMonSpesa_2.Height - Titolo_MonSpesa_2.Height - 10
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutGap: =5
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowY: =LayoutOverflow.Scroll
+                PaddingBottom: =20
+                PaddingTop: =5
                 Width: |
                     =Parent.Width  
                 Y: =ButtonContMonSpesa_2.Y + Titolo_MonSpesa_2.Height
@@ -182,7 +184,7 @@ Acquisti_PF As screen:
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingTop: =0
-                        Text: ="Commissione"
+                        Text: ="Regione accetta CNN"
                         Width: =Parent.Width
                         Wrap: =false
                         Y: |
@@ -201,7 +203,7 @@ Acquisti_PF As screen:
                         Size: =11
                         Text: |-
                             =If(
-                                LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).Commissione = true,
+                                LookUp('CNN', Regione.Value = VarNomeRegione).'Regione accetta CNN' = true,
                                 "Sì",
                                 "No"
                             )
@@ -228,21 +230,26 @@ Acquisti_PF As screen:
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingTop: =0
-                        Text: ="Procedura Commissione"
+                        Text: ="Normativa Regionale"
                         Width: =Parent.Width
                         Y: |
                             =0
                         ZIndex: =35
 
                     dataMonSpesa_18 As label:
+                        AutoHeight: =true
                         Color: =RGBA(0, 32, 104, 1)
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingRight: =1
                         PaddingTop: =0
                         Size: =11
-                        Text: |
-                            =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Commissione' 
+                        Text: |-
+                            =If(
+                                LookUp('CNN', Regione.Value = VarNomeRegione).'Normativa Regionale' = true,
+                                "Sì",
+                                "No"
+                            )
                         Tooltip: |
                             =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Commissione' 
                         VerticalAlign: =VerticalAlign.Top
@@ -270,7 +277,7 @@ Acquisti_PF As screen:
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingTop: =0
-                        Text: ="Linee di Indirizzo"
+                        Text: ="Commissione Regionale"
                         Width: =Parent.Width
                         Y: |
                             =0
@@ -287,7 +294,7 @@ Acquisti_PF As screen:
                         Size: =11
                         Text: |-
                             =If(
-                                LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Linee di Indirizzo' = true,
+                                LookUp('CNN', Regione.Value = VarNomeRegione).'Commissione Regionale' = true,
                                 "Sì",
                                 "No"
                             )
@@ -314,13 +321,14 @@ Acquisti_PF As screen:
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingTop: =0
-                        Text: ="Procedura Linee di indirizzo"
+                        Text: ="Commissione Locale"
                         Width: =Parent.Width
                         Y: |
                             =0
                         ZIndex: =41
 
                     dataMonSpesa_20 As label:
+                        AutoHeight: =true
                         Color: =RGBA(0, 32, 104, 1)
                         Height: =38
                         PaddingBottom: =0
@@ -328,11 +336,15 @@ Acquisti_PF As screen:
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =11
-                        Text: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Linee di Indirizzo'
+                        Text: |-
+                            =If(
+                                LookUp('CNN', Regione.Value = VarNomeRegione).'Commissione Locale' = true,
+                                "Sì",
+                                "No"
+                            )
                         Tooltip: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Linee di Indirizzo'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
-                        Wrap: =false
                         Y: =TitoloMonSpesa_20.Y + TitoloMonSpesa_20.Height
                         ZIndex: =42
 
@@ -355,7 +367,7 @@ Acquisti_PF As screen:
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingTop: =0
-                        Text: ="Budget Spesa"
+                        Text: ="Normativa campioni in CNN"
                         Width: =Parent.Width
                         Y: |
                             =0
@@ -370,9 +382,9 @@ Acquisti_PF As screen:
                         PaddingRight: =1
                         PaddingTop: =0
                         Size: =11
-                        Text: |
+                        Text: |-
                             =If(
-                                LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Budget Spesa' = true,
+                                LookUp('CNN', Regione.Value = VarNomeRegione).'Normativa campioni in CNN' = true,
                                 "Sì",
                                 "No"
                             )
@@ -399,13 +411,14 @@ Acquisti_PF As screen:
                         PaddingBottom: =0
                         PaddingLeft: =20
                         PaddingTop: =0
-                        Text: ="Procedura Budget Spesa"
+                        Text: ="Note"
                         Width: =Parent.Width
                         Y: |
                             =0
                         ZIndex: =47
 
                     dataMonSpesa_22 As label:
+                        AutoHeight: =true
                         Color: =RGBA(0, 32, 104, 1)
                         Height: =38
                         PaddingBottom: =0
@@ -413,98 +426,12 @@ Acquisti_PF As screen:
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =11
-                        Text: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Budget Spesa'
+                        Text: =LookUp(CNN, Regione.Value = VarNomeRegione).Note
                         Tooltip: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Budget Spesa'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
-                        Wrap: =false
                         Y: =22
                         ZIndex: =48
-
-                ContainerMonSpesa_25 As groupContainer.manualLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    DropShadow: =DropShadow.None
-                    FillPortions: =0
-                    Height: =TitoloMonSpesa_17.Height + dataMonSpesa_17.Height
-                    LayoutMinHeight: =20
-                    LayoutMinWidth: =20
-                    Width: =Parent.Width
-                    ZIndex: =49
-
-                    TitoloMonSpesa_23 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        FontWeight: =FontWeight.Bold
-                        Height: =34
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingTop: =0
-                        Text: ="Report di Spesa"
-                        Width: =Parent.Width
-                        Y: |
-                            =0
-                        ZIndex: =50
-
-                    dataMonSpesa_23 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        Height: =27
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingRight: =1
-                        PaddingTop: =0
-                        Size: =11
-                        Text: |
-                            =If(
-                                LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Report di Spesa' = true,
-                                "Sì",
-                                "No"
-                            )
-                        Width: =Parent.Width
-                        Y: =TitoloMonSpesa_23.Y + TitoloMonSpesa_23.Height
-                        ZIndex: =51
-
-                ContainerMonSpesa_26 As groupContainer.manualLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    DropShadow: =DropShadow.None
-                    FillPortions: =0
-                    Height: =TitoloMonSpesa_24.Height + dataMonSpesa_24.Height
-                    LayoutMinHeight: =20
-                    LayoutMinWidth: =20
-                    Width: =Parent.Width
-                    ZIndex: =52
-
-                    TitoloMonSpesa_24 As label:
-                        AutoHeight: =true
-                        Color: =RGBA(0, 32, 104, 1)
-                        FontWeight: =FontWeight.Bold
-                        Height: =34
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingTop: =0
-                        Text: ="Procedura Report di Spesa"
-                        Width: =Parent.Width
-                        Y: |
-                            =0
-                        ZIndex: =53
-
-                    dataMonSpesa_24 As label:
-                        Color: =RGBA(0, 32, 104, 1)
-                        Height: =38
-                        PaddingBottom: =0
-                        PaddingLeft: =20
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =11
-                        Text: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Report di Spesa'
-                        Tooltip: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Report di Spesa'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width
-                        Wrap: =false
-                        Y: =TitoloMonSpesa_24.Y + TitoloMonSpesa_24.Height
-                        ZIndex: =54
 
         ContainerMonSpesa_9 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -566,11 +493,13 @@ Acquisti_PF As screen:
             ContainerMonSpesaInterno_1 As groupContainer.verticalAutoLayoutContainer:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DropShadow: =DropShadow.None
-                Height: =ButtonContMonSpesa_1.Height - Titolo_MonSpesa_1.Height
+                Height: =ButtonContMonSpesa_1.Height - Titolo_MonSpesa_1.Height - 10
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutGap: =5
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowY: =LayoutOverflow.Scroll
+                PaddingBottom: =5
+                PaddingTop: =5
                 Width: |
                     =Parent.Width  
                 Y: =ButtonContMonSpesa_1.Y + Titolo_MonSpesa_1.Height

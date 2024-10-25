@@ -56,6 +56,10 @@ App As appinfo:
             varFolderPathPFCNN,
             ""
         );
+        Set(
+            varFolderPathPFretiPDTA,
+            ""
+        );
         
         Set(
             RegioneSelectedDocumentLibrary,

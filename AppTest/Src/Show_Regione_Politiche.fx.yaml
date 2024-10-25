@@ -171,6 +171,9 @@ Show_Regione_Politiche As screen:
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =ImageReti.Height
                     HoverFill: =ColorFade(Self.Fill, -20%)
+                    OnSelect: |-
+                        =Set(varFolderPathPFretiPDTA, "Documents/Politiche Farmaceutiche/Reti e PDTA/" & VarNomeRegioneNoSpace & " - Reti e PDTA/");
+                        Navigate(RetiPDTA_PF)
                     PressedFill: =Self.Fill
                     Text: =
                     Width: =ImageReti.Width

@@ -112,7 +112,7 @@ Show_Regione_Politiche As screen:
                     HoverFill: =ColorFade(Self.Fill, -20%)
                     OnSelect: |-
                         =Set(varFolderPathPFProceduraModRegione, "Documents/Politiche Farmaceutiche/Procedura e Modulistica/" & VarNomeRegioneNoSpace & " - Procedura e Modulistica/");
-                        Set(varFolderPathPFLIndirizzoUD, "Documents/Politiche Farmaceutiche/Linee di Indirizzo Ultimo Documento" & VarNomeRegioneNoSpace & " - Ultimo Documento/");
+                        Set(varFolderPathPFLIndirizzoUD, "Documents/Politiche Farmaceutiche/Linee di Indirizzo - Ultimo Documento/" & VarNomeRegioneNoSpace & " - Ultimo Documento/");
                         Navigate(Listing_PF)
                     PressedFill: =Self.Fill
                     Text: =

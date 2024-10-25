@@ -287,7 +287,7 @@ Listing_PF As screen:
                     PaddingTop: =5
                     Visible: |-
                         =If(
-                            varFolderPathPFLIndirizzoUD = "Documents/Politiche Farmaceutiche/Linee di Indirizzo Ultimo Documento" & VarNomeRegioneNoSpace & " - Ultimo Documento/",
+                            varFolderPathPFLIndirizzoUD = "Documents/Politiche Farmaceutiche/Linee di Indirizzo - Ultimo Documento/" & VarNomeRegioneNoSpace & " - Ultimo Documento/",
                             false,
                             true)
                     Width: =40

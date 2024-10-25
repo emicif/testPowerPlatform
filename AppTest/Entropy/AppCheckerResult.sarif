@@ -11993,36 +11993,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varFolderPathPFLIndirizzoUD"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.varFolderPathPFLIndirizzoUD",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varFolderPathPFLIndirizzoUD",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.Icona-Farmaci"
                 }
               ],

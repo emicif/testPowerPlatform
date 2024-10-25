@@ -44,7 +44,7 @@ Listing_PF As screen:
                     =SortByColumns(
                         Filter(
                             Documents,
-                            'Percorso cartella' = varFolderPathPFProceduraModRegione
+                            'Percorso cartella' = varFolderPathPFLIndirizzoUD
                         ),
                         "{IsFolder}",
                         SortOrder.Descending,
@@ -58,7 +58,7 @@ Listing_PF As screen:
                         ToggleIsFolder_1.Value = true ,
                         // get the current location for the selected folder
                         Set(
-                           varFolderPathPFProceduraModRegione,
+                           varFolderPathPFLIndirizzoUD,
                            LabelPercorsoCompleto_1.Text & "/"
                         )
                     );
@@ -189,7 +189,7 @@ Listing_PF As screen:
                             ToggleIsFolder_1.Value,
                             // get the current location for the selected folder
                             Set(
-                               varFolderPathPFProceduraModRegione,
+                               varFolderPathPFLIndirizzoUD,
                                LabelPercorsoCompleto_1.Text & "/"
                             )
                         );
@@ -275,11 +275,11 @@ Listing_PF As screen:
                     Icon: =Icon.BackArrow
                     OnSelect: |
                         = Set(
-                            varFolderPathPFProceduraModRegione,
+                            varFolderPathPFLIndirizzoUD,
                             Concat(
                                 FirstN(
-                                    Split(varFolderPathPFProceduraModRegione, "/"), 
-                                    CountRows(Split(varFolderPathPFProceduraModRegione, "/"))-2),
+                                    Split(varFolderPathPFLIndirizzoUD, "/"), 
+                                    CountRows(Split(varFolderPathPFLIndirizzoUD, "/"))-2),
                                     Value,
                                 "/")
                         & "/")
@@ -287,7 +287,7 @@ Listing_PF As screen:
                     PaddingTop: =5
                     Visible: |-
                         =If(
-                            varFolderPathPFProceduraModRegione = "Documents/Politiche Farmaceutiche/Procedura e Modulistica/" & VarNomeRegioneNoSpace & " - Procedura e Modulistica/",
+                            varFolderPathPFLIndirizzoUD = "Documents/Politiche Farmaceutiche/Linee di Indirizzo Ultimo Documento" & VarNomeRegioneNoSpace & " - Ultimo Documento/",
                             false,
                             true)
                     Width: =40

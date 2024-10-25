@@ -154,6 +154,12 @@
           "News": {
             "tableName": "59ba34f9-44e7-4204-9324-679f0dc8db3b"
           },
+          "PDTA": {
+            "tableName": "a21dac1e-733d-4a99-ae7e-ecb297a29298"
+          },
+          "Reti": {
+            "tableName": "7a9598d9-0142-4c65-ad2b-1f6946e914a9"
+          },
           "Sostenibilità": {
             "tableName": "c65f684f-1e6f-4ae4-a3d1-7dc6e58493b6"
           },
@@ -186,7 +192,9 @@
       "Monitoraggio Spesa e Appropriatezza",
       "Governance Farmaceutica",
       "Gara Regionale",
-      "CNN"
+      "CNN",
+      "Reti",
+      "PDTA"
     ],
     "dependencies": {},
     "dependents": [

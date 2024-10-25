@@ -1120,7 +1120,7 @@
   "DoesTestStepsMetadataExist": true,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/25/2024 16:24:19",
+  "HeaderLastSavedDateTimeUTC": "10/25/2024 17:00:53",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "00b60bbd-9aa0-4b65-9d7b-bd5c0488aa58": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/052ab811b1524dcfa26d523e0edc471b\"",
@@ -1345,7 +1345,7 @@
   "OrderDataSource": {
     "Beovu - Kit Prodotto": 2,
     "CNN": 24,
-    "colFolderHistory": 25,
+    "colFolderHistory": 27,
     "ComboBoxSample": 3,
     "Comunicazioni_1": 4,
     "CustomGallerySample": 5,
@@ -1366,6 +1366,8 @@
     "News": 14,
     "NVS-PDF": 0,
     "NVSPdf-Kymriah": 1,
+    "PDTA": 26,
+    "Reti": 25,
     "Sostenibilità": 15,
     "Stockout": 16,
     "TherapeuticArea": 17

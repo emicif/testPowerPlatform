@@ -1,0 +1,1130 @@
+Acquisti_PF As screen:
+    BackgroundImage: =sfondo_italia
+    Fill: =RGBA(4,96,169,0.9)
+
+    ContainerTitolo_2 As groupContainer.horizontalAutoLayoutContainer:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DropShadow: =DropShadow.None
+        Height: =Titolo_19.Height + 40
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =Container18_1.PaddingLeft
+        Width: =Parent.Width
+        Y: =Header_22.Height
+        ZIndex: =2
+
+        Titolo_19 As label:
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(241, 244, 249, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            PaddingLeft: =0
+            Size: =20
+            Text: ="Listing/" & VarNomeRegione
+            Width: =Parent.Width
+            X: =172
+            Y: =116
+            ZIndex: =1
+
+        backHome_20 As image:
+            Height: =40
+            Image: =Expand_down_light
+            OnSelect: |+
+                =Navigate(Show_Regione_Politiche)
+                
+            Width: =36.05
+            X: =136
+            Y: =116
+            ZIndex: =2
+
+    Header_22 As Header:
+        ZIndex: =4
+
+    grpPDFview_5 As group:
+        Height: =5
+        Width: =5
+        X: =120
+        Y: =120
+        ZIndex: =4
+
+        Rectangle1_7 As rectangle:
+            Height: =570
+            Visible: =isPDFviewListingRegione
+            Width: =1198
+            X: =110
+            Y: =100
+            ZIndex: =3
+
+        Icon1_7 As icon.Cancel:
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(isPDFviewListingRegione, false)
+            Visible: =isPDFviewListingRegione
+            Width: =30
+            X: =1266
+            Y: =117
+            ZIndex: =4
+
+        PdfViewer1_7 As pdfViewer:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Document: =pdf_v_listing_regione
+            Fill: =RGBA(0, 0, 0, 0.5)
+            Height: =514
+            ShowControls: =true
+            Visible: =isPDFviewListingRegione
+            Width: =1198
+            X: =110
+            Y: =156
+            ZIndex: =5
+
+    Container18_1 As groupContainer.horizontalAutoLayoutContainer:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DropShadow: =DropShadow.None
+        Height: =314
+        LayoutGap: =20
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =20
+        PaddingLeft: =30
+        PaddingRight: =30
+        PaddingTop: =20
+        Width: =Parent.Width
+        Y: =Header_22.Height + ContainerTitolo_2.Height
+        ZIndex: =6
+
+        ContainerProcMod_1 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DropShadow: =DropShadow.None
+            FillPortions: =3
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            ZIndex: =3
+
+            ButtonContProcMod_1 As button:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                HoverFill: =Color.White
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =
+                Width: =Parent.Width
+                ZIndex: =4
+
+            Titolo_ProcMod_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 32, 104, 1)
+                FontWeight: =FontWeight.Bold
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                Size: =17
+                Text: ="Procedura e Modulistica"
+                Width: =ContainerMonSpesa_9.Width - IconaProcMod_1.Width - Parent.PaddingRight
+                X: =IconaProcMod_1.X + IconaProcMod_1.Width
+                ZIndex: =5
+
+            IconaProcMod_1 As image:
+                Height: |
+                    =40
+                Image: =ProcModIcon
+                PaddingBottom: =5
+                PaddingLeft: =10
+                PaddingTop: =5
+                Width: =50
+                X: =ContainerTitoliPM_1.X
+                Y: |
+                    =Titolo_ProcMod_1.Height/2 - Self.Height/2
+                ZIndex: =6
+
+            ContainerTitoliPM_1 As groupContainer.manualLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DropShadow: =DropShadow.None
+                Height: =40
+                Width: =Parent.Width - 20
+                X: =Parent.Width/2 - Self.Width/2
+                Y: =Titolo_ProcMod_1.Height
+                ZIndex: =7
+
+                IconBack_2 As icon.BackArrow:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =40
+                    Icon: =Icon.BackArrow
+                    OnSelect: |
+                        = Set(
+                            varFolderPathPFProceduraModRegione,
+                            Concat(
+                                FirstN(
+                                    Split(varFolderPathPFProceduraModRegione, "/"), 
+                                    CountRows(Split(varFolderPathPFProceduraModRegione, "/"))-2),
+                                    Value,
+                                "/")
+                        & "/")
+                    PaddingBottom: =5
+                    PaddingTop: =5
+                    Visible: |-
+                        =If(
+                            varFolderPathPFProceduraModRegione = "Documents/Politiche Farmaceutiche/Procedura e Modulistica/" & VarNomeRegioneNoSpace & " - Procedura e Modulistica/",
+                            false,
+                            true)
+                    Width: =40
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =8
+
+                DownloadPM_2 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Height: =36
+                    PaddingRight: =0
+                    Text: ="Download"
+                    Width: =102
+                    Wrap: =false
+                    X: =378
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =9
+
+                ModByPM_2 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Semibold
+                    PaddingLeft: =0
+                    Text: ="Modificato da"
+                    Wrap: =false
+                    X: =330
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =10
+
+                NomePM_2 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Height: =31
+                    PaddingLeft: =0
+                    Text: ="Nome"
+                    Width: =220
+                    Wrap: =false
+                    X: =40
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =11
+
+                DataModPM_2 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Height: =30
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    Text: ="Data/Ora Modifica"
+                    Wrap: =false
+                    X: =280
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =12
+
+                Separator1_4 As rectangle:
+                    Fill: =RGBA(230,230,230,1)
+                    Height: =1
+                    Width: =Parent.Width
+                    Y: =Parent.Height - 1
+                    ZIndex: =13
+
+            "GalleryProcMod_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DelayItemLoading: =true
+                Height: =156
+                Items: |-
+                    =SortByColumns(
+                        Filter(
+                            Documents,
+                            'Percorso cartella' = varFolderPathPFProceduraModRegione
+                        ),
+                        "{IsFolder}",
+                        SortOrder.Descending,
+                        "{Name}",
+                        SortOrder.Ascending  
+                    )
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: |-
+                    =If(
+                        ToggleIsFolder_2.Value = true ,
+                        // get the current location for the selected folder
+                        Set(
+                           varFolderPathPFProceduraModRegione,
+                           LabelPercorsoCompleto_2.Text & "/"
+                        )
+                    );
+                TemplatePadding: =0
+                TemplateSize: =80
+                Width: =Parent.Width - 20
+                X: =Parent.Width/2 - Self.Width/2
+                Y: =ContainerTitoliPM_1.Y +ContainerTitoliPM_1.Height
+                ZIndex: =14
+
+                Rectangle13_2 As rectangle:
+                    BorderColor: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.TemplateHeight - Separator1_5.Height
+                    OnSelect: =Select(Parent)
+                    Visible: =ThisItem.IsSelected
+                    Width: =4
+                    ZIndex: =15
+
+                LabelPercorsoCartella_2 As label:
+                    Height: =47
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Percorso cartella'
+                    Visible: =false
+                    Width: =752
+                    ZIndex: =16
+
+                LabelPercorsoCompleto_2 As label:
+                    Height: =57
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Percorso completo'
+                    Visible: =false
+                    Width: =745
+                    ZIndex: =17
+
+                ToggleIsFolder_2 As toggleSwitch:
+                    Default: =ThisItem.Cartella
+                    DisplayMode: =DisplayMode.View
+                    Height: |
+                        =40
+                    OnSelect: =Select(Parent)
+                    Visible: =false
+                    Width: =404
+                    X: =76
+                    ZIndex: =18
+
+                LabelTitolo_2 As label:
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =39
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: |
+                        =ThisItem.Nome
+                    Tooltip: =ThisItem.Nome
+                    Width: =220
+                    Wrap: =false
+                    X: =NomePM_2.X
+                    Y: =Parent.TemplateHeight/2 - Self.Height/2
+                    ZIndex: =19
+
+                ModificatoDa_2 As label:
+                    AutoHeight: =true
+                    Height: =69
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Modificato da'.DisplayName
+                    Tooltip: =ThisItem.'Modificato da'.DisplayName
+                    Wrap: =false
+                    X: =330
+                    Y: =Rectangle13_2.Height/2 - Self.Height/2
+                    ZIndex: =20
+
+                DownloadIcon_2 As image:
+                    Height: =35
+                    Image: =Icon_Download_Purple
+                    OnSelect: |-
+                        =Download($"{ThisItem.'Collegamento a elemento'}?Download=1")
+                        //Download($"https://mindthehead.sharepoint.com/sites/MTH-NVS/{ThisItem.'Percorso completo'}")
+                    Visible: =!ToggleIsFolder_2.Value
+                    Width: =35
+                    X: =445
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =21
+
+                IconaFileFolder_2 As icon.DocumentwithContent:
+                    Color: =If(ToggleIsFolder_2.Value= true, RGBA(227,184,11,1), RGBA(0,32,104,1))
+                    Height: =29
+                    Icon: =If(ToggleIsFolder_2.Value= true, Icon.Folder, Icon.DocumentWithContent)
+                    OnSelect: |
+                        =If(
+                            ToggleIsFolder_2.Value,
+                            // get the current location for the selected folder
+                            Set(
+                               varFolderPathPFProceduraModRegione,
+                               LabelPercorsoCompleto_2.Text & "/"
+                            )
+                        );
+                        If(
+                            !ToggleIsFolder_2.Value,
+                            Set( NameExtAllegato , Last(Split(LabelNomeFileExt_2.Text, ".")).Value);
+                        
+                            If( NameExtAllegato = "pdf",
+                                Set(pdf_v_listing_regione, 'NVS-PDF'.Run(ThisItem.Identificatore).pdf);
+                                Set(isPDFviewListingRegione, true),
+                                If( NameExtAllegato = "xlsx" || NameExtAllegato = "eml" || NameExtAllegato = "pptx",
+                                  Launch(ThisItem.'Collegamento a elemento')
+                                )
+                            )
+                        
+                        )
+                    Width: =40
+                    Y: =Rectangle13_2.Height/2 - Self.Height/2
+                    ZIndex: =22
+
+                DataModifica_2 As label:
+                    AutoHeight: =true
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =59
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.'Data/ora modifica'
+                    Tooltip: =ThisItem.'Data/ora modifica'
+                    Width: =208
+                    Wrap: =false
+                    X: =272
+                    Y: =Rectangle13_2.Height/2 - Self.Height/2
+                    ZIndex: =23
+
+                LabelNomeFileExt_2 As label:
+                    Height: =47
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Nome file con estensione'
+                    Visible: =false
+                    Width: =752
+                    Y: =33
+                    ZIndex: =24
+
+                Separator1_5 As rectangle:
+                    Fill: =RGBA(230,230,230,1)
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =25
+
+        ContainerMonSpesa_9 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DropShadow: =DropShadow.None
+            FillPortions: =2
+            LayoutMinHeight: =20
+            LayoutMinWidth: =40
+            PaddingBottom: =20
+            PaddingRight: =70
+            ZIndex: =26
+
+            ButtonContMonSpesa_1 As button:
+                DisabledBorderColor: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(255, 255, 255, 1)
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =
+                Width: =Parent.Width
+                ZIndex: =27
+
+            Titolo_MonSpesa_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 32, 104, 1)
+                FontWeight: =FontWeight.Bold
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                Size: =17
+                Text: ="Monitoraggio Spesa e Appropriatezza"
+                Width: =474
+                Wrap: =false
+                X: =IconaMonSpesa_1.X + IconaMonSpesa_1.Width
+                ZIndex: =28
+
+            IconaMonSpesa_1 As image:
+                Height: =40
+                Image: =MonSpesaIcon
+                PaddingBottom: =5
+                PaddingLeft: =20
+                PaddingTop: =5
+                Width: =50
+                X: |
+                    =0
+                Y: |
+                    =Titolo_MonSpesa_1.Height/2 - Self.Height/2
+                ZIndex: =29
+
+            ContainerMonSpesaInterno_1 As groupContainer.verticalAutoLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DropShadow: =DropShadow.None
+                Height: =ButtonContMonSpesa_1.Height - Titolo_MonSpesa_1.Height
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =5
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowY: =LayoutOverflow.Scroll
+                Width: |
+                    =Parent.Width  
+                Y: =ButtonContMonSpesa_1.Y + Titolo_MonSpesa_1.Height
+                ZIndex: =30
+
+                ContainerMonSpesa_10 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =TitoloMonSpesa_9.Height + dataMonSpesa_9.Height
+                    LayoutMinHeight: =20
+                    LayoutMinWidth: =20
+                    Width: =Parent.Width
+                    ZIndex: =31
+
+                    TitoloMonSpesa_9 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(0, 32, 104, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        PaddingBottom: =0
+                        PaddingLeft: =20
+                        PaddingTop: =0
+                        Text: ="Commissione"
+                        Width: =Parent.Width
+                        Wrap: =false
+                        Y: |
+                            =0
+                        ZIndex: =32
+
+                    dataMonSpesa_9 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(0, 32, 104, 1)
+                        Height: |
+                            =20
+                        PaddingBottom: =0
+                        PaddingLeft: =20
+                        PaddingRight: =1
+                        PaddingTop: =0
+                        Size: =11
+                        Text: |-
+                            =If(
+                                LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).Commissione = true,
+                                "Sì",
+                                "No"
+                            )
+                        Width: =Parent.Width
+                        Y: =TitoloMonSpesa_9.Y + TitoloMonSpesa_9.Height
+                        ZIndex: =33
+
+                ContainerMonSpesa_11 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =TitoloMonSpesa_10.Height + dataMonSpesa_10.Height
+                    LayoutMinHeight: =20
+                    LayoutMinWidth: =20
+                    Width: =Parent.Width
+                    ZIndex: =34
+
+                    TitoloMonSpesa_10 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(0, 32, 104, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        PaddingBottom: =0
+                        PaddingLeft: =20
+                        PaddingTop: =0
+                        Text: ="Procedura Commissione"
+                        Width: =Parent.Width
+                        Y: |
+                            =0
+                        ZIndex: =35
+
+                    dataMonSpesa_10 As label:
+                        Color: =RGBA(0, 32, 104, 1)
+                        PaddingBottom: =0
+                        PaddingLeft: =20
+                        PaddingRight: =1
+                        PaddingTop: =0
+                        Size: =11
+                        Text: |
+                            =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Commissione' 
+                        Tooltip: |
+                            =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Commissione' 
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =Parent.Width
+                        Wrap: =false
+                        Y: =TitoloMonSpesa_10.Y + TitoloMonSpesa_10.Height
+                        ZIndex: =36
+
+                ContainerMonSpesa_12 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =TitoloMonSpesa_11.Height + dataMonSpesa_11.Height
+                    LayoutMinHeight: =20
+                    LayoutMinWidth: =20
+                    Width: =Parent.Width
+                    ZIndex: =37
+
+                    TitoloMonSpesa_11 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(0, 32, 104, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        PaddingBottom: =0
+                        PaddingLeft: =20
+                        PaddingTop: =0
+                        Text: ="Linee di Indirizzo"
+                        Width: =Parent.Width
+                        Y: |
+                            =0
+                        ZIndex: =38
+
+                    dataMonSpesa_11 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(0, 32, 104, 1)
+                        Height: =20
+                        PaddingBottom: =0
+                        PaddingLeft: =20
+                        PaddingRight: =1
+                        PaddingTop: =0
+                        Size: =11
+                        Text: |-
+                            =If(
+                                LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Linee di Indirizzo' = true,
+                                "Sì",
+                                "No"
+                            )
+                        Width: =Parent.Width
+                        Y: =TitoloMonSpesa_11.Y + TitoloMonSpesa_11.Height
+                        ZIndex: =39
+
+                ContainerMonSpesa_13 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =TitoloMonSpesa_12.Height + dataMonSpesa_12.Height
+                    LayoutMinHeight: =20
+                    LayoutMinWidth: =20
+                    Width: =Parent.Width
+                    ZIndex: =40
+
+                    TitoloMonSpesa_12 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(0, 32, 104, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        PaddingBottom: =0
+                        PaddingLeft: =20
+                        PaddingTop: =0
+                        Text: ="Procedura Linee di indirizzo"
+                        Width: =Parent.Width
+                        Y: |
+                            =0
+                        ZIndex: =41
+
+                    dataMonSpesa_12 As label:
+                        Color: =RGBA(0, 32, 104, 1)
+                        Height: =38
+                        PaddingBottom: =0
+                        PaddingLeft: =20
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =11
+                        Text: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Linee di Indirizzo'
+                        Tooltip: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Linee di Indirizzo'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =Parent.Width
+                        Wrap: =false
+                        Y: =TitoloMonSpesa_12.Y + TitoloMonSpesa_12.Height
+                        ZIndex: =42
+
+                ContainerMonSpesa_14 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =TitoloMonSpesa_9.Height + dataMonSpesa_9.Height
+                    LayoutMinHeight: =20
+                    LayoutMinWidth: =20
+                    Width: =Parent.Width
+                    ZIndex: =43
+
+                    TitoloMonSpesa_13 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(0, 32, 104, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        PaddingBottom: =0
+                        PaddingLeft: =20
+                        PaddingTop: =0
+                        Text: ="Budget Spesa"
+                        Width: =Parent.Width
+                        Y: |
+                            =0
+                        ZIndex: =44
+
+                    dataMonSpesa_13 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(0, 32, 104, 1)
+                        Height: =Max(40)
+                        PaddingBottom: =0
+                        PaddingLeft: =20
+                        PaddingRight: =1
+                        PaddingTop: =0
+                        Size: =11
+                        Text: |
+                            =If(
+                                LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Budget Spesa' = true,
+                                "Sì",
+                                "No"
+                            )
+                        Width: =Parent.Width
+                        Y: =TitoloMonSpesa_13.Y + TitoloMonSpesa_13.Height
+                        ZIndex: =45
+
+                ContainerMonSpesa_15 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =TitoloMonSpesa_14.Height + dataMonSpesa_14.Height
+                    LayoutMinHeight: =20
+                    LayoutMinWidth: =20
+                    Width: =Parent.Width
+                    ZIndex: =46
+
+                    TitoloMonSpesa_14 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(0, 32, 104, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        PaddingBottom: =0
+                        PaddingLeft: =20
+                        PaddingTop: =0
+                        Text: ="Procedura Budget Spesa"
+                        Width: =Parent.Width
+                        Y: |
+                            =0
+                        ZIndex: =47
+
+                    dataMonSpesa_14 As label:
+                        Color: =RGBA(0, 32, 104, 1)
+                        Height: =38
+                        PaddingBottom: =0
+                        PaddingLeft: =20
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =11
+                        Text: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Budget Spesa'
+                        Tooltip: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Budget Spesa'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =Parent.Width
+                        Wrap: =false
+                        Y: =22
+                        ZIndex: =48
+
+                ContainerMonSpesa_16 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =TitoloMonSpesa_9.Height + dataMonSpesa_9.Height
+                    LayoutMinHeight: =20
+                    LayoutMinWidth: =20
+                    Width: =Parent.Width
+                    ZIndex: =49
+
+                    TitoloMonSpesa_15 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(0, 32, 104, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        PaddingBottom: =0
+                        PaddingLeft: =20
+                        PaddingTop: =0
+                        Text: ="Report di Spesa"
+                        Width: =Parent.Width
+                        Y: |
+                            =0
+                        ZIndex: =50
+
+                    dataMonSpesa_15 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(0, 32, 104, 1)
+                        Height: =27
+                        PaddingBottom: =0
+                        PaddingLeft: =20
+                        PaddingRight: =1
+                        PaddingTop: =0
+                        Size: =11
+                        Text: |
+                            =If(
+                                LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Report di Spesa' = true,
+                                "Sì",
+                                "No"
+                            )
+                        Width: =Parent.Width
+                        Y: =TitoloMonSpesa_15.Y + TitoloMonSpesa_15.Height
+                        ZIndex: =51
+
+                ContainerMonSpesa_17 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =TitoloMonSpesa_16.Height + dataMonSpesa_16.Height
+                    LayoutMinHeight: =20
+                    LayoutMinWidth: =20
+                    Width: =Parent.Width
+                    ZIndex: =52
+
+                    TitoloMonSpesa_16 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(0, 32, 104, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        PaddingBottom: =0
+                        PaddingLeft: =20
+                        PaddingTop: =0
+                        Text: ="Procedura Report di Spesa"
+                        Width: =Parent.Width
+                        Y: |
+                            =0
+                        ZIndex: =53
+
+                    dataMonSpesa_16 As label:
+                        Color: =RGBA(0, 32, 104, 1)
+                        Height: =38
+                        PaddingBottom: =0
+                        PaddingLeft: =20
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =11
+                        Text: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Report di Spesa'
+                        Tooltip: =LookUp('Monitoraggio Spesa e Appropriatezza', Regione.Value = VarNomeRegione).'Procedura Report di Spesa'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =Parent.Width
+                        Wrap: =false
+                        Y: =TitoloMonSpesa_16.Y + TitoloMonSpesa_16.Height
+                        ZIndex: =54
+
+    Container19_1 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DropShadow: =DropShadow.None
+        Height: =Parent.Height - Header_22.Height - ContainerTitolo_2.Height - Container18_1.Height - 20
+        PaddingBottom: =20
+        PaddingLeft: =30
+        PaddingRight: =30
+        PaddingTop: =20
+        Width: =Parent.Width
+        Y: =Header_22.Height + ContainerTitolo_2.Height + Container18_1.Height
+        ZIndex: =7
+
+        ContainerLineeIndirizzo_1 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DropShadow: =DropShadow.None
+            Height: =248
+            PaddingLeft: =5
+            PaddingRight: =5
+            Width: =Parent.Width
+            Y: =12
+            ZIndex: =55
+
+            ButtonLI_1 As button:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =236
+                HoverFill: =Color.White
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =
+                Width: =Parent.Width - 60
+                X: =Parent.Width/2 - Self.Width/2
+                ZIndex: =56
+
+            Titolo_LineeInd_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 32, 104, 1)
+                FontWeight: =FontWeight.Bold
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                Size: =17
+                Text: ="Linee di indirizzo - Ultimo Documento"
+                Width: =Parent.Width - IconaLineeInd_1.Width - 80
+                X: =IconaLineeInd_1.X + IconaLineeInd_1.Width
+                ZIndex: =57
+
+            IconaLineeInd_1 As image:
+                Height: |
+                    =40
+                Image: =ProcModIcon
+                PaddingBottom: =5
+                PaddingLeft: =10
+                PaddingTop: =5
+                Width: =50
+                X: =40
+                Y: =8
+                ZIndex: =58
+
+            ContainerTitoliLI_1 As groupContainer.manualLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DropShadow: =DropShadow.None
+                Height: =50
+                Width: =Parent.Width - 80
+                X: =Parent.Width/2 - Self.Width/2
+                Y: =Titolo_LineeInd_1.Height
+                ZIndex: =59
+
+                IconBack_3 As icon.BackArrow:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =40
+                    Icon: =Icon.BackArrow
+                    OnSelect: |
+                        = Set(
+                            varFolderPathPFLIndirizzoUD,
+                            Concat(
+                                FirstN(
+                                    Split(varFolderPathPFLIndirizzoUD, "/"), 
+                                    CountRows(Split(varFolderPathPFLIndirizzoUD, "/"))-2),
+                                    Value,
+                                "/")
+                        & "/")
+                    PaddingBottom: =5
+                    PaddingTop: =5
+                    Visible: |-
+                        =If(
+                            varFolderPathPFLIndirizzoUD = "Documents/Politiche Farmaceutiche/Linee di Indirizzo - Ultimo Documento/" & VarNomeRegioneNoSpace & " - Ultimo Documento/",
+                            false,
+                            true)
+                    Width: =40
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =60
+
+                DownloadPM_3 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Height: =36
+                    PaddingRight: =0
+                    Text: ="Download"
+                    Width: =102
+                    Wrap: =false
+                    X: |
+                        =1100
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =61
+
+                ModByPM_3 As label:
+                    FontWeight: =FontWeight.Semibold
+                    PaddingLeft: =0
+                    Text: ="Modificato da"
+                    Wrap: =false
+                    X: =884
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =62
+
+                NomePM_3 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Height: =31
+                    PaddingLeft: =0
+                    Text: ="Nome"
+                    Width: =220
+                    Wrap: =false
+                    X: =50
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =63
+
+                DataModPM_3 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Height: =30
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    Text: ="Data/Ora Modifica"
+                    Width: =200
+                    Wrap: =false
+                    X: =600
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =64
+
+                Separator1_6 As rectangle:
+                    Fill: =RGBA(230,230,230,1)
+                    Height: =1
+                    Width: =Parent.Width
+                    Y: =Parent.Height - 1
+                    ZIndex: =65
+
+            "GalleryLI_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DelayItemLoading: =true
+                Height: =126
+                Items: |-
+                    =SortByColumns(
+                        Filter(
+                            Documents,
+                            'Percorso cartella' = varFolderPathPFLIndirizzoUD
+                        ),
+                        "{IsFolder}",
+                        SortOrder.Descending,
+                        "{Name}",
+                        SortOrder.Ascending  
+                    )
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: |-
+                    =If(
+                        ToggleIsFolder_3.Value = true ,
+                        // get the current location for the selected folder
+                        Set(
+                           varFolderPathPFLIndirizzoUD,
+                           LabelPercorsoCompleto_3.Text & "/"
+                        )
+                    );
+                TemplatePadding: =0
+                TemplateSize: =41
+                Width: =Parent.Width - 80
+                X: =Parent.Width/2 - Self.Width/2
+                Y: =98
+                ZIndex: =66
+
+                Rectangle13_3 As rectangle:
+                    BorderColor: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.TemplateHeight - Separator1_7.Height
+                    OnSelect: =Select(Parent)
+                    Visible: =ThisItem.IsSelected
+                    Width: =4
+                    ZIndex: =67
+
+                LabelPercorsoCartella_3 As label:
+                    Height: =41
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Percorso cartella'
+                    Visible: =false
+                    Width: =480
+                    ZIndex: =68
+
+                LabelPercorsoCompleto_3 As label:
+                    Height: =41
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Percorso completo'
+                    Visible: =false
+                    Width: =480
+                    ZIndex: =69
+
+                ToggleIsFolder_3 As toggleSwitch:
+                    Default: =ThisItem.Cartella
+                    DisplayMode: =DisplayMode.View
+                    Height: |
+                        =40
+                    OnSelect: =Select(Parent)
+                    Visible: =false
+                    Width: =404
+                    X: =76
+                    ZIndex: =70
+
+                LabelTitolo_3 As label:
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =39
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: |
+                        =ThisItem.Nome
+                    Tooltip: =ThisItem.Nome
+                    Width: =500
+                    Wrap: =false
+                    X: =NomePM_3.X
+                    Y: =Parent.TemplateHeight/2 - Self.Height/2
+                    ZIndex: =71
+
+                ModificatoDa_3 As label:
+                    AutoHeight: =true
+                    Height: =69
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Modificato da'.DisplayName
+                    Tooltip: =ThisItem.'Modificato da'.DisplayName
+                    Wrap: =false
+                    X: =ModByPM_3.X
+                    ZIndex: =72
+
+                DownloadIcon_3 As image:
+                    Height: =35
+                    Image: =Icon_Download_Purple
+                    OnSelect: |-
+                        =Download($"{ThisItem.'Collegamento a elemento'}?Download=1")
+                        //Download($"https://mindthehead.sharepoint.com/sites/MTH-NVS/{ThisItem.'Percorso completo'}")
+                    Visible: =!ToggleIsFolder_3.Value
+                    Width: =35
+                    X: =DownloadPM_3.X + DownloadPM_3.Width/2 - Self.Width/2
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =73
+
+                IconaFileFolder_3 As icon.DocumentwithContent:
+                    Color: =If(ToggleIsFolder_3.Value= true, RGBA(227,184,11,1), RGBA(0,32,104,1))
+                    Height: =29
+                    Icon: =If(ToggleIsFolder_3.Value= true, Icon.Folder, Icon.DocumentWithContent)
+                    OnSelect: |
+                        =If(
+                            ToggleIsFolder_3.Value,
+                            // get the current location for the selected folder
+                            Set(
+                               varFolderPathPFLIndirizzoUD,
+                               LabelPercorsoCompleto_3.Text & "/"
+                            )
+                        );
+                        If(
+                            !ToggleIsFolder_3.Value,
+                            Set( NameExtAllegato , Last(Split(LabelNomeFileExt_3.Text, ".")).Value);
+                        
+                            If( NameExtAllegato = "pdf",
+                                Set(pdf_v_listing_regione, 'NVS-PDF'.Run(ThisItem.Identificatore).pdf);
+                                Set(isPDFviewListingRegione, true),
+                                If( NameExtAllegato = "xlsx" || NameExtAllegato = "eml" || NameExtAllegato = "pptx",
+                                  Launch(ThisItem.'Collegamento a elemento')
+                                )
+                            )
+                        
+                        )
+                    Width: =40
+                    Y: =Rectangle13_3.Height/2 - Self.Height/2
+                    ZIndex: =74
+
+                DataModifica_3 As label:
+                    AutoHeight: =true
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =59
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.'Data/ora modifica'
+                    Tooltip: =ThisItem.'Data/ora modifica'
+                    Width: =208
+                    Wrap: =false
+                    X: =DataModPM_3.X
+                    ZIndex: =75
+
+                LabelNomeFileExt_3 As label:
+                    Height: =41
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Nome file con estensione'
+                    Visible: =false
+                    Width: =480
+                    ZIndex: =76
+
+                Separator1_7 As rectangle:
+                    Fill: =RGBA(230,230,230,1)
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =77
+

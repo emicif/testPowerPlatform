@@ -141,7 +141,9 @@ Show_Regione_Politiche As screen:
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =ImageAcquisti.Height
                     HoverFill: =ColorFade(Self.Fill, -20%)
-                    OnSelect: =//Navigate(Acquisti_PF)
+                    OnSelect: |-
+                        =Set(varFolderPathPFCNN, "Documents/Politiche Farmaceutiche/CNN/" & VarNomeRegioneNoSpace & " - CNN/");
+                        Navigate(Acquisti_PF)
                     PressedFill: =Self.Fill
                     Text: =
                     Width: =ImageAcquisti.Width

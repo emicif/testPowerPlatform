@@ -197,17 +197,34 @@ Show_Regione_Politiche As screen:
             RadiusTopRight: =19
             ZIndex: =3
 
-            Label11 As label:
-                Color: =RGBA(0,32,104,1)
-                FontWeight: =FontWeight.Bold
-                Size: =16
-                Text: ="Ultime News"
+            Container21 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =40
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                LayoutMinHeight: =40
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
                 ZIndex: =1
+
+                LabelTitoloNews As label:
+                    Color: =RGBA(0,32,104,1)
+                    FontWeight: =FontWeight.Bold
+                    Size: =16
+                    Text: ="Ultime News"
+                    ZIndex: =1
+
+                LabelAllNews As label:
+                    Color: =RGBA(0,32,104,1)
+                    Text: ="Vedi tutte le news"
+                    Underline: =true
+                    Width: =155
+                    Wrap: =false
+                    ZIndex: =2
 
             "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DelayItemLoading: =true
-                Height: =Container8.Height - Label11.Height - 20
+                Height: =Container8.Height - LabelTitoloNews.Height - 20
                 Items: |-
                     =//Sort(Filter(News; Regione.Value = VarNomeRegione || Regione.Value = Blank() );'Data/ora modifica'; SortOrder.Descending)
                     Sort(Filter(News, Regione.Value = VarNomeRegione),'Data/ora modifica', SortOrder.Descending)
@@ -217,7 +234,7 @@ Show_Regione_Politiche As screen:
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
                 TemplateSize: =104
-                ZIndex: =2
+                ZIndex: =3
 
                 Image10 As image:
                     Height: =86

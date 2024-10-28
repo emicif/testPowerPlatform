@@ -208,7 +208,9 @@ Show_Regione_Politiche As screen:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DelayItemLoading: =true
                 Height: =Container8.Height - Label11.Height - 20
-                Items: =Sort(Filter(News, Regione.Value = VarNomeRegione || Regione.Value = Blank() ),'Data/ora modifica', SortOrder.Descending)
+                Items: |-
+                    =//Sort(Filter(News; Regione.Value = VarNomeRegione || Regione.Value = Blank() );'Data/ora modifica'; SortOrder.Descending)
+                    Sort(Filter(News, Regione.Value = VarNomeRegione),'Data/ora modifica', SortOrder.Descending)
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =150
                 LayoutMinWidth: =320

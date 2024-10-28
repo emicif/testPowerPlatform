@@ -203,7 +203,7 @@ Acquisti_PF As screen:
                         Size: =11
                         Text: |-
                             =If(
-                                LookUp('CNN', Regione.Value = VarNomeRegione).'Regione accetta CNN' = true,
+                                LookUp(CNN, Regione.Value = VarNomeRegione).'Regione accetta CNN' = true,
                                 "Sì",
                                 "No"
                             )
@@ -246,7 +246,7 @@ Acquisti_PF As screen:
                         Size: =11
                         Text: |-
                             =If(
-                                LookUp('CNN', Regione.Value = VarNomeRegione).'Normativa Regionale' = true,
+                                LookUp(CNN, Regione.Value = VarNomeRegione).'Normativa Regionale' = true,
                                 "Sì",
                                 "No"
                             )
@@ -294,7 +294,7 @@ Acquisti_PF As screen:
                         Size: =11
                         Text: |-
                             =If(
-                                LookUp('CNN', Regione.Value = VarNomeRegione).'Commissione Regionale' = true,
+                                LookUp(CNN, Regione.Value = VarNomeRegione).'Commissione Regionale' = true,
                                 "Sì",
                                 "No"
                             )
@@ -338,7 +338,7 @@ Acquisti_PF As screen:
                         Size: =11
                         Text: |-
                             =If(
-                                LookUp('CNN', Regione.Value = VarNomeRegione).'Commissione Locale' = true,
+                                LookUp(CNN, Regione.Value = VarNomeRegione).'Commissione Locale' = true,
                                 "Sì",
                                 "No"
                             )
@@ -384,7 +384,7 @@ Acquisti_PF As screen:
                         Size: =11
                         Text: |-
                             =If(
-                                LookUp('CNN', Regione.Value = VarNomeRegione).'Normativa campioni in CNN' = true,
+                                LookUp(CNN, Regione.Value = VarNomeRegione).'Normativa campioni in CNN' = true,
                                 "Sì",
                                 "No"
                             )

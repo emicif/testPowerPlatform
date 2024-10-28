@@ -641,7 +641,7 @@ RetiPDTA_PF As screen:
                         Size: =11
                         Text: |-
                             =If(
-                                LookUp('Reti', Regione.Value = VarNomeRegione).Reti = true,
+                                LookUp(Reti, Regione.Value = VarNomeRegione).Reti = true,
                                 "Sì",
                                 "No"
                             )

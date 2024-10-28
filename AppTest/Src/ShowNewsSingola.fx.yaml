@@ -8,12 +8,16 @@ ShowNewsSingola As screen:
         Height: =Parent.Height - Header_25.Height - ContainerbackTitoloNews_1.Height - 29
         LayoutGap: =20
         LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =20
+        RadiusTopLeft: =0
+        RadiusTopRight: =20
         Width: =Parent.Width - 80
         X: =Parent.Width/2 - Self.Width/2
         Y: =Header_25.Height + ContainerbackTitoloNews_1.Height
         ZIndex: =1
 
-        Image14 As image:
+        ImageNews As image:
             FillPortions: =1
             Height: =Parent.Height
             Image: =LookUp(News, ID = varNewsSingolaID,Immagine)
@@ -43,18 +47,29 @@ ShowNewsSingola As screen:
                 Width: =1286
                 ZIndex: =1
 
-            Label12 As label:
-                Align: =Align.Center
+            "'Descrizione Interna News' As label":
                 DisplayMode: =DisplayMode.View
-                Height: =Parent.Height
+                Height: =Parent.Height - titoloInternoNews.Height - 20
                 Overflow: =Overflow.Scroll
                 PaddingBottom: =20
                 PaddingLeft: =10
                 PaddingRight: =10
                 PaddingTop: =20
                 Text: =LookUp(News, ID = varNewsSingolaID,Descrizione)
-                Width: =Parent.Width
+                Width: =Parent.Width - 30
+                X: =Parent.Width/2 - Self.Width/2
+                Y: =titoloInternoNews.Height
                 ZIndex: =2
+
+            titoloInternoNews As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                PaddingTop: =20
+                Size: =16
+                Text: =LookUp(News, ID = varNewsSingolaID,Titolo)
+                Width: =Parent.Width - 30
+                X: =Parent.Width/2 - Self.Width/2
+                ZIndex: =3
 
     ContainerbackTitoloNews_1 As groupContainer.horizontalAutoLayoutContainer:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -90,7 +105,7 @@ ShowNewsSingola As screen:
             FontWeight: =FontWeight.Bold
             PaddingLeft: =20
             Size: =20
-            Text: =LookUp(News, ID = varNewsSingolaID,Titolo)
+            Text: ="Tutte le News/" & VarNomeRegione
             Width: =Parent.Width - backHome_23.Width
             X: =200
             Y: =116

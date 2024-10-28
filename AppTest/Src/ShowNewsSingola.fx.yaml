@@ -105,7 +105,7 @@ ShowNewsSingola As screen:
             FontWeight: =FontWeight.Bold
             PaddingLeft: =20
             Size: =20
-            Text: ="Tutte le News/" & VarNomeRegione
+            Text: ="Tutte le News / " & VarNomeRegione
             Width: =Parent.Width - backHome_23.Width
             X: =200
             Y: =116

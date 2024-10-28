@@ -166,7 +166,7 @@ AllNews_Regione As screen:
             FontWeight: =FontWeight.Bold
             PaddingLeft: =0
             Size: =20
-            Text: ="Tutte le News/" & VarNomeRegione
+            Text: ="Tutte le News / " & VarNomeRegione
             Width: =Parent.Width - 80
             X: =172
             Y: =116

@@ -61,6 +61,7 @@ AllNews_Regione As screen:
                 ZIndex: =5
 
             Rectangle15 As rectangle:
+                Fill: =RGBA(0,32,104,1)
                 Height: =Parent.TemplateHeight - Separator6.Height - 40
                 OnSelect: =Select(Parent)
                 Visible: =ThisItem.IsSelected

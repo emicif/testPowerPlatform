@@ -61,10 +61,11 @@ AllNews_Regione As screen:
                 ZIndex: =5
 
             Rectangle15 As rectangle:
-                Height: =Parent.TemplateHeight - Separator6.Height
+                Height: =Parent.TemplateHeight - Separator6.Height - 40
                 OnSelect: =Select(Parent)
                 Visible: =ThisItem.IsSelected
                 Width: =4
+                Y: =(Parent.TemplateHeight/2) - (Self.Height/2)
                 ZIndex: =6
 
             Container24 As groupContainer.manualLayoutContainer:

@@ -277,7 +277,7 @@ Show_Regione_Politiche As screen:
                     PaddingTop: =0
                     Text: =ThisItem.Titolo
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =735
+                    Width: =903
                     Wrap: =false
                     X: =129
                     Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle4.Size * 1.8)) / 2
@@ -286,7 +286,7 @@ Show_Regione_Politiche As screen:
                 Subtitle4 As label:
                     Color: =RGBA(97, 97, 97, 1)
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Lighter)
-                    Height: =19
+                    Height: =18
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
@@ -294,7 +294,7 @@ Show_Regione_Politiche As screen:
                     PaddingTop: =0
                     Text: =ThisItem.Descrizione
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =854
+                    Width: =903
                     Wrap: =false
                     X: =Title4.X
                     Y: =Title4.Y + Title4.Height
@@ -325,7 +325,7 @@ Show_Regione_Politiche As screen:
                     HoverColor: =RGBA(0,32,104,1)
                     HoverFill: =Color.White
                     OnSelect: |-
-                        =Select(Parent);
+                        =Set(varNewsSingolaID, ThisItem.ID);
                         Navigate(ShowNewsSingola)
                     PaddingRight: =20
                     PressedFill: =Color.White

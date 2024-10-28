@@ -118,7 +118,7 @@ AllNews_Regione As screen:
                 HoverColor: =RGBA(0,32,104,1)
                 HoverFill: =Color.White
                 OnSelect: |-
-                    =Select(Parent);
+                    =Set(varNewsSingolaID, ThisItem.ID);
                     Navigate(ShowNewsSingola)
                 PaddingRight: =20
                 PressedFill: =Color.White

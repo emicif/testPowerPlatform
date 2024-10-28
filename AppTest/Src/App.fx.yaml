@@ -60,6 +60,7 @@ App As appinfo:
             varFolderPathPFretiPDTA,
             ""
         );
+        Set(varNewsSingolaID, Blank());
         
         Set(
             RegioneSelectedDocumentLibrary,

@@ -104,7 +104,7 @@
                 },
                 "region": {
                   "charLength": 15,
-                  "charOffset": 989,
+                  "charOffset": 1022,
                   "snippet": {
                     "text": "DocumentLibrary"
                   }
@@ -144,7 +144,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 1005,
+                  "charOffset": 1038,
                   "snippet": {
                     "text": "="
                   }
@@ -12903,6 +12903,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ShowNewsSingola.ContainerbackTitoloNews_1.backHome_23.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ShowNewsSingola.ContainerbackTitoloNews_1.backHome_23.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ShowNewsSingola",
+                "type": "ShowNewsSingola.ContainerbackTitoloNews_1.backHome_23"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ShowNewsSingola.ContainerbackTitoloNews_1.backHome_23.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ShowNewsSingola.ContainerbackTitoloNews_1.backHome_23.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ShowNewsSingola",
+                "type": "ShowNewsSingola.ContainerbackTitoloNews_1.backHome_23"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "AllNews_Regione.ContainerGlrNews.Gallery1.AccessibleLabel"
                 }
               ],
@@ -13083,77 +13143,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.backgroundColorGrey"
+                  "fullyQualifiedName": "App.varSaluto"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.backgroundColorGrey",
+                  "fullyQualifiedName": "App.varSaluto",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "backgroundColorGrey",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.AreaSelected"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.AreaSelected",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AreaSelected",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.AreaSelectedDocumentLibrary"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.AreaSelectedDocumentLibrary",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AreaSelectedDocumentLibrary",
+                "member": "varSaluto",
                 "module": "App",
                 "type": "App"
               }
@@ -13203,17 +13203,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varCurrentLevel"
+                  "fullyQualifiedName": "App.AreaSelectedDocumentLibrary"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varCurrentLevel",
+                  "fullyQualifiedName": "App.AreaSelectedDocumentLibrary",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varCurrentLevel",
+                "member": "AreaSelectedDocumentLibrary",
                 "module": "App",
                 "type": "App"
               }
@@ -13233,17 +13233,77 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varSaluto"
+                  "fullyQualifiedName": "App.AreaSelected"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varSaluto",
+                  "fullyQualifiedName": "App.AreaSelected",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varSaluto",
+                "member": "AreaSelected",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.backgroundColorGrey"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.backgroundColorGrey",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "backgroundColorGrey",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.varCurrentLevel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varCurrentLevel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varCurrentLevel",
                 "module": "App",
                 "type": "App"
               }
@@ -13486,6 +13546,36 @@
                 "member": "PaddingLeft",
                 "module": "AllNews_Regione",
                 "type": "AllNews_Regione.ContainerbackTitoloNews"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ShowNewsSingola.ContainerbackTitoloNews_1.PaddingLeft"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ShowNewsSingola.ContainerbackTitoloNews_1.PaddingLeft",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "PaddingLeft",
+                "module": "ShowNewsSingola",
+                "type": "ShowNewsSingola.ContainerbackTitoloNews_1"
               }
             }
           ],

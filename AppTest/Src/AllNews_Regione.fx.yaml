@@ -3,10 +3,26 @@ AllNews_Regione As screen:
     Fill: =RGBA(4,96,169,0.9)
 
     ContainerGlrNews As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DropShadow: =DropShadow.None
         Height: =Parent.Height -  Header_24.Height - ContainerbackTitoloNews.Height
         Width: =Parent.Width
         Y: =Header_24.Height + ContainerbackTitoloNews.Height
         ZIndex: =1
+
+        ButtonSfondoGlrNews As button:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =Parent.Height - 40
+            HoverFill: =Color.White
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Text: =
+            Width: =Parent.Width - 80
+            X: =Parent.Width/2 - Self.Width/2
+            Y: =Parent.Height/2 - Self.Height/2
+            ZIndex: =1
 
         "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
@@ -19,7 +35,7 @@ AllNews_Regione As screen:
             Width: =Parent.Width - 80
             X: =Parent.Width/2 - Self.Width/2
             Y: =Parent.Height/2 - Self.Height/2
-            ZIndex: =1
+            ZIndex: =2
 
             Image8 As image:
                 Height: =72
@@ -81,9 +97,12 @@ AllNews_Regione As screen:
                 ZIndex: =4
 
             Separator6 As rectangle:
-                Height: =8
+                BorderColor: =RGBA(218, 218, 218, 0.8)
+                Fill: =RGBA(218, 218, 218, 0.8)
+                Height: =2
                 OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth
+                Width: =Parent.TemplateWidth - 32
+                X: =16
                 Y: =Parent.TemplateHeight - Self.Height
                 ZIndex: =5
 

@@ -230,7 +230,7 @@ Show_Regione_Politiche As screen:
                 Height: =Container8.Height - LabelTitoloNews.Height - 20
                 Items: |-
                     =//Sort(Filter(News; Regione.Value = VarNomeRegione || Regione.Value = Blank() );'Data/ora modifica'; SortOrder.Descending)
-                    Sort(Filter(News, Regione.Value = VarNomeRegione),'Data/ora modifica', SortOrder.Descending)
+                    FirstN(Sort(Filter(News, Regione.Value = VarNomeRegione),'Data/ora modifica', SortOrder.Descending),4)
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =150
                 LayoutMinWidth: =320

@@ -50,22 +50,6 @@ AllNews_Regione As screen:
                 Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                 ZIndex: =1
 
-            NextArrow1 As icon.ChevronRight:
-                AccessibleLabel: =Self.Tooltip
-                Color: =RGBA(166, 166, 166, 1)
-                Height: =50
-                Icon: =Icon.ChevronRight
-                OnSelect: =Select(Parent)
-                PaddingBottom: =16
-                PaddingLeft: =16
-                PaddingRight: =16
-                PaddingTop: =16
-                Tooltip: ="Visualizza dettagli elementi"
-                Width: =50
-                X: =Parent.TemplateWidth - Self.Width - 12
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =4
-
             Separator6 As rectangle:
                 BorderColor: =RGBA(218, 218, 218, 0.8)
                 Fill: =RGBA(218, 218, 218, 0.8)
@@ -86,8 +70,8 @@ AllNews_Regione As screen:
             Container24 As groupContainer.manualLayoutContainer:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DropShadow: =DropShadow.None
-                Height: =170
-                Width: =Parent.TemplateWidth - Image8.Width - 100
+                Height: =168
+                Width: =897
                 X: =245
                 ZIndex: =7
 
@@ -124,6 +108,26 @@ AllNews_Regione As screen:
                     X: =Title1.X
                     Y: =Title1.Y + Title1.Height
                     ZIndex: =2
+
+            ButtonShowSingolaNews_1 As button:
+                Align: =Align.Right
+                BorderColor: =ColorFade(Self.Fill, -0)
+                Color: =RGBA(0,32,104,1)
+                Fill: =Color.White
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                HoverColor: =RGBA(0,32,104,1)
+                HoverFill: =Color.White
+                OnSelect: |-
+                    =Select(Parent);
+                    Navigate(ShowNewsSingola)
+                PaddingRight: =20
+                PressedFill: =Color.White
+                Size: =13
+                Text: ="Vedi di più"
+                Underline: =true
+                X: =Parent.TemplateWidth - Self.Width - 12
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =8
 
     Header_24 As Header:
         ZIndex: =2

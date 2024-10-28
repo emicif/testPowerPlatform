@@ -13023,6 +13023,126 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "AllNews_Regione.ContainerGlrNews.Gallery1.Container24.Title1.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AllNews_Regione.ContainerGlrNews.Gallery1.Container24.Title1.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "AllNews_Regione",
+                "type": "AllNews_Regione.ContainerGlrNews.Gallery1.Container24.Title1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AllNews_Regione.ContainerGlrNews.Gallery1.Container24.Title1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AllNews_Regione.ContainerGlrNews.Gallery1.Container24.Title1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "AllNews_Regione",
+                "type": "AllNews_Regione.ContainerGlrNews.Gallery1.Container24.Title1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AllNews_Regione.ContainerGlrNews.Gallery1.Container24.Subtitle1.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AllNews_Regione.ContainerGlrNews.Gallery1.Container24.Subtitle1.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "AllNews_Regione",
+                "type": "AllNews_Regione.ContainerGlrNews.Gallery1.Container24.Subtitle1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AllNews_Regione.ContainerGlrNews.Gallery1.Container24.Subtitle1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AllNews_Regione.ContainerGlrNews.Gallery1.Container24.Subtitle1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "AllNews_Regione",
+                "type": "AllNews_Regione.ContainerGlrNews.Gallery1.Container24.Subtitle1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.backgroundColorGrey"
                 }
               ],

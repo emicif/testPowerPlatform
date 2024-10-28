@@ -198,6 +198,8 @@ Show_Regione_Politiche As screen:
             ZIndex: =3
 
             Container21 As groupContainer.horizontalAutoLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =40
                 LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -215,6 +217,7 @@ Show_Regione_Politiche As screen:
 
                 LabelAllNews As label:
                     Color: =RGBA(0,32,104,1)
+                    OnSelect: =Navigate(AllNews_Regione)
                     Text: ="Vedi tutte le news"
                     Underline: =true
                     Width: =155

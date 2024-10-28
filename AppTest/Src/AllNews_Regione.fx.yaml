@@ -1,0 +1,135 @@
+AllNews_Regione As screen:
+    BackgroundImage: =sfondo_italia
+    Fill: =RGBA(4,96,169,0.9)
+
+    ContainerGlrNews As groupContainer.manualLayoutContainer:
+        Height: =Parent.Height -  Header_24.Height - ContainerbackTitoloNews.Height
+        Width: =Parent.Width
+        Y: =Header_24.Height + ContainerbackTitoloNews.Height
+        ZIndex: =1
+
+        "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            DelayItemLoading: =true
+            Height: =Parent.Height - 40
+            Items: =CustomGallerySample
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =104
+            Width: =Parent.Width - 80
+            X: =Parent.Width/2 - Self.Width/2
+            Y: =Parent.Height/2 - Self.Height/2
+            ZIndex: =1
+
+            Image8 As image:
+                Height: =72
+                OnSelect: =Select(Parent)
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Width: =72
+                X: =16
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            Title1 As label:
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.SampleHeading
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Parent.TemplateWidth - 173
+                X: =103
+                Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle1.Size * 1.8)) / 2
+                ZIndex: =2
+
+            Subtitle1 As label:
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.SampleText
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Title1.Width
+                X: =Title1.X
+                Y: =Title1.Y + Title1.Height
+                ZIndex: =3
+
+            NextArrow1 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Color: =RGBA(166, 166, 166, 1)
+                Height: =50
+                Icon: =Icon.ChevronRight
+                OnSelect: =Select(Parent)
+                PaddingBottom: =16
+                PaddingLeft: =16
+                PaddingRight: =16
+                PaddingTop: =16
+                Tooltip: ="Visualizza dettagli elementi"
+                Width: =50
+                X: =Parent.TemplateWidth - Self.Width - 12
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =4
+
+            Separator6 As rectangle:
+                Height: =8
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - Self.Height
+                ZIndex: =5
+
+            Rectangle15 As rectangle:
+                Height: =Parent.TemplateHeight - Separator6.Height
+                OnSelect: =Select(Parent)
+                Visible: =ThisItem.IsSelected
+                Width: =4
+                ZIndex: =6
+
+    Header_24 As Header:
+        ZIndex: =2
+
+    ContainerbackTitoloNews As groupContainer.horizontalAutoLayoutContainer:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DropShadow: =DropShadow.None
+        Height: =TitoloNewsRegione.Height+ 40
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =Container18_2.PaddingLeft
+        Width: =Parent.Width
+        Y: =Header_24.Height
+        ZIndex: =3
+
+        backHome_22 As image:
+            Height: =40
+            Image: =Expand_down_light
+            OnSelect: |+
+                =Navigate(Show_Regione_Politiche)
+                
+            Width: =36.05
+            X: =136
+            Y: =116
+            ZIndex: =1
+
+        TitoloNewsRegione As label:
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(241, 244, 249, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            PaddingLeft: =0
+            Size: =20
+            Text: ="Tutte le News/" & VarNomeRegione
+            Width: =Parent.Width - 80
+            X: =172
+            Y: =116
+            ZIndex: =2
+

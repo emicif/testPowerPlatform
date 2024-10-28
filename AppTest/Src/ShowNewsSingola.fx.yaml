@@ -2,7 +2,11 @@ ShowNewsSingola As screen:
     BackgroundImage: =sfondo_italia
     Fill: =RGBA(4,96,169,0.9)
 
-    Header_25 As Header:
+    Container25 As groupContainer.manualLayoutContainer:
+        Width: =Parent.Width - 80
+        X: =Parent.Width/2 - Self.Width/2
+        Y: =Header_25.Height + ContainerbackTitoloNews_1.Height
+        ZIndex: =1
 
     ContainerbackTitoloNews_1 As groupContainer.horizontalAutoLayoutContainer:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -10,7 +14,6 @@ ShowNewsSingola As screen:
         Height: =TitoloNewsRegione_1.Height+ 40
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutMode: =LayoutMode.Auto
-        PaddingLeft: =Container18_2.PaddingLeft
         Width: =Parent.Width - 80
         X: =Parent.Width/2 - Self.Width/2
         Y: =Header_25.Height
@@ -22,8 +25,10 @@ ShowNewsSingola As screen:
             OnSelect: |+
                 =Navigate(AllNews_Regione)
                 
+            Tooltip: ="Torna a elenco News"
             Width: =36.05
-            X: =136
+            X: |
+                =0
             Y: =116
             ZIndex: =1
 
@@ -37,9 +42,12 @@ ShowNewsSingola As screen:
             FontWeight: =FontWeight.Bold
             PaddingLeft: =20
             Size: =20
-            Text: ="News " & VarNomeRegione & "/ " & Char(10) & LookUp(News, ID = varNewsSingolaID,Titolo)
-            Width: =Parent.Width -100
+            Text: ="News " & VarNomeRegione & "/ " & Char(10) & Char(10) & LookUp(News, ID = varNewsSingolaID,Titolo)
+            Width: =Parent.Width - backHome_23.Width
             X: =200
             Y: =116
             ZIndex: =2
+
+    Header_25 As Header:
+        ZIndex: =3
 

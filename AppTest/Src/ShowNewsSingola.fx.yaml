@@ -2,11 +2,59 @@ ShowNewsSingola As screen:
     BackgroundImage: =sfondo_italia
     Fill: =RGBA(4,96,169,0.9)
 
-    Container25 As groupContainer.manualLayoutContainer:
+    Container26 As groupContainer.horizontalAutoLayoutContainer:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DropShadow: =DropShadow.None
+        Height: =Parent.Height - Header_25.Height - ContainerbackTitoloNews_1.Height - 29
+        LayoutGap: =20
+        LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width - 80
         X: =Parent.Width/2 - Self.Width/2
         Y: =Header_25.Height + ContainerbackTitoloNews_1.Height
         ZIndex: =1
+
+        Image14 As image:
+            FillPortions: =1
+            Height: =Parent.Height
+            Image: =LookUp(News, ID = varNewsSingolaID,Immagine)
+            ImagePosition: =ImagePosition.Stretch
+            Width: =Parent.Width
+            ZIndex: =1
+
+        Container25 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DropShadow: =DropShadow.None
+            FillPortions: =2
+            Height: =284
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =836
+            ZIndex: =2
+
+            ButtonSfondoGlrNews_1 As button:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height 
+                HoverFill: =Color.White
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =
+                Width: =1286
+                ZIndex: =1
+
+            Label12 As label:
+                Align: =Align.Center
+                DisplayMode: =DisplayMode.View
+                Height: =Parent.Height
+                Overflow: =Overflow.Scroll
+                PaddingBottom: =20
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =20
+                Text: =LookUp(News, ID = varNewsSingolaID,Descrizione)
+                Width: =Parent.Width
+                ZIndex: =2
 
     ContainerbackTitoloNews_1 As groupContainer.horizontalAutoLayoutContainer:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -16,7 +64,7 @@ ShowNewsSingola As screen:
         LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width - 80
         X: =Parent.Width/2 - Self.Width/2
-        Y: =Header_25.Height
+        Y: =Header_25.Height 
         ZIndex: =2
 
         backHome_23 As image:
@@ -42,7 +90,7 @@ ShowNewsSingola As screen:
             FontWeight: =FontWeight.Bold
             PaddingLeft: =20
             Size: =20
-            Text: ="News " & VarNomeRegione & "/ " & Char(10) & Char(10) & LookUp(News, ID = varNewsSingolaID,Titolo)
+            Text: =LookUp(News, ID = varNewsSingolaID,Titolo)
             Width: =Parent.Width - backHome_23.Width
             X: =200
             Y: =116

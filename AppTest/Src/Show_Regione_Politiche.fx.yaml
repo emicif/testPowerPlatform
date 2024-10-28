@@ -201,7 +201,7 @@ Show_Regione_Politiche As screen:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DropShadow: =DropShadow.None
                 FillPortions: =0
-                Height: =40
+                Height: =50
                 LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                 LayoutMinHeight: =40
                 LayoutMinWidth: =250
@@ -209,20 +209,33 @@ Show_Regione_Politiche As screen:
                 ZIndex: =1
 
                 LabelTitoloNews As label:
+                    AlignInContainer: =AlignInContainer.Center
                     Color: =RGBA(0,32,104,1)
                     FontWeight: =FontWeight.Bold
                     Size: =16
                     Text: ="Ultime News"
                     ZIndex: =1
 
-                LabelAllNews As label:
+                ButtonAllNews As button:
+                    Align: =Align.Right
+                    AlignInContainer: =AlignInContainer.Center
+                    BorderColor: =ColorFade(Self.Fill, -0)
                     Color: =RGBA(0,32,104,1)
+                    Fill: =Color.White
+                    FontWeight: =FontWeight.Normal
+                    HoverColor: =RGBA(0,32,104,1)
+                    HoverFill: =Color.White
                     OnSelect: =Navigate(AllNews_Regione)
+                    PaddingRight: =20
+                    PressedFill: =Color.White
+                    Size: =14
                     Text: ="Vedi tutte le news"
                     Underline: =true
-                    Width: =155
-                    Wrap: =false
-                    ZIndex: =2
+                    Width: |
+                        =250
+                    X: =1046
+                    Y: =32
+                    ZIndex: =3
 
             "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -230,7 +243,7 @@ Show_Regione_Politiche As screen:
                 Height: =Container8.Height - LabelTitoloNews.Height - 20
                 Items: |-
                     =//Sort(Filter(News; Regione.Value = VarNomeRegione || Regione.Value = Blank() );'Data/ora modifica'; SortOrder.Descending)
-                    FirstN(Sort(Filter(News, Regione.Value = VarNomeRegione),'Data/ora modifica', SortOrder.Descending),4)
+                    FirstN(Sort(Filter(News, Regione.Value = VarNomeRegione),'Data/ora modifica', SortOrder.Descending),3)
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =150
                 LayoutMinWidth: =320
@@ -264,7 +277,8 @@ Show_Regione_Politiche As screen:
                     PaddingTop: =0
                     Text: =ThisItem.Titolo
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =1007
+                    Width: =735
+                    Wrap: =false
                     X: =129
                     Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle4.Size * 1.8)) / 2
                     ZIndex: =2
@@ -272,7 +286,7 @@ Show_Regione_Politiche As screen:
                 Subtitle4 As label:
                     Color: =RGBA(97, 97, 97, 1)
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Lighter)
-                    Height: =Self.Size * 1.8
+                    Height: =19
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
@@ -280,30 +294,11 @@ Show_Regione_Politiche As screen:
                     PaddingTop: =0
                     Text: =ThisItem.Descrizione
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =Title4.Width
+                    Width: =854
                     Wrap: =false
                     X: =Title4.X
                     Y: =Title4.Y + Title4.Height
                     ZIndex: =3
-
-                NextArrow2 As icon.ChevronRight:
-                    AccessibleLabel: =Self.Tooltip
-                    BorderColor: =RGBA(0, 0, 0, 1)
-                    Color: =RGBA(166, 166, 166, 1)
-                    DisabledBorderColor: =RGBA(56, 56, 56, 1)
-                    DisabledColor: =RGBA(119, 119, 119, 1)
-                    Height: =50
-                    Icon: =Icon.ChevronRight
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =16
-                    PaddingLeft: =16
-                    PaddingRight: =16
-                    PaddingTop: =16
-                    Tooltip: ="Visualizza dettagli elementi"
-                    Width: =50
-                    X: =Parent.TemplateWidth - Self.Width - 12
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                    ZIndex: =4
 
                 Separator5 As rectangle:
                     BorderColor: =RGBA(218, 218, 218, 1)
@@ -320,6 +315,24 @@ Show_Regione_Politiche As screen:
                     Visible: =ThisItem.IsSelected
                     Width: =4
                     ZIndex: =6
+
+                ButtonShowSingolaNews As button:
+                    Align: =Align.Right
+                    BorderColor: =ColorFade(Self.Fill, -0)
+                    Color: =RGBA(0,32,104,1)
+                    Fill: =Color.White
+                    FontWeight: =FontWeight.Normal
+                    HoverColor: =RGBA(0,32,104,1)
+                    HoverFill: =Color.White
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =20
+                    PressedFill: =Color.White
+                    Size: =13
+                    Text: ="Vedi di più"
+                    Underline: =true
+                    X: =1046
+                    Y: =32
+                    ZIndex: =7
 
     Header_19 As Header:
         ZIndex: =2

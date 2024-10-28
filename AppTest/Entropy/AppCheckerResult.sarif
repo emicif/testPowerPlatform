@@ -12903,66 +12903,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Show_Regione_Politiche.Container13.Container8.Container21.LabelAllNews.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Show_Regione_Politiche.Container13.Container8.Container21.LabelAllNews.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Show_Regione_Politiche",
-                "type": "Show_Regione_Politiche.Container13.Container8.Container21.LabelAllNews"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Show_Regione_Politiche.Container13.Container8.Container21.LabelAllNews.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Show_Regione_Politiche.Container13.Container8.Container21.LabelAllNews.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Show_Regione_Politiche",
-                "type": "Show_Regione_Politiche.Container13.Container8.Container21.LabelAllNews"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "AllNews_Regione.ContainerGlrNews.Gallery1.AccessibleLabel"
                 }
               ],

@@ -22,6 +22,10 @@ ShowNewsSingola As screen:
             Height: =Parent.Height
             Image: =LookUp(News, ID = varNewsSingolaID,Immagine)
             ImagePosition: =ImagePosition.Stretch
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
             Width: =Parent.Width
             ZIndex: =1
 

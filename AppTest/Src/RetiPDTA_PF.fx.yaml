@@ -760,7 +760,7 @@ RetiPDTA_PF As screen:
             FontWeight: =FontWeight.Bold
             PaddingLeft: =0
             Size: =20
-            Text: ="Reti e PDTA/" & VarNomeRegione
+            Text: ="Reti e PDTA / " & VarNomeRegione
             Width: =Parent.Width
             X: =172
             Y: =116

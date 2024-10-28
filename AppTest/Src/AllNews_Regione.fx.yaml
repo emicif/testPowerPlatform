@@ -40,6 +40,7 @@ AllNews_Regione As screen:
             Image8 As image:
                 Height: =150
                 Image: =ThisItem.Immagine
+                ImagePosition: =ImagePosition.Stretch
                 OnSelect: =Select(Parent)
                 RadiusBottomLeft: =8
                 RadiusBottomRight: =8

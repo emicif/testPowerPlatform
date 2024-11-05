@@ -124,7 +124,10 @@ Show_Farmaco_Brand_TA As screen:
         ZIndex: =17
 
     lblNome_2 As label:
+        Color: =RGBA(0, 32, 104, 1)
         Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Size: =15
         Text: ="Nome"
         Width: =Parent.Width/4
         X: =148
@@ -132,7 +135,10 @@ Show_Farmaco_Brand_TA As screen:
         ZIndex: =21
 
     lblAutore_2 As label:
+        Color: =RGBA(0, 32, 104, 1)
         Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Size: =15
         Text: ="Autore"
         Width: =128
         X: =511
@@ -317,16 +323,22 @@ Show_Farmaco_Brand_TA As screen:
             ZIndex: =7
 
     lblAutore_3 As label:
+        Color: =RGBA(0, 32, 104, 1)
         Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Size: =15
         Text: ="Data"
         X: =766
         Y: =200
         ZIndex: =30
 
     lblAutore_4 As label:
+        Color: =RGBA(0, 32, 104, 1)
         Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Size: =15
         Text: ="Download"
-        X: =1016
+        X: =1030
         Y: =200
         ZIndex: =31
 

@@ -207,7 +207,7 @@ Show_Farmaco_Brand_TA As screen:
                 Set(pdf_v; 'NVS-PDF'.Run(ThisItem.Identificatore).pdf)
             )*/
         TemplatePadding: =0
-        TemplateSize: =48
+        TemplateSize: =60
         Width: =1095
         X: =148
         Y: =253
@@ -229,7 +229,7 @@ Show_Farmaco_Brand_TA As screen:
             RadiusTopLeft: =8
             RadiusTopRight: =8
             Width: =38
-            Y: =14
+            Y: =18
             ZIndex: =2
 
         Title8_2 As label:
@@ -265,7 +265,7 @@ Show_Farmaco_Brand_TA As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =230
             X: =54
-            Y: =14
+            Y: =18
             ZIndex: =3
 
         Subtitle8_2 As label:
@@ -281,7 +281,7 @@ Show_Farmaco_Brand_TA As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =154
             X: =364
-            Y: =14
+            Y: =18
             ZIndex: =4
 
         Separator4_2 As rectangle:
@@ -303,7 +303,7 @@ Show_Farmaco_Brand_TA As screen:
                 )
             Width: =62
             X: =898
-            Y: =8
+            Y: =10
             ZIndex: =6
 
         Subtitle8_3 As label:
@@ -319,7 +319,7 @@ Show_Farmaco_Brand_TA As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =154
             X: =617
-            Y: =14
+            Y: =18
             ZIndex: =7
 
     lblAutore_3 As label:

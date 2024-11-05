@@ -1,0 +1,114 @@
+Show_Brand_TA As screen:
+    BackgroundImage: ='sfondo home'
+    OnVisible: =
+
+    ButtonHome_16 As button:
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =92
+        HoverFill: =Color.Transparent
+        OnSelect: =Navigate(Homepage)
+        PressedFill: =Color.Transparent
+        Text: =
+        Width: =288
+        ZIndex: =2
+
+    Header_27 As Header:
+        ZIndex: =3
+
+    Titolo_21 As label:
+        Color: =RGBA(241, 244, 249, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =64
+        Size: =16
+        Text: =varBusinessAreaBrand
+        Width: =420
+        X: =171
+        Y: =105
+        ZIndex: =6
+
+    backHome_25 As image:
+        Height: =38
+        Image: =Expand_down_light
+        OnSelect: =Navigate(footer_vaiProdotti)
+        Width: =36
+        X: =136
+        Y: =118
+        ZIndex: =8
+
+    "glryBusinessArea_1 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver5.0'":
+        BorderStyle: =BorderStyle.None
+        DelayItemLoading: =true
+        Fill: =RGBA(255, 255, 255, 0)
+        Height: =445
+        Items: |-
+            =Filter(
+                TherapeuticArea, 
+                BusinessArea_ID.Value = varBusinessAreaBrand,
+                Titolo
+            )
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: |+
+            =Set(varTerapeuticAreaBrand, ThisItem.Titolo);
+            
+            Navigate(Business_Area_Farmaci)
+            
+            
+            
+            
+        TemplatePadding: =4
+        TemplateSize: =409
+        Width: =1123
+        WrapCount: =3
+        X: =119
+        Y: =212
+        ZIndex: =13
+
+        Label10_1 As label:
+            OnSelect: =Select(Parent)
+            Text: |
+                =ThisItem.ImgText
+            X: =60
+            Y: =60
+            ZIndex: =1
+
+        Image13_1 As image:
+            Height: =300
+            Image: |-
+                =If(
+                    ThisItem.Titolo = "Solid Tumors", iconSolidTumors,
+                    ThisItem.Titolo = "Hematology", iconHematology,
+                    ThisItem.Titolo = "Mature Brands & Rest of Portfolio", iconMature,
+                    ThisItem.Titolo = "Neuroscience", iconNeuroscience,
+                    ThisItem.Titolo = "Immuno", iconImmuno,
+                    ThisItem.Titolo = "Essentials", iconEssentials,
+                    ThisItem.Titolo = "Cardio-Metabolic", iconCardioMetabolic,
+                    ThisItem.Titolo = "Gene Therapies", iconGeneTherapies,
+                    ThisItem.Titolo = "ADACAP", iconADACAP
+                
+                    
+                  //  iconDefault
+                )
+            OnSelect: =Select(Parent)
+            Width: =300
+            X: =40
+            Y: =67
+            ZIndex: =2
+
+        Label8_1 As label:
+            Align: =Align.Center
+            Color: =textColorBlu
+            FontWeight: =FontWeight.Semibold
+            Height: =79
+            OnSelect: =Select(Parent)
+            Size: =22
+            Text: |+
+                =ThisItem.Titolo
+                
+                
+            Width: =276
+            X: =26
+            Y: =288
+            ZIndex: =3
+

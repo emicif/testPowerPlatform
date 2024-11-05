@@ -1,0 +1,198 @@
+Brand_TA As screen:
+    BackgroundImage: ='sfondo home'
+    OnHidden: =
+    OnVisible: =
+
+    Header_26 As Header:
+
+    ButtonHome_15 As button:
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =92
+        HoverFill: =Color.Transparent
+        OnSelect: =Navigate(Homepage)
+        PressedFill: =Color.Transparent
+        Text: =
+        Width: =286
+        ZIndex: =2
+
+    ToggleStockout_17 As toggleSwitch:
+        Default: =Footer_17.Navigazione_stockout
+        OnChange: =If(varstock,Navigate(footer_stockout,ScreenTransition.Fade))
+        Visible: =false
+        X: =411
+        Y: =32
+        ZIndex: =3
+
+    ToggleDPC_17 As toggleSwitch:
+        Default: =Footer_17.Navigazione_DPC
+        OnChange: =If(vardpc,Navigate(footer_DPC,ScreenTransition.Fade))
+        Visible: =false
+        X: =431
+        Y: =52
+        ZIndex: =4
+
+    ToggleComunicazioni_17 As toggleSwitch:
+        Default: =Footer_17.Navigazione_comunicazioni
+        OnChange: =If(varcomunicazioni,Navigate(footer_comunicazioni,ScreenTransition.Fade))
+        Visible: =false
+        X: =471
+        Y: =92
+        ZIndex: =5
+
+    Footer_17 As Footer:
+        Y: =696
+        ZIndex: =5
+
+    ToggleSostenibilita_17 As toggleSwitch:
+        Default: =Footer_17.Navigazione_sostenibilita
+        OnChange: =If(varsostenibilita,Navigate(footer_sostenibilita,ScreenTransition.Fade))
+        Visible: =false
+        X: =491
+        Y: =112
+        ZIndex: =6
+
+    backHome_24 As image:
+        Height: =40
+        Image: =Expand_down_light
+        OnSelect: =Navigate(Homepage)
+        Width: =36.05
+        X: =136
+        Y: =116
+        ZIndex: =7
+
+    TitoloFarmaco_3 As label:
+        Color: =RGBA(241, 244, 249, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: ="Brand/TA"
+        Width: =273
+        X: =171
+        Y: =116
+        ZIndex: =8
+
+    ToggleListini_17 As toggleSwitch:
+        Default: =Footer_17.Navigazione_listini
+        OnChange: =If(varlistini,Navigate(footer_listini,ScreenTransition.Fade))
+        Visible: =false
+        X: =511
+        Y: =132
+        ZIndex: =9
+
+    ToggleVaiProdotti_17 As toggleSwitch:
+        Default: =Footer_17.NavigazioneVaiAiProdotti
+        OnChange: =If(varvaiprodotti,Navigate(Brand_TA,ScreenTransition.Fade))
+        Visible: =false
+        X: =531
+        Y: =152
+        ZIndex: =10
+
+    ToggleReporting_17 As toggleSwitch:
+        Default: =Footer_17.Navigazione_reporting
+        OnChange: =If(varreporting,Navigate(footer_Reporting,ScreenTransition.Fade))
+        Visible: =false
+        X: =551
+        Y: =172
+        ZIndex: =11
+
+    ToggleKitProdotti_17 As toggleSwitch:
+        Default: =Footer_17.Navigazione_kitprodotti
+        OnChange: =If(varkitprodotti,Navigate(footer_kitProdotti,ScreenTransition.Fade))
+        Visible: =false
+        X: =571
+        Y: =192
+        ZIndex: =12
+
+    Container1_2 As groupContainer.horizontalAutoLayoutContainer:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DropShadow: =DropShadow.None
+        Height: =425
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =1070
+        X: =(App.Width - Container1_2.Width)/2
+        Y: =207
+        ZIndex: =13
+
+        "'Image-cancer_1' As image":
+            Height: =250
+            Image: ='NVS-cancer-img'
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: |+
+                =Set(varBusinessAreaBrand, "Cancer");
+                
+                Navigate(Show_Brand_TA)
+                
+            Width: =250
+            ZIndex: =1
+
+        "'Image-cronicity_1' As image":
+            Height: =250
+            Image: ='NVS-cronicity-img'
+            OnSelect: |+
+                =
+                
+                Set(varvaiprodotti,false);
+                Set(varcomunicazioni,false);
+                Set(varstock,false);
+                Set(vardpc,false);
+                Set(varsostenibilita,false);
+                Set(varreporting,false);
+                Set(varlistini,false);
+                Set(varkitprodotti,false);
+                
+                Set(varBusinessArea, "Cronicity");
+                Navigate(BU)
+                
+            Width: =250
+            ZIndex: =2
+
+        "'Image-genes_1' As image":
+            Height: =250
+            Image: ='NVS-genes-img'
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: |+
+                =
+                
+                Set(varvaiprodotti,false);
+                Set(varcomunicazioni,false);
+                Set(varstock,false);
+                Set(vardpc,false);
+                Set(varsostenibilita,false);
+                Set(varreporting,false);
+                Set(varlistini,false);
+                Set(varkitprodotti,false);
+                
+                Set(varBusinessArea, "Gene Therapies");
+                Navigate(BU)
+                
+            Width: =250
+            ZIndex: =3
+
+        Image2_1 As image:
+            Height: =250
+            Image: =ADACAP
+            OnSelect: |+
+                =
+                
+                Set(varvaiprodotti,false);
+                Set(varcomunicazioni,false);
+                Set(varstock,false);
+                Set(vardpc,false);
+                Set(varsostenibilita,false);
+                Set(varreporting,false);
+                Set(varlistini,false);
+                Set(varkitprodotti,false);
+                
+                Set(varBusinessArea, "ADACAP");
+                Navigate(BU)
+                
+            Width: =250
+            ZIndex: =4
+

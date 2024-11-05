@@ -212,8 +212,8 @@ Show_Farmaco_Brand_TA As screen:
                             
                 If( ThisItem.isFolder = 0,
                     If( NameExtAllegato = "pdf",
-                        Set(pdf_v, 'NVS-PDF'.Run(ThisItem.Identificatore).pdf);
-                        Set(isPDFview, true),
+                        Set(pdf_v_brand, 'NVS-PDF'.Run(ThisItem.Identificatore).pdf);
+                        Set(isPDFviewBrand, true),
                         If( NameExtAllegato = "xlsx" || NameExtAllegato = "eml",
                           Launch(ThisItem.'Collegamento a elemento')
                         )
@@ -294,7 +294,7 @@ Show_Farmaco_Brand_TA As screen:
 
         Rectangle1_9 As rectangle:
             Height: =652
-            Visible: =isPDFview
+            Visible: =isPDFviewBrand
             Width: =1198
             X: =110
             Y: =92
@@ -304,8 +304,8 @@ Show_Farmaco_Brand_TA As screen:
             Color: =RGBA(255, 255, 255, 1)
             Height: =33
             Icon: =Icon.Cancel
-            OnSelect: =Set(isPDFview, false)
-            Visible: =isPDFview
+            OnSelect: =Set(isPDFviewBrand, false)
+            Visible: =isPDFviewBrand
             Width: =30
             X: =1266
             Y: =119
@@ -313,11 +313,11 @@ Show_Farmaco_Brand_TA As screen:
 
         PdfViewer1_9 As pdfViewer:
             BorderColor: =RGBA(0, 0, 0, 1)
-            Document: =pdf_v
+            Document: =pdf_v_brand
             Fill: =RGBA(0, 0, 0, 0.5)
             Height: =569
             ShowControls: =true
-            Visible: =isPDFview
+            Visible: =isPDFviewBrand
             Width: =1198
             X: =110
             Y: =162

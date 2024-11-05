@@ -280,6 +280,21 @@ Show_Farmaco_Brand_TA As screen:
             Y: =Parent.TemplateHeight - Self.Height
             ZIndex: =5
 
+        Image14 As image:
+            Height: =34
+            Image: =Icon_Download_Purple
+            OnSelect: =Download($"{ThisItem.'Collegamento a elemento'}?Download=1")
+            Visible: |-
+                =If(
+                    ThisItem.isFolder, 
+                    false, 
+                    true
+                )
+            Width: =62
+            X: =888
+            Y: =7
+            ZIndex: =6
+
     lblAutore_3 As label:
         Font: =Font.Lato
         Text: ="Data"

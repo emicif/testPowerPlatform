@@ -41,7 +41,7 @@ BrandTA_Area_Farmaci As screen:
 
         Image9_1 As image:
             Height: =70
-            Image: =ThisItem.'Logo'
+            Image: =ThisItem.Logo
             ImagePosition: =ImagePosition.Fill
             OnSelect: =Select(Parent)
             PaddingBottom: =5
@@ -64,6 +64,7 @@ BrandTA_Area_Farmaci As screen:
             FontWeight: =FontWeight.Bold
             Height: =112
             OnSelect: =Select(Parent)
+            Size: =16
             Text: =ThisItem.Titolo
             Width: =151
             X: =118

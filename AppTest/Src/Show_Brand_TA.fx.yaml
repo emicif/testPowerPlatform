@@ -107,6 +107,7 @@ Show_Brand_TA As screen:
                 =ThisItem.Titolo
                 
                 
+            Visible: =false
             Width: =276
             X: =26
             Y: =288

@@ -25,6 +25,7 @@ Value_Access_Heor As screen:
         BrandTa_icon As image:
             Height: =Container4.Height
             Image: =BrandTA_Icon
+            OnSelect: =Navigate(Brand_TA)
             Width: =(Container4.Width/4) - 10
             ZIndex: =1
 

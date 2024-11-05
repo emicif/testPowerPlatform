@@ -30,7 +30,7 @@ Show_Brand_TA As screen:
     backHome_25 As image:
         Height: =38
         Image: =Expand_down_light
-        OnSelect: =Navigate(footer_vaiProdotti)
+        OnSelect: =Back()
         Width: =36
         X: =136
         Y: =118

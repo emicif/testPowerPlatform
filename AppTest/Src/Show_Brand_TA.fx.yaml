@@ -52,7 +52,7 @@ Show_Brand_TA As screen:
         OnSelect: |+
             =Set(varTerapeuticAreaBrand, ThisItem.Titolo);
             
-            Navigate(Business_Area_Farmaci)
+            Navigate(BrandTA_Area_Farmaci)
             
             
             

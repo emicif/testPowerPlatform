@@ -1,0 +1,181 @@
+BrandTA_Area_Farmaci As screen:
+    BackgroundImage: ='sfondo home'
+    OnVisible: |
+        =
+
+    ButtonHome_17 As button:
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =92
+        HoverFill: =Color.Transparent
+        OnSelect: =Navigate(Homepage)
+        PressedFill: =Color.Transparent
+        Text: =
+        Width: =284
+        ZIndex: =2
+
+    Header_28 As Header:
+        ZIndex: =3
+
+    ToggleStockout_18 As toggleSwitch:
+        Default: =Footer_18.Navigazione_stockout
+        OnChange: =If(varstock,Navigate(footer_stockout,ScreenTransition.Fade))
+        Visible: =false
+        X: =411
+        Y: =32
+        ZIndex: =3
+
+    ToggleDPC_18 As toggleSwitch:
+        Default: =Footer_18.Navigazione_DPC
+        OnChange: =If(vardpc,Navigate(footer_DPC,ScreenTransition.Fade))
+        Visible: =false
+        X: =431
+        Y: =52
+        ZIndex: =4
+
+    Footer_18 As Footer:
+        Y: =696
+        ZIndex: =4
+
+    ToggleComunicazioni_18 As toggleSwitch:
+        Default: =Footer_18.Navigazione_comunicazioni
+        OnChange: =If(varcomunicazioni,Navigate(footer_comunicazioni,ScreenTransition.Fade))
+        Visible: =false
+        X: =471
+        Y: =92
+        ZIndex: =5
+
+    Titolo_22 As label:
+        Color: =RGBA(241, 244, 249, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =64
+        Size: =16
+        Text: =varTerapeuticAreaBrand
+        Width: =472
+        X: =171
+        Y: =105
+        ZIndex: =6
+
+    ToggleSostenibilita_18 As toggleSwitch:
+        Default: =Footer_18.Navigazione_sostenibilita
+        OnChange: =If(varsostenibilita,Navigate(footer_sostenibilita,ScreenTransition.Fade))
+        Visible: =false
+        X: =491
+        Y: =112
+        ZIndex: =7
+
+    backHome_26 As image:
+        Height: =38
+        Image: =Expand_down_light
+        OnSelect: =Navigate(BU)
+        Width: =36
+        X: =136
+        Y: =118
+        ZIndex: =8
+
+    ToggleListini_18 As toggleSwitch:
+        Default: =Footer_18.Navigazione_listini
+        OnChange: =If(varlistini,Navigate(footer_listini,ScreenTransition.Fade))
+        Visible: =false
+        X: =511
+        Y: =132
+        ZIndex: =9
+
+    ToggleVaiProdotti_18 As toggleSwitch:
+        Default: =Footer_11.NavigazioneVaiAiProdotti
+        OnChange: =If(varvaiprodotti,Navigate(footer_vaiProdotti,ScreenTransition.Fade))
+        Visible: =false
+        X: =531
+        Y: =152
+        ZIndex: =10
+
+    ToggleReporting_18 As toggleSwitch:
+        Default: =Footer_18.Navigazione_reporting
+        OnChange: =If(varreporting,Navigate(footer_Reporting,ScreenTransition.Fade))
+        Visible: =false
+        X: =551
+        Y: =172
+        ZIndex: =11
+
+    ToggleKitProdotti_18 As toggleSwitch:
+        Default: =Footer_18.Navigazione_kitprodotti
+        OnChange: =If(varkitprodotti,Navigate(footer_kitProdotti,ScreenTransition.Fade))
+        Visible: =false
+        X: =571
+        Y: =192
+        ZIndex: =12
+
+    SfondoGlrFarmaci_2 As button:
+        DisabledBorderColor: =RGBA(255, 255, 255, 1)
+        DisabledFill: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =399
+        RadiusBottomLeft: =19
+        RadiusBottomRight: =19
+        RadiusTopLeft: =19
+        RadiusTopRight: =19
+        Text: =""
+        Width: =1103
+        X: =155
+        Y: =212
+        ZIndex: =13
+
+    "glryBusinessArea_Farmaco_1 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver5.0'":
+        BorderStyle: =BorderStyle.None
+        DelayItemLoading: =true
+        Fill: =RGBA(255, 255, 255, 255)
+        Height: =367
+        Items: |+
+            =Filter(
+                Drugs, 
+                TherapeuticArea_ID.Value = varTerapeuticArea, 
+                Titolo
+            )
+            
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: |-
+            =Navigate(Home_Prodotto);
+            
+            Set(
+                areaSelected,
+                ThisItem.Titolo
+            );
+        TemplatePadding: =4
+        TemplateSize: =106
+        Width: =334
+        WrapCount: =3
+        X: =171
+        Y: =220
+        ZIndex: =14
+
+        Image9_1 As image:
+            Height: =50
+            Image: =ThisItem.'Logo-giallo'
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: =Select(Parent)
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =50
+            X: =22
+            Y: =9
+            ZIndex: =1
+
+        Label9_1 As label:
+            Color: =textColorBlu
+            Font: =Font.Lato
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Titolo
+            Width: =83
+            X: =5
+            Y: =59
+            ZIndex: =2
+

@@ -173,7 +173,7 @@ Show_Farmaco_Brand_TA As screen:
         '#CopilotOverlayLabel': ="Filtro applicato"
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 255)
-        Height: =395
+        Height: =385
         Items: |+
             =SortByColumns(
                 Filter(
@@ -210,7 +210,7 @@ Show_Farmaco_Brand_TA As screen:
         TemplateSize: =48
         Width: =1095
         X: =148
-        Y: =243
+        Y: =253
         ZIndex: =26
 
         Rectangle6_2 As rectangle:

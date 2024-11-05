@@ -24,11 +24,11 @@ BrandTA_Area_Farmaci As screen:
                 ThisItem.Titolo
             );
         TemplatePadding: =4
-        TemplateSize: =135
+        TemplateSize: =153
         Width: =982
         WrapCount: =3
-        X: =171
-        Y: =220
+        X: =191
+        Y: =230
         ZIndex: =2
 
         Button4 As button:

@@ -68,19 +68,8 @@ Brand_TA As screen:
             Height: =250
             Image: ='NVS-cronicity-img'
             OnSelect: |+
-                =
-                
-                Set(varvaiprodotti,false);
-                Set(varcomunicazioni,false);
-                Set(varstock,false);
-                Set(vardpc,false);
-                Set(varsostenibilita,false);
-                Set(varreporting,false);
-                Set(varlistini,false);
-                Set(varkitprodotti,false);
-                
-                Set(varBusinessArea, "Cronicity");
-                Navigate(BU)
+                =Set(varBusinessAreaBrand, "Cronicity");
+                Navigate(Show_Brand_TA)
                 
             Width: =250
             ZIndex: =2
@@ -91,40 +80,9 @@ Brand_TA As screen:
             ImagePosition: =ImagePosition.Fill
             OnSelect: |+
                 =
-                
-                Set(varvaiprodotti,false);
-                Set(varcomunicazioni,false);
-                Set(varstock,false);
-                Set(vardpc,false);
-                Set(varsostenibilita,false);
-                Set(varreporting,false);
-                Set(varlistini,false);
-                Set(varkitprodotti,false);
-                
-                Set(varBusinessArea, "Gene Therapies");
-                Navigate(BU)
+                Set(varBusinessAreaBrand, "Gene Therapies");
+                Navigate(Show_Brand_TA)
                 
             Width: =250
             ZIndex: =3
-
-        Image2_1 As image:
-            Height: =250
-            Image: =ADACAP
-            OnSelect: |+
-                =
-                
-                Set(varvaiprodotti,false);
-                Set(varcomunicazioni,false);
-                Set(varstock,false);
-                Set(vardpc,false);
-                Set(varsostenibilita,false);
-                Set(varreporting,false);
-                Set(varlistini,false);
-                Set(varkitprodotti,false);
-                
-                Set(varBusinessArea, "ADACAP");
-                Navigate(BU)
-                
-            Width: =250
-            ZIndex: =4
 

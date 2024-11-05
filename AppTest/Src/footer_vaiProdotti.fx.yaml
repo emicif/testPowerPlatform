@@ -112,7 +112,7 @@ footer_vaiProdotti As screen:
             Height: =250
             Image: ='NVS-cronicity-img'
             OnSelect: |+
-                =
+                =Set(varBusinessAreaBrand, "Cronicity");
                 
                 Set(varvaiprodotti,false);
                 Set(varcomunicazioni,false);
@@ -122,8 +122,6 @@ footer_vaiProdotti As screen:
                 Set(varreporting,false);
                 Set(varlistini,false);
                 Set(varkitprodotti,false);
-                
-                Set(varBusinessArea, "Cronicity");
                 Navigate(BU)
                 
             Width: =250

@@ -3,45 +3,9 @@ BrandTA_Area_Farmaci As screen:
     OnVisible: |
         =
 
-    ButtonHome_17 As button:
-        DisabledFill: =Color.Transparent
-        Fill: =Color.Transparent
-        Height: =92
-        HoverFill: =Color.Transparent
-        OnSelect: =Navigate(Homepage)
-        PressedFill: =Color.Transparent
-        Text: =
-        Width: =284
-        ZIndex: =2
-
-    Header_28 As Header:
-        ZIndex: =3
-
-    Titolo_22 As label:
-        Color: =RGBA(241, 244, 249, 1)
-        Font: =Font.Lato
-        FontWeight: =FontWeight.Bold
-        Height: =64
-        Size: =16
-        Text: =varTerapeuticAreaBrand
-        Width: =472
-        X: =171
-        Y: =105
-        ZIndex: =6
-
-    backHome_26 As image:
-        Height: =38
-        Image: =Expand_down_light
-        OnSelect: =Navigate(BU)
-        Width: =36
-        X: =136
-        Y: =118
-        ZIndex: =8
-
     "glryBusinessArea_Farmaco_1 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver5.0'":
         BorderStyle: =BorderStyle.None
         DelayItemLoading: =true
-        Fill: =RGBA(255, 255, 255, 255)
         Height: =417
         Items: |+
             =Filter(
@@ -60,16 +24,24 @@ BrandTA_Area_Farmaci As screen:
                 ThisItem.Titolo
             );
         TemplatePadding: =4
-        TemplateSize: =122
-        Width: =1034
+        TemplateSize: =135
+        Width: =982
         WrapCount: =3
         X: =171
         Y: =220
-        ZIndex: =14
+        ZIndex: =2
+
+        Button4 As button:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =112
+            Text: =""
+            Width: =245
+            X: =40
+            ZIndex: =1
 
         Image9_1 As image:
-            Height: =50
-            Image: =ThisItem.'Logo-giallo'
+            Height: =70
+            Image: =ThisItem.'Logo'
             ImagePosition: =ImagePosition.Fill
             OnSelect: =Select(Parent)
             PaddingBottom: =5
@@ -80,19 +52,55 @@ BrandTA_Area_Farmaci As screen:
             RadiusBottomRight: =8
             RadiusTopLeft: =8
             RadiusTopRight: =8
-            Width: =50
-            X: =22
-            Y: =9
-            ZIndex: =1
+            Width: =70
+            X: =48
+            Y: =23
+            ZIndex: =2
 
         Label9_1 As label:
+            Align: =Align.Center
             Color: =textColorBlu
             Font: =Font.Lato
-            Height: =55
+            FontWeight: =FontWeight.Bold
+            Height: =112
             OnSelect: =Select(Parent)
             Text: =ThisItem.Titolo
             Width: =151
-            X: =5
-            Y: =59
-            ZIndex: =2
+            X: =118
+            ZIndex: =3
+
+    Header_28 As Header:
+        ZIndex: =3
+
+    backHome_26 As image:
+        Height: =38
+        Image: =Expand_down_light
+        OnSelect: =Navigate(BU)
+        Width: =36
+        X: =136
+        Y: =118
+        ZIndex: =4
+
+    Titolo_22 As label:
+        Color: =RGBA(241, 244, 249, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =64
+        Size: =16
+        Text: =varTerapeuticAreaBrand
+        Width: =472
+        X: =171
+        Y: =105
+        ZIndex: =5
+
+    ButtonHome_17 As button:
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =92
+        HoverFill: =Color.Transparent
+        OnSelect: =Navigate(Homepage)
+        PressedFill: =Color.Transparent
+        Text: =
+        Width: =284
+        ZIndex: =6
 

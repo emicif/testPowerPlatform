@@ -1,0 +1,283 @@
+Comunicazioni_2 As screen:
+    BackgroundImage: ='sfondo home'
+    Fill: =Color.White 
+    OnVisible: =
+
+    ButtonHome_18 As button:
+        DisabledFill: =Color.Transparent
+        Fill: =Color.Transparent
+        Height: =92
+        HoverFill: =Color.Transparent
+        OnSelect: =Navigate(Homepage)
+        PressedFill: =Color.Transparent
+        Text: =
+        Width: =288
+        ZIndex: =2
+
+    Header_29 As Header:
+        ZIndex: =5
+
+    Titolo_23 As label:
+        Color: =RGBA(241, 244, 249, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: =areaSelected
+        Width: =273
+        X: =171
+        Y: =116
+        ZIndex: =8
+
+    backHome_27 As image:
+        Height: =31.61
+        Image: =Expand_down_light
+        OnSelect: |+
+            =Navigate(Home_Prodotto);
+            
+            
+            Set(
+                varFolderPath, 
+               "Documents/"
+            )
+            
+            
+            
+            
+        Width: =36.05
+        X: =136
+        Y: =118
+        ZIndex: =10
+
+    grpPDFview_7 As group:
+        Height: =5
+        Width: =5
+        X: =120
+        Y: =120
+        ZIndex: =11
+
+        Rectangle1_9 As rectangle:
+            Height: =570
+            Visible: =isPDFview
+            Width: =1198
+            X: =110
+            Y: =100
+            ZIndex: =6
+
+        Icon1_9 As icon.Cancel:
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(isPDFview, false)
+            Visible: =isPDFview
+            Width: =30
+            X: =1266
+            Y: =117
+            ZIndex: =9
+
+        PdfViewer1_9 As pdfViewer:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Document: =pdf_v
+            Fill: =RGBA(0, 0, 0, 0.5)
+            Height: =514
+            ShowControls: =true
+            Visible: =isPDFview
+            Width: =1198
+            X: =110
+            Y: =156
+            ZIndex: =13
+
+    SfondoComunicazioniSx_2 As button:
+        DisabledBorderColor: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(255, 255, 255, 1)
+        DisabledFill: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =463
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =19
+        RadiusBottomRight: =19
+        RadiusTopLeft: =19
+        RadiusTopRight: =19
+        Text: =""
+        Width: =1148
+        X: =148
+        Y: =188
+        ZIndex: =15
+
+    Rectangle8_2 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderThickness: =19
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =52
+        Width: =569
+        X: =148
+        Y: =188
+        ZIndex: =16
+
+    Titolo_24 As label:
+        Color: =RGBA(241, 244, 249, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: =varIsFolder
+        Visible: =false
+        Width: =273
+        X: =433
+        Y: =188
+        ZIndex: =17
+
+    lblNome_2 As label:
+        Font: =Font.Lato
+        Text: ="Nome"
+        Width: =91
+        X: =208
+        Y: =194
+        ZIndex: =21
+
+    lblAutore_2 As label:
+        Font: =Font.Lato
+        Text: ="Autore"
+        X: =523
+        Y: =194
+        ZIndex: =22
+
+    Icon2_2 As icon.BackArrow:
+        Height: =24
+        Icon: =Icon.BackArrow
+        OnSelect: |+
+            =Set(
+                varFolderPath, 
+                Concat(
+                    FirstN(
+                        Split(varFolderPath, "/"), 
+                        CountRows(Split(varFolderPath, "/"))-2),
+                        Value,
+                        "/")
+                        & "/")
+            
+        Visible: |-
+            =If(
+                varFolderPath = "Documents/",
+                false,
+                true)
+        Width: =24
+        X: =165
+        Y: =202
+        ZIndex: =24
+
+    "Gallery2_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        '#CopilotOverlayLabel': ="Filtro applicato"
+        DelayItemLoading: =true
+        Fill: =RGBA(255, 255, 255, 255)
+        Height: =395
+        Items: |+
+            =Filter(
+                Documents,
+                //attualmente è Documents, rendere dinamico in ambiente NVS con la variabile di Shared Documents
+                'Percorso cartella' = varFolderPath,
+              //  isFolder = true;
+               // isFolder = varIsFolder;
+                Drugs.Value = areaSelected
+            
+            )
+            
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: |
+            =If(
+                ThisItem.isFolder,
+               // Collect(colFolderHistory; {FolderPath: varFolderPath});
+                Set(varFolderPath, ThisItem.'Percorso cartella' & ThisItem.Nome & "/")
+            );
+               /* Navigate(
+            
+                    Comunicazioni
+                  
+                
+                );
+             
+              //flusso per aprire il file
+                Set(pdf_v; 'NVS-PDF'.Run(ThisItem.Identificatore).pdf)
+            )*/
+        TemplatePadding: =0
+        TemplateSize: =48
+        Width: =546
+        X: =SfondoComunicazioniSx_2.X + ((SfondoComunicazioniSx_2.Width - Gallery2_2.Width)/2)
+        Y: =243
+        ZIndex: =26
+
+        Rectangle6_2 As rectangle:
+            Height: =Parent.TemplateHeight - Separator4_2.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =0
+            ZIndex: =1
+
+        Image24_2 As image:
+            Height: =20
+            Image: =If(ThisItem.isFolder, 'icon-folder', 'menu-icon')
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =38
+            Y: =14
+            ZIndex: =2
+
+        Title8_2 As label:
+            Font: =Font.Lato
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: |+
+                =If(
+                    ThisItem.isFolder,
+                    Set(varFolderPath, ThisItem.'Percorso cartella' & ThisItem.Nome & "/");
+                        Set(varCurrentLevel, varIsFolder) // Imposta il livello corrente
+                
+                );
+                
+                Set( NameExtAllegato , Last(Split(ThisItem.'Nome file con estensione', ".")).Value);
+                            
+                If( ThisItem.isFolder = 0,
+                    If( NameExtAllegato = "pdf",
+                        Set(pdf_v, 'NVS-PDF'.Run(ThisItem.Identificatore).pdf);
+                        Set(isPDFview, true),
+                        If( NameExtAllegato = "xlsx" || NameExtAllegato = "eml",
+                          Launch(ThisItem.'Collegamento a elemento')
+                        )
+                    )
+                );
+                
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Nome
+            VerticalAlign: =VerticalAlign.Top
+            Width: =230
+            X: =54
+            Y: =14
+            ZIndex: =3
+
+        Subtitle8_2 As label:
+            Font: =Font.Lato
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =20
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Autore.DisplayName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =154
+            X: =364
+            Y: =14
+            ZIndex: =4
+
+        Separator4_2 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+

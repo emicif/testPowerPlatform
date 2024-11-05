@@ -20,7 +20,7 @@ BrandTA_Area_Farmaci As screen:
             =Navigate(Home_Prodotto);
             
             Set(
-                areaSelected,
+                areaSelectedBrand,
                 ThisItem.Titolo
             );
         TemplatePadding: =4
@@ -75,7 +75,7 @@ BrandTA_Area_Farmaci As screen:
     backHome_26 As image:
         Height: =38
         Image: =Expand_down_light
-        OnSelect: =Navigate(BU)
+        OnSelect: =Back()
         Width: =36
         X: =136
         Y: =118

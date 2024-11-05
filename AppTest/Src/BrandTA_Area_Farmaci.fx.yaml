@@ -17,7 +17,7 @@ BrandTA_Area_Farmaci As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: |-
-            =Navigate(Home_Prodotto);
+            =Navigate(Show_Farmaco_Brand_TA);
             
             Set(
                 areaSelectedBrand,

@@ -1,4 +1,4 @@
-Comunicazioni_2 As screen:
+Show_Farmaco_Brand_TA As screen:
     BackgroundImage: ='sfondo home'
     Fill: =Color.White 
     OnVisible: =
@@ -22,7 +22,7 @@ Comunicazioni_2 As screen:
         Font: =Font.Lato
         FontWeight: =FontWeight.Bold
         Size: =16
-        Text: =areaSelected
+        Text: =areaSelectedBrand
         Width: =273
         X: =171
         Y: =116
@@ -32,8 +32,7 @@ Comunicazioni_2 As screen:
         Height: =31.61
         Image: =Expand_down_light
         OnSelect: |+
-            =Navigate(Home_Prodotto);
-            
+            =Back();
             
             Set(
                 varFolderPath, 
@@ -175,7 +174,7 @@ Comunicazioni_2 As screen:
                 'Percorso cartella' = varFolderPath,
               //  isFolder = true;
                // isFolder = varIsFolder;
-                Drugs.Value = areaSelected
+                Drugs.Value = areaSelectedBrand
             
             )
             
@@ -199,8 +198,8 @@ Comunicazioni_2 As screen:
             )*/
         TemplatePadding: =0
         TemplateSize: =48
-        Width: =546
-        X: =SfondoComunicazioniSx_2.X + ((SfondoComunicazioniSx_2.Width - Gallery2_2.Width)/2)
+        Width: =1069
+        X: =172
         Y: =243
         ZIndex: =26
 
@@ -280,4 +279,18 @@ Comunicazioni_2 As screen:
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - Self.Height
             ZIndex: =5
+
+    lblAutore_3 As label:
+        Font: =Font.Lato
+        Text: ="Data"
+        X: =798
+        Y: =194
+        ZIndex: =30
+
+    lblAutore_4 As label:
+        Font: =Font.Lato
+        Text: ="Download"
+        X: =1049
+        Y: =194
+        ZIndex: =31
 

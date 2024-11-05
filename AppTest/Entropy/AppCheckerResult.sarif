@@ -894,12 +894,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Comunicazioni_2.Gallery2_2.Items"
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Gallery2_2.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Comunicazioni_2.Gallery2_2.Items",
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Gallery2_2.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -912,8 +912,8 @@
               },
               "properties": {
                 "member": "Items",
-                "module": "Comunicazioni_2",
-                "type": "Comunicazioni_2.Gallery2_2"
+                "module": "Show_Farmaco_Brand_TA",
+                "type": "Show_Farmaco_Brand_TA.Gallery2_2"
               }
             }
           ],
@@ -934,12 +934,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Comunicazioni_2.Gallery2_2.Items"
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Gallery2_2.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Comunicazioni_2.Gallery2_2.Items",
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Gallery2_2.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -952,8 +952,8 @@
               },
               "properties": {
                 "member": "Items",
-                "module": "Comunicazioni_2",
-                "type": "Comunicazioni_2.Gallery2_2"
+                "module": "Show_Farmaco_Brand_TA",
+                "type": "Show_Farmaco_Brand_TA.Gallery2_2"
               }
             }
           ],
@@ -13303,19 +13303,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Comunicazioni_2.backHome_27.AccessibleLabel"
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.backHome_27.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Comunicazioni_2.backHome_27.AccessibleLabel",
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.backHome_27.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Comunicazioni_2",
-                "type": "Comunicazioni_2.backHome_27"
+                "module": "Show_Farmaco_Brand_TA",
+                "type": "Show_Farmaco_Brand_TA.backHome_27"
               }
             }
           ],
@@ -13333,19 +13333,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Comunicazioni_2.backHome_27.TabIndex"
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.backHome_27.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Comunicazioni_2.backHome_27.TabIndex",
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.backHome_27.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Comunicazioni_2",
-                "type": "Comunicazioni_2.backHome_27"
+                "module": "Show_Farmaco_Brand_TA",
+                "type": "Show_Farmaco_Brand_TA.backHome_27"
               }
             }
           ],
@@ -13363,19 +13363,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Comunicazioni_2.Icon2_2.AccessibleLabel"
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Icon2_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Comunicazioni_2.Icon2_2.AccessibleLabel",
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Icon2_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Comunicazioni_2",
-                "type": "Comunicazioni_2.Icon2_2"
+                "module": "Show_Farmaco_Brand_TA",
+                "type": "Show_Farmaco_Brand_TA.Icon2_2"
               }
             }
           ],
@@ -13393,19 +13393,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Comunicazioni_2.Icon2_2.TabIndex"
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Icon2_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Comunicazioni_2.Icon2_2.TabIndex",
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Icon2_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Comunicazioni_2",
-                "type": "Comunicazioni_2.Icon2_2"
+                "module": "Show_Farmaco_Brand_TA",
+                "type": "Show_Farmaco_Brand_TA.Icon2_2"
               }
             }
           ],
@@ -13483,19 +13483,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Comunicazioni_2.Gallery2_2.AccessibleLabel"
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Gallery2_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Comunicazioni_2.Gallery2_2.AccessibleLabel",
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Gallery2_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Comunicazioni_2",
-                "type": "Comunicazioni_2.Gallery2_2"
+                "module": "Show_Farmaco_Brand_TA",
+                "type": "Show_Farmaco_Brand_TA.Gallery2_2"
               }
             }
           ],
@@ -13513,19 +13513,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Comunicazioni_2.Gallery2_2.Title8_2.FocusedBorderThickness"
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Gallery2_2.Title8_2.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Comunicazioni_2.Gallery2_2.Title8_2.FocusedBorderThickness",
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Gallery2_2.Title8_2.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
-                "module": "Comunicazioni_2",
-                "type": "Comunicazioni_2.Gallery2_2.Title8_2"
+                "module": "Show_Farmaco_Brand_TA",
+                "type": "Show_Farmaco_Brand_TA.Gallery2_2.Title8_2"
               }
             }
           ],
@@ -13543,19 +13543,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Comunicazioni_2.Gallery2_2.TabIndex"
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Gallery2_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Comunicazioni_2.Gallery2_2.TabIndex",
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Gallery2_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Comunicazioni_2",
-                "type": "Comunicazioni_2.Gallery2_2"
+                "module": "Show_Farmaco_Brand_TA",
+                "type": "Show_Farmaco_Brand_TA.Gallery2_2"
               }
             }
           ],
@@ -13573,19 +13573,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Comunicazioni_2.Gallery2_2.Title8_2.TabIndex"
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Gallery2_2.Title8_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Comunicazioni_2.Gallery2_2.Title8_2.TabIndex",
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Gallery2_2.Title8_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Comunicazioni_2",
-                "type": "Comunicazioni_2.Gallery2_2.Title8_2"
+                "module": "Show_Farmaco_Brand_TA",
+                "type": "Show_Farmaco_Brand_TA.Gallery2_2.Title8_2"
               }
             }
           ],
@@ -13783,19 +13783,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Comunicazioni_2.Icon1_9.TabIndex"
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Icon1_9.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Comunicazioni_2.Icon1_9.TabIndex",
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Icon1_9.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Comunicazioni_2",
-                "type": "Comunicazioni_2.Icon1_9"
+                "module": "Show_Farmaco_Brand_TA",
+                "type": "Show_Farmaco_Brand_TA.Icon1_9"
               }
             }
           ],
@@ -13813,19 +13813,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Comunicazioni_2.Icon1_9.AccessibleLabel"
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Icon1_9.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Comunicazioni_2.Icon1_9.AccessibleLabel",
+                  "fullyQualifiedName": "Show_Farmaco_Brand_TA.Icon1_9.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Comunicazioni_2",
-                "type": "Comunicazioni_2.Icon1_9"
+                "module": "Show_Farmaco_Brand_TA",
+                "type": "Show_Farmaco_Brand_TA.Icon1_9"
               }
             }
           ],
@@ -14274,36 +14274,6 @@
               },
               "properties": {
                 "member": "SelectedID",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.areaSelectedBrand"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.areaSelectedBrand",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "areaSelectedBrand",
                 "module": "App",
                 "type": "App"
               }

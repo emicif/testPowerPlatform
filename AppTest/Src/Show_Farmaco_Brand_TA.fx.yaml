@@ -169,14 +169,17 @@ Show_Farmaco_Brand_TA As screen:
         Fill: =RGBA(255, 255, 255, 255)
         Height: =395
         Items: |+
-            =Filter(
-                Documents,
-                //attualmente è Documents, rendere dinamico in ambiente NVS con la variabile di Shared Documents
-                'Percorso cartella' = varFolderPath,
-              //  isFolder = true;
-               // isFolder = varIsFolder;
-                Drugs.Value = areaSelectedBrand
-            
+            =SortByColumns(
+                Filter(
+                    Documents,
+                    //attualmente è Documents, rendere dinamico in ambiente NVS con la variabile di Shared Documents
+                    'Percorso cartella' = varFolderPath,
+                    // isFolder = true;
+                    // isFolder = varIsFolder;
+                    Drugs.Value = areaSelectedBrand
+                ),
+                "Created", 
+                SortOrder.Descending
             )
             
         Layout: =Layout.Vertical

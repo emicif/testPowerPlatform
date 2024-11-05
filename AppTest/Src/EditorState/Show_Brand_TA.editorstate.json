@@ -337,7 +337,7 @@
       "MetaDataIDKey": "",
       "Name": "ButtonHome_16",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -812,7 +812,7 @@
       "MetaDataIDKey": "",
       "Name": "Header_27",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

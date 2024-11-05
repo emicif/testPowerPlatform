@@ -97,8 +97,8 @@ Show_Farmaco_Brand_TA As screen:
         RadiusTopLeft: =19
         RadiusTopRight: =19
         Text: =""
-        Width: =1148
-        X: =148
+        Width: =1130
+        X: =136
         Y: =188
         ZIndex: =15
 
@@ -126,16 +126,17 @@ Show_Farmaco_Brand_TA As screen:
     lblNome_2 As label:
         Font: =Font.Lato
         Text: ="Nome"
-        Width: =91
-        X: =208
-        Y: =194
+        Width: =Parent.Width/4
+        X: =148
+        Y: =200
         ZIndex: =21
 
     lblAutore_2 As label:
         Font: =Font.Lato
         Text: ="Autore"
-        X: =523
-        Y: =194
+        Width: =128
+        X: =511
+        Y: =200
         ZIndex: =22
 
     Icon2_2 As icon.BackArrow:
@@ -198,8 +199,8 @@ Show_Farmaco_Brand_TA As screen:
             )*/
         TemplatePadding: =0
         TemplateSize: =48
-        Width: =1069
-        X: =172
+        Width: =1095
+        X: =148
         Y: =243
         ZIndex: =26
 
@@ -281,7 +282,7 @@ Show_Farmaco_Brand_TA As screen:
             ZIndex: =5
 
         Image14 As image:
-            Height: =34
+            Height: =32
             Image: =Icon_Download_Purple
             OnSelect: =Download($"{ThisItem.'Collegamento a elemento'}?Download=1")
             Visible: |-
@@ -291,21 +292,37 @@ Show_Farmaco_Brand_TA As screen:
                     true
                 )
             Width: =62
-            X: =888
-            Y: =7
+            X: =871
+            Y: =8
             ZIndex: =6
+
+        Subtitle8_3 As label:
+            Font: =Font.Lato
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =20
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Data/ora creazione'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =154
+            X: =617
+            Y: =19
+            ZIndex: =7
 
     lblAutore_3 As label:
         Font: =Font.Lato
         Text: ="Data"
-        X: =798
-        Y: =194
+        X: =766
+        Y: =200
         ZIndex: =30
 
     lblAutore_4 As label:
         Font: =Font.Lato
         Text: ="Download"
-        X: =1049
-        Y: =194
+        X: =1016
+        Y: =200
         ZIndex: =31
 

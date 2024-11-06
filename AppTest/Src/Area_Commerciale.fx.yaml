@@ -62,6 +62,7 @@ Area_Commerciale As screen:
         TemplatePadding: =0
         TemplateSize: =163
         Width: =1044
+        WrapCount: =2
         X: =(App.Width - glryFarmaci.Width)/2
         Y: =538
         ZIndex: =5

@@ -1550,7 +1550,14 @@
           "NameMapSourceSchema": "?"
         },
         "ZIndex",
-        "WrapCount",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "1",
+          "InvariantPropertyName": "WrapCount",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "#CopilotOverlayLabel",
         "#CopilotOverlayVisible",
         {
@@ -1580,7 +1587,7 @@
         {
           "Category": "Data",
           "PropertyName": "WrapCount",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",

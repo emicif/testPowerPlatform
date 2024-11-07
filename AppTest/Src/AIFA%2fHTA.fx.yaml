@@ -395,6 +395,7 @@
                 Size: =14
                 Text: ="Vedi tutte le news"
                 Underline: =true
+                Visible: =false
                 Width: |
                     =250
                 X: =1046

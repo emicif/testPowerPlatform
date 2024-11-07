@@ -35,7 +35,7 @@ Value_Access_Heor As screen:
             OnSelect: |-
                 =Set(
                     varFolderPathAIFA, 
-                   "Documents/Value Access/AIFA"
+                   "Documents/Value Access/AIFA/"
                 );
                 
                 Navigate('AIFA/HTA')

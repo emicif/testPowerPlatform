@@ -1,4 +1,4 @@
-Show_Farmaco_Brand_TA_1 As screen:
+"'AIFA/HTA' As screen":
     BackgroundImage: ='sfondo home'
     Fill: =Color.White 
     OnVisible: =
@@ -22,7 +22,7 @@ Show_Farmaco_Brand_TA_1 As screen:
         Font: =Font.Lato
         FontWeight: =FontWeight.Bold
         Size: =16
-        Text: =areaSelectedBrand
+        Text: ="AIFA/HTA"
         Width: =273
         X: =171
         Y: =116

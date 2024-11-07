@@ -45,6 +45,11 @@ Value_Access_Heor As screen:
         PRCommunity_icon As image:
             Height: =Container4.Height
             Image: =PRCommunity_Icon
+            OnSelect: |-
+                =Set(
+                    varFolderPathPRCommunity, 
+                   "Documents/Value Access/P&RCommunity/"
+                )
             Width: =(Container4.Width/4) - 10
             ZIndex: =3
 

@@ -54,7 +54,7 @@
         DisabledFill: =RGBA(255, 255, 255, 1)
         DisplayMode: =DisplayMode.View
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =295
+        Height: =498
         HoverFill: =RGBA(255, 255, 255, 1)
         RadiusBottomLeft: =19
         RadiusBottomRight: =19
@@ -195,13 +195,13 @@
         '#CopilotOverlayLabel': ="Filtro applicato"
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 255)
-        Height: =207
+        Height: =385
         Items: |+
             =
             SortByColumns(
                 Filter(
                     Documents,
-                    'Percorso cartella' = varFolderPathAIFA
+                    'Percorso cartella' = varFolderPathPRCommunity
             
                    
                 ),
@@ -342,120 +342,4 @@
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - Self.Height
             ZIndex: =7
-
-    Container8_2 As groupContainer.verticalAutoLayoutContainer:
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =213
-        LayoutDirection: =LayoutDirection.Vertical
-        LayoutMode: =LayoutMode.Auto
-        PaddingBottom: =10
-        PaddingLeft: =20
-        PaddingRight: =20
-        PaddingTop: =10
-        RadiusBottomLeft: =19
-        RadiusBottomRight: =19
-        RadiusTopLeft: =19
-        RadiusTopRight: =19
-        Width: =1130
-        X: =136
-        Y: =531
-        ZIndex: =16
-
-        Container21_2 As groupContainer.horizontalAutoLayoutContainer:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            DropShadow: =DropShadow.None
-            FillPortions: =0
-            Height: =50
-            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-            LayoutMinHeight: =40
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            ZIndex: =8
-
-            LabelTitoloNews_2 As label:
-                AlignInContainer: =AlignInContainer.Center
-                Color: =RGBA(0,32,104,1)
-                FontWeight: =FontWeight.Bold
-                Size: =16
-                Text: ="Ultime News"
-                ZIndex: =9
-
-            ButtonAllNews_2 As button:
-                Align: =Align.Right
-                AlignInContainer: =AlignInContainer.Center
-                BorderColor: =ColorFade(Self.Fill, -0)
-                Color: =RGBA(0,32,104,1)
-                Fill: =Color.White
-                FontWeight: =FontWeight.Normal
-                HoverColor: =RGBA(0,32,104,1)
-                HoverFill: =Color.White
-                OnSelect: =Navigate(AllNews_Regione)
-                PaddingRight: =20
-                PressedFill: =Color.White
-                Size: =14
-                Text: ="Vedi tutte le news"
-                Underline: =true
-                Visible: =false
-                Width: |
-                    =250
-                X: =1046
-                Y: =32
-                ZIndex: =10
-
-        "Gallery3_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-            BorderColor: =RGBA(0, 0, 0, 0)
-            DelayItemLoading: =true
-            Height: =Container8_2.Height - LabelTitoloNews_2.Height - 20
-            Items: |-
-                =//Sort(Filter(News; Regione.Value = VarNomeRegione || Regione.Value = Blank() );'Data/ora modifica'; SortOrder.Descending)
-                FirstN(Sort(Filter(News, SezApplicativo.Value = "AIFA"),'Data/ora modifica', SortOrder.Descending),3)
-            Layout: =Layout.Vertical
-            LayoutMinHeight: =150
-            LayoutMinWidth: =320
-            LoadingSpinner: =LoadingSpinner.Data
-            TemplatePadding: =0
-            TemplateSize: =104
-            ZIndex: =11
-
-            Title4_2 As label:
-                Color: =RGBA(97, 97, 97, 1)
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Bold, FontWeight.Semibold)
-                Height: =25
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =ThisItem.Titolo
-                VerticalAlign: =VerticalAlign.Top
-                Width: =460
-                Wrap: =false
-                X: =20
-                Y: =9
-                ZIndex: =12
-
-            Subtitle4_2 As label:
-                Color: =RGBA(97, 97, 97, 1)
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Lighter)
-                Height: =43
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =ThisItem.Descrizione
-                VerticalAlign: =VerticalAlign.Top
-                Width: =1070
-                Wrap: =false
-                Y: =Title4_2.Y + Title4_2.Height
-                ZIndex: =13
-
-            Separator5_2 As rectangle:
-                BorderColor: =RGBA(218, 218, 218, 1)
-                Fill: =RGBA(218, 218, 218, 0.8)
-                Height: =2
-                OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth
-                Y: =75
-                ZIndex: =14
 

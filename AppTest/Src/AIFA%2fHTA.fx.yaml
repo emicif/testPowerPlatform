@@ -64,7 +64,7 @@
         Width: =1130
         X: =136
         Y: =188
-        ZIndex: =7
+        ZIndex: =5
 
     Rectangle8_3 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -74,7 +74,7 @@
         Width: =569
         X: =148
         Y: =188
-        ZIndex: =8
+        ZIndex: =6
 
     Titolo_26 As label:
         Color: =RGBA(241, 244, 249, 1)
@@ -85,7 +85,7 @@
         Width: =273
         X: =433
         Y: =188
-        ZIndex: =9
+        ZIndex: =7
 
     lblNome_3 As label:
         Color: =RGBA(0, 32, 104, 1)
@@ -96,7 +96,7 @@
         Width: =Parent.Width/4
         X: =148
         Y: =200
-        ZIndex: =10
+        ZIndex: =8
 
     lblAutore_5 As label:
         Color: =RGBA(0, 32, 104, 1)
@@ -107,65 +107,7 @@
         Width: =128
         X: =511
         Y: =200
-        ZIndex: =11
-
-    grpPDFview_8 As group:
-        Height: =5
-        Width: =5
-        X: =120
-        Y: =120
-        ZIndex: =11
-
-        Rectangle1_10 As rectangle:
-            Height: =652
-            Visible: =isPDFviewBrand
-            Width: =1198
-            X: =110
-            Y: =92
-            ZIndex: =2
-
-        Icon1_10 As icon.Cancel:
-            Color: =RGBA(255, 255, 255, 1)
-            Height: =33
-            Icon: =Icon.Cancel
-            OnSelect: =Set(isPDFviewBrand, false)
-            Visible: =isPDFviewBrand
-            Width: =30
-            X: =1266
-            Y: =119
-            ZIndex: =5
-
-        PdfViewer1_10 As pdfViewer:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            Document: =pdf_v_brand
-            Fill: =RGBA(0, 0, 0, 0.5)
-            Height: =569
-            ShowControls: =true
-            Visible: =isPDFviewBrand
-            Width: =1198
-            X: =110
-            Y: =162
-            ZIndex: =6
-
-    lblAutore_6 As label:
-        Color: =RGBA(0, 32, 104, 1)
-        Font: =Font.Lato
-        FontWeight: =FontWeight.Semibold
-        Size: =14
-        Text: ="Data creazione"
-        X: =766
-        Y: =200
-        ZIndex: =12
-
-    lblAutore_7 As label:
-        Color: =RGBA(0, 32, 104, 1)
-        Font: =Font.Lato
-        FontWeight: =FontWeight.Semibold
-        Size: =14
-        Text: ="Download"
-        X: =1030
-        Y: =200
-        ZIndex: =13
+        ZIndex: =9
 
     Icon2_3 As icon.BackArrow:
         Height: =24
@@ -189,7 +131,7 @@
         Width: =24
         X: =165
         Y: =202
-        ZIndex: =14
+        ZIndex: =10
 
     "Gallery2_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         '#CopilotOverlayLabel': ="Filtro applicato"
@@ -232,7 +174,7 @@
         Width: =1095
         X: =148
         Y: =253
-        ZIndex: =15
+        ZIndex: =11
 
         Rectangle6_3 As rectangle:
             Height: =Parent.TemplateHeight - Separator4_3.Height
@@ -285,8 +227,8 @@
                             
                 If( ThisItem.isFolder = 0,
                     If( NameExtAllegato = "pdf",
-                        Set(pdf_v_brand, 'NVS-PDF'.Run(ThisItem.Identificatore).pdf);
-                        Set(isPDFviewBrand, true),
+                        Set(pdf_v_brand_AIFA, 'NVS-PDF'.Run(ThisItem.Identificatore).pdf);
+                        Set(isPDFviewAIFA, true),
                         If( NameExtAllegato = "xlsx" || NameExtAllegato = "eml",
                           Launch(ThisItem.'Collegamento a elemento')
                         )
@@ -343,6 +285,64 @@
             Y: =Parent.TemplateHeight - Self.Height
             ZIndex: =7
 
+    grpPDFview_8 As group:
+        Height: =5
+        Width: =5
+        X: =120
+        Y: =120
+        ZIndex: =11
+
+        Rectangle1_10 As rectangle:
+            Height: =652
+            Visible: =isPDFviewAIFA
+            Width: =1198
+            X: =110
+            Y: =92
+            ZIndex: =15
+
+        Icon1_10 As icon.Cancel:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =33
+            Icon: =Icon.Cancel
+            OnSelect: =Set(isPDFviewAIFA, false)
+            Visible: =isPDFviewAIFA
+            Width: =30
+            X: =1266
+            Y: =119
+            ZIndex: =16
+
+        PdfViewer1_10 As pdfViewer:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Document: =pdf_v_brand
+            Fill: =RGBA(0, 0, 0, 0.5)
+            Height: =569
+            ShowControls: =true
+            Visible: =isPDFviewAIFA
+            Width: =1198
+            X: =110
+            Y: =162
+            ZIndex: =17
+
+    lblAutore_6 As label:
+        Color: =RGBA(0, 32, 104, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Size: =14
+        Text: ="Data creazione"
+        X: =766
+        Y: =200
+        ZIndex: =12
+
+    lblAutore_7 As label:
+        Color: =RGBA(0, 32, 104, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Size: =14
+        Text: ="Download"
+        X: =1030
+        Y: =200
+        ZIndex: =13
+
     Container8_1 As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =213
@@ -359,7 +359,7 @@
         Width: =1130
         X: =136
         Y: =531
-        ZIndex: =17
+        ZIndex: =14
 
         Container21_1 As groupContainer.horizontalAutoLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)

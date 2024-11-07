@@ -14973,6 +14973,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.pdf_v_brand_AIFA"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.pdf_v_brand_AIFA",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "pdf_v_brand_AIFA",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Icona-Farmaci"
                 }
               ],

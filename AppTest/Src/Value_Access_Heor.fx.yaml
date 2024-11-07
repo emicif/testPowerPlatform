@@ -48,8 +48,9 @@ Value_Access_Heor As screen:
             OnSelect: |-
                 =Set(
                     varFolderPathPRCommunity, 
-                   "Documents/Value Access/P&RCommunity/"
-                )
+                   "Documents/Value Access/P&R Community/"
+                );
+                Navigate('P&R')
             Width: =(Container4.Width/4) - 10
             ZIndex: =3
 

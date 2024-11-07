@@ -32,6 +32,13 @@ Value_Access_Heor As screen:
         AifaHta_icon As image:
             Height: =Container4.Height
             Image: ='AIFA-HTA_Icon'
+            OnSelect: |-
+                =Set(
+                    varFolderPathAIFA, 
+                   "Documents/'Value Access'/AIFA"
+                );
+                
+                Navigate('AIFA/HTA')
             Width: =(Container4.Width/4) - 10
             ZIndex: =2
 

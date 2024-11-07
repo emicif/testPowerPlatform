@@ -22,7 +22,8 @@
         Font: =Font.Lato
         FontWeight: =FontWeight.Bold
         Size: =16
-        Text: ="AIFA/HTA"
+        Text: |
+            ="AIFA/HTA"
         Width: =273
         X: =171
         Y: =116
@@ -196,14 +197,13 @@
         Fill: =RGBA(255, 255, 255, 255)
         Height: =385
         Items: |+
-            =SortByColumns(
+            =
+            SortByColumns(
                 Filter(
                     Documents,
-                    //attualmente è Documents, rendere dinamico in ambiente NVS con la variabile di Shared Documents
-                    'Percorso cartella' = varFolderPath,
-                    // isFolder = true;
-                    // isFolder = varIsFolder;
-                    Drugs.Value = areaSelectedBrand
+                    'Percorso cartella' = varFolderPathAIFA
+            
+                   
                 ),
                 "Created", 
                 SortOrder.Descending

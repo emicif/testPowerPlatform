@@ -343,3 +343,154 @@
             Y: =Parent.TemplateHeight - Self.Height
             ZIndex: =7
 
+    Container8_1 As groupContainer.verticalAutoLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =213
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =10
+        PaddingLeft: =20
+        PaddingRight: =20
+        PaddingTop: =10
+        RadiusBottomLeft: =19
+        RadiusBottomRight: =19
+        RadiusTopLeft: =19
+        RadiusTopRight: =19
+        Width: =1130
+        X: =136
+        Y: =531
+        ZIndex: =17
+
+        Container21_1 As groupContainer.horizontalAutoLayoutContainer:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =50
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMinHeight: =40
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =1
+
+            LabelTitoloNews_1 As label:
+                AlignInContainer: =AlignInContainer.Center
+                Color: =RGBA(0,32,104,1)
+                FontWeight: =FontWeight.Bold
+                Size: =16
+                Text: ="Ultime News"
+                ZIndex: =1
+
+            ButtonAllNews_1 As button:
+                Align: =Align.Right
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =ColorFade(Self.Fill, -0)
+                Color: =RGBA(0,32,104,1)
+                Fill: =Color.White
+                FontWeight: =FontWeight.Normal
+                HoverColor: =RGBA(0,32,104,1)
+                HoverFill: =Color.White
+                OnSelect: =Navigate(AllNews_Regione)
+                PaddingRight: =20
+                PressedFill: =Color.White
+                Size: =14
+                Text: ="Vedi tutte le news"
+                Underline: =true
+                Width: |
+                    =250
+                X: =1046
+                Y: =32
+                ZIndex: =3
+
+        "Gallery3_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DelayItemLoading: =true
+            Height: =Container8_1.Height - LabelTitoloNews_1.Height - 20
+            Items: |-
+                =//Sort(Filter(News; Regione.Value = VarNomeRegione || Regione.Value = Blank() );'Data/ora modifica'; SortOrder.Descending)
+                FirstN(Sort(Filter(News, SezApplicativo.Value = "AIFA"),'Data/ora modifica', SortOrder.Descending),3)
+            Layout: =Layout.Vertical
+            LayoutMinHeight: =150
+            LayoutMinWidth: =320
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =104
+            ZIndex: =3
+
+            Image10_1 As image:
+                Height: =86
+                Image: =ThisItem.Immagine
+                ImagePosition: =ImagePosition.Stretch
+                OnSelect: =Select(Parent)
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Width: =87
+                X: =16
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            Title4_1 As label:
+                Color: =RGBA(97, 97, 97, 1)
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Bold, FontWeight.Semibold)
+                Height: =25
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Titolo
+                VerticalAlign: =VerticalAlign.Top
+                Width: =460
+                Wrap: =false
+                X: =20
+                Y: =9
+                ZIndex: =2
+
+            Subtitle4_1 As label:
+                Color: =RGBA(97, 97, 97, 1)
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Lighter)
+                Height: =18
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Descrizione
+                VerticalAlign: =VerticalAlign.Top
+                Width: =460
+                Wrap: =false
+                X: =20
+                Y: =Title4_1.Y + Title4_1.Height
+                ZIndex: =3
+
+            Separator5_1 As rectangle:
+                BorderColor: =RGBA(218, 218, 218, 1)
+                Fill: =RGBA(218, 218, 218, 0.8)
+                Height: =2
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =60
+                ZIndex: =5
+
+            ButtonShowSingolaNews_2 As button:
+                Align: =Align.Right
+                BorderColor: =ColorFade(Self.Fill, -0)
+                Color: =RGBA(0,32,104,1)
+                Fill: =Color.White
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                HoverColor: =RGBA(0,32,104,1)
+                HoverFill: =Color.White
+                OnSelect: |-
+                    =Set(varNewsSingolaID, ThisItem.ID);
+                    Navigate(ShowNewsSingola)
+                PaddingRight: =20
+                PressedFill: =Color.White
+                Size: =13
+                Text: ="Vedi di più"
+                Underline: =true
+                Width: =0
+                X: =480
+                Y: =32
+                ZIndex: =7
+

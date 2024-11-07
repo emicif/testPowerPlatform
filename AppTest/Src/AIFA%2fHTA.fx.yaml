@@ -417,20 +417,6 @@
             TemplateSize: =104
             ZIndex: =3
 
-            Image10_1 As image:
-                Height: =86
-                Image: =ThisItem.Immagine
-                ImagePosition: =ImagePosition.Stretch
-                OnSelect: =Select(Parent)
-                RadiusBottomLeft: =8
-                RadiusBottomRight: =8
-                RadiusTopLeft: =8
-                RadiusTopRight: =8
-                Width: =87
-                X: =16
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =1
-
             Title4_1 As label:
                 Color: =RGBA(97, 97, 97, 1)
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Bold, FontWeight.Semibold)
@@ -451,7 +437,7 @@
             Subtitle4_1 As label:
                 Color: =RGBA(97, 97, 97, 1)
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Lighter)
-                Height: =18
+                Height: =43
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -459,7 +445,7 @@
                 PaddingTop: =0
                 Text: =ThisItem.Descrizione
                 VerticalAlign: =VerticalAlign.Top
-                Width: =460
+                Width: =1070
                 Wrap: =false
                 X: =20
                 Y: =Title4_1.Y + Title4_1.Height
@@ -471,27 +457,6 @@
                 Height: =2
                 OnSelect: =Select(Parent)
                 Width: =Parent.TemplateWidth
-                Y: =60
+                Y: =75
                 ZIndex: =5
-
-            ButtonShowSingolaNews_2 As button:
-                Align: =Align.Right
-                BorderColor: =ColorFade(Self.Fill, -0)
-                Color: =RGBA(0,32,104,1)
-                Fill: =Color.White
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                HoverColor: =RGBA(0,32,104,1)
-                HoverFill: =Color.White
-                OnSelect: |-
-                    =Set(varNewsSingolaID, ThisItem.ID);
-                    Navigate(ShowNewsSingola)
-                PaddingRight: =20
-                PressedFill: =Color.White
-                Size: =13
-                Text: ="Vedi di più"
-                Underline: =true
-                Width: =0
-                X: =480
-                Y: =32
-                ZIndex: =7
 

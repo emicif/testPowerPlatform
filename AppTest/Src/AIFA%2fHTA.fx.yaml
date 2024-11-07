@@ -54,7 +54,7 @@
         DisabledFill: =RGBA(255, 255, 255, 1)
         DisplayMode: =DisplayMode.View
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =463
+        Height: =295
         HoverFill: =RGBA(255, 255, 255, 1)
         RadiusBottomLeft: =19
         RadiusBottomRight: =19
@@ -195,7 +195,7 @@
         '#CopilotOverlayLabel': ="Filtro applicato"
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 255)
-        Height: =385
+        Height: =207
         Items: |+
             =
             SortByColumns(

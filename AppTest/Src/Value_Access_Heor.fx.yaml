@@ -57,6 +57,12 @@ Value_Access_Heor As screen:
         Cia_icon As image:
             Height: =Container4.Height
             Image: =CIA_Icon
+            OnSelect: |-
+                =Set(
+                    varFolderPathPRCommunity, 
+                   "Documents/Value Access/CIA/"
+                );
+                Navigate('CIA')
             Width: =(Container4.Width/4) - 10
             ZIndex: =4
 

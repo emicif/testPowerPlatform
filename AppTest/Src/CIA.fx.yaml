@@ -128,7 +128,7 @@ CIA As screen:
             Color: =RGBA(255, 255, 255, 1)
             Height: =33
             Icon: =Icon.Cancel
-            OnSelect: =Set(isPDFviewPR, false)
+            OnSelect: =Set(isPDFviewCIA, false)
             Visible: =isPDFviewCIA
             Width: =30
             X: =1266

@@ -107,7 +107,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 2,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -151,6 +151,7 @@
     "Target",
     "footer_vaiProdotti",
     "footer_comunicazioni",
+    "footer_tender",
     "footer_stockout",
     "footer_DPC",
     "footer_sostenibilita",

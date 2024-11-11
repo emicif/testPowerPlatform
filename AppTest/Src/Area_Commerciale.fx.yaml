@@ -434,3 +434,11 @@ Area_Commerciale As screen:
         Width: =286
         ZIndex: =28
 
+    ToggleTender As toggleSwitch:
+        Default: =Footer_2.Navigazione_stockout
+        OnChange: =If(vartender,Navigate(footer_tender,ScreenTransition.Fade))
+        Visible: =false
+        X: =519
+        Y: =72
+        ZIndex: =29
+

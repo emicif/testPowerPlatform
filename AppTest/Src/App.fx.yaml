@@ -91,6 +91,7 @@ App As appinfo:
         Set(varreporting,false);
         Set(varlistini,false);
         Set(varkitprodotti,false);
+        Set(vartender,false);
         
         Set(varSaluto, "IT");
         

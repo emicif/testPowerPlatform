@@ -171,7 +171,7 @@ Footer As CanvasComponent:
             Set(varsostenibilita,false);
             Set(varreporting,false);
             Set(varlistini,false);
-            Set(varkitprodotti,true);
+            Set(vartender,true);
         Text: =""
         Width: =161
         X: =1204

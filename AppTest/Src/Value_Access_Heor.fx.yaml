@@ -62,7 +62,7 @@ Value_Access_Heor As screen:
                     varFolderPathPRCommunity, 
                    "Documents/Value Access/CIA/"
                 );
-                Navigate('CIA')
+                Navigate(CIA)
             Width: =(Container4.Width/4) - 10
             ZIndex: =4
 

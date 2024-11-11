@@ -83,22 +83,13 @@ Footer As CanvasComponent:
         Y: =10
         ZIndex: =8
 
-    ImageKitProdottiWhite As image:
-        Height: =52
-        Image: ='kit-icon-footer'
-        Visible: =!varkitprodotti
-        Width: =162
-        X: =1204
-        Y: =10
-        ZIndex: =9
-
     ImageVaiProdottiSelected As image:
         Height: =52
         Image: =VaiProdottiSelected
         Visible: =varvaiprodotti
         Width: =162
         Y: =10
-        ZIndex: =10
+        ZIndex: =9
 
     ImageComunicazioniSelected As image:
         Height: =52
@@ -107,7 +98,7 @@ Footer As CanvasComponent:
         Width: =172
         X: =163
         Y: =10
-        ZIndex: =11
+        ZIndex: =10
 
     ImageStockSelected As image:
         Height: =52
@@ -116,7 +107,7 @@ Footer As CanvasComponent:
         Width: =172
         X: =337
         Y: =10
-        ZIndex: =12
+        ZIndex: =11
 
     ImageDPCSelected As image:
         Height: =52
@@ -125,7 +116,7 @@ Footer As CanvasComponent:
         Width: =172
         X: =511
         Y: =10
-        ZIndex: =13
+        ZIndex: =12
 
     ImageSostenibilitaSelected As image:
         Height: =52
@@ -134,7 +125,7 @@ Footer As CanvasComponent:
         Width: =172
         X: =684
         Y: =10
-        ZIndex: =14
+        ZIndex: =13
 
     ImageReportingSelected As image:
         Height: =52
@@ -143,7 +134,7 @@ Footer As CanvasComponent:
         Width: =172
         X: =858
         Y: =10
-        ZIndex: =15
+        ZIndex: =14
 
     ImageListiniSelected As image:
         Height: =52
@@ -152,16 +143,16 @@ Footer As CanvasComponent:
         Width: =172
         X: =1032
         Y: =10
-        ZIndex: =16
+        ZIndex: =15
 
     ImageKitProdottiSelected As image:
-        Height: =52
+        Height: =57
         Image: =KitProdottiSelected
         Visible: =varkitprodotti
         Width: =162
         X: =1204
-        Y: =10
-        ZIndex: =17
+        Y: =5
+        ZIndex: =16
 
     ButtonKitProdotti As button:
         Color: =Color.Transparent
@@ -184,7 +175,7 @@ Footer As CanvasComponent:
         Text: =""
         Width: =161
         X: =1204
-        ZIndex: =18
+        ZIndex: =17
 
     ButtonListini As button:
         Color: =Color.Transparent
@@ -206,7 +197,7 @@ Footer As CanvasComponent:
         Text: =""
         Width: =173
         X: =1031
-        ZIndex: =19
+        ZIndex: =18
 
     ButtonReporting As button:
         Color: =Color.Transparent
@@ -230,7 +221,7 @@ Footer As CanvasComponent:
         Text: =""
         Width: =173
         X: =857
-        ZIndex: =20
+        ZIndex: =19
 
     ButtonSostenibilita As button:
         Color: =Color.Transparent
@@ -253,7 +244,7 @@ Footer As CanvasComponent:
         Text: =""
         Width: =172
         X: =683
-        ZIndex: =21
+        ZIndex: =20
 
     ButtonVaiProdotti As button:
         Color: =Color.Transparent
@@ -276,7 +267,7 @@ Footer As CanvasComponent:
             Set(varkitprodotti,false);
         Text: =""
         Width: =162
-        ZIndex: =22
+        ZIndex: =21
 
     ButtonComunicazioni As button:
         Color: =Color.Transparent
@@ -300,7 +291,7 @@ Footer As CanvasComponent:
         Text: =""
         Width: =172
         X: =163
-        ZIndex: =23
+        ZIndex: =22
 
     ButtonDPC As button:
         Color: =Color.Transparent
@@ -324,7 +315,7 @@ Footer As CanvasComponent:
         Text: =""
         Width: =173
         X: =511
-        ZIndex: =24
+        ZIndex: =23
 
     ButtonStock As button:
         Color: =Color.Transparent
@@ -347,5 +338,13 @@ Footer As CanvasComponent:
         Text: =""
         Width: =172
         X: =337
+        ZIndex: =24
+
+    Image27 As image:
+        Height: =57
+        Image: =icon_tender
+        Width: =81
+        X: =1242
+        Y: =10
         ZIndex: =25
 

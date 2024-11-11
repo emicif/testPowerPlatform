@@ -341,7 +341,7 @@ Footer As CanvasComponent:
         ZIndex: =24
 
     Image27 As image:
-        Height: =57
+        Height: =52
         Image: =icon_tender
         Width: =81
         X: =1242

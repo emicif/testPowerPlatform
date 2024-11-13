@@ -422,7 +422,9 @@ Area_Commerciale As screen:
         Title5 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =49
-            OnSelect: =Select(Parent)
+            OnSelect: |-
+                =Set(areaSelected, ThisItem.Nome);
+                Navigate(Home_Prodotto)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -430,7 +432,7 @@ Area_Commerciale As screen:
             Text: =ThisItem.Titolo
             VerticalAlign: =VerticalAlign.Top
             Width: =147
-            X: =100
+            X: =77
             Y: =16
             ZIndex: =2
 

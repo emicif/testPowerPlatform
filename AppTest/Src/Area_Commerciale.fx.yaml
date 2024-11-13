@@ -51,63 +51,6 @@ Area_Commerciale As screen:
         Y: =525
         ZIndex: =4
 
-    "glryFarmaci As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
-        '#CopilotOverlayLabel': ="Filtro applicato"
-        DelayItemLoading: =true
-        Fill: =RGBA(255, 255, 255, 255)
-        Height: =142
-        Items: |
-            =Sort(Drugs, Titolo, SortOrder.Ascending)
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplatePadding: =0
-        TemplateSize: =163
-        Width: =1044
-        WrapCount: =2
-        X: =(App.Width - glryFarmaci.Width)/2
-        Y: =538
-        ZIndex: =5
-
-        "'Logo-Farmaci' As image":
-            Height: =25
-            Image: =ThisItem.Logo
-            ImagePosition: =ImagePosition.Fill
-            OnSelect: |-
-                =Set(
-                    areaSelected,
-                    ThisItem.Titolo
-                );
-                Navigate(Home_Prodotto)
-            RadiusBottomLeft: =8
-            RadiusBottomRight: =8
-            RadiusTopLeft: =8
-            RadiusTopRight: =8
-            Width: =25
-            X: =8
-            Y: =21
-            ZIndex: =1
-
-        "'Title-Farmaci' As label":
-            Font: =Font.Lato
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =42
-            OnSelect: |-
-                =Set(
-                    areaSelected,
-                    ThisItem.Titolo
-                );
-                
-                Navigate(Home_Prodotto)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Titolo
-            VerticalAlign: =VerticalAlign.Top
-            Width: =106
-            X: =49
-            Y: =21
-            ZIndex: =2
-
     Header_2 As Header:
         ZIndex: =6
 
@@ -447,4 +390,54 @@ Area_Commerciale As screen:
         X: =519
         Y: =72
         ZIndex: =29
+
+    "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =143
+        Items: |
+            =Sort(Drugs, Titolo, SortOrder.Ascending)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =66
+        Width: =1019
+        WrapCount: =4
+        X: =172
+        Y: =540
+        ZIndex: =30
+
+        Image17 As image:
+            Height: =38
+            Image: =ThisItem.Logo
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =50
+            X: =16
+            Y: =16
+            ZIndex: =1
+
+        Title5 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =49
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Titolo
+            VerticalAlign: =VerticalAlign.Top
+            Width: =147
+            X: =100
+            Y: =16
+            ZIndex: =2
+
+        Rectangle16 As rectangle:
+            Height: =
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =6
 

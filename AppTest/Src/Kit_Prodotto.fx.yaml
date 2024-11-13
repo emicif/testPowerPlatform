@@ -1116,7 +1116,7 @@ Kit_Prodotto As screen:
             BorderStyle: =BorderStyle.None
             DelayItemLoading: =true
             Fill: =RGBA(255, 255, 255, 255)
-            Height: =494
+            Height: =393
             Items: |
                 =Switch(
                     areaSelected,

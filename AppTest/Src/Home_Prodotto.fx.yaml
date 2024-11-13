@@ -65,7 +65,7 @@ Home_Prodotto As screen:
             Set(varPDFUrl, 'NVSPdf-Kymriah'.Run(sharinglink).pdf);
             Set(popupPDFUrl, true)
             
-        Visible: =If(areaSelected = "Kymriah" || areaSelectedBrand = "Zolgensma", true)
+        Visible: =If(areaSelected = "Kymriah" || areaSelected = "Zolgensma", true)
         Width: =210
         X: =1066
         Y: =306

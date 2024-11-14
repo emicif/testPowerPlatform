@@ -1151,12 +1151,22 @@ Listing_PF As screen:
             ZIndex: =1
 
         Button6 As button:
+            OnSelect: |-
+                ='NVS-UploadDoc'.Run(
+                    {
+                        fileDaSalvare: {
+                            name: First(AttachUploadFile.Attachments).Name,
+                            ContentBytes: First(AttachUploadFile.Attachments).Value
+                        },
+                        varPercorsoCartella : varFolderPathPFProceduraModRegione
+                    }
+                )
             Text: ="Carica File"
             X: =208
             Y: =338
             ZIndex: =2
 
-        DataCardValue31_1 As attachments:
+        AttachUploadFile As attachments:
             BorderColor: =
             DisplayMode: =Parent.DisplayMode
             Height: =122

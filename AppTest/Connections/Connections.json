@@ -200,11 +200,11 @@
     "dependents": [
       "039acdde-7578-433e-b029-285158466b05",
       "00b60bbd-9aa0-4b65-9d7b-bd5c0488aa58",
-      "e6cb660a-a6e4-4d9c-b376-5702169099ff"
+      "cb396afb-f326-411c-8a02-a597a85abcb4"
     ],
     "id": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
   },
-  "e6cb660a-a6e4-4d9c-b376-5702169099ff": {
+  "cb396afb-f326-411c-8a02-a597a85abcb4": {
     "connectionRef": {
       "displayName": "Flussi di logica",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png",
@@ -242,6 +242,6 @@
       "shared_sharepointonline": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
     },
     "dependents": [],
-    "id": "e6cb660a-a6e4-4d9c-b376-5702169099ff"
+    "id": "cb396afb-f326-411c-8a02-a597a85abcb4"
   }
 }

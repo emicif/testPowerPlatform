@@ -35,6 +35,7 @@ Listing_PF As screen:
                 Text: =
                 Width: =Parent.Width - 60
                 X: =Parent.Width/2 - Self.Width/2
+                Y: =12
                 ZIndex: =1
 
             "GalleryLI As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
@@ -1147,4 +1148,74 @@ Listing_PF As screen:
             Text: =
             Width: =Parent.Width
             ZIndex: =1
+
+        Form5 As form:
+            Height: =473
+            Width: =595
+            ZIndex: =2
+
+            Allegati_DataCard3 As typedDataCard.attachmentsEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="{Attachments}"
+                Default: =ThisItem.Allegati
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@News],DataSourceInfo.DisplayName,'{Attachments}')
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue31.Attachments
+                Width: =198
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+                DataCardKey32 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue31 As attachments:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DisplayMode: =Parent.DisplayMode
+                    IsInDataCard: =true
+                    Items: =Parent.Default
+                    PaddingBottom: =5
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey32.Y + DataCardKey32.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage31 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue31.Y + DataCardValue31.Height
+                    ZIndex: =3
+
+                StarVisible31 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey32.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey32.Y
+                    ZIndex: =4
 

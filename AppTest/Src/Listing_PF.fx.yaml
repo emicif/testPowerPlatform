@@ -1134,3 +1134,17 @@ Listing_PF As screen:
             Y: =117
             ZIndex: =7
 
+    PopupNewFile As groupContainer.manualLayoutContainer:
+        Height: =473
+        Width: =595
+        X: =395
+        Y: =147
+        ZIndex: =8
+
+        Button5 As button:
+            Fill: =Color.White
+            Height: =Parent.Height
+            Text: =
+            Width: =Parent.Width
+            ZIndex: =1
+

@@ -1185,30 +1185,30 @@ Listing_PF As screen:
             Y: =40
             ZIndex: =3
 
-        Form3 As form:
+        Form5 As form:
             DataSource: =Documents
-            Height: =164
+            Height: =171
             Width: =595
-            Y: =175
+            Y: =158
             ZIndex: =4
 
-            Titolo_DataCard1 As typedDataCard.textualEditCard:
+            Titolo_DataCard4 As typedDataCard.textualEditCard:
                 BorderStyle: =BorderStyle.Solid
-                DataField: ="Title"
-                Default: =ThisItem.Titolo
+                DataField: ="Nome"
+                Default: =ThisItem.Nome
                 DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@Documents],DataSourceInfo.DisplayName,Title)
+                DisplayName: =DataSourceInfo([@Documents],DataSourceInfo.DisplayName,Nome)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 MaxLength: =DataSourceInfo([@Documents], DataSourceInfo.MaxLength, Title)
                 Required: =false
-                Update: =DataCardValue1.Text
-                Width: =594
+                Update: =DataCardValue20.Text
+                Width: =198
                 X: =0
                 Y: =0
                 ZIndex: =5
 
-                DataCardKey1 As label:
+                DataCardKey20 As label:
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
@@ -1218,7 +1218,7 @@ Listing_PF As screen:
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue1 As text:
+                DataCardValue20 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     Default: =Parent.Default
                     DelayOutput: =true
@@ -1232,10 +1232,10 @@ Listing_PF As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =44
+                    Y: =DataCardKey20.Y + DataCardKey20.Height + 5
                     ZIndex: =2
 
-                ErrorMessage1 As label:
+                ErrorMessage15 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -1247,36 +1247,35 @@ Listing_PF As screen:
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue1.Y + DataCardValue1.Height
+                    Y: =DataCardValue20.Y + DataCardValue20.Height
                     ZIndex: =3
 
-                StarVisible1 As label:
+                StarVisible15 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey1.Height
+                    Height: =DataCardKey20.Height
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey1.Y
+                    Y: =DataCardKey20.Y
                     ZIndex: =4
 
-            isFolder_DataCard1 As typedDataCard.numberEditCard:
+            isFolder_DataCard3 As typedDataCard.numberEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="isFolder"
-                Default: =0
+                Default: =ThisItem.isFolder
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@Documents],DataSourceInfo.DisplayName,isFolder)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 Required: =false
-                Update: =Value(DataCardValue3.Text)
-                Visible: =false
+                Update: =Value(DataCardValue22.Text)
                 Width: =198
-                X: =0
-                Y: =1
+                X: =1
+                Y: =0
                 ZIndex: =5
 
-                DataCardKey3 As label:
+                DataCardKey22 As label:
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
@@ -1286,7 +1285,7 @@ Listing_PF As screen:
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue3 As text:
+                DataCardValue22 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     Default: =Parent.Default
                     DelayOutput: =true
@@ -1300,10 +1299,10 @@ Listing_PF As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                    Y: =DataCardKey22.Y + DataCardKey22.Height + 5
                     ZIndex: =2
 
-                ErrorMessage3 As label:
+                ErrorMessage17 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -1315,37 +1314,35 @@ Listing_PF As screen:
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue3.Y + DataCardValue3.Height
+                    Y: =DataCardValue22.Y + DataCardValue22.Height
                     ZIndex: =3
 
-                StarVisible3 As label:
+                StarVisible17 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey3.Height
+                    Height: =DataCardKey22.Height
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey3.Y
+                    Y: =DataCardKey22.Y
                     ZIndex: =4
 
-            Regione_DataCard1 As typedDataCard.comboBoxEditCard:
+            Regione_DataCard3 As typedDataCard.comboBoxEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Regione"
-                Default: |-
-                    ={Value : VarNomeRegione}
+                Default: =ThisItem.Regione
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@Documents],DataSourceInfo.DisplayName,Regione)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 Required: =false
-                Update: =DataCardValue6.Selected
-                Visible: =false
+                Update: =DataCardValue24.Selected
                 Width: =198
-                X: =1
-                Y: =1
+                X: =2
+                Y: =0
                 ZIndex: =5
 
-                DataCardKey5 As label:
+                DataCardKey24 As label:
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
@@ -1355,7 +1352,7 @@ Listing_PF As screen:
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue6 As combobox:
+                DataCardValue24 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DefaultSelectedItems: =Parent.Default
                     DisplayFields: =["Value"]
@@ -1363,15 +1360,15 @@ Listing_PF As screen:
                     Items: =Choices([@Documents].Regione)
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
-                    SearchItems: =Choices(Documents.Regione,DataCardValue6.SearchText)
+                    SearchItems: =Choices(Documents.Regione,DataCardValue24.SearchText)
                     SelectMultiple: =false
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                    Y: =DataCardKey24.Y + DataCardKey24.Height + 5
                     ZIndex: =2
 
-                ErrorMessage5 As label:
+                ErrorMessage19 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -1383,16 +1380,16 @@ Listing_PF As screen:
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue6.Y + DataCardValue6.Height
+                    Y: =DataCardValue24.Y + DataCardValue24.Height
                     ZIndex: =3
 
-                StarVisible5 As label:
+                StarVisible19 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey5.Height
+                    Height: =DataCardKey24.Height
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey5.Y
+                    Y: =DataCardKey24.Y
                     ZIndex: =4
 

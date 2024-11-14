@@ -1154,10 +1154,12 @@ Listing_PF As screen:
             OnSelect: |-
                 ='NVS-UploadDoc'.Run(
                     varFolderPathPFProceduraModRegione,
+                   { file: (
                     {
                         name: First(AttachUploadFile.Attachments).Name,
                         contentBytes: First(AttachUploadFile.Attachments).Value
-                    }
+                    })
+                   }
                     
                                 
                 )

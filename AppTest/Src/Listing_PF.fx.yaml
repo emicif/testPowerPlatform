@@ -1188,6 +1188,7 @@ Listing_PF As screen:
         Form5 As form:
             DataSource: =Documents
             Height: =171
+            NumberOfColumns: =1
             Width: =595
             Y: =158
             ZIndex: =4
@@ -1203,7 +1204,7 @@ Listing_PF As screen:
                 MaxLength: =DataSourceInfo([@Documents], DataSourceInfo.MaxLength, Title)
                 Required: =false
                 Update: =DataCardValue20.Text
-                Width: =198
+                Width: =595
                 X: =0
                 Y: =0
                 ZIndex: =5
@@ -1270,9 +1271,10 @@ Listing_PF As screen:
                 Height: =50
                 Required: =false
                 Update: =Value(DataCardValue22.Text)
-                Width: =198
-                X: =1
-                Y: =0
+                Visible: =false
+                Width: =595
+                X: =0
+                Y: =1
                 ZIndex: =5
 
                 DataCardKey22 As label:
@@ -1287,7 +1289,7 @@ Listing_PF As screen:
 
                 DataCardValue22 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Parent.Default
+                    Default: =0
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     Format: =TextFormat.Number
@@ -1330,16 +1332,18 @@ Listing_PF As screen:
             Regione_DataCard3 As typedDataCard.comboBoxEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Regione"
-                Default: =ThisItem.Regione
+                Default: |-
+                    ={Value : VarNomeRegione}
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@Documents],DataSourceInfo.DisplayName,Regione)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 Required: =false
                 Update: =DataCardValue24.Selected
-                Width: =198
-                X: =2
-                Y: =0
+                Visible: =false
+                Width: =595
+                X: =0
+                Y: =2
                 ZIndex: =5
 
                 DataCardKey24 As label:

@@ -1154,6 +1154,7 @@ Listing_PF As screen:
             OnSelect: |
                 ='NVS-UploadDoc'.Run(
                     varFolderPathPFProceduraModRegione,
+                   JSON(FormUpdateFile.Updates, JSONFormat.IncludeBinaryData),
                    { file: (
                     {
                         name: First(AttachUploadFile.Attachments).Name,
@@ -1185,7 +1186,7 @@ Listing_PF As screen:
             Y: =40
             ZIndex: =3
 
-        Form5 As form:
+        FormUpdateFile As form:
             DataSource: =Documents
             Height: =171
             NumberOfColumns: =1

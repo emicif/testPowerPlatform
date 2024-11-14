@@ -1203,7 +1203,7 @@ Listing_PF As screen:
                 MaxLength: =DataSourceInfo([@Documents], DataSourceInfo.MaxLength, Title)
                 Required: =false
                 Update: =DataCardValue1.Text
-                Width: =198
+                Width: =594
                 X: =0
                 Y: =0
                 ZIndex: =5
@@ -1232,7 +1232,7 @@ Listing_PF As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                    Y: =44
                     ZIndex: =2
 
                 ErrorMessage1 As label:
@@ -1270,9 +1270,10 @@ Listing_PF As screen:
                 Height: =50
                 Required: =false
                 Update: =Value(DataCardValue3.Text)
+                Visible: =false
                 Width: =198
-                X: =1
-                Y: =0
+                X: =0
+                Y: =1
                 ZIndex: =5
 
                 DataCardKey3 As label:
@@ -1330,16 +1331,18 @@ Listing_PF As screen:
             Regione_DataCard1 As typedDataCard.comboBoxEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Regione"
-                Default: =ThisItem.Regione
+                Default: |-
+                    ={Value : VarNomeRegione}
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@Documents],DataSourceInfo.DisplayName,Regione)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 Required: =false
                 Update: =DataCardValue6.Selected
+                Visible: =false
                 Width: =198
-                X: =2
-                Y: =0
+                X: =1
+                Y: =1
                 ZIndex: =5
 
                 DataCardKey5 As label:

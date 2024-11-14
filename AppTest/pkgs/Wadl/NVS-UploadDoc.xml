@@ -31,7 +31,7 @@
           </param>
           <representation mediaType="application/json">
             <param style="plain" name="file" path="/file" type="service:ManualTriggerInput_file_def">
-              <doc title="Contenuto file" />
+              <doc title="fileDaSalvare" />
             </param>
             <param style="plain" name="text" path="/text" type="xs:string" required="true">
               <doc title="varPercorsoCartella" />

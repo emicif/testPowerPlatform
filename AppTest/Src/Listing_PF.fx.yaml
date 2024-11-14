@@ -1153,14 +1153,19 @@ Listing_PF As screen:
         Button6 As button:
             OnSelect: |-
                 ='NVS-UploadDoc'.Run(
+                    varFolderPathPFProceduraModRegione,
                     {
-                        fileDaSalvare: {
-                            name: First(AttachUploadFile.Attachments).Name,
-                            ContentBytes: First(AttachUploadFile.Attachments).Value
-                        },
-                        varPercorsoCartella : varFolderPathPFProceduraModRegione
+                        name: First(AttachUploadFile.Attachments).Name,
+                        contentBytes: First(AttachUploadFile.Attachments).Value
                     }
+                    
+                                
                 )
+                
+                 /*fileDaSalvare: {
+                            name: First(AttachUploadFile.Attachments).Name;
+                            ContentBytes: First(AttachUploadFile.Attachments).Value
+                        }*/
             Text: ="Carica File"
             X: =208
             Y: =338

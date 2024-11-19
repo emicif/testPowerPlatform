@@ -6,6 +6,7 @@ App As appinfo:
         Set(backgroundColorGrey, "F2F2F4");
         
         Set(VarPopUpInfoRegioneVisible, false);
+        Set(varPopUpNewFile, false);
         Set(VarNomeRegione, Blank());
         Set(VarNomeRegioneNoSpace, Blank());
         Set(varImgRegione, Blank());

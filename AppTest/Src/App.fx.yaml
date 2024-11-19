@@ -11,6 +11,7 @@ App As appinfo:
         Set(VarNomeRegioneNoSpace, Blank());
         Set(varImgRegione, Blank());
         
+        
         Set( NameExtAllegato , "");
         
         Set(
@@ -61,6 +62,7 @@ App As appinfo:
             varFolderPathPFretiPDTA,
             ""
         );
+        Set(varPathNewFile,  "");
         Set(varNewsSingolaID, Blank());
         
         Set(

@@ -1144,16 +1144,16 @@ Listing_PF As screen:
             ZIndex: =7
 
     PopupNewFile As groupContainer.manualLayoutContainer:
-        Height: =473
+        Height: =415
         Visible: =varPopUpNewFile
         Width: =595
         X: =395
-        Y: =147
+        Y: =204
         ZIndex: =8
 
         Button5 As button:
             Fill: =Color.White
-            Height: =Parent.Height
+            Height: =415
             HoverFill: =ColorFade(RGBA(255, 255, 255, 1), -20%)
             Text: =
             Width: =Parent.Width
@@ -1173,8 +1173,8 @@ Listing_PF As screen:
                                 
                 )
             Text: ="Carica File"
-            X: =217
-            Y: =405
+            X: =216
+            Y: =345
             ZIndex: =2
 
         AttachUploadFile As attachments:
@@ -1190,7 +1190,7 @@ Listing_PF As screen:
             PaddingTop: =5
             Tooltip: =
             Width: =Parent.Width-80
-            X: =40
-            Y: =40
+            X: =39
+            Y: =175
             ZIndex: =3
 

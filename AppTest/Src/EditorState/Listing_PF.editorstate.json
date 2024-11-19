@@ -1745,7 +1745,7 @@
       "MetaDataIDKey": "",
       "Name": "ButtonContProcMod",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2054,7 +2054,7 @@
       "MetaDataIDKey": "",
       "Name": "ButtonLI",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13183,7 +13183,7 @@
       "MetaDataIDKey": "",
       "Name": "IconaLineeInd",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13701,7 +13701,7 @@
       "MetaDataIDKey": "",
       "Name": "IconaProcMod",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14595,7 +14595,7 @@
       "MetaDataIDKey": "",
       "Name": "IconNewFile",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14802,7 +14802,7 @@
       "MetaDataIDKey": "",
       "Name": "IconNewFileLineeInd",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21428,7 +21428,7 @@
       "MetaDataIDKey": "",
       "Name": "Titolo_LineeInd",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22147,7 +22147,7 @@
       "MetaDataIDKey": "",
       "Name": "Titolo_ProcMod",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

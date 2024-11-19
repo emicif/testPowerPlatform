@@ -1177,7 +1177,7 @@ Listing_PF As screen:
         Button5 As button:
             Fill: =Color.White
             Height: =Parent.Height
-            HoverFill: =ColorFade(RGBA(255, 255, 255, 1), -20%)
+            HoverFill: =RGBA(255, 255, 255, 1)
             Text: =
             Width: =Parent.Width
             ZIndex: =1
@@ -1192,7 +1192,8 @@ Listing_PF As screen:
                             contentBytes: First(AttachUploadFile.Attachments).Value
                         })
                     }
-                )
+                );
+                Set(varPopUpNewFile, false)
             Text: ="Carica File"
             X: =217
             Y: =240

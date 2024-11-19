@@ -1197,19 +1197,21 @@ Listing_PF As screen:
             PaddingTop: =5
             Tooltip: =
             Width: =Parent.Width-80
-            X: =40
-            Y: =81
+            X: =39
+            Y: =108
             ZIndex: =3
 
         Label11 As label:
             Align: =Align.Center
             FontWeight: =FontWeight.Semibold
-            Height: =43
-            Size: =20
-            Text: ="Aggiungi nuovo File"
-            Width: =295
-            X: =Parent.Width/2 - Self.Width/2
-            Y: =24
+            Height: =76
+            Size: =18
+            Text: |-
+                ="Aggiungi nuovo File nella sezione:" & Char(10) & varSezioneFile
+            VerticalAlign: =VerticalAlign.Top
+            Width: =485
+            X: =40
+            Y: =17
             ZIndex: =4
 
         IconClosePopupNewFile As icon.Cancel:
@@ -1218,6 +1220,6 @@ Listing_PF As screen:
             OnSelect: =Set(varPopUpNewFile, false)
             Width: =30
             X: =525
-            Y: =30
+            Y: =17
             ZIndex: =5
 

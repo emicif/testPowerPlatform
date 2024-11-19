@@ -16873,36 +16873,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Listing_PF.varSezioneFile"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Listing_PF.varSezioneFile",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varSezioneFile",
-                "module": "Listing_PF",
-                "type": "Listing_PF"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Comunicazioni.glry_ultimenews_1.Title3_1.Y"
                 }
               ],

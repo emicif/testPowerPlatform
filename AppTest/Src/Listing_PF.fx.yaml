@@ -298,9 +298,9 @@ Listing_PF As screen:
                     ZIndex: =6
 
             Titolo_LineeInd As label:
-                AutoHeight: =true
                 Color: =RGBA(0, 32, 104, 1)
                 FontWeight: =FontWeight.Bold
+                Height: =35
                 PaddingBottom: =10
                 PaddingLeft: =10
                 PaddingRight: =10
@@ -309,6 +309,7 @@ Listing_PF As screen:
                 Text: ="Linee di indirizzo - Ultimo Documento"
                 Width: =Parent.Width - IconaLineeInd.Width - 80
                 X: =IconaLineeInd.X + IconaLineeInd.Width
+                Y: =13
                 ZIndex: =6
 
             IconaLineeInd As image:
@@ -644,6 +645,20 @@ Listing_PF As screen:
                 Y: |
                     =Titolo_ProcMod.Height/2 - Self.Height/2
                 ZIndex: =7
+
+            IconNewFile As icon.Add:
+                Color: =RGBA(0, 32, 104, 1)
+                Height: =30
+                Icon: =Icon.Add
+                OnSelect: |-
+                    =UpdateContext({
+                        varSezioneFile : "Procedura e Modulistica"
+                    });
+                    Set(varPopUpNewFile, true)
+                Width: =30
+                X: =722
+                Y: =9
+                ZIndex: =8
 
         ContainerMonSpesa As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1090,18 +1105,10 @@ Listing_PF As screen:
             PaddingLeft: =0
             Size: =20
             Text: ="Listing / " & VarNomeRegione
-            Width: =Parent.Width - backHome_19.Width - IconNewFile.Width
+            Width: =Parent.Width - backHome_19.Width 
             X: =172
             Y: =116
             ZIndex: =2
-
-        IconNewFile As icon.Add:
-            Color: =RGBA(255, 255, 255, 1)
-            Height: =40
-            Icon: =Icon.Add
-            OnSelect: =Set(varPopUpNewFile, true)
-            Width: =40
-            ZIndex: =3
 
     Header_21 As Header:
         ZIndex: =4

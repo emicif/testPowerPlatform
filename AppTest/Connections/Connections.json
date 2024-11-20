@@ -1,48 +1,4 @@
 {
-  "00b60bbd-9aa0-4b65-9d7b-bd5c0488aa58": {
-    "appActions": [
-      "Run"
-    ],
-    "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "Flussi di logica",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "50b38312-3aaa-491f-b136-d62fa5b82c0b": {
-          "value": "shared_sharepointonline"
-        },
-        "workflowDisplayName": {
-          "value": "NVSPdf - Kymriah"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "9845208a-3fcc-45b4-9ccd-c34b87ca6c51"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_sharepointonline": {
-          "value": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
-        },
-        "workflowDisplayName": {
-          "value": "NVSPdf - Kymriah"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "9845208a-3fcc-45b4-9ccd-c34b87ca6c51"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "NVSPdf-Kymriah"
-    ],
-    "dependencies": {
-      "shared_sharepointonline": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
-    },
-    "dependents": [],
-    "id": "00b60bbd-9aa0-4b65-9d7b-bd5c0488aa58"
-  },
   "039acdde-7578-433e-b029-285158466b05": {
     "appActions": [
       "Run"
@@ -86,6 +42,40 @@
     },
     "dependents": [],
     "id": "039acdde-7578-433e-b029-285158466b05"
+  },
+  "044cad8d-cdd5-4dff-8062-0bdd7f30636d": {
+    "connectionRef": {
+      "displayName": "Flussi di logica",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowDisplayName": {
+          "value": "NVSPdf - Kymriah"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "9845208a-3fcc-45b4-9ccd-c34b87ca6c51"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowDisplayName": {
+          "value": "NVSPdf - Kymriah"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "9845208a-3fcc-45b4-9ccd-c34b87ca6c51"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "NVSPdf-Kymriah"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
+    },
+    "dependents": [],
+    "id": "044cad8d-cdd5-4dff-8062-0bdd7f30636d"
   },
   "50b38312-3aaa-491f-b136-d62fa5b82c0b": {
     "appActions": [
@@ -210,9 +200,6 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "50b38312-3aaa-491f-b136-d62fa5b82c0b": {
-          "value": "shared_sharepointonline"
-        },
         "workflowDisplayName": {
           "value": "NVS - Upload Doc"
         },
@@ -222,9 +209,6 @@
         }
       },
       "parameterHintsV2": {
-        "shared_sharepointonline": {
-          "value": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
-        },
         "workflowDisplayName": {
           "value": "NVS - Upload Doc"
         },

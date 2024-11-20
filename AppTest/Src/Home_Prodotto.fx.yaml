@@ -62,7 +62,7 @@ Home_Prodotto As screen:
         Image: ='Icona-centriAttivi'
         OnSelect: |+
             =If(areaSelected = "Zolgensma",
-                Set(SharingLink, "Documents%252fnovartis-zolgensma-centriattivi");
+                Set(SharingLink, "Documents%252fnovartis-zolgensma-centriattivi.pdf");
                 Set(varPDFUrl, 'NVSPdf-Kymriah'.Run(SharingLink).pdf);
                 Set(popupPDFUrl, true)
             );

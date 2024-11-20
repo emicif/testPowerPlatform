@@ -83,6 +83,40 @@
     "dependents": [],
     "id": "044cad8d-cdd5-4dff-8062-0bdd7f30636d"
   },
+  "36b554c7-279c-4fca-a976-51fed8d63483": {
+    "connectionRef": {
+      "displayName": "Flussi di logica",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowDisplayName": {
+          "value": "NVS - Upload Doc"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "613cb4ef-32d4-40b3-8b81-47082f3c2727"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowDisplayName": {
+          "value": "NVS - Upload Doc"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "613cb4ef-32d4-40b3-8b81-47082f3c2727"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "NVS-UploadDoc"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
+    },
+    "dependents": [],
+    "id": "36b554c7-279c-4fca-a976-51fed8d63483"
+  },
   "50b38312-3aaa-491f-b136-d62fa5b82c0b": {
     "appActions": [
       "providers/PowerPlatform.Governance/Operations/Read",
@@ -196,42 +230,8 @@
     "dependents": [
       "039acdde-7578-433e-b029-285158466b05",
       "044cad8d-cdd5-4dff-8062-0bdd7f30636d",
-      "d02d0861-4c68-43eb-b7b2-6d3474a7021a"
+      "36b554c7-279c-4fca-a976-51fed8d63483"
     ],
     "id": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
-  },
-  "d02d0861-4c68-43eb-b7b2-6d3474a7021a": {
-    "connectionRef": {
-      "displayName": "Flussi di logica",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "workflowDisplayName": {
-          "value": "NVS - Upload Doc"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "613cb4ef-32d4-40b3-8b81-47082f3c2727"
-        }
-      },
-      "parameterHintsV2": {
-        "workflowDisplayName": {
-          "value": "NVS - Upload Doc"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "613cb4ef-32d4-40b3-8b81-47082f3c2727"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "NVS-UploadDoc"
-    ],
-    "dependencies": {
-      "shared_sharepointonline": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
-    },
-    "dependents": [],
-    "id": "d02d0861-4c68-43eb-b7b2-6d3474a7021a"
   }
 }

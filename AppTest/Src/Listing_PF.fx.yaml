@@ -1184,16 +1184,18 @@ Listing_PF As screen:
 
         ButtonCaricaFile As button:
             OnSelect: |-
-                ='NVS-UploadDoc'.Run(
-                    varPathNewFile,
-                    VarIDRegione,
-                    NomeFile.Text,
+                =UpdateContext({varNomeFile:  NomeFile.Text});
+                'NVS-UploadDoc'.Run(
                     {
-                        file: ({
+                       
                             name: First(AttachUploadFile.Attachments).Name,
                             contentBytes: First(AttachUploadFile.Attachments).Value
-                        })
-                    }
+                
+                    },
+                    varPathNewFile,
+                    VarIDRegione,
+                    {text_1: varNomeFile}
+                 
                 );
                 Set(varPopUpNewFile, false);
                 Reset(AttachUploadFile);

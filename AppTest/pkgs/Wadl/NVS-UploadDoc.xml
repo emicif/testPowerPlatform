@@ -10,10 +10,12 @@
       </object>
       <string name="ManualTriggerInput_text_def" />
       <number name="ManualTriggerInput_number_def" />
+      <string name="ManualTriggerInput_text_1_def" />
       <object name="ManualTriggerInput">
         <property name="file" typeRef="ManualTriggerInput_file_def" />
         <property name="text" type="string" />
         <property name="number" type="number" />
+        <property name="text_1" type="string" />
       </object>
       <string name="ResponseActionOutput_fileuploaded_def" />
       <object name="ResponseActionOutput">
@@ -32,7 +34,7 @@
             <doc title="The api version" />
           </param>
           <representation mediaType="application/json">
-            <param style="plain" name="file" path="/file" type="service:ManualTriggerInput_file_def">
+            <param style="plain" name="file" path="/file" type="service:ManualTriggerInput_file_def" required="true">
               <doc title="fileDaSalvare" />
             </param>
             <param style="plain" name="text" path="/text" type="xs:string" required="true">
@@ -40,6 +42,9 @@
             </param>
             <param style="plain" name="number" path="/number" type="xs:double" required="true">
               <doc title="RegioneID" />
+            </param>
+            <param style="plain" name="text_1" path="/text_1" type="xs:string">
+              <doc title="TitoloFile" />
             </param>
           </representation>
         </request>

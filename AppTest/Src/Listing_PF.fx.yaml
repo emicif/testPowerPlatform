@@ -1187,15 +1187,17 @@ Listing_PF As screen:
                 ='NVS-UploadDoc'.Run(
                     varPathNewFile,
                     VarIDRegione,
+                    NomeFile.Text,
                     {
                         file: ({
                             name: First(AttachUploadFile.Attachments).Name,
                             contentBytes: First(AttachUploadFile.Attachments).Value
                         })
                     }
-                    
                 );
                 Set(varPopUpNewFile, false);
+                Reset(AttachUploadFile);
+                Reset(NomeFile);
                 Refresh(Documents)
             Text: ="Carica File"
             X: =217
@@ -1218,7 +1220,10 @@ Listing_PF As screen:
         IconClosePopupNewFile As icon.Cancel:
             Height: =30
             Icon: =Icon.Cancel
-            OnSelect: =Set(varPopUpNewFile, false)
+            OnSelect: |-
+                =Reset(AttachUploadFile);
+                Reset(NomeFile);
+                Set(varPopUpNewFile, false)
             Width: =30
             X: =525
             Y: =17
@@ -1268,7 +1273,7 @@ Listing_PF As screen:
             LabelAllegato As label:
                 FontWeight: =FontWeight.Semibold
                 Height: =36
-                Text: ="Allegato"
+                Text: ="Allegato *"
                 X: =40
                 Y: =109
                 ZIndex: =6

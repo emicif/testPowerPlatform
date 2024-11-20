@@ -1024,18 +1024,15 @@ Acquisti_PF As screen:
 
         ButtonCaricaFile_1 As button:
             OnSelect: |-
-                =UpdateContext({varNomeFile:  NomeFile_1.Text});
-                'NVS-UploadDoc'.Run(
+                ='NVS-UploadDoc'.Run(
                     {
                        
-                            name: First(AttachUploadFile_1.Attachments).Name,
+                            name: If(IsBlank(NomeFile_1.Text), First(AttachUploadFile_1.Attachments).Name,NomeFile_1.Text),
                             contentBytes: First(AttachUploadFile_1.Attachments).Value
                 
                     },
                     varPathNewFile,
-                    VarIDRegione,
-                    {text_1: varNomeFile}
-                 
+                    VarIDRegione
                 );
                 Set(varPopUpNewFile_acquisti, false);
                 Reset(AttachUploadFile_1);

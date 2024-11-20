@@ -839,18 +839,15 @@ RetiPDTA_PF As screen:
 
         ButtonCaricaFile_2 As button:
             OnSelect: |-
-                =UpdateContext({varNomeFile:  NomeFile_2.Text});
-                'NVS-UploadDoc'.Run(
+                ='NVS-UploadDoc'.Run(
                     {
                        
-                            name: First(AttachUploadFile_2.Attachments).Name,
+                            name: If(IsBlank(NomeFile_2.Text), First(AttachUploadFile_2.Attachments).Name,NomeFile_2.Text),
                             contentBytes: First(AttachUploadFile_2.Attachments).Value
                 
                     },
                     varPathNewFile,
-                    VarIDRegione,
-                    {text_1: varNomeFile}
-                 
+                    VarIDRegione
                 );
                 Set(varPopUpNewFile_reti, false);
                 Reset(AttachUploadFile_2);

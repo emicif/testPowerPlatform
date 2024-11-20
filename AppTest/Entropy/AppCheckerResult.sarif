@@ -16843,6 +16843,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.AreaSelected"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.AreaSelected",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AreaSelected",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.backgroundColorGrey"
                 }
               ],
@@ -16933,36 +16963,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.AreaSelectedDocumentLibrary"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.AreaSelectedDocumentLibrary",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AreaSelectedDocumentLibrary",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.varCurrentLevel"
                 }
               ],
@@ -16993,17 +16993,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.AreaSelected"
+                  "fullyQualifiedName": "App.AreaSelectedDocumentLibrary"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.AreaSelected",
+                  "fullyQualifiedName": "App.AreaSelectedDocumentLibrary",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AreaSelected",
+                "member": "AreaSelectedDocumentLibrary",
                 "module": "App",
                 "type": "App"
               }

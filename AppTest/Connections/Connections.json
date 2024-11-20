@@ -5,6 +5,9 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "50b38312-3aaa-491f-b136-d62fa5b82c0b": {
+          "value": "shared_sharepointonline"
+        },
         "workflowDisplayName": {
           "value": "NVSPdf - Kymriah"
         },
@@ -14,6 +17,9 @@
         }
       },
       "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
+        },
         "workflowDisplayName": {
           "value": "NVSPdf - Kymriah"
         },

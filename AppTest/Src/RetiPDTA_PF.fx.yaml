@@ -47,7 +47,7 @@ RetiPDTA_PF As screen:
                 PaddingTop: =10
                 Size: =17
                 Text: ="Reti e PDTA - Documenti"
-                Width: =Parent.Width - IconaLineeInd_2.Width - 80
+                Width: =1113
                 X: =IconaLineeInd_2.X + IconaLineeInd_2.Width
                 ZIndex: =45
 
@@ -318,6 +318,21 @@ RetiPDTA_PF As screen:
                     Width: =Parent.TemplateWidth
                     Y: =Parent.TemplateHeight - Self.Height
                     ZIndex: =65
+
+            IconNewFile_2 As icon.Add:
+                Color: =RGBA(0, 32, 104, 1)
+                Height: =30
+                Icon: =Icon.Add
+                OnSelect: |-
+                    =UpdateContext({
+                        varSezioneFile : "Reti e PDTA - Documenti"
+                    });
+                    Set(varPathNewFile,  varFolderPathPFretiPDTA);
+                    Set(varPopUpNewFile_reti, true);
+                Width: =30
+                X: =1285
+                Y: =8
+                ZIndex: =55
 
     Container18_2 As groupContainer.horizontalAutoLayoutContainer:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -805,4 +820,118 @@ RetiPDTA_PF As screen:
             X: =110
             Y: =156
             ZIndex: =7
+
+    PopupNewFileAcquisti_1 As groupContainer.manualLayoutContainer:
+        Height: =518
+        Visible: =varPopUpNewFile_reti
+        Width: =595
+        X: =415
+        Y: =137
+        ZIndex: =8
+
+        Button5_2 As button:
+            Fill: =Color.White
+            Height: =518
+            HoverFill: =RGBA(255, 255, 255, 1)
+            Text: =
+            Width: =Parent.Width
+            ZIndex: =1
+
+        ButtonCaricaFile_2 As button:
+            OnSelect: |-
+                =UpdateContext({varNomeFile:  NomeFile_2.Text});
+                'NVS-UploadDoc'.Run(
+                    {
+                       
+                            name: First(AttachUploadFile_2.Attachments).Name,
+                            contentBytes: First(AttachUploadFile_2.Attachments).Value
+                
+                    },
+                    varPathNewFile,
+                    VarIDRegione,
+                    {text_1: varNomeFile}
+                 
+                );
+                Set(varPopUpNewFile_reti, false);
+                Reset(AttachUploadFile_2);
+                Reset(NomeFile_2);
+                Refresh(Documents)
+            Text: ="Carica File"
+            X: =217
+            Y: =461
+            ZIndex: =2
+
+        LabelTitoloNewFile_2 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Semibold
+            Height: =76
+            Size: =18
+            Text: |-
+                ="Aggiungi nuovo File nella sezione:" & Char(10) & varSezioneFile
+            VerticalAlign: =VerticalAlign.Top
+            Width: =485
+            X: =40
+            Y: =17
+            ZIndex: =7
+
+        IconClosePopupNewFile_2 As icon.Cancel:
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =Reset(AttachUploadFile_2);
+                Reset(NomeFile_2);
+                Set(varPopUpNewFile_reti, false);
+            Width: =30
+            X: =525
+            Y: =17
+            ZIndex: =8
+
+        GroupNewFileInputs_2 As group:
+            Height: =5
+            Width: =5
+            X: =80
+            Y: =80
+            ZIndex: =9
+
+            NomeFile_2 As text:
+                Default: =
+                Height: =88
+                Mode: =TextMode.MultiLine
+                Width: =515
+                X: =40
+                Y: =326
+                ZIndex: =3
+
+            AttachUploadFile_2 As attachments:
+                BorderColor: =
+                DisplayMode: =Parent.DisplayMode
+                Height: =107
+                IsInDataCard: =true
+                Items: =
+                MaxAttachments: =1
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =
+                Width: =515
+                X: =39
+                Y: =145
+                ZIndex: =4
+
+            LabelNome_12 As label:
+                FontWeight: =FontWeight.Semibold
+                Height: =36
+                Text: ="Nome File"
+                X: =40
+                Y: =279
+                ZIndex: =5
+
+            LabelAllegato_2 As label:
+                FontWeight: =FontWeight.Semibold
+                Height: =36
+                Text: ="Allegato *"
+                X: =40
+                Y: =109
+                ZIndex: =6
 

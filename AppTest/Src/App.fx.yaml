@@ -7,6 +7,8 @@ App As appinfo:
         
         Set(VarPopUpInfoRegioneVisible, false);
         Set(varPopUpNewFile, false);
+        Set(varPopUpNewFile_acquisti, false);
+        Set(varPopUpNewFile_reti, false);
         Set(VarNomeRegione, Blank());
         Set(VarIDRegione, Blank());
         Set(VarNomeRegioneNoSpace, Blank());

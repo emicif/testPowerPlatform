@@ -1167,22 +1167,22 @@ Listing_PF As screen:
             ZIndex: =7
 
     PopupNewFile As groupContainer.manualLayoutContainer:
-        Height: =300
+        Height: =518
         Visible: =varPopUpNewFile
         Width: =595
         X: =395
-        Y: =224
+        Y: =117
         ZIndex: =8
 
         Button5 As button:
             Fill: =Color.White
-            Height: =Parent.Height
+            Height: =518
             HoverFill: =RGBA(255, 255, 255, 1)
             Text: =
             Width: =Parent.Width
             ZIndex: =1
 
-        Button6 As button:
+        ButtonCaricaFile As button:
             OnSelect: |-
                 ='NVS-UploadDoc'.Run(
                     varPathNewFile,
@@ -1199,27 +1199,10 @@ Listing_PF As screen:
                 Refresh(Documents)
             Text: ="Carica File"
             X: =217
-            Y: =240
+            Y: =461
             ZIndex: =2
 
-        AttachUploadFile As attachments:
-            BorderColor: =
-            DisplayMode: =Parent.DisplayMode
-            Height: =118
-            IsInDataCard: =true
-            Items: =
-            MaxAttachments: =1
-            PaddingBottom: =5
-            PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-            PaddingRight: =5
-            PaddingTop: =5
-            Tooltip: =
-            Width: =Parent.Width-80
-            X: =39
-            Y: =108
-            ZIndex: =3
-
-        Label11 As label:
+        LabelTitoloNewFile As label:
             Align: =Align.Center
             FontWeight: =FontWeight.Semibold
             Height: =76
@@ -1230,7 +1213,7 @@ Listing_PF As screen:
             Width: =485
             X: =40
             Y: =17
-            ZIndex: =4
+            ZIndex: =7
 
         IconClosePopupNewFile As icon.Cancel:
             Height: =30
@@ -1239,5 +1222,54 @@ Listing_PF As screen:
             Width: =30
             X: =525
             Y: =17
-            ZIndex: =5
+            ZIndex: =8
+
+        GroupNewFileInputs As group:
+            Height: =5
+            Width: =5
+            X: =80
+            Y: =80
+            ZIndex: =9
+
+            NomeFile As text:
+                Default: =
+                Height: =88
+                Mode: =TextMode.MultiLine
+                Width: =515
+                X: =40
+                Y: =326
+                ZIndex: =3
+
+            AttachUploadFile As attachments:
+                BorderColor: =
+                DisplayMode: =Parent.DisplayMode
+                Height: =107
+                IsInDataCard: =true
+                Items: =
+                MaxAttachments: =1
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =
+                Width: =515
+                X: =39
+                Y: =145
+                ZIndex: =4
+
+            LabelNome As label:
+                FontWeight: =FontWeight.Semibold
+                Height: =36
+                Text: ="Nome File"
+                X: =40
+                Y: =279
+                ZIndex: =5
+
+            LabelAllegato As label:
+                FontWeight: =FontWeight.Semibold
+                Height: =36
+                Text: ="Allegato"
+                X: =40
+                Y: =109
+                ZIndex: =6
 

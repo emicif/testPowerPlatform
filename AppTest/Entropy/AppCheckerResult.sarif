@@ -16453,6 +16453,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Listing_PF.PopupNewFile.NomeFile.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Listing_PF.PopupNewFile.NomeFile.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Listing_PF",
+                "type": "Listing_PF.PopupNewFile.NomeFile"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.backgroundColorGrey"
                 }
               ],

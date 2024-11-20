@@ -1,17 +1,10 @@
 {
   "00b60bbd-9aa0-4b65-9d7b-bd5c0488aa58": {
-    "appActions": [
-      "Run"
-    ],
     "connectionRef": {
-      "apiTier": "Standard",
       "displayName": "Flussi di logica",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "50b38312-3aaa-491f-b136-d62fa5b82c0b": {
-          "value": "shared_sharepointonline"
-        },
         "workflowDisplayName": {
           "value": "NVSPdf - Kymriah"
         },
@@ -21,9 +14,6 @@
         }
       },
       "parameterHintsV2": {
-        "shared_sharepointonline": {
-          "value": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
-        },
         "workflowDisplayName": {
           "value": "NVSPdf - Kymriah"
         },
@@ -199,8 +189,8 @@
     "dependencies": {},
     "dependents": [
       "039acdde-7578-433e-b029-285158466b05",
-      "00b60bbd-9aa0-4b65-9d7b-bd5c0488aa58",
-      "9d10258e-fa59-4c43-8fe9-26fb6a28b00d"
+      "9d10258e-fa59-4c43-8fe9-26fb6a28b00d",
+      "00b60bbd-9aa0-4b65-9d7b-bd5c0488aa58"
     ],
     "id": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
   },
@@ -210,6 +200,9 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "50b38312-3aaa-491f-b136-d62fa5b82c0b": {
+          "value": "shared_sharepointonline"
+        },
         "workflowDisplayName": {
           "value": "NVS - Upload Doc"
         },
@@ -219,6 +212,9 @@
         }
       },
       "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
+        },
         "workflowDisplayName": {
           "value": "NVS - Upload Doc"
         },

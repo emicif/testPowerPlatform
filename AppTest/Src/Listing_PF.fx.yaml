@@ -1186,12 +1186,14 @@ Listing_PF As screen:
             OnSelect: |-
                 ='NVS-UploadDoc'.Run(
                     varPathNewFile,
+                    VarIDRegione,
                     {
                         file: ({
                             name: First(AttachUploadFile.Attachments).Name,
                             contentBytes: First(AttachUploadFile.Attachments).Value
                         })
                     }
+                    
                 );
                 Set(varPopUpNewFile, false)
             Text: ="Carica File"

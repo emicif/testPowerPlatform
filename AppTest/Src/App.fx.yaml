@@ -8,6 +8,7 @@ App As appinfo:
         Set(VarPopUpInfoRegioneVisible, false);
         Set(varPopUpNewFile, false);
         Set(VarNomeRegione, Blank());
+        Set(VarIDRegione, Blank());
         Set(VarNomeRegioneNoSpace, Blank());
         Set(varImgRegione, Blank());
         

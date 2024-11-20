@@ -113,6 +113,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Sardegna");
+                        Set(VarIDRegione, 20);
                         Set(varImgRegione, img_pulsante_sardegna)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -137,6 +138,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Sicilia");
+                        Set(VarIDRegione, 19);
                         Set(varImgRegione, img_pulsante_sicilia)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -161,6 +163,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Basilicata");
+                        Set(VarIDRegione, 16);
                         Set(varImgRegione, img_pulsante_basilicata)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -185,6 +188,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Calabria");
+                        Set(VarIDRegione, 1);
                         Set(varImgRegione, img_pulsante_calabria)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -209,6 +213,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Puglia");
+                        Set(VarIDRegione, 17);
                         Set(varImgRegione, img_pulsante_puglia)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -233,6 +238,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Campania");
+                        Set(VarIDRegione, 15);
                         Set(varImgRegione, img_pulsante_campania)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -257,6 +263,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Molise");
+                        Set(VarIDRegione, 13);
                         Set(varImgRegione, img_pulsante_molise)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -281,6 +288,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Abruzzo");
+                        Set(VarIDRegione, 14);
                         Set(varImgRegione, img_pulsante_abruzzo)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -305,6 +313,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Lazio");
+                        Set(VarIDRegione, 10);
                         Set(varImgRegione, img_pulsante_lazio)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -328,6 +337,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Marche");
+                        Set(VarIDRegione, 12);
                         Set(varImgRegione, img_pulsante_marche)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -352,6 +362,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Umbria");
+                        Set(VarIDRegione, 11);
                         Set(varImgRegione, img_pulsante_umbria)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -376,6 +387,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Toscana");
+                        Set(VarIDRegione, 9);
                         Set(varImgRegione, img_pulsante_toscana)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -399,6 +411,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Emilia Romagna");
+                        Set(VarIDRegione, 7);
                         Set(varImgRegione, img_pulsante_emilia)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -423,6 +436,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Liguria");
+                        Set(VarIDRegione, 8);
                         Set(varImgRegione, img_pulsante_liguria)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -446,6 +460,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Friuli Venezia Giulia");
+                        Set(VarIDRegione, 5);
                         Set(varImgRegione, img_pulsante_friuli)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -470,6 +485,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Veneto");
+                        Set(VarIDRegione, 6);
                         Set(varImgRegione, img_pulsante_veneto)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -494,6 +510,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Trentino Alto Adige");
+                        Set(VarIDRegione, 4);
                         Set(varImgRegione, img_pulsante_trentino)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -518,6 +535,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Valle D'Aosta");
+                        Set(VarIDRegione, 18);
                         Set(varImgRegione, img_pulsante_aosta)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -541,6 +559,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Lombardia");
+                        Set(VarIDRegione, 3);
                         Set(varImgRegione, img_pulsante_lombardia)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -565,6 +584,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |-
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Piemonte");
+                        Set(VarIDRegione, 2);
                         Set(varImgRegione, img_pulsante_piemonte)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100
@@ -589,6 +609,7 @@ Politiche_Farmaceutiche As screen:
                     OnSelect: |
                         =Set(VarPopUpInfoRegioneVisible, true);
                         Set(VarNomeRegione, "Bolzano");
+                        Set(VarIDRegione, 21);
                         Set(varImgRegione, img_pulsante_trentino)
                     RadiusBottomLeft: =100
                     RadiusBottomRight: =100

@@ -200,19 +200,16 @@
     "dependents": [
       "039acdde-7578-433e-b029-285158466b05",
       "00b60bbd-9aa0-4b65-9d7b-bd5c0488aa58",
-      "e80b1f44-0211-45e8-bb0a-a1a220aa3d4f"
+      "9d10258e-fa59-4c43-8fe9-26fb6a28b00d"
     ],
     "id": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
   },
-  "e80b1f44-0211-45e8-bb0a-a1a220aa3d4f": {
+  "9d10258e-fa59-4c43-8fe9-26fb6a28b00d": {
     "connectionRef": {
       "displayName": "Flussi di logica",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "50b38312-3aaa-491f-b136-d62fa5b82c0b": {
-          "value": "shared_sharepointonline"
-        },
         "workflowDisplayName": {
           "value": "NVS - Upload Doc"
         },
@@ -222,9 +219,6 @@
         }
       },
       "parameterHintsV2": {
-        "shared_sharepointonline": {
-          "value": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
-        },
         "workflowDisplayName": {
           "value": "NVS - Upload Doc"
         },
@@ -242,6 +236,6 @@
       "shared_sharepointonline": "50b38312-3aaa-491f-b136-d62fa5b82c0b"
     },
     "dependents": [],
-    "id": "e80b1f44-0211-45e8-bb0a-a1a220aa3d4f"
+    "id": "9d10258e-fa59-4c43-8fe9-26fb6a28b00d"
   }
 }

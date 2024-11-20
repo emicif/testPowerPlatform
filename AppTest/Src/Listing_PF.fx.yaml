@@ -1195,7 +1195,8 @@ Listing_PF As screen:
                     }
                     
                 );
-                Set(varPopUpNewFile, false)
+                Set(varPopUpNewFile, false);
+                Refresh(Documents)
             Text: ="Carica File"
             X: =217
             Y: =240

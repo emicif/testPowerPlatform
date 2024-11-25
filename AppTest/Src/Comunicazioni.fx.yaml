@@ -51,7 +51,8 @@ Comunicazioni As screen:
                 'Percorso cartella' = varFolderPath,
               //  isFolder = true;
                // isFolder = varIsFolder;
-                Drugs.Value = areaSelected
+                Drugs.Value = areaSelected,
+                Not(Nome = "novartis-centriattivi-Kymraih")
             
             )
             

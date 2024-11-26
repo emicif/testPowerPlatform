@@ -22,6 +22,7 @@ Kit_Prodotto As screen:
         RadiusTopLeft: =20
         RadiusTopRight: =20
         Text: ="Nuovo"
+        Visible: =PermissionControlloCompleto
         Width: =141
         X: =1106
         Y: =154
@@ -1089,6 +1090,7 @@ Kit_Prodotto As screen:
     Image6 As image:
         Height: =16
         Image: ='icon-plus'
+        Visible: =PermissionControlloCompleto
         Width: =23
         X: =1123
         Y: =163
@@ -1235,6 +1237,7 @@ Kit_Prodotto As screen:
                     Set(SelectedID, ThisItem.ID);
                     Set(Selected, ThisItem);
                     EditForm(Form2)
+                Visible: =PermissionControlloCompleto
                 Width: =30
                 X: =990
                 Y: =19

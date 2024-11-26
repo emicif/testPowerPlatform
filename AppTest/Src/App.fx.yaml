@@ -1,19 +1,47 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |+
-        =Set(textColorBlu, ColorValue("#002068"));
+    OnStart: |
+        =Set(
+            textColorBlu,
+            ColorValue("#002068")
+        );
         //Set(textColorAzzurro; ColorValue("#04609A"));;
-        Set(backgroundColorGrey, "F2F2F4");
-        
-        Set(VarPopUpInfoRegioneVisible, false);
-        Set(varPopUpNewFile, false);
-        Set(varPopUpNewFile_acquisti, false);
-        Set(varPopUpNewFile_reti, false);
-        Set(VarNomeRegione, Blank());
-        Set(VarIDRegione, Blank());
-        Set(VarNomeRegioneNoSpace, Blank());
-        Set(varImgRegione, Blank());
-        
+        Set(
+            backgroundColorGrey,
+            "F2F2F4"
+        );
+        Set(
+            VarPopUpInfoRegioneVisible,
+            false
+        );
+        Set(
+            varPopUpNewFile,
+            false
+        );
+        Set(
+            varPopUpNewFile_acquisti,
+            false
+        );
+        Set(
+            varPopUpNewFile_reti,
+            false
+        );
+        Set(
+            VarNomeRegione,
+            Blank()
+        );
+        Set(
+            VarIDRegione,
+            Blank()
+        );
+        Set(
+            VarNomeRegioneNoSpace,
+            Blank()
+        );
+        Set(
+            varImgRegione,
+            Blank()
+        );
         Set(
             userName,
             UtentidiOffice365.MyProfileV2().displayName
@@ -24,19 +52,32 @@ App As appinfo:
         );
         Set(
             userGroups,
-            LookUp(AccessGroups, mail.Email = userMail).Gruppo.Value
+            LookUp(
+                AccessGroups,
+                mail.Email = userMail
+            ).Gruppo.Value
         );
         
-        If( 
-                !IsBlank(userGroups)
-                &&
-              ("APM" in userGroups || "Area Politiche Regionali" in userGroups ),
-                Set(PermissionPoliticheRegionali,true),
-               Set(PermissionPoliticheRegionali, false) 
-         );
-        
-        Set( NameExtAllegato , "");
-        
+        Set(
+            PermissionPoliticheRegionali,
+            If(
+               IsBlank(userGroups) && ("APM" in userGroups || "Area Politiche Regionali" in userGroups || "Proprietari di Share-VAlue" in userGroups),
+                true,
+                false
+            )
+        );
+        Set(
+            PermissionControlloCompleto,
+            If(
+                !IsBlank(userGroups) && "Proprietari di Share-VAlue" in userGroups,
+                true,
+                false
+            )
+        );
+        Set(
+            NameExtAllegato,
+            ""
+        );
         Set(
             AreaSelected,
             LookUp(
@@ -44,7 +85,6 @@ App As appinfo:
                 Titolo = Titolo
             ).Titolo
         );
-        
         Set(
             AreaSelectedDocumentLibrary,
             LookUp(
@@ -52,23 +92,19 @@ App As appinfo:
                 DocumentLibrary = DocumentLibrary
             ).DocumentLibrary
         );
-        
         //in NVS inserire  "Shared Documents/"
         Set(
             varFolderPath,
             "Documents/"
         );
-        
         Set(
             varFolderPathTarget,
             "Documents/Target/"
         );
-        
         Set(
             varFolderPathListini,
             "Listini/"
         );
-        
         Set(
             varFolderPathPFProceduraModRegione,
             ""
@@ -85,9 +121,14 @@ App As appinfo:
             varFolderPathPFretiPDTA,
             ""
         );
-        Set(varPathNewFile,  "");
-        Set(varNewsSingolaID, Blank());
-        
+        Set(
+            varPathNewFile,
+            ""
+        );
+        Set(
+            varNewsSingolaID,
+            Blank()
+        );
         Set(
             RegioneSelectedDocumentLibrary,
             LookUp(
@@ -99,30 +140,63 @@ App As appinfo:
             varBusinessArea,
             ""
         );
-        
-        
-        Set(varIsFolder, 1);
-        Set(varCurrentLevel, 0);
-        Set(searchQuery,"");
-        
-        
-        ClearCollect(colFolderHistory, {FolderPath: "Documents/"});
-        
+        Set(
+            varIsFolder,
+            1
+        );
+        Set(
+            varCurrentLevel,
+            0
+        );
+        Set(
+            searchQuery,
+            ""
+        );
+        ClearCollect(
+            colFolderHistory,
+            {FolderPath: "Documents/"}
+        );
         //variabili per navigare nel footer
-        Set(varvaiprodotti,false);
-        Set(varcomunicazioni,false);
-        Set(varstock,false);
-        Set(vardpc,false);
-        Set(varsostenibilita,false);
-        Set(varreporting,false);
-        Set(varlistini,false);
-        Set(varkitprodotti,false);
-        Set(vartender,false);
-        
-        Set(varSaluto, "IT");
-        
-        
-        
+        Set(
+            varvaiprodotti,
+            false
+        );
+        Set(
+            varcomunicazioni,
+            false
+        );
+        Set(
+            varstock,
+            false
+        );
+        Set(
+            vardpc,
+            false
+        );
+        Set(
+            varsostenibilita,
+            false
+        );
+        Set(
+            varreporting,
+            false
+        );
+        Set(
+            varlistini,
+            false
+        );
+        Set(
+            varkitprodotti,
+            false
+        );
+        Set(
+            vartender,
+            false
+        );
+        Set(
+            varSaluto,
+            "IT"
+        );
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

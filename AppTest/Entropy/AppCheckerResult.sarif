@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 15,
-                  "charOffset": 822,
+                  "charOffset": 1053,
                   "snippet": {
                     "text": "DocumentLibrary"
                   }
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 838,
+                  "charOffset": 1069,
                   "snippet": {
                     "text": "="
                   }
@@ -104,7 +104,7 @@
                 },
                 "region": {
                   "charLength": 15,
-                  "charOffset": 1405,
+                  "charOffset": 1636,
                   "snippet": {
                     "text": "DocumentLibrary"
                   }
@@ -144,7 +144,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 1421,
+                  "charOffset": 1652,
                   "snippet": {
                     "text": "="
                   }
@@ -16843,6 +16843,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.varSaluto"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varSaluto",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varSaluto",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.RegioneSelectedDocumentLibrary"
                 }
               ],
@@ -16933,36 +16963,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.userGroups"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.userGroups",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "userGroups",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.varCurrentLevel"
                 }
               ],
@@ -16974,36 +16974,6 @@
               },
               "properties": {
                 "member": "varCurrentLevel",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.userName"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.userName",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "userName",
                 "module": "App",
                 "type": "App"
               }
@@ -17083,17 +17053,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.backgroundColorGrey"
+                  "fullyQualifiedName": "App.userName"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.backgroundColorGrey",
+                  "fullyQualifiedName": "App.userName",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "backgroundColorGrey",
+                "member": "userName",
                 "module": "App",
                 "type": "App"
               }
@@ -17113,17 +17083,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varSaluto"
+                  "fullyQualifiedName": "App.backgroundColorGrey"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varSaluto",
+                  "fullyQualifiedName": "App.backgroundColorGrey",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varSaluto",
+                "member": "backgroundColorGrey",
                 "module": "App",
                 "type": "App"
               }

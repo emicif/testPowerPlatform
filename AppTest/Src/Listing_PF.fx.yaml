@@ -334,6 +334,7 @@ Listing_PF As screen:
                     });
                     Set(varPathNewFile, varFolderPathPFLIndirizzoUD);
                     Set(varPopUpNewFile, true)
+                Visible: =PermissionPoliticheFarmaceutiche
                 Width: =30
                 X: =1296
                 Y: =18
@@ -671,6 +672,7 @@ Listing_PF As screen:
                     });
                     Set(varPathNewFile,  varFolderPathPFProceduraModRegione);
                     Set(varPopUpNewFile, true)
+                Visible: =PermissionPoliticheFarmaceutiche
                 Width: =30
                 X: =722
                 Y: =9

@@ -24,8 +24,16 @@ App As appinfo:
         );
         Set(
             userGroups,
-            LookUp(AccessGroups, mail.Email = userMail, Gruppo.Value)
+            LookUp(AccessGroups, mail.Email = userMail).Gruppo.Value
         );
+        
+        If( 
+                !IsBlank(userGroups)
+                &&
+              ("APM" in LookUp(AccessGroups, mail.Email = userMail, Gruppo.Value)),
+                Set(PermissionPoliticheFarmaceutiche,true),
+               Set(PermissionPoliticheFarmaceutiche, false) 
+         );
         
         Set( NameExtAllegato , "");
         

@@ -139,6 +139,9 @@
     "datasets": {
       "https://mindthehead.sharepoint.com/sites/MTH-NVS": {
         "dataSources": {
+          "AccessGroups": {
+            "tableName": "579ae7b6-4f36-4e96-ad52-f48cc74f655f"
+          },
           "Beovu - Kit Prodotto": {
             "tableName": "1fa9917e-f4ea-4a6b-a3b2-ae1f3c9b6557"
           },
@@ -230,7 +233,8 @@
       "Gara Regionale",
       "CNN",
       "Reti",
-      "PDTA"
+      "PDTA",
+      "AccessGroups"
     ],
     "dependencies": {},
     "dependents": [

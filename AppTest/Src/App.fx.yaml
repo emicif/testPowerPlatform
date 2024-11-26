@@ -14,6 +14,18 @@ App As appinfo:
         Set(VarNomeRegioneNoSpace, Blank());
         Set(varImgRegione, Blank());
         
+        Set(
+            userName,
+            UtentidiOffice365.MyProfileV2().displayName
+        );
+        Set(
+            userMail,
+            UtentidiOffice365.MyProfileV2().mail
+        );
+        Set(
+            userGroups,
+            LookUp(AccessGroups, mail.Email = userMail, Gruppo.Value)
+        );
         
         Set( NameExtAllegato , "");
         

@@ -30,9 +30,9 @@ App As appinfo:
         If( 
                 !IsBlank(userGroups)
                 &&
-              ("APM" in LookUp(AccessGroups, mail.Email = userMail, Gruppo.Value)),
-                Set(PermissionPoliticheFarmaceutiche,true),
-               Set(PermissionPoliticheFarmaceutiche, false) 
+              ("APM" in userGroups || "Area Politiche Regionali" in userGroups ),
+                Set(PermissionPoliticheRegionali,true),
+               Set(PermissionPoliticheRegionali, false) 
          );
         
         Set( NameExtAllegato , "");

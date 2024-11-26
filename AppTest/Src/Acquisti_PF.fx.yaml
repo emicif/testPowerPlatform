@@ -1001,7 +1001,7 @@ Acquisti_PF As screen:
                     });
                     Set(varPathNewFile,  varFolderPathPFCNN);
                     Set(varPopUpNewFile_acquisti, true);
-                Visible: =PermissionPoliticheFarmaceutiche
+                Visible: =PermissionPoliticheRegionali
                 Width: =30
                 X: =1283
                 Y: =19

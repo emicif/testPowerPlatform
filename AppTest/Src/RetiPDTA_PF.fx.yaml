@@ -329,7 +329,7 @@ RetiPDTA_PF As screen:
                     });
                     Set(varPathNewFile,  varFolderPathPFretiPDTA);
                     Set(varPopUpNewFile_reti, true);
-                Visible: =PermissionPoliticheFarmaceutiche
+                Visible: =PermissionPoliticheRegionali
                 Width: =30
                 X: =1285
                 Y: =8

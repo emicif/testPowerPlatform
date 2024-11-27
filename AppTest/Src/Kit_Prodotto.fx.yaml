@@ -92,8 +92,8 @@ Kit_Prodotto As screen:
             DataSource: |-
                 =Switch(
                     areaSelected,
-                    "Beovu", 'Beovu - Kit Prodotto',
-                    "Kymriah", 'Kymriah - Kit Prodotto'
+                    "Beovu", 'Beovu - Kit prodotto'
+                   // "Kymriah"; 'Kymriah - Kit Prodotto'
                 )
             Fill: =RGBA(255, 255, 255, 255)
             Height: =411
@@ -125,7 +125,7 @@ Kit_Prodotto As screen:
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Text: =ThisItem.NomeCommerciale
+                    Text: =ThisItem.Titolo
                     Width: =300
                     X: =3
                     Y: =62
@@ -281,7 +281,7 @@ Kit_Prodotto As screen:
             PrezzoExFactory_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,PrezzoExFactory)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,PrezzoEx_x002d_FactorydaG_x002e_)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =117
                 Width: =400
@@ -297,7 +297,7 @@ Kit_Prodotto As screen:
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Text: =ThisItem.PrezzoExFactory
+                    Text: =ThisItem.'Prezzo Ex-Factory da G.U.'
                     Width: =380
                     X: =3
                     Y: =37
@@ -421,7 +421,7 @@ Kit_Prodotto As screen:
             CondizioniNegoziali_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,CondizioniNegoziali)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, Condizioninegoziali_x002d_Altro)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =95
                 Width: =309
@@ -438,7 +438,7 @@ Kit_Prodotto As screen:
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Text: =ThisItem.CondizioniNegoziali
+                    Text: =ThisItem.'Condizioni negoziali - Altro'
                     Width: =290
                     X: =3
                     Y: =35
@@ -456,7 +456,7 @@ Kit_Prodotto As screen:
             RegMonit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Regime di monitoraggio')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, Registrodimonitoraggio)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =82
                 Width: =309
@@ -479,7 +479,7 @@ Kit_Prodotto As screen:
                     BorderThickness: =1
                     Default: =
                     DisplayMode: =DisplayMode.View
-                    Items: =ThisItem.Regimedimonitoraggio
+                    Items: =ThisItem.'Registro di monitoraggio'
                     Width: =250
                     X: =1
                     Y: =36
@@ -505,7 +505,7 @@ Kit_Prodotto As screen:
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Text: =ThisItem.PianoTerapeutico
+                    Text: =ThisItem.'Piano Terapeutico'.Value
                     Width: =290
                     X: =3
                     Y: =35
@@ -542,7 +542,7 @@ Kit_Prodotto As screen:
                     ZIndex: =2
 
                 Checkbox_FarmacoInnovativo_1 As checkbox:
-                    Default: =ThisItem.Il_x0020_farmaco_x0020__x00e8__x
+                    Default: =ThisItem.'Il farmaco è innovativo?'
                     DisplayMode: =DisplayMode.View
                     Height: =40
                     Text: =
@@ -675,7 +675,7 @@ Kit_Prodotto As screen:
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Text: =ThisItem.Posologia_x0020_per_x0020_ciascu
+                    Text: =ThisItem.'Posologia per ciascuna indicazione'
                     Width: =1180
                     X: =3
                     Y: =36
@@ -1223,6 +1223,7 @@ Kit_Prodotto As screen:
                 Image: ='icon-show'
                 OnSelect: |-
                     =Set(varFormView, true);
+                    Set(Selected, ThisItem);
                     Set(SelectedID, ThisItem.ID)
                 Width: =30
                 X: =1041

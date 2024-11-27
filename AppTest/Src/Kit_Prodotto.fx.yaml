@@ -12,8 +12,8 @@ Kit_Prodotto As screen:
             
             Switch(
                 areaSelected,
-                "Beovu", 'Beovu - Kit Prodotto'
-               // "Kymriah"; 'Kymriah - Kit Prodotto'
+                "Beovu", 'Beovu - Kit Prodotto',
+               "Kymriah", 'Kymriah - Kit Prodotto'
             )
         PaddingLeft: =25
         PaddingRight: =0

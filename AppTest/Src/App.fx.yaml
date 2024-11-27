@@ -79,7 +79,7 @@ App As appinfo:
             ""
         );
         Set(
-            AreaSelected,
+            areaSelected,
             LookUp(
                 Drugs,
                 Titolo = Titolo

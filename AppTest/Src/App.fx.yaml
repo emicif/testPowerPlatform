@@ -78,13 +78,13 @@ App As appinfo:
             NameExtAllegato,
             ""
         );
-        Set(
-            areaSelected,
+        /*Set(
+            AreaSelected;
             LookUp(
-                Drugs,
+                Drugs;
                 Titolo = Titolo
             ).Titolo
-        );
+        );;*/
         Set(
             AreaSelectedDocumentLibrary,
             LookUp(

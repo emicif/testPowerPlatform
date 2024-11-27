@@ -1322,7 +1322,7 @@ Kit_Prodotto As screen:
             DataSource: |-
                 =Switch(
                     areaSelected,
-                    "Beovu", 'Beovu - Kit Prodotto',
+                    "Beovu", 'Beovu - Kit prodotto',
                     "Kymriah", 'Kymriah - Kit Prodotto'
                 )
             DefaultMode: =FormMode.New
@@ -1840,7 +1840,7 @@ Kit_Prodotto As screen:
             RegMonitEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Regime di monitoraggio')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Registrodimonitoraggio')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =380
@@ -1880,7 +1880,7 @@ Kit_Prodotto As screen:
             CondizioniNegozialiEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,CondizioniNegoziali)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, Condizioninegoziali_x002d_Altro)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =423
@@ -1986,9 +1986,12 @@ Kit_Prodotto As screen:
                 BorderStyle: =BorderStyle.Solid
                 BorderThickness: =0
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,PrezzoExFactory)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,PrezzoEx_x002d_FactorydaG_x002e_)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
+                Visible: |-
+                    =//true
+                    false
                 Width: =410
                 X: =1
                 Y: =3
@@ -2008,7 +2011,7 @@ Kit_Prodotto As screen:
                     Default: |-
                         =If(
                             Form2.Mode = FormMode.Edit,
-                           Selected.PrezzoExFactory
+                           Selected.PrezzoEx_x002d_FactorydaG_x002e_
                         )
                     Format: =TextFormat.Number
                     PaddingBottom: =0
@@ -2197,7 +2200,7 @@ Kit_Prodotto As screen:
                 BorderStyle: =BorderStyle.Solid
                 DataField: =""
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Nome Commerciale')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Title')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =309
@@ -2221,7 +2224,7 @@ Kit_Prodotto As screen:
                     Default: |-
                         =If(
                             Form2.Mode = FormMode.Edit,
-                            Selected.NomeCommerciale
+                            Selected.Title
                         )
                     PaddingBottom: =0
                     Width: =280

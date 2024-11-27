@@ -109,7 +109,7 @@ Kit_Prodotto As screen:
             NomeCommerciale_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Nome Commerciale')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Nome Commerciale')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =122
                 Width: =309
@@ -145,7 +145,7 @@ Kit_Prodotto As screen:
             PrincipioAttivio_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Principio attivo')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Principio attivo')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =115
                 Width: =309
@@ -179,7 +179,7 @@ Kit_Prodotto As screen:
             AIC_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,AIC)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,AIC)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =106
                 Width: =309
@@ -213,7 +213,7 @@ Kit_Prodotto As screen:
             ATC_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,ATC)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,ATC)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =86
                 Width: =309
@@ -247,7 +247,7 @@ Kit_Prodotto As screen:
             Confezioni_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,Confezioni)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Confezioni)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =117
                 Width: =1236
@@ -281,7 +281,7 @@ Kit_Prodotto As screen:
             PrezzoExFactory_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,PrezzoExFactory)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,PrezzoExFactory)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =117
                 Width: =400
@@ -317,7 +317,7 @@ Kit_Prodotto As screen:
             UG_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Unità Galenica')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Unità Galenica')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =122
                 Width: =412
@@ -352,7 +352,7 @@ Kit_Prodotto As screen:
             CanaliDistributivi_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Canali distributivi')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Canali distributivi')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =122
                 Width: =412
@@ -386,7 +386,7 @@ Kit_Prodotto As screen:
             "'Classe/Regime_DataCard' As typedDataCard.blankCard":
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,Classe)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Classe)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =309
@@ -421,7 +421,7 @@ Kit_Prodotto As screen:
             CondizioniNegoziali_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,CondizioniNegoziali)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,CondizioniNegoziali)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =95
                 Width: =309
@@ -456,7 +456,7 @@ Kit_Prodotto As screen:
             RegMonit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Regime di monitoraggio')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Regime di monitoraggio')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =82
                 Width: =309
@@ -488,7 +488,7 @@ Kit_Prodotto As screen:
             PianoTerapeutico_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Piano Terapeutico')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Piano Terapeutico')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =95
                 Width: =309
@@ -523,7 +523,7 @@ Kit_Prodotto As screen:
             FarmacoInnovativo_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Il farmaco è innovativo?')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Il farmaco è innovativo?')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =130
                 Width: =500
@@ -554,7 +554,7 @@ Kit_Prodotto As screen:
             RegimeInnovativiti_DataCard_1 As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Regime di innovatività')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Regime di innovatività')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =130
                 Width: =720
@@ -590,7 +590,7 @@ Kit_Prodotto As screen:
             IndicazioniRimborsate_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Indicazioni terapeutiche rimborsate')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Indicazioni terapeutiche rimborsate')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =180
                 Width: =1200
@@ -624,7 +624,7 @@ Kit_Prodotto As screen:
             IndicazioniNonRimborsate_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Indicazioni terapeutiche non rimborsate')    
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Indicazioni terapeutiche non rimborsate')    
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =160
                 Width: =1200
@@ -659,7 +659,7 @@ Kit_Prodotto As screen:
             Posologia_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Posologia per ciascuna indicazione')    
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Posologia per ciascuna indicazione')    
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =170
                 Width: =1200
@@ -695,7 +695,7 @@ Kit_Prodotto As screen:
             RegimeDispensazione_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, 'Regime di dispensazione')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Regime di dispensazione')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =130
                 Width: =1200
@@ -731,7 +731,7 @@ Kit_Prodotto As screen:
             MEA_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, MEA)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, MEA)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =90
                 Width: =280
@@ -761,7 +761,7 @@ Kit_Prodotto As screen:
             ScontoConfidenziale_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, 'Sconto confidenziale')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Sconto confidenziale')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =90
                 Width: =300
@@ -791,7 +791,7 @@ Kit_Prodotto As screen:
             Tetto_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, Tetto)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, Tetto)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =90
                 Width: =295
@@ -821,7 +821,7 @@ Kit_Prodotto As screen:
             ClausolaSalvaguardia_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, 'Clausole di salvaguardia')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Clausole di salvaguardia')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =90
                 Width: =280
@@ -852,7 +852,7 @@ Kit_Prodotto As screen:
                 BorderStyle: =BorderStyle.Solid
                 BorderThickness: =0
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, 'Il farmaco è orfano?')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Il farmaco è orfano?')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =130
                 Width: =400
@@ -885,7 +885,7 @@ Kit_Prodotto As screen:
                 BorderStyle: =BorderStyle.Solid
                 BorderThickness: =0
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, 'Indicazioni per il quale il farmaco è orfano')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Indicazioni per il quale il farmaco è orfano')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =130
                 Width: =800
@@ -921,7 +921,7 @@ Kit_Prodotto As screen:
             ScadenzaStatusOrgano_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, 'Scadenza dello status di orfano')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Scadenza dello status di orfano')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =130
                 Width: =412
@@ -950,7 +950,7 @@ Kit_Prodotto As screen:
             RinunciaApplicazioneSconti_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, 'Rinuncia all''applicazione degli sconti di legge')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Rinuncia all''applicazione degli sconti di legge')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =110
                 Width: =1200
@@ -1337,7 +1337,7 @@ Kit_Prodotto As screen:
             ScadenzaOrfano_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, 'Scadenza dello status di orfano')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Scadenza dello status di orfano')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =130
                 Width: =400
@@ -1370,7 +1370,7 @@ Kit_Prodotto As screen:
             RinunciaApplicazione_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, 'Rinuncia all''applicazione degli sconti di legge')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Rinuncia all''applicazione degli sconti di legge')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =100
                 Width: =500
@@ -1403,7 +1403,7 @@ Kit_Prodotto As screen:
             ClausoleSalvaguardiaEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, 'Clausole di salvaguardia')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Clausole di salvaguardia')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =100
                 Width: =280
@@ -1437,7 +1437,7 @@ Kit_Prodotto As screen:
             TettoEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, Tetto)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, Tetto)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =100
                 Width: =250
@@ -1470,7 +1470,7 @@ Kit_Prodotto As screen:
             ScontoConfidenzialeEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, 'Sconto confidenziale')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Sconto confidenziale')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =100
                 Width: =340
@@ -1503,7 +1503,7 @@ Kit_Prodotto As screen:
             MEAEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, MEA)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, MEA)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =100
                 Width: =300
@@ -1537,7 +1537,7 @@ Kit_Prodotto As screen:
             RegimeDiDispensazioneEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Regime di dispensazione')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Regime di dispensazione')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =150
                 Width: =1220
@@ -1570,7 +1570,7 @@ Kit_Prodotto As screen:
             FarmacoOrfanoEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Indicazioni per il quale il farmaco è orfano')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Indicazioni per il quale il farmaco è orfano')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =110
                 Width: =820
@@ -1603,7 +1603,7 @@ Kit_Prodotto As screen:
             FarmacoOrfanoSINO_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, 'Il farmaco è orfano?')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Il farmaco è orfano?')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =130
                 Width: =400
@@ -1636,7 +1636,7 @@ Kit_Prodotto As screen:
             RegimeInnovatività_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName, 'Regime di innovatività')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Regime di innovatività')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =110
                 Width: =820
@@ -1667,7 +1667,7 @@ Kit_Prodotto As screen:
             FarmacoInnovativoEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Il farmaco è innovativo?')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Il farmaco è innovativo?')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =130
                 Width: =400
@@ -1702,7 +1702,7 @@ Kit_Prodotto As screen:
             PosologiaEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Posologia per ciascuna indicazione')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Posologia per ciascuna indicazione')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =140
                 Width: =1230
@@ -1737,7 +1737,7 @@ Kit_Prodotto As screen:
             IndicazioniNonRimborsateEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Indicazioni terapeutiche non rimborsate')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Indicazioni terapeutiche non rimborsate')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =140
                 Width: =1230
@@ -1772,7 +1772,7 @@ Kit_Prodotto As screen:
             IndicazioniRimborsateEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Indicazioni terapeutiche rimborsate')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Indicazioni terapeutiche rimborsate')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =140
                 Width: =1220
@@ -1807,7 +1807,7 @@ Kit_Prodotto As screen:
             PianoTerapeuticoEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Piano Terapeutico')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Piano Terapeutico')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =1220
@@ -1840,7 +1840,7 @@ Kit_Prodotto As screen:
             RegMonitEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Regime di monitoraggio')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Regime di monitoraggio')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =380
@@ -1880,7 +1880,7 @@ Kit_Prodotto As screen:
             CondizioniNegozialiEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,CondizioniNegoziali)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,CondizioniNegoziali)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =423
@@ -1913,7 +1913,7 @@ Kit_Prodotto As screen:
             ClasseRegimeEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,Classe)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Classe)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =423
@@ -1947,7 +1947,7 @@ Kit_Prodotto As screen:
                 BorderStyle: =BorderStyle.Solid
                 BorderThickness: =0
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Unità Galenica')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Unità Galenica')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =400
@@ -1986,7 +1986,7 @@ Kit_Prodotto As screen:
                 BorderStyle: =BorderStyle.Solid
                 BorderThickness: =0
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,PrezzoExFactory)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,PrezzoExFactory)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =410
@@ -2022,7 +2022,7 @@ Kit_Prodotto As screen:
                 BorderStyle: =BorderStyle.Solid
                 BorderThickness: =0
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Canali distributivi')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Canali distributivi')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =423
@@ -2058,7 +2058,7 @@ Kit_Prodotto As screen:
                 BorderStyle: =BorderStyle.Solid
                 DataField: =""
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,Confezioni)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Confezioni)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =140
                 Width: =1269
@@ -2095,7 +2095,7 @@ Kit_Prodotto As screen:
                 BorderStyle: =BorderStyle.Solid
                 DataField: =""
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,AIC)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,AIC)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =110
                 Width: =309
@@ -2129,7 +2129,7 @@ Kit_Prodotto As screen:
                 BorderStyle: =BorderStyle.Solid
                 DataField: =""
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,ATC)
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,ATC)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =110
                 Width: =309
@@ -2163,7 +2163,7 @@ Kit_Prodotto As screen:
                 BorderStyle: =BorderStyle.Solid
                 DataField: =""
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Principio attivo')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Principio attivo')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =138
                 Width: =309
@@ -2197,7 +2197,7 @@ Kit_Prodotto As screen:
                 BorderStyle: =BorderStyle.Solid
                 DataField: =""
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit Prodotto'],DataSourceInfo.DisplayName,'Nome Commerciale')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Nome Commerciale')
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =309

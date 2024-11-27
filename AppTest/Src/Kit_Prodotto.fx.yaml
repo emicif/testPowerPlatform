@@ -1829,7 +1829,7 @@ Kit_Prodotto As screen:
                     Default: |-
                         =If(
                             Form2.Mode = FormMode.Edit,
-                           Selected.PianoTerapeutico
+                           Selected.'Piano Terapeutico'.Value
                         )
                     PaddingBottom: =0
                     Width: =1210

@@ -1019,47 +1019,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Kit_Prodotto.Form2.PianoTerapeuticoEdit_DataCard.TextInput_PianoTerapeutico.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Kit_Prodotto.Form2.PianoTerapeuticoEdit_DataCard.TextInput_PianoTerapeutico.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 66,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "If(\n    Form2.Mode = FormMode.Edit;\n   Selected.PianoTerapeutico\n)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Kit_Prodotto",
-                "type": "Kit_Prodotto.Form2.PianoTerapeuticoEdit_DataCard.TextInput_PianoTerapeutico"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text",
-              "Record"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia.Default"
                 }
               ],

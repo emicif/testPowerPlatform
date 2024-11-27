@@ -12,6 +12,8 @@ Kit_Prodotto As screen:
                 "Beovu"; 'Beovu - Kit prodotto'
              //  "Kymriah"; 'Kymriah - Kit Prodotto'
             );;*/
+            Notify("Il pulsante è stato cliccato", NotificationType.Information);
+            
             Set(varFormNew, true);
             NewForm(Form2)
             

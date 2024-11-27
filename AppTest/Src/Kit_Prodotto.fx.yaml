@@ -109,7 +109,7 @@ Kit_Prodotto As screen:
             NomeCommerciale_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Nome Commerciale')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Title)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =122
                 Width: =309
@@ -1323,8 +1323,8 @@ Kit_Prodotto As screen:
             DataSource: |-
                 =Switch(
                     areaSelected,
-                    "Beovu", 'Beovu - Kit prodotto',
-                    "Kymriah", 'Kymriah - Kit Prodotto'
+                    "Beovu", 'Beovu - Kit prodotto'
+                   // "Kymriah"; 'Kymriah - Kit Prodotto'
                 )
             DefaultMode: =FormMode.New
             Height: =402

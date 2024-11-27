@@ -7,11 +7,11 @@ Kit_Prodotto As screen:
         Fill: =RGBA(0, 32, 104, 1)
         Height: =34
         OnSelect: |+
-            =Switch(
-                areaSelected,
-                "Beovu", 'Beovu - Kit prodotto'
+            =/*Switch(
+                areaSelected;
+                "Beovu"; 'Beovu - Kit prodotto'
              //  "Kymriah"; 'Kymriah - Kit Prodotto'
-            );
+            );;*/
             Set(varFormNew, true);
             NewForm(Form2)
             

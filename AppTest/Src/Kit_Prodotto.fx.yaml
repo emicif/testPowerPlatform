@@ -6,15 +6,15 @@ Kit_Prodotto As screen:
         BorderThickness: =2   
         Fill: =RGBA(0, 32, 104, 1)
         Height: =34
-        OnSelect: |-
-            =Set(varFormNew, true);
-            NewForm(Form2);
-            
-            Switch(
+        OnSelect: |+
+            =Switch(
                 areaSelected,
                 "Beovu", 'Beovu - Kit prodotto'
              //  "Kymriah"; 'Kymriah - Kit Prodotto'
-            )
+            );
+            Set(varFormNew, true);
+            NewForm(Form2)
+            
         PaddingLeft: =25
         PaddingRight: =0
         RadiusBottomLeft: =20

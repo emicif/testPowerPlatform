@@ -1729,7 +1729,7 @@ Kit_Prodotto As screen:
                     Default: |-
                         =If(
                             Form2.Mode = FormMode.Edit,
-                           Selected.Posologia_x0020_per_x0020_ciascu
+                           Selected.'Posologia per ciascuna indicazione'
                         )
                     Height: =71
                     Mode: =TextMode.MultiLine
@@ -1845,7 +1845,7 @@ Kit_Prodotto As screen:
             RegMonitEdit_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Registrodimonitoraggio')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Registrodimonitoraggio)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =380
@@ -2205,7 +2205,7 @@ Kit_Prodotto As screen:
                 BorderStyle: =BorderStyle.Solid
                 DataField: =""
                 DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Title')
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Title)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =309
@@ -2249,7 +2249,7 @@ Kit_Prodotto As screen:
                             'Beovu - Kit prodotto',
                             Defaults('Beovu - Kit prodotto'),
                             {
-                               'Titolo': TextInput_NomeCommerciale.Text,
+                               Titolo: TextInput_NomeCommerciale.Text,
                                 'Principio attivo': TextInput_PrincipioAttivo.Text,
                                 AIC: TextInput_AIC.Text,
                                 ATC: TextInput_ATC.Text,
@@ -2283,7 +2283,7 @@ Kit_Prodotto As screen:
                             Selected,
                             
                             {
-                                'Titolo': TextInput_NomeCommerciale.Text,
+                                Titolo: TextInput_NomeCommerciale.Text,
                                 'Principio attivo': TextInput_PrincipioAttivo.Text,
                                 AIC: TextInput_AIC.Text,
                                 ATC: TextInput_ATC.Text,

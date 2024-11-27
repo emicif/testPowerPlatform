@@ -26,7 +26,7 @@ Kit_Prodotto As screen:
         Width: =141
         X: =1106
         Y: =154
-        ZIndex: =2
+        ZIndex: =1
 
     SfondoGlrKit As button:
         Fill: =RGBA(255, 255, 255, 1)
@@ -42,14 +42,14 @@ Kit_Prodotto As screen:
         Width: =1128
         X: =(App.Width - SfondoGlrKit.Width)/2
         Y: =205
-        ZIndex: =3
+        ZIndex: =2
 
     Header_4 As Header:
-        ZIndex: =5
+        ZIndex: =4
 
     Footer_4 As Footer:
         Y: =696
-        ZIndex: =6
+        ZIndex: =5
 
     backHome_2 As image:
         Height: =38
@@ -58,7 +58,7 @@ Kit_Prodotto As screen:
         Width: =36
         X: =119
         Y: =118
-        ZIndex: =7
+        ZIndex: =6
 
     Titolo_2 As label:
         Color: =RGBA(241, 244, 249, 1)
@@ -69,7 +69,7 @@ Kit_Prodotto As screen:
         Width: =273
         X: =171
         Y: =116
-        ZIndex: =8
+        ZIndex: =7
 
     popupView As group:
         Height: =5
@@ -86,7 +86,7 @@ Kit_Prodotto As screen:
             Width: =1278
             X: =40
             Y: =105
-            ZIndex: =14
+            ZIndex: =13
 
         FormViewer As formViewer:
             DataSource: |-
@@ -104,7 +104,7 @@ Kit_Prodotto As screen:
             Width: =1241
             X: =64
             Y: =203
-            ZIndex: =15
+            ZIndex: =14
 
             NomeCommerciale_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
@@ -987,7 +987,7 @@ Kit_Prodotto As screen:
             Width: =29
             X: =1276
             Y: =118
-            ZIndex: =16
+            ZIndex: =15
 
         Title_view As label:
             Color: =RGBA(0, 32, 104, 100)
@@ -999,7 +999,7 @@ Kit_Prodotto As screen:
             Width: =190
             X: =598
             Y: =105
-            ZIndex: =17
+            ZIndex: =16
 
         Descrizione_view As label:
             Color: =RGBA(0, 32, 104, 100)
@@ -1011,7 +1011,7 @@ Kit_Prodotto As screen:
             Width: =412
             X: =64
             Y: =161
-            ZIndex: =18
+            ZIndex: =17
 
         btnClose As button:
             Height: =41
@@ -1021,7 +1021,7 @@ Kit_Prodotto As screen:
             Width: =173
             X: =606
             Y: =626
-            ZIndex: =19
+            ZIndex: =18
 
     ToggleStockout_4 As toggleSwitch:
         Default: =Footer_4.Navigazione_stockout
@@ -1029,7 +1029,7 @@ Kit_Prodotto As screen:
         Visible: =false
         X: =411
         Y: =32
-        ZIndex: =20
+        ZIndex: =19
 
     ToggleDPC_4 As toggleSwitch:
         Default: =Footer_4.Navigazione_DPC
@@ -1037,7 +1037,7 @@ Kit_Prodotto As screen:
         Visible: =false
         X: =431
         Y: =52
-        ZIndex: =21
+        ZIndex: =20
 
     ToggleComunicazioni_4 As toggleSwitch:
         Default: =Footer_4.Navigazione_comunicazioni
@@ -1045,7 +1045,7 @@ Kit_Prodotto As screen:
         Visible: =false
         X: =471
         Y: =92
-        ZIndex: =22
+        ZIndex: =21
 
     ToggleSostenibilita_4 As toggleSwitch:
         Default: =Footer_4.Navigazione_sostenibilita
@@ -1053,7 +1053,7 @@ Kit_Prodotto As screen:
         Visible: =false
         X: =491
         Y: =112
-        ZIndex: =23
+        ZIndex: =22
 
     ToggleListini_4 As toggleSwitch:
         Default: =Footer_4.Navigazione_listini
@@ -1061,7 +1061,7 @@ Kit_Prodotto As screen:
         Visible: =false
         X: =511
         Y: =132
-        ZIndex: =24
+        ZIndex: =23
 
     ToggleVaiProdotti_4 As toggleSwitch:
         Default: =Footer_11.NavigazioneVaiAiProdotti
@@ -1069,7 +1069,7 @@ Kit_Prodotto As screen:
         Visible: =false
         X: =531
         Y: =152
-        ZIndex: =25
+        ZIndex: =24
 
     ToggleReporting_4 As toggleSwitch:
         Default: =Footer_4.Navigazione_reporting
@@ -1077,7 +1077,7 @@ Kit_Prodotto As screen:
         Visible: =false
         X: =551
         Y: =172
-        ZIndex: =26
+        ZIndex: =25
 
     ToggleKitProdotti_4 As toggleSwitch:
         Default: =Footer_4.Navigazione_kitprodotti
@@ -1085,7 +1085,7 @@ Kit_Prodotto As screen:
         Visible: =false
         X: =571
         Y: =192
-        ZIndex: =27
+        ZIndex: =26
 
     Image6 As image:
         Height: =16
@@ -1094,7 +1094,7 @@ Kit_Prodotto As screen:
         Width: =23
         X: =1123
         Y: =163
-        ZIndex: =33
+        ZIndex: =27
 
     ButtonHome_2 As button:
         DisabledFill: =Color.Transparent
@@ -1105,7 +1105,7 @@ Kit_Prodotto As screen:
         PressedFill: =Color.Transparent
         Text: =
         Width: =284
-        ZIndex: =35
+        ZIndex: =28
 
     grpKitProdotto As group:
         Height: =5
@@ -1132,7 +1132,7 @@ Kit_Prodotto As screen:
             Width: =1128
             X: =120
             Y: =274
-            ZIndex: =4
+            ZIndex: =3
 
             Title12 As label:
                 Font: =Font.Lato
@@ -1250,7 +1250,7 @@ Kit_Prodotto As screen:
             Width: =1128
             X: =(App.Width - Rectangle2.Width)/2
             Y: =218
-            ZIndex: =9
+            ZIndex: =8
 
         labelNomeCommerciale As label:
             Color: =textColorBlu
@@ -1262,7 +1262,7 @@ Kit_Prodotto As screen:
             Width: =191
             X: =143
             Y: =224
-            ZIndex: =10
+            ZIndex: =9
 
         labelPrincipioAttivo As label:
             Color: =textColorBlu
@@ -1275,7 +1275,7 @@ Kit_Prodotto As screen:
             Width: =157
             X: =394
             Y: =224
-            ZIndex: =11
+            ZIndex: =10
 
         labelAIC As label:
             Color: =textColorBlu
@@ -1288,7 +1288,7 @@ Kit_Prodotto As screen:
             Width: =157
             X: =637
             Y: =224
-            ZIndex: =12
+            ZIndex: =11
 
         labelAIC_1 As label:
             Color: =textColorBlu
@@ -1301,7 +1301,7 @@ Kit_Prodotto As screen:
             Width: =157
             X: =821
             Y: =224
-            ZIndex: =13
+            ZIndex: =12
 
     popupNew As group:
         Height: =5
@@ -1317,7 +1317,7 @@ Kit_Prodotto As screen:
             Width: =1311
             X: =26
             Y: =105
-            ZIndex: =1
+            ZIndex: =29
 
         Form2 As form:
             DataSource: |-
@@ -1337,7 +1337,7 @@ Kit_Prodotto As screen:
             Width: =1270
             X: =47
             Y: =212
-            ZIndex: =28
+            ZIndex: =30
 
             ScadenzaOrfano_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
@@ -2402,7 +2402,7 @@ Kit_Prodotto As screen:
             Width: =130
             X: =537
             Y: =626
-            ZIndex: =29
+            ZIndex: =31
 
         btnAnnullaFormNewEdit As button:
             Fill: =Color.Gray
@@ -2417,7 +2417,7 @@ Kit_Prodotto As screen:
             Width: =130
             X: =708
             Y: =626
-            ZIndex: =30
+            ZIndex: =32
 
         titleView As label:
             Color: =RGBA(0, 32, 104, 100)
@@ -2436,7 +2436,7 @@ Kit_Prodotto As screen:
             Width: =287
             X: =579
             Y: =116
-            ZIndex: =31
+            ZIndex: =33
 
         Image23_2 As image:
             Height: =21
@@ -2448,7 +2448,7 @@ Kit_Prodotto As screen:
             Width: =30
             X: =1267
             Y: =128
-            ZIndex: =32
+            ZIndex: =34
 
         Descrizione_view_2 As label:
             Color: =RGBA(0, 32, 104, 100)
@@ -2460,5 +2460,5 @@ Kit_Prodotto As screen:
             Width: =423
             X: =40
             Y: =152
-            ZIndex: =34
+            ZIndex: =35
 

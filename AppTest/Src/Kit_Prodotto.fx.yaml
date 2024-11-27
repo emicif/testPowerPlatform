@@ -12,7 +12,7 @@ Kit_Prodotto As screen:
             
             Switch(
                 areaSelected,
-                "Beovu", 'Beovu - Kit Prodotto',
+                "Beovu", 'Beovu - Kit prodotto',
                "Kymriah", 'Kymriah - Kit Prodotto'
             )
         PaddingLeft: =25
@@ -1122,7 +1122,7 @@ Kit_Prodotto As screen:
             Items: |
                 =Switch(
                     areaSelected,
-                    "Beovu", 'Beovu - Kit Prodotto',
+                    "Beovu", 'Beovu - Kit prodotto',
                     "Kymriah", 'Kymriah - Kit Prodotto'
                 )
             Layout: =Layout.Vertical
@@ -2238,8 +2238,8 @@ Kit_Prodotto As screen:
                     
                         // Creazione di un nuovo record
                         Patch(
-                            'Beovu - Kit Prodotto',
-                            Defaults('Beovu - Kit Prodotto'),
+                            'Beovu - Kit prodotto',
+                            Defaults('Beovu - Kit prodotto'),
                             {
                                 'Nome Commerciale': TextInput_NomeCommerciale.Text,
                                 'Principio attivo': TextInput_PrincipioAttivo.Text,
@@ -2272,7 +2272,7 @@ Kit_Prodotto As screen:
                         ),
                         // Aggiornamento di un record esistente
                         Patch(
-                            'Beovu - Kit Prodotto',
+                            'Beovu - Kit prodotto',
                             Selected,
                             
                             {

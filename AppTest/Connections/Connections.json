@@ -142,8 +142,8 @@
           "AccessGroups": {
             "tableName": "579ae7b6-4f36-4e96-ad52-f48cc74f655f"
           },
-          "Beovu - Kit Prodotto": {
-            "tableName": "1fa9917e-f4ea-4a6b-a3b2-ae1f3c9b6557"
+          "Beovu - Kit prodotto": {
+            "tableName": "17b3dad6-7bc7-4561-b41b-d86307b1d929"
           },
           "CNN": {
             "tableName": "ff5070b8-129e-4b5a-8d89-dc13bdf94ebb"
@@ -224,7 +224,6 @@
       "Lang",
       "TherapeuticArea",
       "Kymriah - Kit Prodotto",
-      "Beovu - Kit Prodotto",
       "Mappa Nazionale",
       "Mappa Regionale",
       "Governance Sanitaria Regionale",
@@ -234,7 +233,8 @@
       "CNN",
       "Reti",
       "PDTA",
-      "AccessGroups"
+      "AccessGroups",
+      "Beovu - Kit prodotto"
     ],
     "dependencies": {},
     "dependents": [

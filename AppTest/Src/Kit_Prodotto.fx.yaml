@@ -12,8 +12,8 @@ Kit_Prodotto As screen:
             
             Switch(
                 areaSelected,
-                "Beovu", 'Beovu - Kit prodotto',
-               "Kymriah", 'Kymriah - Kit Prodotto'
+                "Beovu", 'Beovu - Kit prodotto'
+             //  "Kymriah"; 'Kymriah - Kit Prodotto'
             )
         PaddingLeft: =25
         PaddingRight: =0
@@ -1122,8 +1122,8 @@ Kit_Prodotto As screen:
             Items: |
                 =Switch(
                     areaSelected,
-                    "Beovu", 'Beovu - Kit prodotto',
-                    "Kymriah", 'Kymriah - Kit Prodotto'
+                    "Beovu", 'Beovu - Kit prodotto'
+                  //  "Kymriah"; 'Kymriah - Kit Prodotto'
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
@@ -1862,7 +1862,7 @@ Kit_Prodotto As screen:
                     Default: |-
                         =If(
                             Form2.Mode = FormMode.Edit,
-                           Selected.Regimedimonitoraggio.Value
+                           Selected.'Registro di monitoraggio'.Value
                         )
                     Items: =["Attivo", "Non attivo"]
                     Width: =370
@@ -1902,7 +1902,7 @@ Kit_Prodotto As screen:
                     Default: |-
                         =If(
                             Form2.Mode = FormMode.Edit,
-                           Selected.CondizioniNegoziali
+                           Selected.'Condizioni negoziali - Altro'
                         )
                     PaddingBottom: =0
                     Width: =385

@@ -2308,81 +2308,83 @@ Kit_Prodotto As screen:
                         )
                     )
                 );
-                If(areaSelected = "Kymriah",
+                /*
+                If(areaSelected = "Kymriah";
                 If(
-                        Form2.Mode = FormMode.New,
+                        Form2.Mode = FormMode.New;
                     
                         // Creazione di un nuovo record
                          Patch(
-                            'Kymriah - Kit Prodotto',
-                            Defaults('Kymriah - Kit Prodotto'),
+                            'Kymriah - Kit Prodotto';
+                            Defaults('Kymriah - Kit Prodotto');
                             {
-                                'Nome Commerciale': TextInput_NomeCommerciale.Text,
-                                'Principio attivo': TextInput_PrincipioAttivo.Text,
-                                AIC: TextInput_AIC.Text,
-                                ATC: TextInput_ATC.Text,
-                                Confezioni: TextInput_Confezioni.Text,
-                                PrezzoExFactory: Value(TextInput_PrezzoExFactory.Text),
-                                'Unità Galenica': Value(TextInput_UG.Text),
-                                'Canali distributivi': TextInput_CanaliDistributivi.Text,
-                                Classe: TextInput_ClasseRegime.Text,
-                                CondizioniNegoziali: TextInput_CondizioniNegoziali.Text,
-                               'Regime di monitoraggio': Dropdown_RegMonit.SelectedText,
-                                'Piano Terapeutico': TextInput_PianoTerapeutico.Text,
-                                'Il farmaco è innovativo?': Checkbox_FarmacoInnovativo.Value,
-                                 'Indicazioni per il quale il farmaco è orfano': TextInput_FarmacoOrfano.Text,
-                                'Indicazioni terapeutiche rimborsate': TextInput_IndicazioniRimborsate.Text,
-                                'Indicazioni terapeutiche non rimborsate': TextInput_IndicazioniNonRimborsate.Text,
-                                'Posologia per ciascuna indicazione': TextInput_Posologia.Text,
-                                'Regime di innovatività': TextInput_RegimeDiInnovativita.Text,
-                                'Il farmaco è orfano?': Checkbox_FarmacoOrfanoSINO.Value,
-                                'Regime di dispensazione': TextInput_RegimeDiDispensazione.Text,
-                                MEA: Checkbox_MEA.Value,
-                                'Sconto confidenziale': Checkbox_ScontoConfidenziale.Value,
-                                Tetto: Checkbox_Tetto.Value,
-                                'Clausole di salvaguardia': Checkbox_ClausoleSalvaguardia.Value,
-                                'Rinuncia all''applicazione degli sconti di legge': Checkbox_RinunciaApplicazione.Value,
+                                'Nome Commerciale': TextInput_NomeCommerciale.Text;
+                                'Principio attivo': TextInput_PrincipioAttivo.Text;
+                                AIC: TextInput_AIC.Text;
+                                ATC: TextInput_ATC.Text;
+                                Confezioni: TextInput_Confezioni.Text;
+                                PrezzoExFactory: Value(TextInput_PrezzoExFactory.Text);
+                                'Unità Galenica': Value(TextInput_UG.Text);
+                                'Canali distributivi': TextInput_CanaliDistributivi.Text;
+                                Classe: TextInput_ClasseRegime.Text;
+                                CondizioniNegoziali: TextInput_CondizioniNegoziali.Text;
+                               'Regime di monitoraggio': Dropdown_RegMonit.SelectedText;
+                                'Piano Terapeutico': TextInput_PianoTerapeutico.Text;
+                                'Il farmaco è innovativo?': Checkbox_FarmacoInnovativo.Value;
+                                 'Indicazioni per il quale il farmaco è orfano': TextInput_FarmacoOrfano.Text;
+                                'Indicazioni terapeutiche rimborsate': TextInput_IndicazioniRimborsate.Text;
+                                'Indicazioni terapeutiche non rimborsate': TextInput_IndicazioniNonRimborsate.Text;
+                                'Posologia per ciascuna indicazione': TextInput_Posologia.Text;
+                                'Regime di innovatività': TextInput_RegimeDiInnovativita.Text;
+                                'Il farmaco è orfano?': Checkbox_FarmacoOrfanoSINO.Value;
+                                'Regime di dispensazione': TextInput_RegimeDiDispensazione.Text;
+                                MEA: Checkbox_MEA.Value;
+                                'Sconto confidenziale': Checkbox_ScontoConfidenziale.Value;
+                                Tetto: Checkbox_Tetto.Value;
+                                'Clausole di salvaguardia': Checkbox_ClausoleSalvaguardia.Value;
+                                'Rinuncia all''applicazione degli sconti di legge': Checkbox_RinunciaApplicazione.Value;
                                 'Scadenza dello status di orfano': DatePicker1.SelectedDate    
                         
                             }
-                        ),
+                        );
                         // Aggiornamento di un record esistente
                        Patch(
-                            'Kymriah - Kit Prodotto',
-                            Selected,
+                            'Kymriah - Kit Prodotto';
+                            Selected;
                             
                             {
-                                'Nome Commerciale': TextInput_NomeCommerciale.Text,
-                                'Principio attivo': TextInput_PrincipioAttivo.Text,
-                                AIC: TextInput_AIC.Text,
-                                ATC: TextInput_ATC.Text,
-                                Confezioni: TextInput_Confezioni.Text,
-                                PrezzoExFactory: Value(TextInput_PrezzoExFactory.Text),
-                                'Unità Galenica': Value(TextInput_UG.Text),
-                                'Canali distributivi': TextInput_CanaliDistributivi.Text,
-                                Classe: TextInput_ClasseRegime.Text,
-                                CondizioniNegoziali: TextInput_CondizioniNegoziali.Text,
-                               'Regime di monitoraggio': Dropdown_RegMonit.SelectedText,
-                                'Piano Terapeutico': TextInput_PianoTerapeutico.Text,
-                                'Il farmaco è innovativo?': Checkbox_FarmacoInnovativo.Value,
-                                 'Indicazioni per il quale il farmaco è orfano': TextInput_FarmacoOrfano.Text,
-                                'Indicazioni terapeutiche rimborsate': TextInput_IndicazioniRimborsate.Text,
-                                'Indicazioni terapeutiche non rimborsate': TextInput_IndicazioniNonRimborsate.Text,
-                                'Posologia per ciascuna indicazione': TextInput_Posologia.Text,
-                                'Regime di innovatività': TextInput_RegimeDiInnovativita.Text,
-                                'Il farmaco è orfano?': Checkbox_FarmacoOrfanoSINO.Value,
-                                'Regime di dispensazione': TextInput_RegimeDiDispensazione.Text,
-                                MEA: Checkbox_MEA.Value,
-                                'Sconto confidenziale': Checkbox_ScontoConfidenziale.Value,
-                                Tetto: Checkbox_Tetto.Value,
-                                'Clausole di salvaguardia': Checkbox_ClausoleSalvaguardia.Value,
-                                'Rinuncia all''applicazione degli sconti di legge': Checkbox_RinunciaApplicazione.Value,
+                                'Nome Commerciale': TextInput_NomeCommerciale.Text;
+                                'Principio attivo': TextInput_PrincipioAttivo.Text;
+                                AIC: TextInput_AIC.Text;
+                                ATC: TextInput_ATC.Text;
+                                Confezioni: TextInput_Confezioni.Text;
+                                PrezzoExFactory: Value(TextInput_PrezzoExFactory.Text);
+                                'Unità Galenica': Value(TextInput_UG.Text);
+                                'Canali distributivi': TextInput_CanaliDistributivi.Text;
+                                Classe: TextInput_ClasseRegime.Text;
+                                CondizioniNegoziali: TextInput_CondizioniNegoziali.Text;
+                               'Regime di monitoraggio': Dropdown_RegMonit.SelectedText;
+                                'Piano Terapeutico': TextInput_PianoTerapeutico.Text;
+                                'Il farmaco è innovativo?': Checkbox_FarmacoInnovativo.Value;
+                                 'Indicazioni per il quale il farmaco è orfano': TextInput_FarmacoOrfano.Text;
+                                'Indicazioni terapeutiche rimborsate': TextInput_IndicazioniRimborsate.Text;
+                                'Indicazioni terapeutiche non rimborsate': TextInput_IndicazioniNonRimborsate.Text;
+                                'Posologia per ciascuna indicazione': TextInput_Posologia.Text;
+                                'Regime di innovatività': TextInput_RegimeDiInnovativita.Text;
+                                'Il farmaco è orfano?': Checkbox_FarmacoOrfanoSINO.Value;
+                                'Regime di dispensazione': TextInput_RegimeDiDispensazione.Text;
+                                MEA: Checkbox_MEA.Value;
+                                'Sconto confidenziale': Checkbox_ScontoConfidenziale.Value;
+                                Tetto: Checkbox_Tetto.Value;
+                                'Clausole di salvaguardia': Checkbox_ClausoleSalvaguardia.Value;
+                                'Rinuncia all''applicazione degli sconti di legge': Checkbox_RinunciaApplicazione.Value;
                                 'Scadenza dello status di orfano': DatePicker1.SelectedDate 
                         
                             }
                         )
                     )
-                );
+                );;
+                */
                 ResetForm(Form2);
                 Set(varFormNew, false);
                 Notify("Salvataggio avvenuto con successo", NotificationType.Success)

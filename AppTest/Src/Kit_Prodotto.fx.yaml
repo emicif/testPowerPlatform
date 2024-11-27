@@ -1321,11 +1321,15 @@ Kit_Prodotto As screen:
 
         Form2 As form:
             DataSource: |-
-                =Switch(
-                    areaSelected,
-                    "Beovu", 'Beovu - Kit prodotto'
+                ='Beovu - Kit prodotto'
+                
+                /*
+                Switch(
+                    areaSelected;
+                    "Beovu"; 'Beovu - Kit prodotto'
                    // "Kymriah"; 'Kymriah - Kit Prodotto'
                 )
+                */
             DefaultMode: =FormMode.New
             Height: =402
             Item: =glryKitProdotto.Selected

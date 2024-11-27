@@ -2276,18 +2276,18 @@ Kit_Prodotto As screen:
                             Selected,
                             
                             {
-                                'Nome Commerciale': TextInput_NomeCommerciale.Text,
+                                'Titolo': TextInput_NomeCommerciale.Text,
                                 'Principio attivo': TextInput_PrincipioAttivo.Text,
                                 AIC: TextInput_AIC.Text,
                                 ATC: TextInput_ATC.Text,
                                 Confezioni: TextInput_Confezioni.Text,
-                                PrezzoExFactory: Value(TextInput_PrezzoExFactory.Text),
+                                'Prezzo Ex-Factory da G.U.': Value(TextInput_PrezzoExFactory.Text),
                                 'Unità Galenica': Value(TextInput_UG.Text),
                                 'Canali distributivi': TextInput_CanaliDistributivi.Text,
                                 Classe: TextInput_ClasseRegime.Text,
-                                 CondizioniNegoziali: TextInput_CondizioniNegoziali.Text,
-                               'Regime di monitoraggio': Dropdown_RegMonit.SelectedText,
-                                'Piano Terapeutico': TextInput_PianoTerapeutico.Text,
+                                 'Condizioni negoziali - Altro': TextInput_CondizioniNegoziali.Text,
+                               //'Regime di monitoraggio': Dropdown_RegMonit.SelectedText;
+                            //    'Piano Terapeutico': TextInput_PianoTerapeutico.Text;
                                 'Il farmaco è innovativo?': Checkbox_FarmacoInnovativo.Value,
                                  'Indicazioni per il quale il farmaco è orfano': TextInput_FarmacoOrfano.Text,
                                 'Indicazioni terapeutiche rimborsate': TextInput_IndicazioniRimborsate.Text,

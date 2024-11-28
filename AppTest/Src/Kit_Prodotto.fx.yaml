@@ -1358,7 +1358,8 @@ Kit_Prodotto As screen:
             Container2 As groupContainer.horizontalAutoLayoutContainer:
                 LayoutMode: =LayoutMode.Auto
                 Width: =423
-                Y: =2
+                X: =2
+                Y: =1
                 ZIndex: =1
 
             RegMonitEdit_DataCard As typedDataCard.comboBoxEditCard:
@@ -1372,7 +1373,7 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =Dropdown_RegMonit.Selected
                 Width: =423
-                X: =1
+                X: =0
                 Y: =5
                 ZIndex: =1
 
@@ -1416,7 +1417,7 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_PianoTerapeutico.Selected
                 Width: =423
-                X: =2
+                X: =1
                 Y: =5
                 ZIndex: =1
 
@@ -1458,8 +1459,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_IndicazioniRimborsate.Text
                 Width: =423
-                X: =0
-                Y: =6
+                X: =2
+                Y: =5
                 ZIndex: =1
 
                 TextInput_IndicazioniRimborsate As text:
@@ -1501,7 +1502,7 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_IndicazioniNonRimborsate.Text
                 Width: =423
-                X: =1
+                X: =0
                 Y: =6
                 ZIndex: =1
 
@@ -1545,7 +1546,7 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_Posologia.Text
                 Width: =423
-                X: =2
+                X: =1
                 Y: =6
                 ZIndex: =1
 
@@ -1588,8 +1589,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =DataCardValue21.Value
                 Width: =423
-                X: =0
-                Y: =7
+                X: =2
+                Y: =6
                 ZIndex: =1
 
                 DataCardValue21 As toggleSwitch:
@@ -1637,7 +1638,7 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_RegimeDiInnovativita.Text
                 Width: =423
-                X: =1
+                X: =0
                 Y: =7
                 ZIndex: =1
 
@@ -1679,7 +1680,7 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =DataCardValue23.Value
                 Width: =423
-                X: =2
+                X: =1
                 Y: =7
                 ZIndex: =1
 
@@ -1727,8 +1728,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_FarmacoOrfano.Text
                 Width: =423
-                X: =0
-                Y: =8
+                X: =2
+                Y: =7
                 ZIndex: =1
 
                 TextInput_FarmacoOrfano As text:
@@ -1771,7 +1772,7 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_RegimeDiDispensazione.Text
                 Width: =423
-                X: =1
+                X: =0
                 Y: =8
                 ZIndex: =1
 
@@ -1814,7 +1815,7 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =DataCardValue26.Value
                 Width: =423
-                X: =2
+                X: =1
                 Y: =8
                 ZIndex: =1
 
@@ -1861,8 +1862,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =DataCardValue27.Value
                 Width: =423
-                X: =0
-                Y: =9
+                X: =2
+                Y: =8
                 ZIndex: =1
 
                 DataCardValue27 As toggleSwitch:
@@ -1909,8 +1910,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_CondizioniNegoziali.Text
                 Width: =423
-                X: =0
-                Y: =5
+                X: =2
+                Y: =4
                 ZIndex: =2
 
                 Intestazione_CondizioniNegoziali_1 As label:
@@ -1953,7 +1954,7 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_ClasseRegime.Text
                 Width: =423
-                X: =2
+                X: =1
                 Y: =4
                 ZIndex: =3
 
@@ -1996,7 +1997,7 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =Value(TextInput_UG.Text)
                 Width: =423
-                X: =1
+                X: =0
                 Y: =4
                 ZIndex: =4
 
@@ -2039,8 +2040,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =Value(TextInput_PrezzoExFactory.Text)
                 Width: =423
-                X: =0
-                Y: =4
+                X: =2
+                Y: =3
                 ZIndex: =5
 
                 Intestazione_PrezzoExFactory_1 As label:
@@ -2083,7 +2084,7 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_CanaliDistributivi.Text
                 Width: =423
-                X: =2
+                X: =1
                 Y: =3
                 ZIndex: =6
 
@@ -2127,7 +2128,7 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_Confezioni.Text
                 Width: =423
-                X: =1
+                X: =0
                 Y: =3
                 ZIndex: =7
 
@@ -2171,8 +2172,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_AIC.Text
                 Width: =423
-                X: =0
-                Y: =3
+                X: =2
+                Y: =2
                 ZIndex: =8
 
                 Intestazione_AIC_1 As label:
@@ -2214,7 +2215,7 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_ATC.Text
                 Width: =423
-                X: =2
+                X: =1
                 Y: =2
                 ZIndex: =9
 
@@ -2258,7 +2259,7 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_PrincipioAttivo.Text
                 Width: =309
-                X: =1
+                X: =0
                 Y: =2
                 ZIndex: =10
 
@@ -2301,7 +2302,7 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_NomeCommerciale.Text
                 Width: =309
-                X: =2
+                X: =1
                 Y: =1
                 ZIndex: =11
 
@@ -2340,7 +2341,7 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =130
                 Width: =400
-                X: =1
+                X: =0
                 Y: =1
                 ZIndex: =12
 
@@ -2373,8 +2374,8 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =100
                 Width: =500
-                X: =0
-                Y: =1
+                X: =2
+                Y: =0
                 ZIndex: =13
 
                 Intestazione_RinunciaApplicazione_1 As label:
@@ -2406,7 +2407,7 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =100
                 Width: =280
-                X: =1
+                X: =0
                 Y: =0
                 ZIndex: =14
 
@@ -2440,7 +2441,7 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =100
                 Width: =250
-                X: =2
+                X: =1
                 Y: =0
                 ZIndex: =15
 
@@ -2465,17 +2466,6 @@ Kit_Prodotto As screen:
                     Width: =56
                     X: =60
                     ZIndex: =2
-
-            "'ScontoConfidenzialeEdit_DataCard-old' As typedDataCard.blankCard":
-                BorderStyle: =BorderStyle.Solid
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Sconto confidenziale')
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =100
-                Width: =340
-                X: =0
-                Y: =0
-                ZIndex: =16
 
         btnSaveFormNewEdit As button:
             Height: =39

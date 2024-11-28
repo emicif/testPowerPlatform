@@ -1094,6 +1094,1126 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardKey14"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardKey14"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 13,
+                  "snippet": {
+                    "text": ".Y"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 18,
+                  "snippet": {
+                    "text": "DataCardKey14"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardKey14"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 31,
+                  "snippet": {
+                    "text": ".Height"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardKey13"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardKey13"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 13,
+                  "snippet": {
+                    "text": ".Y"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 18,
+                  "snippet": {
+                    "text": "DataCardKey13"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardKey13"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 31,
+                  "snippet": {
+                    "text": ".Height"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardKey15"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardKey15"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 13,
+                  "snippet": {
+                    "text": ".Y"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 18,
+                  "snippet": {
+                    "text": "DataCardKey15"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardKey15"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 31,
+                  "snippet": {
+                    "text": ".Height"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.RegMonitEdit_DataCard.Dropdown_RegMonit.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.RegMonitEdit_DataCard.Dropdown_RegMonit.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardKey16"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.RegMonitEdit_DataCard.Dropdown_RegMonit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardKey16"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.RegMonitEdit_DataCard.Dropdown_RegMonit.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.RegMonitEdit_DataCard.Dropdown_RegMonit.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 13,
+                  "snippet": {
+                    "text": ".Y"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.RegMonitEdit_DataCard.Dropdown_RegMonit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.RegMonitEdit_DataCard.Dropdown_RegMonit.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.RegMonitEdit_DataCard.Dropdown_RegMonit.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 18,
+                  "snippet": {
+                    "text": "DataCardKey16"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.RegMonitEdit_DataCard.Dropdown_RegMonit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardKey16"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.RegMonitEdit_DataCard.Dropdown_RegMonit.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.RegMonitEdit_DataCard.Dropdown_RegMonit.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 31,
+                  "snippet": {
+                    "text": ".Height"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.RegMonitEdit_DataCard.Dropdown_RegMonit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PianoTerapeuticoEdit_DataCard.TextInput_PianoTerapeutico.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PianoTerapeuticoEdit_DataCard.TextInput_PianoTerapeutico.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardKey17"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.PianoTerapeuticoEdit_DataCard.TextInput_PianoTerapeutico"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardKey17"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PianoTerapeuticoEdit_DataCard.TextInput_PianoTerapeutico.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PianoTerapeuticoEdit_DataCard.TextInput_PianoTerapeutico.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 13,
+                  "snippet": {
+                    "text": ".Y"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.PianoTerapeuticoEdit_DataCard.TextInput_PianoTerapeutico"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PianoTerapeuticoEdit_DataCard.TextInput_PianoTerapeutico.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PianoTerapeuticoEdit_DataCard.TextInput_PianoTerapeutico.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 18,
+                  "snippet": {
+                    "text": "DataCardKey17"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.PianoTerapeuticoEdit_DataCard.TextInput_PianoTerapeutico"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardKey17"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PianoTerapeuticoEdit_DataCard.TextInput_PianoTerapeutico.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PianoTerapeuticoEdit_DataCard.TextInput_PianoTerapeutico.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 31,
+                  "snippet": {
+                    "text": ".Height"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.PianoTerapeuticoEdit_DataCard.TextInput_PianoTerapeutico"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardKey18"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardKey18"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 13,
+                  "snippet": {
+                    "text": ".Y"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 18,
+                  "snippet": {
+                    "text": "DataCardKey18"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardKey18"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 31,
+                  "snippet": {
+                    "text": ".Height"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardKey20"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardKey20"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 13,
+                  "snippet": {
+                    "text": ".Y"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 18,
+                  "snippet": {
+                    "text": "DataCardKey20"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardKey20"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 31,
+                  "snippet": {
+                    "text": ".Height"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
                 }
               ],
@@ -1623,8 +2743,128 @@
                   "relativeAddress": 0
                 },
                 "region": {
+                  "charLength": 13,
+                  "charOffset": 646,
+                  "snippet": {
+                    "text": "TextInput_UG_"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "TextInput_UG_"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 659,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 640,
+                  "snippet": {
+                    "text": "Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Value"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
                   "charLength": 32,
-                  "charOffset": 705,
+                  "charOffset": 706,
                   "snippet": {
                     "text": "TextInput_CanaliDistributivi_old"
                   }
@@ -1664,7 +2904,407 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 737,
+                  "charOffset": 738,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 769,
+                  "snippet": {
+                    "text": "'TextInput_ClasseRegime-'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "TextInput_ClasseRegime-"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 794,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 32,
+                  "charOffset": 850,
+                  "snippet": {
+                    "text": "'TextInput_CondizioniNegoziali-'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "TextInput_CondizioniNegoziali-"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 882,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 34,
+                  "charOffset": 1264,
+                  "snippet": {
+                    "text": "'TextInput_IndicazioniRimborsate-'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "TextInput_IndicazioniRimborsate-"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 1298,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 37,
+                  "charOffset": 1364,
+                  "snippet": {
+                    "text": "'TextInput_IndicazioniNonRimborsate-'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "TextInput_IndicazioniNonRimborsate-"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 1401,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 1462,
+                  "snippet": {
+                    "text": "'TextInput_Posologia-'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "TextInput_Posologia-"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 1484,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -1743,10 +3383,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1926,
+                  "charLength": 1942,
                   "charOffset": 224,
                   "snippet": {
-                    "text": "{\n               Titolo: TextInput_NomeCommerciale_vecchio.Text;\n                'Principio attivo': TextInput_PrincipioAttivo_vecchio.Text;\n                AIC: TextInput_AIC_old.Text;\n                ATC: TextInput_ATC_vecchio.Text;\n                Confezioni: TextInput_Confezioni_old.Text;\n                'Prezzo Ex-Factory da G.U.': Value(TextInput_PrezzoExFactory_old.Text);\n                'Unità Galenica': Value(TextInput_UG.Text);\n                'Canali distributivi': TextInput_CanaliDistributivi_old.Text;\n                Classe: TextInput_ClasseRegime.Text;\n                 'Condizioni negoziali - Altro': TextInput_CondizioniNegoziali.Text;\n               //'Regime di monitoraggio': Dropdown_RegMonit.SelectedText;\n            //    'Piano Terapeutico': TextInput_PianoTerapeutico.Text;\n                'Il farmaco è innovativo?': Checkbox_FarmacoInnovativo.Value;\n                 'Indicazioni per il quale il farmaco è orfano': TextInput_FarmacoOrfano.Text;\n                'Indicazioni terapeutiche rimborsate': TextInput_IndicazioniRimborsate.Text;\n                'Indicazioni terapeutiche non rimborsate': TextInput_IndicazioniNonRimborsate.Text;\n                'Posologia per ciascuna indicazione': TextInput_Posologia.Text;\n                'Regime di innovatività': TextInput_RegimeDiInnovativita.Text;\n                'Il farmaco è orfano?': Checkbox_FarmacoOrfanoSINO.Value;\n                'Regime di dispensazione': TextInput_RegimeDiDispensazione.Text;\n                MEA: Checkbox_MEA.Value;\n                'Sconto confidenziale': Checkbox_ScontoConfidenziale.Value;\n                Tetto: Checkbox_Tetto.Value;\n                'Clausole di salvaguardia': Checkbox_ClausoleSalvaguardia.Value;\n                'Rinuncia all''applicazione degli sconti di legge': Checkbox_RinunciaApplicazione.Value;\n                'Scadenza dello status di orfano': DatePicker1.SelectedDate    \n            }"
+                    "text": "{\n               Titolo: TextInput_NomeCommerciale_vecchio.Text;\n                'Principio attivo': TextInput_PrincipioAttivo_vecchio.Text;\n                AIC: TextInput_AIC_old.Text;\n                ATC: TextInput_ATC_vecchio.Text;\n                Confezioni: TextInput_Confezioni_old.Text;\n                'Prezzo Ex-Factory da G.U.': Value(TextInput_PrezzoExFactory_old.Text);\n                'Unità Galenica': Value(TextInput_UG_.Text);\n                'Canali distributivi': TextInput_CanaliDistributivi_old.Text;\n                Classe: 'TextInput_ClasseRegime-'.Text;\n                 'Condizioni negoziali - Altro': 'TextInput_CondizioniNegoziali-'.Text;\n               //'Regime di monitoraggio': Dropdown_RegMonit.SelectedText;\n            //    'Piano Terapeutico': TextInput_PianoTerapeutico.Text;\n                'Il farmaco è innovativo?': Checkbox_FarmacoInnovativo.Value;\n                 'Indicazioni per il quale il farmaco è orfano': TextInput_FarmacoOrfano.Text;\n                'Indicazioni terapeutiche rimborsate': 'TextInput_IndicazioniRimborsate-'.Text;\n                'Indicazioni terapeutiche non rimborsate': 'TextInput_IndicazioniNonRimborsate-'.Text;\n                'Posologia per ciascuna indicazione': 'TextInput_Posologia-'.Text;\n                'Regime di innovatività': TextInput_RegimeDiInnovativita.Text;\n                'Il farmaco è orfano?': Checkbox_FarmacoOrfanoSINO.Value;\n                'Regime di dispensazione': TextInput_RegimeDiDispensazione.Text;\n                MEA: Checkbox_MEA.Value;\n                'Sconto confidenziale': Checkbox_ScontoConfidenziale.Value;\n                Tetto: Checkbox_Tetto.Value;\n                'Clausole di salvaguardia': Checkbox_ClausoleSalvaguardia.Value;\n                'Rinuncia all''applicazione degli sconti di legge': Checkbox_RinunciaApplicazione.Value;\n                'Scadenza dello status di orfano': DatePicker1.SelectedDate    \n            }"
                   }
                 }
               },
@@ -1786,7 +3426,7 @@
                 },
                 "region": {
                   "charLength": 33,
-                  "charOffset": 2334,
+                  "charOffset": 2350,
                   "snippet": {
                     "text": "TextInput_NomeCommerciale_vecchio"
                   }
@@ -1826,7 +3466,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 2367,
+                  "charOffset": 2383,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -1866,7 +3506,7 @@
                 },
                 "region": {
                   "charLength": 33,
-                  "charOffset": 2410,
+                  "charOffset": 2426,
                   "snippet": {
                     "text": "TextInput_PrincipioAttivo_vecchio"
                   }
@@ -1906,7 +3546,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 2443,
+                  "charOffset": 2459,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -1946,7 +3586,7 @@
                 },
                 "region": {
                   "charLength": 17,
-                  "charOffset": 2471,
+                  "charOffset": 2487,
                   "snippet": {
                     "text": "TextInput_AIC_old"
                   }
@@ -1986,7 +3626,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 2488,
+                  "charOffset": 2504,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -2026,7 +3666,7 @@
                 },
                 "region": {
                   "charLength": 21,
-                  "charOffset": 2516,
+                  "charOffset": 2532,
                   "snippet": {
                     "text": "TextInput_ATC_vecchio"
                   }
@@ -2066,7 +3706,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 2537,
+                  "charOffset": 2553,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -2106,7 +3746,7 @@
                 },
                 "region": {
                   "charLength": 24,
-                  "charOffset": 2572,
+                  "charOffset": 2588,
                   "snippet": {
                     "text": "TextInput_Confezioni_old"
                   }
@@ -2146,7 +3786,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 2596,
+                  "charOffset": 2612,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -2186,7 +3826,7 @@
                 },
                 "region": {
                   "charLength": 29,
-                  "charOffset": 2654,
+                  "charOffset": 2670,
                   "snippet": {
                     "text": "TextInput_PrezzoExFactory_old"
                   }
@@ -2226,7 +3866,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 2683,
+                  "charOffset": 2699,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -2266,7 +3906,127 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 2648,
+                  "charOffset": 2664,
+                  "snippet": {
+                    "text": "Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Value"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 2747,
+                  "snippet": {
+                    "text": "TextInput_UG_"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "TextInput_UG_"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 2760,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 2741,
                   "snippet": {
                     "text": "Value"
                   }
@@ -2306,7 +4066,7 @@
                 },
                 "region": {
                   "charLength": 32,
-                  "charOffset": 2790,
+                  "charOffset": 2807,
                   "snippet": {
                     "text": "TextInput_CanaliDistributivi_old"
                   }
@@ -2346,7 +4106,407 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 2822,
+                  "charOffset": 2839,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 2870,
+                  "snippet": {
+                    "text": "'TextInput_ClasseRegime-'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "TextInput_ClasseRegime-"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 2895,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 32,
+                  "charOffset": 2951,
+                  "snippet": {
+                    "text": "'TextInput_CondizioniNegoziali-'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "TextInput_CondizioniNegoziali-"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 2983,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 34,
+                  "charOffset": 3365,
+                  "snippet": {
+                    "text": "'TextInput_IndicazioniRimborsate-'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "TextInput_IndicazioniRimborsate-"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 3399,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 37,
+                  "charOffset": 3465,
+                  "snippet": {
+                    "text": "'TextInput_IndicazioniNonRimborsate-'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "TextInput_IndicazioniNonRimborsate-"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 3502,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 3563,
+                  "snippet": {
+                    "text": "'TextInput_Posologia-'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.btnSaveFormNewEdit"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "TextInput_Posologia-"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.btnSaveFormNewEdit.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 3585,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -2386,7 +4546,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 2218,
+                  "charOffset": 2234,
                   "snippet": {
                     "text": "Patch"
                   }
@@ -2425,10 +4585,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1927,
-                  "charOffset": 2308,
+                  "charLength": 1943,
+                  "charOffset": 2324,
                   "snippet": {
-                    "text": "{\n                Titolo: TextInput_NomeCommerciale_vecchio.Text;\n                'Principio attivo': TextInput_PrincipioAttivo_vecchio.Text;\n                AIC: TextInput_AIC_old.Text;\n                ATC: TextInput_ATC_vecchio.Text;\n                Confezioni: TextInput_Confezioni_old.Text;\n                'Prezzo Ex-Factory da G.U.': Value(TextInput_PrezzoExFactory_old.Text);\n                'Unità Galenica': Value(TextInput_UG.Text);\n                'Canali distributivi': TextInput_CanaliDistributivi_old.Text;\n                Classe: TextInput_ClasseRegime.Text;\n                 'Condizioni negoziali - Altro': TextInput_CondizioniNegoziali.Text;\n               //'Regime di monitoraggio': Dropdown_RegMonit.SelectedText;\n            //    'Piano Terapeutico': TextInput_PianoTerapeutico.Text;\n                'Il farmaco è innovativo?': Checkbox_FarmacoInnovativo.Value;\n                 'Indicazioni per il quale il farmaco è orfano': TextInput_FarmacoOrfano.Text;\n                'Indicazioni terapeutiche rimborsate': TextInput_IndicazioniRimborsate.Text;\n                'Indicazioni terapeutiche non rimborsate': TextInput_IndicazioniNonRimborsate.Text;\n                'Posologia per ciascuna indicazione': TextInput_Posologia.Text;\n                'Regime di innovatività': TextInput_RegimeDiInnovativita.Text;\n                'Il farmaco è orfano?': Checkbox_FarmacoOrfanoSINO.Value;\n                'Regime di dispensazione': TextInput_RegimeDiDispensazione.Text;\n                MEA: Checkbox_MEA.Value;\n                'Sconto confidenziale': Checkbox_ScontoConfidenziale.Value;\n                Tetto: Checkbox_Tetto.Value;\n                'Clausole di salvaguardia': Checkbox_ClausoleSalvaguardia.Value;\n                'Rinuncia all''applicazione degli sconti di legge': Checkbox_RinunciaApplicazione.Value;\n                'Scadenza dello status di orfano': DatePicker1.SelectedDate    \n            }"
+                    "text": "{\n                Titolo: TextInput_NomeCommerciale_vecchio.Text;\n                'Principio attivo': TextInput_PrincipioAttivo_vecchio.Text;\n                AIC: TextInput_AIC_old.Text;\n                ATC: TextInput_ATC_vecchio.Text;\n                Confezioni: TextInput_Confezioni_old.Text;\n                'Prezzo Ex-Factory da G.U.': Value(TextInput_PrezzoExFactory_old.Text);\n                'Unità Galenica': Value(TextInput_UG_.Text);\n                'Canali distributivi': TextInput_CanaliDistributivi_old.Text;\n                Classe: 'TextInput_ClasseRegime-'.Text;\n                 'Condizioni negoziali - Altro': 'TextInput_CondizioniNegoziali-'.Text;\n               //'Regime di monitoraggio': Dropdown_RegMonit.SelectedText;\n            //    'Piano Terapeutico': TextInput_PianoTerapeutico.Text;\n                'Il farmaco è innovativo?': Checkbox_FarmacoInnovativo.Value;\n                 'Indicazioni per il quale il farmaco è orfano': TextInput_FarmacoOrfano.Text;\n                'Indicazioni terapeutiche rimborsate': 'TextInput_IndicazioniRimborsate-'.Text;\n                'Indicazioni terapeutiche non rimborsate': 'TextInput_IndicazioniNonRimborsate-'.Text;\n                'Posologia per ciascuna indicazione': 'TextInput_Posologia-'.Text;\n                'Regime di innovatività': TextInput_RegimeDiInnovativita.Text;\n                'Il farmaco è orfano?': Checkbox_FarmacoOrfanoSINO.Value;\n                'Regime di dispensazione': TextInput_RegimeDiDispensazione.Text;\n                MEA: Checkbox_MEA.Value;\n                'Sconto confidenziale': Checkbox_ScontoConfidenziale.Value;\n                Tetto: Checkbox_Tetto.Value;\n                'Clausole di salvaguardia': Checkbox_ClausoleSalvaguardia.Value;\n                'Rinuncia all''applicazione degli sconti di legge': Checkbox_RinunciaApplicazione.Value;\n                'Scadenza dello status di orfano': DatePicker1.SelectedDate    \n            }"
                   }
                 }
               },
@@ -3212,6 +5372,166 @@
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardKey19"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardKey19"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 13,
+                  "snippet": {
+                    "text": ".Y"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 18,
+                  "snippet": {
+                    "text": "DataCardKey19"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardKey19"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 31,
+                  "snippet": {
+                    "text": ".Height"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -11468,19 +13788,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG.AccessibleLabel"
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG.AccessibleLabel",
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Kit_Prodotto",
-                "type": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG"
+                "type": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate"
               }
             }
           ],
@@ -11528,19 +13848,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime.AccessibleLabel"
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime.AccessibleLabel",
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Kit_Prodotto",
-                "type": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime"
+                "type": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate"
               }
             }
           ],
@@ -11558,19 +13878,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali.AccessibleLabel"
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali.AccessibleLabel",
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Kit_Prodotto",
-                "type": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali"
+                "type": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia"
               }
             }
           ],
@@ -11618,6 +13938,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Kit_Prodotto",
+                "type": "Kit_Prodotto.Form2.CondizioniNegozialiEdit_DataCard.TextInput_CondizioniNegoziali"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Kit_Prodotto.Form2.PianoTerapeuticoEdit_DataCard.TextInput_PianoTerapeutico.AccessibleLabel"
                 }
               ],
@@ -11648,19 +13998,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate.AccessibleLabel"
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate.AccessibleLabel",
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Kit_Prodotto",
-                "type": "Kit_Prodotto.Form2.IndicazioniRimborsateEdit_DataCard.TextInput_IndicazioniRimborsate"
+                "type": "Kit_Prodotto.Form2.ClasseRegimeEdit_DataCard.TextInput_ClasseRegime"
               }
             }
           ],
@@ -11678,49 +14028,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate.AccessibleLabel"
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate.AccessibleLabel",
+                  "fullyQualifiedName": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Kit_Prodotto",
-                "type": "Kit_Prodotto.Form2.IndicazioniNonRimborsateEdit_DataCard.TextInput_IndicazioniNonRimborsate"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Kit_Prodotto",
-                "type": "Kit_Prodotto.Form2.PosologiaEdit_DataCard.TextInput_Posologia"
+                "type": "Kit_Prodotto.Form2.UGEdit_DataCard.TextInput_UG"
               }
             }
           ],

@@ -197,6 +197,8 @@ App As appinfo:
             varSaluto,
             "IT"
         );
+        
+        Set(varTypeKit, "")
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

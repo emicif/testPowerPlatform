@@ -33,6 +33,7 @@ Home_Prodotto As screen:
         Image: ='icona-KitProdotto'
         OnSelect: |-
             =//Set(AreaSelectedDocumentLibrary; AreaSelected);;
+            Set(varkitprodotti, true);
             Navigate(Kit_Prodotto)
         Width: =210
         X: =164
@@ -153,13 +154,6 @@ Home_Prodotto As screen:
         PressedFill: =Color.Transparent
         Text: =
         Width: =280
-        ZIndex: =20
-
-    Button6 As button:
-        OnSelect: =Navigate(Kit_Prodotto)
-        Text: ="Pulsante"
-        X: =171
-        Y: =203
         ZIndex: =21
 
     grpPDFview_1 As group:

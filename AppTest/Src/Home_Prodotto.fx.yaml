@@ -33,7 +33,6 @@ Home_Prodotto As screen:
         Image: ='icona-KitProdotto'
         OnSelect: |-
             =//Set(AreaSelectedDocumentLibrary; AreaSelected);;
-            Set(varkitprodotti, true);
             Navigate(Kit_Prodotto)
         Width: =210
         X: =164

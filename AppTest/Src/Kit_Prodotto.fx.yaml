@@ -15,8 +15,8 @@ Kit_Prodotto As screen:
             Notify("Il pulsante è stato cliccato", NotificationType.Information);
             
             Set(varTypeKit, "NewForm");
-            Set(varFormNew, true)
-            //NewForm(Form2)
+            Set(varFormNew, true);
+            NewForm(Form2)
             
         PaddingLeft: =25
         PaddingRight: =0
@@ -1241,8 +1241,8 @@ Kit_Prodotto As screen:
                     
                     Set(varFormNew, true);
                     Set(SelectedID, ThisItem.ID);
-                    Set(Selected, ThisItem)
-                    //EditForm(Form2)
+                    Set(Selected, ThisItem);
+                    EditForm(Form2)
                 Visible: =PermissionControlloCompleto
                 Width: =30
                 X: =990

@@ -58,6 +58,39 @@ Homepage As screen:
         Y: =212
         ZIndex: =5
 
+        ScadenzaOrfano_DataCard_1 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Scadenza dello status di orfano')
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =130
+            Width: =400
+            X: =2
+            Y: =13
+            ZIndex: =1
+
+            Intestazione_ScadenzaOrfano_1 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =42
+                Italic: =true
+                Text: =Parent.DisplayName
+                Width: =381
+                Wrap: =false
+                X: =3
+                ZIndex: =1
+
+            DatePicker1_2 As datepicker:
+                DefaultDate: |-
+                    =If(
+                        Form2_1.Mode = FormMode.Edit,
+                       Selected.Scadenzadellostatusdiorfano
+                    )
+                InputTextPlaceholder: =If(IsBlank(Self.SelectedDate), Text(Today(), Self.Format, Self.Language))
+                StartOfWeek: =StartOfWeek.Monday
+                X: =3
+                Y: =40
+                ZIndex: =2
+
         Titolo_DataCard3_1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
@@ -101,39 +134,6 @@ Homepage As screen:
                 X: =1
                 Y: =24
                 ZIndex: =3
-
-        ScadenzaOrfano_DataCard_1 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Scadenza dello status di orfano')
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =130
-            Width: =400
-            X: =2
-            Y: =13
-            ZIndex: =1
-
-            Intestazione_ScadenzaOrfano_1 As label:
-                FontWeight: =FontWeight.Bold
-                Height: =42
-                Italic: =true
-                Text: =Parent.DisplayName
-                Width: =381
-                Wrap: =false
-                X: =3
-                ZIndex: =1
-
-            DatePicker1_2 As datepicker:
-                DefaultDate: |-
-                    =If(
-                        Form2_1.Mode = FormMode.Edit,
-                       Selected.Scadenzadellostatusdiorfano
-                    )
-                InputTextPlaceholder: =If(IsBlank(Self.SelectedDate), Text(Today(), Self.Format, Self.Language))
-                StartOfWeek: =StartOfWeek.Monday
-                X: =3
-                Y: =40
-                ZIndex: =2
 
         RinunciaApplicazione_DataCard_1 As typedDataCard.blankCard:
             BorderStyle: =BorderStyle.Solid

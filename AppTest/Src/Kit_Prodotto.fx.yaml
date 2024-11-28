@@ -1355,6 +1355,12 @@ Kit_Prodotto As screen:
             Y: =212
             ZIndex: =30
 
+            Container2 As groupContainer.horizontalAutoLayoutContainer:
+                LayoutMode: =LayoutMode.Auto
+                Width: =423
+                Y: =2
+                ZIndex: =1
+
             RegMonitEdit_DataCard As typedDataCard.comboBoxEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Registrodimonitoraggio"
@@ -1366,8 +1372,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =Dropdown_RegMonit.Selected
                 Width: =423
-                X: =2
-                Y: =8
+                X: =1
+                Y: =5
                 ZIndex: =1
 
                 Intestazione_RegMonit_1 As label:
@@ -1410,8 +1416,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_PianoTerapeutico.Selected
                 Width: =423
-                X: =0
-                Y: =9
+                X: =2
+                Y: =5
                 ZIndex: =1
 
                 Intestazione_PianoTerapeutico_1 As label:
@@ -1452,8 +1458,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_IndicazioniRimborsate.Text
                 Width: =423
-                X: =1
-                Y: =9
+                X: =0
+                Y: =6
                 ZIndex: =1
 
                 TextInput_IndicazioniRimborsate As text:
@@ -1495,8 +1501,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_IndicazioniNonRimborsate.Text
                 Width: =423
-                X: =2
-                Y: =9
+                X: =1
+                Y: =6
                 ZIndex: =1
 
                 TextInput_IndicazioniNonRimborsate As text:
@@ -1539,8 +1545,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_Posologia.Text
                 Width: =423
-                X: =0
-                Y: =10
+                X: =2
+                Y: =6
                 ZIndex: =1
 
                 TextInput_Posologia As text:
@@ -1571,12 +1577,325 @@ Kit_Prodotto As screen:
                     Y: =16
                     ZIndex: =3
 
-            Container2 As groupContainer.horizontalAutoLayoutContainer:
-                LayoutMode: =LayoutMode.Auto
+            FarmacoInnovativoEdit_DataCard As typedDataCard.toggleEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Ilfarmaco_x00e8_innovativo_x003f"
+                Default: =ThisItem.'Il farmaco è innovativo?'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Ilfarmaco_x00e8_innovativo_x003f)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue21.Value
+                Width: =423
+                X: =0
+                Y: =7
+                ZIndex: =1
+
+                DataCardValue21 As toggleSwitch:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DisplayMode: =Parent.DisplayMode
+                    Tooltip: =Parent.DisplayName
+                    X: =30
+                    Y: =DataCardKey21.Y + DataCardKey21.Height + 5
+                    ZIndex: =2
+
+                Intestazione_FarmacoInnovativo_1 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =40
+                    Y: =16
+                    ZIndex: =3
+
+                Checkbox_FarmacoInnovativo As checkbox:
+                    Default: |-
+                        =If(
+                            Form2.Mode = FormMode.Edit,
+                           Selected.Ilfarmaco_x00e8_orfano_x003f_
+                        )
+                    Height: =40
+                    Text: =
+                    Width: =40
+                    X: =60
+                    Y: =10
+                    ZIndex: =4
+
+            RegimeInnovatività_DataCard As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Regimediinnovativit_x00e0_"
+                Default: =ThisItem.'Regime di innovatività'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Regimediinnovativit_x00e0_)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Beovu - Kit prodotto'], DataSourceInfo.MaxLength, Regimediinnovativit_x00e0_)
+                Required: =false
+                Update: =TextInput_RegimeDiInnovativita.Text
                 Width: =423
                 X: =1
-                Y: =5
+                Y: =7
                 ZIndex: =1
+
+                TextInput_RegimeDiInnovativita As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey22.Y + DataCardKey22.Height + 5
+                    ZIndex: =2
+
+                Intestazione_RegimeDiInnovativita_1 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    Y: =16
+                    ZIndex: =3
+
+            FarmacoOrfanoSINO_DataCard As typedDataCard.toggleEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Ilfarmaco_x00e8_orfano_x003f_"
+                Default: =ThisItem.'Il farmaco è orfano?'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Ilfarmaco_x00e8_orfano_x003f_)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue23.Value
+                Width: =423
+                X: =2
+                Y: =7
+                ZIndex: =1
+
+                DataCardValue23 As toggleSwitch:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DisplayMode: =Parent.DisplayMode
+                    Tooltip: =Parent.DisplayName
+                    X: =30
+                    Y: =DataCardKey23.Y + DataCardKey23.Height + 5
+                    ZIndex: =2
+
+                Intestazione_FarmacoOrfanoSINO_1 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =42
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =230
+                    Wrap: =false
+                    X: =40
+                    Y: =8
+                    ZIndex: =3
+
+                Checkbox_FarmacoOrfanoSINO As checkbox:
+                    Default: |-
+                        =If(
+                            Form2.Mode = FormMode.Edit,
+                           Selected.Ilfarmaco_x00e8_orfano_x003f_
+                        )
+                    Text: =
+                    Width: =56
+                    X: =60
+                    Y: =40
+                    ZIndex: =4
+
+            FarmacoOrfanoEdit_DataCard As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Indicazioniperilqualeilfarmaco_x"
+                Default: =ThisItem.'Indicazioni per il quale il farmaco è orfano'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Indicazioniperilqualeilfarmaco_x)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Beovu - Kit prodotto'], DataSourceInfo.MaxLength, Indicazioniperilqualeilfarmaco_x)
+                Required: =false
+                Update: =TextInput_FarmacoOrfano.Text
+                Width: =423
+                X: =0
+                Y: =8
+                ZIndex: =1
+
+                TextInput_FarmacoOrfano As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey24.Y + DataCardKey24.Height + 5
+                    ZIndex: =2
+
+                Intestazione_FarmacoOrfano_1 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =1
+                    Y: =40
+                    ZIndex: =3
+
+            RegimeDiDispensazioneEdit_DataCard As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Regimedidispensazione"
+                Default: =ThisItem.'Regime di dispensazione'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Regimedidispensazione)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Beovu - Kit prodotto'], DataSourceInfo.MaxLength, Regimedidispensazione)
+                Required: =false
+                Update: =TextInput_RegimeDiDispensazione.Text
+                Width: =423
+                X: =1
+                Y: =8
+                ZIndex: =1
+
+                TextInput_RegimeDiDispensazione As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey25.Y + DataCardKey25.Height + 5
+                    ZIndex: =2
+
+                Intestazione_RegimeDiDispensazione_1 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =2
+                    Y: =40
+                    ZIndex: =3
+
+            MEAEdit_DataCard As typedDataCard.toggleEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="MEA"
+                Default: =ThisItem.MEA
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,MEA)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue26.Value
+                Width: =423
+                X: =2
+                Y: =8
+                ZIndex: =1
+
+                DataCardValue26 As toggleSwitch:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DisplayMode: =Parent.DisplayMode
+                    Tooltip: =Parent.DisplayName
+                    X: =30
+                    Y: =DataCardKey26.Y + DataCardKey26.Height + 5
+                    ZIndex: =2
+
+                Intestazione_MEA_1 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
+                    Italic: =true
+                    PaddingBottom: =0
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =40
+                    Y: =8
+                    ZIndex: =3
+
+                Checkbox_MEA As checkbox:
+                    Default: |-
+                        =If(
+                            Form2.Mode = FormMode.Edit,
+                           Selected.MEA
+                        )
+                    Text: =
+                    Width: =56
+                    X: =100
+                    ZIndex: =4
+
+            ScontoConfidenzialeEdit_DataCard As typedDataCard.toggleEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Scontoconfidenziale"
+                Default: =ThisItem.'Sconto confidenziale'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Scontoconfidenziale)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue27.Value
+                Width: =423
+                X: =0
+                Y: =9
+                ZIndex: =1
+
+                DataCardValue27 As toggleSwitch:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DisplayMode: =Parent.DisplayMode
+                    Tooltip: =Parent.DisplayName
+                    X: =30
+                    Y: =DataCardKey27.Y + DataCardKey27.Height + 5
+                    ZIndex: =2
+
+                Intestazione_ScontoConfidenziale_1 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
+                    Height: =34
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =180
+                    Wrap: =false
+                    X: =40
+                    Y: =8
+                    ZIndex: =3
+
+                Checkbox_ScontoConfidenziale As checkbox:
+                    Default: |-
+                        =If(
+                            Form2.Mode = FormMode.Edit,
+                           Selected.Scontoconfidenziale
+                        )
+                    Text: =
+                    Width: =56
+                    X: =220
+                    ZIndex: =4
 
             CondizioniNegozialiEdit_DataCard As typedDataCard.textualEditCard:
                 BorderStyle: =BorderStyle.Solid
@@ -1590,8 +1909,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_CondizioniNegoziali.Text
                 Width: =423
-                X: =1
-                Y: =8
+                X: =0
+                Y: =5
                 ZIndex: =2
 
                 Intestazione_CondizioniNegoziali_1 As label:
@@ -1634,8 +1953,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_ClasseRegime.Text
                 Width: =423
-                X: =0
-                Y: =8
+                X: =2
+                Y: =4
                 ZIndex: =3
 
                 Intestazione_ClasseRegime_1 As label:
@@ -1677,8 +1996,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =Value(TextInput_UG.Text)
                 Width: =423
-                X: =2
-                Y: =7
+                X: =1
+                Y: =4
                 ZIndex: =4
 
                 Intestazione_UG_1 As label:
@@ -1720,8 +2039,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =Value(TextInput_PrezzoExFactory.Text)
                 Width: =423
-                X: =1
-                Y: =7
+                X: =0
+                Y: =4
                 ZIndex: =5
 
                 Intestazione_PrezzoExFactory_1 As label:
@@ -1764,8 +2083,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_CanaliDistributivi.Text
                 Width: =423
-                X: =0
-                Y: =7
+                X: =2
+                Y: =3
                 ZIndex: =6
 
                 Intestazione_CanaliDistributivi_1 As label:
@@ -1808,8 +2127,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_Confezioni.Text
                 Width: =423
-                X: =2
-                Y: =6
+                X: =1
+                Y: =3
                 ZIndex: =7
 
                 Intestazione_Confezioni_1 As label:
@@ -1852,8 +2171,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_AIC.Text
                 Width: =423
-                X: =1
-                Y: =6
+                X: =0
+                Y: =3
                 ZIndex: =8
 
                 Intestazione_AIC_1 As label:
@@ -1895,8 +2214,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_ATC.Text
                 Width: =423
-                X: =0
-                Y: =6
+                X: =2
+                Y: =2
                 ZIndex: =9
 
                 TextInput_ATC As text:
@@ -1939,8 +2258,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_PrincipioAttivo.Text
                 Width: =309
-                X: =2
-                Y: =5
+                X: =1
+                Y: =2
                 ZIndex: =10
 
                 Intestazione_PrincipioAttivo_1 As label:
@@ -1982,8 +2301,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_NomeCommerciale.Text
                 Width: =309
-                X: =0
-                Y: =5
+                X: =2
+                Y: =1
                 ZIndex: =11
 
                 TextInput_NomeCommerciale As text:
@@ -2021,8 +2340,8 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =130
                 Width: =400
-                X: =2
-                Y: =4
+                X: =1
+                Y: =1
                 ZIndex: =12
 
                 Intestazione_ScadenzaOrfano As label:
@@ -2054,8 +2373,8 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =100
                 Width: =500
-                X: =1
-                Y: =4
+                X: =0
+                Y: =1
                 ZIndex: =13
 
                 Intestazione_RinunciaApplicazione_1 As label:
@@ -2087,8 +2406,8 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =100
                 Width: =280
-                X: =2
-                Y: =3
+                X: =1
+                Y: =0
                 ZIndex: =14
 
                 Intestazione_Tetto_2 As label:
@@ -2121,8 +2440,8 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =100
                 Width: =250
-                X: =0
-                Y: =4
+                X: =2
+                Y: =0
                 ZIndex: =15
 
                 Intestazione_Tetto_1 As label:
@@ -2147,7 +2466,7 @@ Kit_Prodotto As screen:
                     X: =60
                     ZIndex: =2
 
-            ScontoConfidenzialeEdit_DataCard As typedDataCard.blankCard:
+            "'ScontoConfidenzialeEdit_DataCard-old' As typedDataCard.blankCard":
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
                 DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Sconto confidenziale')
@@ -2155,229 +2474,8 @@ Kit_Prodotto As screen:
                 Height: =100
                 Width: =340
                 X: =0
-                Y: =3
+                Y: =0
                 ZIndex: =16
-
-                Intestazione_ScontoConfidenziale_1 As label:
-                    AutoHeight: =true
-                    FontWeight: =FontWeight.Bold
-                    Height: =34
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =180
-                    Wrap: =false
-                    Y: =8
-                    ZIndex: =1
-
-                Checkbox_ScontoConfidenziale As checkbox:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                           Selected.Scontoconfidenziale
-                        )
-                    Text: =
-                    Width: =56
-                    X: =180
-                    ZIndex: =2
-
-            MEAEdit_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, MEA)
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =100
-                Width: =300
-                X: =1
-                Y: =3
-                ZIndex: =17
-
-                Intestazione_MEA_1 As label:
-                    AutoHeight: =true
-                    FontWeight: =FontWeight.Bold
-                    Italic: =true
-                    PaddingBottom: =0
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =16
-                    Y: =8
-                    ZIndex: =1
-
-                Checkbox_MEA As checkbox:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                           Selected.MEA
-                        )
-                    Text: =
-                    Width: =56
-                    X: =76
-                    ZIndex: =3
-
-            RegimeDiDispensazioneEdit_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Regime di dispensazione')
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =150
-                Width: =1220
-                X: =0
-                Y: =2
-                ZIndex: =18
-
-                Intestazione_RegimeDiDispensazione_1 As label:
-                    AutoHeight: =true
-                    FontWeight: =FontWeight.Bold
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =2
-                    Y: =2
-                    ZIndex: =1
-
-                TextInput_RegimeDiDispensazione As text:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                           Selected.Regimedidispensazione
-                        )
-                    Width: =1200
-                    X: =2
-                    Y: =40
-                    ZIndex: =2
-
-            FarmacoOrfanoEdit_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Indicazioni per il quale il farmaco è orfano')
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =110
-                Width: =820
-                X: =1
-                Y: =1
-                ZIndex: =19
-
-                Intestazione_FarmacoOrfano_1 As label:
-                    AutoHeight: =true
-                    FontWeight: =FontWeight.Bold
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =1
-                    ZIndex: =1
-
-                TextInput_FarmacoOrfano As text:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                           Selected.Indicazioniperilqualeilfarmaco_x
-                        )
-                    PaddingBottom: =0
-                    Width: =810
-                    X: =1
-                    Y: =40
-                    ZIndex: =2
-
-            FarmacoOrfanoSINO_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Il farmaco è orfano?')
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =130
-                Width: =400
-                X: =0
-                Y: =1
-                ZIndex: =20
-
-                Intestazione_FarmacoOrfanoSINO_1 As label:
-                    FontWeight: =FontWeight.Bold
-                    Height: =42
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =230
-                    Wrap: =false
-                    Y: =40
-                    ZIndex: =1
-
-                Checkbox_FarmacoOrfanoSINO As checkbox:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                           Selected.Ilfarmaco_x00e8_orfano_x003f_
-                        )
-                    Text: =
-                    Width: =56
-                    X: =230
-                    Y: =40
-                    ZIndex: =2
-
-            RegimeInnovatività_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Regime di innovatività')
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =110
-                Width: =820
-                X: =1
-                Y: =0
-                ZIndex: =21
-
-                Intestazione_RegimeDiInnovativita_1 As label:
-                    AutoHeight: =true
-                    FontWeight: =FontWeight.Bold
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    ZIndex: =1
-
-                TextInput_RegimeDiInnovativita As text:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                           Selected.Regimediinnovativit_x00e0_
-                        )
-                    PaddingBottom: =0
-                    Width: =810
-                    Y: =40
-                    ZIndex: =2
-
-            FarmacoInnovativoEdit_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Il farmaco è innovativo?')
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =130
-                Width: =400
-                X: =0
-                Y: =0
-                ZIndex: =22
-
-                Intestazione_FarmacoInnovativo_1 As label:
-                    AutoHeight: =true
-                    FontWeight: =FontWeight.Bold
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =6
-                    Y: =40
-                    ZIndex: =1
-
-                Checkbox_FarmacoInnovativo As checkbox:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                           Selected.Ilfarmaco_x00e8_orfano_x003f_
-                        )
-                    Height: =40
-                    Text: =
-                    Width: =40
-                    X: =224
-                    Y: =40
-                    ZIndex: =3
 
         btnSaveFormNewEdit As button:
             Height: =39
@@ -2404,13 +2502,13 @@ Kit_Prodotto As screen:
                                //'Regime di monitoraggio': Dropdown_RegMonit.SelectedText;
                             //    'Piano Terapeutico': TextInput_PianoTerapeutico.Text;
                                 'Il farmaco è innovativo?': Checkbox_FarmacoInnovativo.Value,
-                                 'Indicazioni per il quale il farmaco è orfano': TextInput_FarmacoOrfano.Text,
+                                 'Indicazioni per il quale il farmaco è orfano': 'TextInput_FarmacoOrfano-'.Text,
                                 'Indicazioni terapeutiche rimborsate': 'TextInput_IndicazioniRimborsate-'.Text,
                                 'Indicazioni terapeutiche non rimborsate': 'TextInput_IndicazioniNonRimborsate-'.Text,
                                 'Posologia per ciascuna indicazione': 'TextInput_Posologia-'.Text,
-                                'Regime di innovatività': TextInput_RegimeDiInnovativita.Text,
+                                'Regime di innovatività': 'TextInput_RegimeDiInnovativita-'.Text,
                                 'Il farmaco è orfano?': Checkbox_FarmacoOrfanoSINO.Value,
-                                'Regime di dispensazione': TextInput_RegimeDiDispensazione.Text,
+                                'Regime di dispensazione': 'TextInput_RegimeDiDispensazione-'.Text,
                                 MEA: Checkbox_MEA.Value,
                                 'Sconto confidenziale': Checkbox_ScontoConfidenziale.Value,
                                 Tetto: Checkbox_Tetto.Value,
@@ -2438,13 +2536,13 @@ Kit_Prodotto As screen:
                                //'Regime di monitoraggio': Dropdown_RegMonit.SelectedText;
                             //    'Piano Terapeutico': TextInput_PianoTerapeutico.Text;
                                 'Il farmaco è innovativo?': Checkbox_FarmacoInnovativo.Value,
-                                 'Indicazioni per il quale il farmaco è orfano': TextInput_FarmacoOrfano.Text,
+                                 'Indicazioni per il quale il farmaco è orfano': 'TextInput_FarmacoOrfano-'.Text,
                                 'Indicazioni terapeutiche rimborsate': 'TextInput_IndicazioniRimborsate-'.Text,
                                 'Indicazioni terapeutiche non rimborsate': 'TextInput_IndicazioniNonRimborsate-'.Text,
                                 'Posologia per ciascuna indicazione': 'TextInput_Posologia-'.Text,
-                                'Regime di innovatività': TextInput_RegimeDiInnovativita.Text,
+                                'Regime di innovatività': 'TextInput_RegimeDiInnovativita-'.Text,
                                 'Il farmaco è orfano?': Checkbox_FarmacoOrfanoSINO.Value,
-                                'Regime di dispensazione': TextInput_RegimeDiDispensazione.Text,
+                                'Regime di dispensazione': 'TextInput_RegimeDiDispensazione-'.Text,
                                 MEA: Checkbox_MEA.Value,
                                 'Sconto confidenziale': Checkbox_ScontoConfidenziale.Value,
                                 Tetto: Checkbox_Tetto.Value,

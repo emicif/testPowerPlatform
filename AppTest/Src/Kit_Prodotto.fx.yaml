@@ -12,11 +12,12 @@ Kit_Prodotto As screen:
                 "Beovu"; 'Beovu - Kit prodotto'
              //  "Kymriah"; 'Kymriah - Kit Prodotto'
             );;*/
-            Notify("Il pulsante è stato cliccato", NotificationType.Information);
             
             Set(varTypeKit, "NewForm");
+            Notify(varTypeKit, NotificationType.Information);
+            
             Set(varFormNew, true);
-            NewForm(Form2)
+            //NewForm(Form2)
             
         PaddingLeft: =25
         PaddingRight: =0
@@ -1123,11 +1124,13 @@ Kit_Prodotto As screen:
             Fill: =RGBA(255, 255, 255, 255)
             Height: =393
             Items: |
-                =Switch(
-                    areaSelected,
-                    "Beovu", 'Beovu - Kit prodotto'
+                =/*Switch(
+                    areaSelected;
+                    "Beovu"; 'Beovu - Kit prodotto'
                   //  "Kymriah"; 'Kymriah - Kit Prodotto'
-                )
+                )*/
+                
+                'Beovu - Kit prodotto'
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -1236,13 +1239,14 @@ Kit_Prodotto As screen:
             Image35 As image:
                 Height: =28
                 Image: ='icon-edit'
-                OnSelect: |-
+                OnSelect: |
                     =Set(varTypeKit, "EditForm");
                     
                     Set(varFormNew, true);
                     Set(SelectedID, ThisItem.ID);
                     Set(Selected, ThisItem);
-                    EditForm(Form2)
+                    EditForm(Form2);
+                    Notify(varTypeKit, NotificationType.Information);
                 Visible: =PermissionControlloCompleto
                 Width: =30
                 X: =990
@@ -1341,7 +1345,8 @@ Kit_Prodotto As screen:
                     FormMode.Edit
                 )
             Height: =402
-            Item: =glryKitProdotto.Selected
+            Item: |
+                =glryKitProdotto.Selected
             Visible: =varFormNew
             Width: =1270
             X: =47
@@ -2450,9 +2455,12 @@ Kit_Prodotto As screen:
         Image23_2 As image:
             Height: =21
             Image: ='icona-X'
-            OnSelect: |-
-                =Set(varFormNew, false);
-                ResetForm(Form2)
+            OnSelect: |+
+                =Set(varTypeKit, "");
+                Set(varFormNew, false);
+                ResetForm(Form2);
+                Notify(varTypeKit, NotificationType.Information)
+                
             Visible: =varFormNew
             Width: =30
             X: =1267

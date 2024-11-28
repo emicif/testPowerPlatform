@@ -14,8 +14,9 @@ Kit_Prodotto As screen:
             );;*/
             Notify("Il pulsante è stato cliccato", NotificationType.Information);
             
-            Set(varFormNew, true);
-            NewForm(Form2)
+            Set(varTypeKit, "NewForm");
+            Set(varFormNew, true)
+            //NewForm(Form2)
             
         PaddingLeft: =25
         PaddingRight: =0
@@ -1236,10 +1237,12 @@ Kit_Prodotto As screen:
                 Height: =28
                 Image: ='icon-edit'
                 OnSelect: |-
-                    =Set(varFormNew, true);
+                    =Set(varTypeKit, "EditForm");
+                    
+                    Set(varFormNew, true);
                     Set(SelectedID, ThisItem.ID);
-                    Set(Selected, ThisItem);
-                    EditForm(Form2)
+                    Set(Selected, ThisItem)
+                    //EditForm(Form2)
                 Visible: =PermissionControlloCompleto
                 Width: =30
                 X: =990
@@ -1332,7 +1335,11 @@ Kit_Prodotto As screen:
                    // "Kymriah"; 'Kymriah - Kit Prodotto'
                 )
                 */
-            DefaultMode: =FormMode.New
+            DefaultMode: |-
+                =If(varTypeKit = "FormNew",
+                    FormMode.New,
+                    FormMode.Edit
+                )
             Height: =402
             Item: =glryKitProdotto.Selected
             Visible: =varFormNew

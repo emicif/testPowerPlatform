@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |
+    OnStart: |+
         =Set(
             textColorBlu,
             ColorValue("#002068")
@@ -61,7 +61,7 @@ App As appinfo:
         Set(
             PermissionPoliticheRegionali,
             If(
-               IsBlank(userGroups) && ("APM" in userGroups || "Area Politiche Regionali" in userGroups || "Proprietari di Share-VAlue" in userGroups),
+               !IsBlank(userGroups) && ("APM" in userGroups|| "Area Politiche Regionali" in userGroups || "Proprietari di Share-VAlue" in userGroups),
                 true,
                 false
             )
@@ -199,6 +199,7 @@ App As appinfo:
         );
         
         Set(varTypeKit, "FormNew")
+        
     StartScreen: =
     Theme: =PowerAppsTheme
 

@@ -15,7 +15,6 @@ Kit_Prodotto As screen:
             
             Set(varTypeKit, "FormNew");
             //Notify(varTypeKit; NotificationType.Information);;
-            
             Set(varFormNew, true);
             //NewForm(Form2)
             
@@ -26,9 +25,8 @@ Kit_Prodotto As screen:
         RadiusTopLeft: =20
         RadiusTopRight: =20
         Text: ="Nuovo"
-        Visible: |-
-            =//PermissionControlloCompleto
-            true
+        Visible: |
+            =PermissionControlloCompleto
         Width: =141
         X: =1106
         Y: =154
@@ -1245,14 +1243,13 @@ Kit_Prodotto As screen:
                 Image: ='icon-edit'
                 OnSelect: |-
                     =Set(varTypeKit, "FormEdit");
-                    
                     Set(varFormNew, true);
                     Set(SelectedID, ThisItem.ID);
                     Set(Selected, ThisItem);
                     //EditForm(Form2)
-                Visible: |
-                    =//PermissionControlloCompleto
-                    true
+                Visible: |+
+                    =PermissionControlloCompleto
+                    
                 Width: =30
                 X: =990
                 Y: =19
@@ -1358,6 +1355,311 @@ Kit_Prodotto As screen:
             Y: =212
             ZIndex: =30
 
+            PrincipioAttivoEdit_DataCard As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Principioattivo"
+                Default: =ThisItem.'Principio attivo'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Principioattivo)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Beovu - Kit prodotto'], DataSourceInfo.MaxLength, Principioattivo)
+                Required: =false
+                Update: =TextInput_PrincipioAttivo.Text
+                Width: =309
+                X: =2
+                Y: =11
+                ZIndex: =1
+
+                Intestazione_PrincipioAttivo_1 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =40
+                    Y: =40
+                    ZIndex: =1
+
+                TextInput_PrincipioAttivo As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    ZIndex: =2
+
+            ATCEdit_DataCard As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ATC"
+                Default: =ThisItem.ATC
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,ATC)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Beovu - Kit prodotto'], DataSourceInfo.MaxLength, ATC)
+                Required: =false
+                Update: =TextInput_ATC.Text
+                Width: =423
+                X: =0
+                Y: =12
+                ZIndex: =1
+
+                TextInput_ATC As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                    ZIndex: =2
+
+                Intestazione_ATC_1 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =40
+                    Y: =40
+                    ZIndex: =3
+
+            AICEdit_DataCard As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="AIC"
+                Default: =ThisItem.AIC
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,AIC)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Beovu - Kit prodotto'], DataSourceInfo.MaxLength, AIC)
+                Required: =false
+                Update: =TextInput_AIC.Text
+                Width: =423
+                X: =1
+                Y: =12
+                ZIndex: =1
+
+                Intestazione_AIC_1 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =40
+                    Y: =40
+                    ZIndex: =1
+
+                TextInput_AIC As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    ZIndex: =2
+
+            ConfezioniEdit_DataCard As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Confezioni"
+                Default: =ThisItem.Confezioni
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Confezioni)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Beovu - Kit prodotto'], DataSourceInfo.MaxLength, Confezioni)
+                Required: =false
+                Update: =TextInput_Confezioni.Text
+                Width: =423
+                X: =2
+                Y: =12
+                ZIndex: =1
+
+                Intestazione_Confezioni_1 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =3
+                    Y: =40
+                    ZIndex: =1
+
+                TextInput_Confezioni As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey10.Y + DataCardKey10.Height + 5
+                    ZIndex: =2
+
+            CanaliDistributiviEdit_DataCard As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Canalidistributivi"
+                Default: =ThisItem.'Canali distributivi'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Canalidistributivi)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Beovu - Kit prodotto'], DataSourceInfo.MaxLength, Canalidistributivi)
+                Required: =false
+                Update: =TextInput_CanaliDistributivi.Text
+                Width: =423
+                X: =0
+                Y: =13
+                ZIndex: =1
+
+                Intestazione_CanaliDistributivi_1 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =40
+                    Y: =16
+                    ZIndex: =1
+
+                TextInput_CanaliDistributivi As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                    ZIndex: =2
+
+            PrezzoExFactoryEdit_DataCard As typedDataCard.numberEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="PrezzoEx_x002d_FactorydaG_x002e_"
+                Default: =ThisItem.'Prezzo Ex-Factory da G.U.'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,PrezzoEx_x002d_FactorydaG_x002e_)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =Value(TextInput_PrezzoExFactory.Text)
+                Width: =423
+                X: =1
+                Y: =13
+                ZIndex: =1
+
+                Intestazione_PrezzoExFactory_1 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =40
+                    Y: =10
+                    ZIndex: =1
+
+                TextInput_PrezzoExFactory As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Format: =TextFormat.Number
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey12.Y + DataCardKey12.Height + 5
+                    ZIndex: =2
+
+            NomeCommercialeEdit_DataCard As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Title"
+                Default: =ThisItem.Titolo
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Title)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =120
+                MaxLength: =DataSourceInfo([@'Beovu - Kit prodotto'], DataSourceInfo.MaxLength, Title)
+                Required: =false
+                Update: =TextInput_NomeCommerciale.Text
+                Width: =309
+                X: =0
+                Y: =11
+                ZIndex: =1
+
+                TextInput_NomeCommerciale As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =
+                    ZIndex: =2
+
+                Intestazione_NomeCommerciale_1 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =1
+                    Y: =24
+                    ZIndex: =3
+
             ScadenzaOrfano_DataCard As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
@@ -1365,8 +1667,8 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =130
                 Width: =400
-                X: =600
-                Y: =1678
+                X: =2
+                Y: =10
                 ZIndex: =1
 
                 Intestazione_ScadenzaOrfano As label:
@@ -1398,8 +1700,8 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =100
                 Width: =500
-                X: =2
-                Y: =12
+                X: =1
+                Y: =10
                 ZIndex: =2
 
                 Intestazione_RinunciaApplicazione_1 As label:
@@ -1431,8 +1733,8 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =100
                 Width: =280
-                X: =1
-                Y: =12
+                X: =2
+                Y: =9
                 ZIndex: =3
 
                 Intestazione_Tetto_2 As label:
@@ -1465,8 +1767,8 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =100
                 Width: =250
-                X: =1
-                Y: =12
+                X: =0
+                Y: =10
                 ZIndex: =4
 
                 Intestazione_Tetto_1 As label:
@@ -1499,7 +1801,7 @@ Kit_Prodotto As screen:
                 Height: =100
                 Width: =340
                 X: =0
-                Y: =12
+                Y: =9
                 ZIndex: =5
 
                 Intestazione_ScontoConfidenziale_1 As label:
@@ -1531,8 +1833,8 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =100
                 Width: =300
-                X: =0
-                Y: =12
+                X: =1
+                Y: =9
                 ZIndex: =6
 
                 Intestazione_MEA_1 As label:
@@ -1566,7 +1868,7 @@ Kit_Prodotto As screen:
                 Height: =150
                 Width: =1220
                 X: =0
-                Y: =11
+                Y: =8
                 ZIndex: =7
 
                 Intestazione_RegimeDiDispensazione_1 As label:
@@ -1599,7 +1901,7 @@ Kit_Prodotto As screen:
                 Height: =110
                 Width: =820
                 X: =1
-                Y: =10
+                Y: =7
                 ZIndex: =8
 
                 Intestazione_FarmacoOrfano_1 As label:
@@ -1632,7 +1934,7 @@ Kit_Prodotto As screen:
                 Height: =130
                 Width: =400
                 X: =0
-                Y: =10
+                Y: =7
                 ZIndex: =9
 
                 Intestazione_FarmacoOrfanoSINO_1 As label:
@@ -1665,7 +1967,7 @@ Kit_Prodotto As screen:
                 Height: =110
                 Width: =820
                 X: =1
-                Y: =9
+                Y: =6
                 ZIndex: =10
 
                 Intestazione_RegimeDiInnovativita_1 As label:
@@ -1696,7 +1998,7 @@ Kit_Prodotto As screen:
                 Height: =130
                 Width: =400
                 X: =0
-                Y: =9
+                Y: =6
                 ZIndex: =11
 
                 Intestazione_FarmacoInnovativo_1 As label:
@@ -1731,7 +2033,7 @@ Kit_Prodotto As screen:
                 Height: =140
                 Width: =1230
                 X: =0
-                Y: =8
+                Y: =5
                 ZIndex: =12
 
                 Intestazione_Posologia_1 As label:
@@ -1766,7 +2068,7 @@ Kit_Prodotto As screen:
                 Height: =140
                 Width: =1230
                 X: =0
-                Y: =7
+                Y: =4
                 ZIndex: =13
 
                 Intestazione_IndicazioniNonRimborsate_1 As label:
@@ -1801,7 +2103,7 @@ Kit_Prodotto As screen:
                 Height: =140
                 Width: =1220
                 X: =0
-                Y: =6
+                Y: =3
                 ZIndex: =14
 
                 TextInput_IndicazioniRimborsate As text:
@@ -1836,7 +2138,7 @@ Kit_Prodotto As screen:
                 Height: =120
                 Width: =1220
                 X: =0
-                Y: =5
+                Y: =2
                 ZIndex: =15
 
                 Intestazione_PianoTerapeutico_1 As label:
@@ -1868,8 +2170,8 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =380
-                X: =2
-                Y: =4
+                X: =0
+                Y: =1
                 ZIndex: =16
 
                 Intestazione_RegMonit_1 As label:
@@ -1897,8 +2199,8 @@ Kit_Prodotto As screen:
             Container2 As groupContainer.horizontalAutoLayoutContainer:
                 LayoutMode: =LayoutMode.Auto
                 Width: =423
-                X: =601
-                Y: =1678
+                X: =1
+                Y: =11
                 ZIndex: =17
 
             CondizioniNegozialiEdit_DataCard As typedDataCard.blankCard:
@@ -1908,8 +2210,8 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =423
-                X: =1
-                Y: =4
+                X: =2
+                Y: =0
                 ZIndex: =18
 
                 Intestazione_CondizioniNegoziali_1 As label:
@@ -1941,8 +2243,8 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =423
-                X: =0
-                Y: =4
+                X: =1
+                Y: =0
                 ZIndex: =19
 
                 Intestazione_ClasseRegime_1 As label:
@@ -1975,8 +2277,8 @@ Kit_Prodotto As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 Width: =400
-                X: =2
-                Y: =3
+                X: =0
+                Y: =0
                 ZIndex: =20
 
                 Intestazione_UG_1 As label:
@@ -2006,256 +2308,6 @@ Kit_Prodotto As screen:
                     Y: =40
                     ZIndex: =2
 
-            PrezzoExFactoryEdit_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                BorderThickness: =0
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,PrezzoEx_x002d_FactorydaG_x002e_)
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =120
-                Visible: |-
-                    =//true
-                    false
-                Width: =410
-                X: =1
-                Y: =3
-                ZIndex: =21
-
-                Intestazione_PrezzoExFactory_1 As label:
-                    AutoHeight: =true
-                    FontWeight: =FontWeight.Bold
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =2
-                    ZIndex: =1
-
-                TextInput_PrezzoExFactory As text:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                           Selected.PrezzoEx_x002d_FactorydaG_x002e_
-                        )
-                    Format: =TextFormat.Number
-                    PaddingBottom: =0
-                    PaddingTop: =0
-                    Width: =385
-                    X: =1
-                    Y: =40
-                    ZIndex: =2
-
-            CanaliDistributiviEdit_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                BorderThickness: =0
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Canali distributivi')
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =120
-                Width: =423
-                X: =0
-                Y: =3
-                ZIndex: =22
-
-                Intestazione_CanaliDistributivi_1 As label:
-                    AutoHeight: =true
-                    FontWeight: =FontWeight.Bold
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =2
-                    Y: =1
-                    ZIndex: =1
-
-                TextInput_CanaliDistributivi As text:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                           Selected.Canalidistributivi
-                        )
-                    PaddingBottom: =0
-                    PaddingTop: =0
-                    Width: =385
-                    X: =1
-                    Y: =40
-                    ZIndex: =2
-
-            ConfezioniEdit_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                DataField: =""
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Confezioni)
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =140
-                Width: =1269
-                X: =0
-                Y: =2
-                ZIndex: =23
-
-                Intestazione_Confezioni_1 As label:
-                    AutoHeight: =true
-                    FontWeight: =FontWeight.Bold
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =3
-                    ZIndex: =1
-
-                TextInput_Confezioni As text:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                            Selected.Confezioni
-                        )
-                    Height: =71
-                    Mode: =TextMode.MultiLine
-                    PaddingBottom: =0
-                    PaddingTop: =0
-                    Width: =1210
-                    X: =2
-                    Y: =40
-                    ZIndex: =2
-
-            AICEdit_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                DataField: =""
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,AIC)
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =110
-                Width: =309
-                X: =930
-                Y: =0
-                ZIndex: =24
-
-                Intestazione_AIC_1 As label:
-                    AutoHeight: =true
-                    FontWeight: =FontWeight.Bold
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =1
-                    Y: =24
-                    ZIndex: =1
-
-                TextInput_AIC As text:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                            Selected.AIC
-                        )
-                    Width: =280
-                    X: =3
-                    Y: =66
-                    ZIndex: =2
-
-            ATCEdit_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                DataField: =""
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,ATC)
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =110
-                Width: =309
-                X: =618
-                Y: =0
-                ZIndex: =25
-
-                Intestazione_ATC_1 As label:
-                    AutoHeight: =true
-                    FontWeight: =FontWeight.Bold
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =1
-                    Y: =24
-                    ZIndex: =1
-
-                TextInput_ATC As text:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                            Selected.ATC
-                        )
-                    Width: =280
-                    X: =3
-                    Y: =66
-                    ZIndex: =2
-
-            PrincipioAttivoEdit_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                DataField: =""
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,'Principio attivo')
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =138
-                Width: =309
-                X: =2
-                Y: =0
-                ZIndex: =26
-
-                Intestazione_PrincipioAttivo_1 As label:
-                    AutoHeight: =true
-                    FontWeight: =FontWeight.Bold
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =1
-                    Y: =24
-                    ZIndex: =1
-
-                TextInput_PrincipioAttivo As text:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                            Selected.Principioattivo
-                        )
-                    Width: =280
-                    X: =3
-                    Y: =66
-                    ZIndex: =2
-
-            NomeCommercialeEdit_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                DataField: =""
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Title)
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =120
-                Width: =309
-                WidthFit: =false
-                X: =0
-                Y: =0
-                ZIndex: =27
-
-                Intestazione_NomeCommerciale_1 As label:
-                    AutoHeight: =true
-                    FontWeight: =FontWeight.Bold
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =1
-                    Y: =24
-                    ZIndex: =2
-
-                TextInput_NomeCommerciale As text:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                            Selected.Title
-                        )
-                    PaddingBottom: =0
-                    Width: =280
-                    X: =3
-                    Y: =66
-                    ZIndex: =3
-
         btnSaveFormNewEdit As button:
             Height: =39
             OnSelect: |
@@ -2268,14 +2320,14 @@ Kit_Prodotto As screen:
                             'Beovu - Kit prodotto',
                             Defaults('Beovu - Kit prodotto'),
                             {
-                               Titolo: TextInput_NomeCommerciale.Text,
-                                'Principio attivo': TextInput_PrincipioAttivo.Text,
-                                AIC: TextInput_AIC.Text,
-                                ATC: TextInput_ATC.Text,
-                                Confezioni: TextInput_Confezioni.Text,
-                                'Prezzo Ex-Factory da G.U.': Value(TextInput_PrezzoExFactory.Text),
+                               Titolo: TextInput_NomeCommerciale_vecchio.Text,
+                                'Principio attivo': TextInput_PrincipioAttivo_vecchio.Text,
+                                AIC: TextInput_AIC_old.Text,
+                                ATC: TextInput_ATC_vecchio.Text,
+                                Confezioni: TextInput_Confezioni_old.Text,
+                                'Prezzo Ex-Factory da G.U.': Value(TextInput_PrezzoExFactory_old.Text),
                                 'Unità Galenica': Value(TextInput_UG.Text),
-                                'Canali distributivi': TextInput_CanaliDistributivi.Text,
+                                'Canali distributivi': TextInput_CanaliDistributivi_old.Text,
                                 Classe: TextInput_ClasseRegime.Text,
                                  'Condizioni negoziali - Altro': TextInput_CondizioniNegoziali.Text,
                                //'Regime di monitoraggio': Dropdown_RegMonit.SelectedText;
@@ -2302,14 +2354,14 @@ Kit_Prodotto As screen:
                             Selected,
                             
                             {
-                                Titolo: TextInput_NomeCommerciale.Text,
-                                'Principio attivo': TextInput_PrincipioAttivo.Text,
-                                AIC: TextInput_AIC.Text,
-                                ATC: TextInput_ATC.Text,
-                                Confezioni: TextInput_Confezioni.Text,
-                                'Prezzo Ex-Factory da G.U.': Value(TextInput_PrezzoExFactory.Text),
+                                Titolo: TextInput_NomeCommerciale_vecchio.Text,
+                                'Principio attivo': TextInput_PrincipioAttivo_vecchio.Text,
+                                AIC: TextInput_AIC_old.Text,
+                                ATC: TextInput_ATC_vecchio.Text,
+                                Confezioni: TextInput_Confezioni_old.Text,
+                                'Prezzo Ex-Factory da G.U.': Value(TextInput_PrezzoExFactory_old.Text),
                                 'Unità Galenica': Value(TextInput_UG.Text),
-                                'Canali distributivi': TextInput_CanaliDistributivi.Text,
+                                'Canali distributivi': TextInput_CanaliDistributivi_old.Text,
                                 Classe: TextInput_ClasseRegime.Text,
                                  'Condizioni negoziali - Altro': TextInput_CondizioniNegoziali.Text,
                                //'Regime di monitoraggio': Dropdown_RegMonit.SelectedText;

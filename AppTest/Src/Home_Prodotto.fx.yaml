@@ -155,6 +155,13 @@ Home_Prodotto As screen:
         Width: =280
         ZIndex: =20
 
+    Button6 As button:
+        OnSelect: =Navigate(Kit_Prodotto)
+        Text: ="Pulsante"
+        X: =171
+        Y: =203
+        ZIndex: =21
+
     grpPDFview_1 As group:
         Height: =5
         Width: =5

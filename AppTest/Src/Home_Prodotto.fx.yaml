@@ -3,11 +3,10 @@ Home_Prodotto As screen:
     OnVisible: =
 
     Header_3 As Header:
-        ZIndex: =4
 
     Footer_3 As Footer:
         Y: =696
-        ZIndex: =5
+        ZIndex: =2
 
     backHome_1 As image:
         Height: =40
@@ -16,7 +15,7 @@ Home_Prodotto As screen:
         Width: =36.05
         X: =136
         Y: =116
-        ZIndex: =6
+        ZIndex: =3
 
     TitoloFarmaco As label:
         Color: =RGBA(241, 244, 249, 1)
@@ -27,7 +26,7 @@ Home_Prodotto As screen:
         Width: =273
         X: =171
         Y: =116
-        ZIndex: =7
+        ZIndex: =4
 
     Image19 As image:
         Height: =219
@@ -38,7 +37,7 @@ Home_Prodotto As screen:
         Width: =210
         X: =164
         Y: =306
-        ZIndex: =8
+        ZIndex: =5
 
     Image20 As image:
         Height: =219
@@ -47,7 +46,7 @@ Home_Prodotto As screen:
         Width: =210
         X: =472
         Y: =306
-        ZIndex: =9
+        ZIndex: =6
 
     Image21 As image:
         Height: =219
@@ -56,7 +55,7 @@ Home_Prodotto As screen:
         Width: =210
         X: =783
         Y: =306
-        ZIndex: =10
+        ZIndex: =7
 
     Image22 As image:
         Height: =219
@@ -79,7 +78,7 @@ Home_Prodotto As screen:
         Width: =210
         X: =1066
         Y: =306
-        ZIndex: =11
+        ZIndex: =8
 
     ToggleStockout_3 As toggleSwitch:
         Default: =Footer_3.Navigazione_stockout
@@ -87,7 +86,7 @@ Home_Prodotto As screen:
         Visible: =false
         X: =411
         Y: =32
-        ZIndex: =12
+        ZIndex: =9
 
     ToggleDPC_3 As toggleSwitch:
         Default: =Footer_3.Navigazione_DPC
@@ -95,7 +94,7 @@ Home_Prodotto As screen:
         Visible: =false
         X: =431
         Y: =52
-        ZIndex: =13
+        ZIndex: =10
 
     ToggleComunicazioni_3 As toggleSwitch:
         Default: =Footer_3.Navigazione_comunicazioni
@@ -103,7 +102,7 @@ Home_Prodotto As screen:
         Visible: =false
         X: =471
         Y: =92
-        ZIndex: =14
+        ZIndex: =11
 
     ToggleSostenibilita_3 As toggleSwitch:
         Default: =Footer_3.Navigazione_sostenibilita
@@ -111,7 +110,7 @@ Home_Prodotto As screen:
         Visible: =false
         X: =491
         Y: =112
-        ZIndex: =15
+        ZIndex: =12
 
     ToggleListini_3 As toggleSwitch:
         Default: =Footer_3.Navigazione_listini
@@ -119,7 +118,7 @@ Home_Prodotto As screen:
         Visible: =false
         X: =511
         Y: =132
-        ZIndex: =16
+        ZIndex: =13
 
     ToggleVaiProdotti_3 As toggleSwitch:
         Default: =Footer_3.NavigazioneVaiAiProdotti
@@ -127,7 +126,7 @@ Home_Prodotto As screen:
         Visible: =false
         X: =531
         Y: =152
-        ZIndex: =17
+        ZIndex: =14
 
     ToggleReporting_3 As toggleSwitch:
         Default: =Footer_3.Navigazione_reporting
@@ -135,7 +134,7 @@ Home_Prodotto As screen:
         Visible: =false
         X: =551
         Y: =172
-        ZIndex: =18
+        ZIndex: =15
 
     ToggleKitProdotti_3 As toggleSwitch:
         Default: =Footer_3.Navigazione_kitprodotti
@@ -143,7 +142,7 @@ Home_Prodotto As screen:
         Visible: =false
         X: =571
         Y: =192
-        ZIndex: =19
+        ZIndex: =16
 
     ButtonHome_1 As button:
         DisabledFill: =Color.Transparent
@@ -169,7 +168,7 @@ Home_Prodotto As screen:
             Width: =1198
             X: =110
             Y: =100
-            ZIndex: =1
+            ZIndex: =17
 
         PdfViewer1_1 As pdfViewer:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -182,7 +181,7 @@ Home_Prodotto As screen:
             Width: =1198
             X: =110
             Y: =140
-            ZIndex: =2
+            ZIndex: =18
 
         Icon1_1 As icon.Cancel:
             Height: =30
@@ -192,5 +191,5 @@ Home_Prodotto As screen:
             Width: =30
             X: =1263
             Y: =107
-            ZIndex: =3
+            ZIndex: =19
 

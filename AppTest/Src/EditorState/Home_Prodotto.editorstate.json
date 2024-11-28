@@ -80,7 +80,7 @@
       "MetaDataIDKey": "",
       "Name": "backHome_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -330,7 +330,7 @@
       "MetaDataIDKey": "",
       "Name": "ButtonHome_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -558,7 +558,7 @@
       "MetaDataIDKey": "",
       "Name": "Footer_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 19,
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -655,7 +655,7 @@
       "MetaDataIDKey": "",
       "Name": "grpPDFview_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 20,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -913,7 +913,7 @@
       "MetaDataIDKey": "",
       "Name": "Icon1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1111,7 +1111,7 @@
       "MetaDataIDKey": "",
       "Name": "Image19",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 15,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1334,7 +1334,7 @@
       "MetaDataIDKey": "",
       "Name": "Image20",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 16,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1557,7 +1557,7 @@
       "MetaDataIDKey": "",
       "Name": "Image21",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 17,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1788,7 +1788,7 @@
       "MetaDataIDKey": "",
       "Name": "Image22",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 18,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2009,7 +2009,7 @@
       "MetaDataIDKey": "",
       "Name": "PdfViewer1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2134,7 +2134,7 @@
       "MetaDataIDKey": "",
       "Name": "Rectangle1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2339,7 +2339,7 @@
       "MetaDataIDKey": "",
       "Name": "TitoloFarmaco",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2610,7 +2610,7 @@
       "MetaDataIDKey": "",
       "Name": "ToggleComunicazioni_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2821,7 +2821,7 @@
       "MetaDataIDKey": "",
       "Name": "ToggleDPC_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3032,7 +3032,7 @@
       "MetaDataIDKey": "",
       "Name": "ToggleKitProdotti_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3243,7 +3243,7 @@
       "MetaDataIDKey": "",
       "Name": "ToggleListini_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3454,7 +3454,7 @@
       "MetaDataIDKey": "",
       "Name": "ToggleReporting_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 13,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3665,7 +3665,7 @@
       "MetaDataIDKey": "",
       "Name": "ToggleSostenibilita_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3876,7 +3876,7 @@
       "MetaDataIDKey": "",
       "Name": "ToggleStockout_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4087,7 +4087,7 @@
       "MetaDataIDKey": "",
       "Name": "ToggleVaiProdotti_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

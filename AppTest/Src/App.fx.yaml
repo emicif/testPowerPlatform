@@ -198,7 +198,7 @@ App As appinfo:
             "IT"
         );
         
-        Set(varTypeKit, "")
+        Set(varTypeKit, "FormNew")
     StartScreen: =
     Theme: =PowerAppsTheme
 

@@ -1358,9 +1358,47 @@ Kit_Prodotto As screen:
             Container2 As groupContainer.horizontalAutoLayoutContainer:
                 LayoutMode: =LayoutMode.Auto
                 Width: =423
-                X: =2
-                Y: =1
                 ZIndex: =1
+
+            ScadenzaOrfano_DataCard As typedDataCard.dateEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Scadenzadellostatusdiorfano"
+                Default: =ThisItem.'Scadenza dello status di orfano'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Scadenzadellostatusdiorfano)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DatePicker1.SelectedDate
+                Width: =800
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+                DatePicker1 As datepicker:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultDate: =Parent.Default
+                    DisplayMode: =Parent.DisplayMode
+                    EndYear: =Year(Today())+100
+                    IsEditable: =true
+                    PaddingBottom: =0
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    StartOfWeek: =StartOfWeek.Monday
+                    StartYear: =1899
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    ZIndex: =2
+
+                Intestazione_ScadenzaOrfano As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =42
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =381
+                    Wrap: =false
+                    X: =3
+                    ZIndex: =3
 
             RegMonitEdit_DataCard As typedDataCard.comboBoxEditCard:
                 BorderStyle: =BorderStyle.Solid
@@ -1373,8 +1411,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =Dropdown_RegMonit.Selected
                 Width: =423
-                X: =0
-                Y: =5
+                X: =2
+                Y: =3
                 ZIndex: =1
 
                 Intestazione_RegMonit_1 As label:
@@ -1403,7 +1441,6 @@ Kit_Prodotto As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey16.Y + DataCardKey16.Height + 5
                     ZIndex: =2
 
             PianoTerapeuticoEdit_DataCard As typedDataCard.comboBoxEditCard:
@@ -1417,8 +1454,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_PianoTerapeutico.Selected
                 Width: =423
-                X: =1
-                Y: =5
+                X: =0
+                Y: =4
                 ZIndex: =1
 
                 Intestazione_PianoTerapeutico_1 As label:
@@ -1444,7 +1481,6 @@ Kit_Prodotto As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey17.Y + DataCardKey17.Height + 5
                     ZIndex: =2
 
             IndicazioniRimborsateEdit_DataCard As typedDataCard.textualEditCard:
@@ -1459,8 +1495,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_IndicazioniRimborsate.Text
                 Width: =423
-                X: =2
-                Y: =5
+                X: =1
+                Y: =4
                 ZIndex: =1
 
                 TextInput_IndicazioniRimborsate As text:
@@ -1477,7 +1513,6 @@ Kit_Prodotto As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey18.Y + DataCardKey18.Height + 5
                     ZIndex: =2
 
                 Intestazione_IndicazioniRimborsate_1 As label:
@@ -1502,8 +1537,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_IndicazioniNonRimborsate.Text
                 Width: =423
-                X: =0
-                Y: =6
+                X: =2
+                Y: =4
                 ZIndex: =1
 
                 TextInput_IndicazioniNonRimborsate As text:
@@ -1520,7 +1555,6 @@ Kit_Prodotto As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey19.Y + DataCardKey19.Height + 5
                     ZIndex: =2
 
                 Intestazione_IndicazioniNonRimborsate_1 As label:
@@ -1546,8 +1580,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_Posologia.Text
                 Width: =423
-                X: =1
-                Y: =6
+                X: =0
+                Y: =5
                 ZIndex: =1
 
                 TextInput_Posologia As text:
@@ -1564,7 +1598,6 @@ Kit_Prodotto As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey20.Y + DataCardKey20.Height + 5
                     ZIndex: =2
 
                 Intestazione_Posologia_1 As label:
@@ -1589,8 +1622,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =DataCardValue21.Value
                 Width: =423
-                X: =2
-                Y: =6
+                X: =1
+                Y: =5
                 ZIndex: =1
 
                 DataCardValue21 As toggleSwitch:
@@ -1599,7 +1632,6 @@ Kit_Prodotto As screen:
                     DisplayMode: =Parent.DisplayMode
                     Tooltip: =Parent.DisplayName
                     X: =30
-                    Y: =DataCardKey21.Y + DataCardKey21.Height + 5
                     ZIndex: =2
 
                 Intestazione_FarmacoInnovativo_1 As label:
@@ -1638,8 +1670,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_RegimeDiInnovativita.Text
                 Width: =423
-                X: =0
-                Y: =7
+                X: =2
+                Y: =5
                 ZIndex: =1
 
                 TextInput_RegimeDiInnovativita As text:
@@ -1656,7 +1688,6 @@ Kit_Prodotto As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey22.Y + DataCardKey22.Height + 5
                     ZIndex: =2
 
                 Intestazione_RegimeDiInnovativita_1 As label:
@@ -1680,8 +1711,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =DataCardValue23.Value
                 Width: =423
-                X: =1
-                Y: =7
+                X: =0
+                Y: =6
                 ZIndex: =1
 
                 DataCardValue23 As toggleSwitch:
@@ -1690,7 +1721,6 @@ Kit_Prodotto As screen:
                     DisplayMode: =Parent.DisplayMode
                     Tooltip: =Parent.DisplayName
                     X: =30
-                    Y: =DataCardKey23.Y + DataCardKey23.Height + 5
                     ZIndex: =2
 
                 Intestazione_FarmacoOrfanoSINO_1 As label:
@@ -1728,8 +1758,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_FarmacoOrfano.Text
                 Width: =423
-                X: =2
-                Y: =7
+                X: =1
+                Y: =6
                 ZIndex: =1
 
                 TextInput_FarmacoOrfano As text:
@@ -1746,7 +1776,6 @@ Kit_Prodotto As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey24.Y + DataCardKey24.Height + 5
                     ZIndex: =2
 
                 Intestazione_FarmacoOrfano_1 As label:
@@ -1772,8 +1801,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_RegimeDiDispensazione.Text
                 Width: =423
-                X: =0
-                Y: =8
+                X: =2
+                Y: =6
                 ZIndex: =1
 
                 TextInput_RegimeDiDispensazione As text:
@@ -1790,7 +1819,6 @@ Kit_Prodotto As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey25.Y + DataCardKey25.Height + 5
                     ZIndex: =2
 
                 Intestazione_RegimeDiDispensazione_1 As label:
@@ -1815,8 +1843,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =DataCardValue26.Value
                 Width: =423
-                X: =1
-                Y: =8
+                X: =0
+                Y: =7
                 ZIndex: =1
 
                 DataCardValue26 As toggleSwitch:
@@ -1825,7 +1853,6 @@ Kit_Prodotto As screen:
                     DisplayMode: =Parent.DisplayMode
                     Tooltip: =Parent.DisplayName
                     X: =30
-                    Y: =DataCardKey26.Y + DataCardKey26.Height + 5
                     ZIndex: =2
 
                 Intestazione_MEA_1 As label:
@@ -1862,8 +1889,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =DataCardValue27.Value
                 Width: =423
-                X: =2
-                Y: =8
+                X: =1
+                Y: =7
                 ZIndex: =1
 
                 DataCardValue27 As toggleSwitch:
@@ -1872,7 +1899,6 @@ Kit_Prodotto As screen:
                     DisplayMode: =Parent.DisplayMode
                     Tooltip: =Parent.DisplayName
                     X: =30
-                    Y: =DataCardKey27.Y + DataCardKey27.Height + 5
                     ZIndex: =2
 
                 Intestazione_ScontoConfidenziale_1 As label:
@@ -1898,6 +1924,142 @@ Kit_Prodotto As screen:
                     X: =220
                     ZIndex: =4
 
+            TettoEdit_DataCard As typedDataCard.toggleEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Tetto"
+                Default: =ThisItem.Tetto
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Tetto)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue1.Value
+                Width: =800
+                X: =0
+                Y: =8
+                ZIndex: =1
+
+                DataCardValue1 As toggleSwitch:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DisplayMode: =Parent.DisplayMode
+                    Tooltip: =Parent.DisplayName
+                    X: =30
+                    ZIndex: =2
+
+                Intestazione_Tetto_1 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
+                    Height: =34
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =130
+                    Wrap: =false
+                    Y: =8
+                    ZIndex: =3
+
+                Checkbox_Tetto As checkbox:
+                    Default: |-
+                        =If(
+                            Form2.Mode = FormMode.Edit,
+                           Selected.Tetto
+                        )
+                    Text: =
+                    Width: =56
+                    X: =60
+                    ZIndex: =4
+
+            ClausoleSalvaguardiaEdit_DataCard As typedDataCard.toggleEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Clausoledisalvaguardia"
+                Default: =ThisItem.'Clausole di salvaguardia'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Clausoledisalvaguardia)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue2.Value
+                Width: =800
+                X: =0
+                Y: =9
+                ZIndex: =1
+
+                DataCardValue2 As toggleSwitch:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DisplayMode: =Parent.DisplayMode
+                    Tooltip: =Parent.DisplayName
+                    X: =30
+                    ZIndex: =2
+
+                Intestazione_Tetto_2 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
+                    Height: =34
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =258
+                    Wrap: =false
+                    X: =6
+                    Y: =8
+                    ZIndex: =3
+
+                Checkbox_ClausoleSalvaguardia As checkbox:
+                    Default: |-
+                        =If(
+                            Form2.Mode = FormMode.Edit,
+                           Selected.Clausoledisalvaguardia
+                        )
+                    Text: =
+                    Width: =56
+                    X: =216
+                    ZIndex: =4
+
+            RinunciaApplicazione_DataCard As typedDataCard.toggleEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Rinunciaallapplicazionedegliscon"
+                Default: =ThisItem.'Rinuncia all''applicazione degli sconti di legge'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Rinunciaallapplicazionedegliscon)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue3.Value
+                Width: =800
+                X: =0
+                Y: =10
+                ZIndex: =1
+
+                DataCardValue3 As toggleSwitch:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DisplayMode: =Parent.DisplayMode
+                    Tooltip: =Parent.DisplayName
+                    X: =30
+                    ZIndex: =2
+
+                Intestazione_RinunciaApplicazione_1 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =42
+                    Italic: =true
+                    Text: =Parent.DisplayName
+                    Width: =381
+                    Wrap: =false
+                    X: =3
+                    Y: =8
+                    ZIndex: =3
+
+                Checkbox_RinunciaApplicazione As checkbox:
+                    Default: |-
+                        =If(
+                            Form2.Mode = FormMode.Edit,
+                           Selected.Rinunciaallapplicazionedegliscon
+                        )
+                    Text: =
+                    Width: =56
+                    X: =403
+                    ZIndex: =4
+
             CondizioniNegozialiEdit_DataCard As typedDataCard.textualEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Condizioninegoziali_x002d_Altro"
@@ -1910,8 +2072,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_CondizioniNegoziali.Text
                 Width: =423
-                X: =2
-                Y: =4
+                X: =1
+                Y: =3
                 ZIndex: =2
 
                 Intestazione_CondizioniNegoziali_1 As label:
@@ -1939,7 +2101,6 @@ Kit_Prodotto As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey15.Y + DataCardKey15.Height + 5
                     ZIndex: =2
 
             ClasseRegimeEdit_DataCard As typedDataCard.textualEditCard:
@@ -1954,8 +2115,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_ClasseRegime.Text
                 Width: =423
-                X: =1
-                Y: =4
+                X: =0
+                Y: =3
                 ZIndex: =3
 
                 Intestazione_ClasseRegime_1 As label:
@@ -1983,7 +2144,6 @@ Kit_Prodotto As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey14.Y + DataCardKey14.Height + 5
                     ZIndex: =2
 
             UGEdit_DataCard As typedDataCard.numberEditCard:
@@ -1997,8 +2157,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =Value(TextInput_UG.Text)
                 Width: =423
-                X: =0
-                Y: =4
+                X: =2
+                Y: =2
                 ZIndex: =4
 
                 Intestazione_UG_1 As label:
@@ -2040,8 +2200,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =Value(TextInput_PrezzoExFactory.Text)
                 Width: =423
-                X: =2
-                Y: =3
+                X: =1
+                Y: =2
                 ZIndex: =5
 
                 Intestazione_PrezzoExFactory_1 As label:
@@ -2084,8 +2244,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_CanaliDistributivi.Text
                 Width: =423
-                X: =1
-                Y: =3
+                X: =0
+                Y: =2
                 ZIndex: =6
 
                 Intestazione_CanaliDistributivi_1 As label:
@@ -2128,8 +2288,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_Confezioni.Text
                 Width: =423
-                X: =0
-                Y: =3
+                X: =2
+                Y: =1
                 ZIndex: =7
 
                 Intestazione_Confezioni_1 As label:
@@ -2172,8 +2332,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_AIC.Text
                 Width: =423
-                X: =2
-                Y: =2
+                X: =1
+                Y: =1
                 ZIndex: =8
 
                 Intestazione_AIC_1 As label:
@@ -2215,8 +2375,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_ATC.Text
                 Width: =423
-                X: =1
-                Y: =2
+                X: =0
+                Y: =1
                 ZIndex: =9
 
                 TextInput_ATC As text:
@@ -2259,8 +2419,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_PrincipioAttivo.Text
                 Width: =309
-                X: =0
-                Y: =2
+                X: =1
+                Y: =0
                 ZIndex: =10
 
                 Intestazione_PrincipioAttivo_1 As label:
@@ -2302,8 +2462,8 @@ Kit_Prodotto As screen:
                 Required: =false
                 Update: =TextInput_NomeCommerciale.Text
                 Width: =309
-                X: =1
-                Y: =1
+                X: =2
+                Y: =0
                 ZIndex: =11
 
                 TextInput_NomeCommerciale As text:
@@ -2333,139 +2493,6 @@ Kit_Prodotto As screen:
                     X: =1
                     Y: =24
                     ZIndex: =3
-
-            ScadenzaOrfano_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Scadenza dello status di orfano')
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =130
-                Width: =400
-                X: =0
-                Y: =1
-                ZIndex: =12
-
-                Intestazione_ScadenzaOrfano As label:
-                    FontWeight: =FontWeight.Bold
-                    Height: =42
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =381
-                    Wrap: =false
-                    X: =3
-                    ZIndex: =1
-
-                DatePicker1 As datepicker:
-                    DefaultDate: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                           Selected.Scadenzadellostatusdiorfano
-                        )
-                    InputTextPlaceholder: =If(IsBlank(Self.SelectedDate), Text(Today(), Self.Format, Self.Language))
-                    StartOfWeek: =StartOfWeek.Monday
-                    X: =3
-                    Y: =40
-                    ZIndex: =2
-
-            RinunciaApplicazione_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Rinuncia all''applicazione degli sconti di legge')
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =100
-                Width: =500
-                X: =2
-                Y: =0
-                ZIndex: =13
-
-                Intestazione_RinunciaApplicazione_1 As label:
-                    FontWeight: =FontWeight.Bold
-                    Height: =42
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =381
-                    Wrap: =false
-                    X: =3
-                    Y: =8
-                    ZIndex: =1
-
-                Checkbox_RinunciaApplicazione As checkbox:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                           Selected.Rinunciaallapplicazionedegliscon
-                        )
-                    Text: =
-                    Width: =56
-                    X: =406
-                    ZIndex: =2
-
-            ClausoleSalvaguardiaEdit_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, 'Clausole di salvaguardia')
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =100
-                Width: =280
-                X: =0
-                Y: =0
-                ZIndex: =14
-
-                Intestazione_Tetto_2 As label:
-                    AutoHeight: =true
-                    FontWeight: =FontWeight.Bold
-                    Height: =34
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =258
-                    Wrap: =false
-                    X: =6
-                    Y: =8
-                    ZIndex: =1
-
-                Checkbox_ClausoleSalvaguardia As checkbox:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                           Selected.Clausoledisalvaguardia
-                        )
-                    Text: =
-                    Width: =56
-                    X: =222
-                    ZIndex: =2
-
-            TettoEdit_DataCard As typedDataCard.blankCard:
-                BorderStyle: =BorderStyle.Solid
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName, Tetto)
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =100
-                Width: =250
-                X: =1
-                Y: =0
-                ZIndex: =15
-
-                Intestazione_Tetto_1 As label:
-                    AutoHeight: =true
-                    FontWeight: =FontWeight.Bold
-                    Height: =34
-                    Italic: =true
-                    Text: =Parent.DisplayName
-                    Width: =130
-                    Wrap: =false
-                    Y: =8
-                    ZIndex: =1
-
-                Checkbox_Tetto As checkbox:
-                    Default: |-
-                        =If(
-                            Form2.Mode = FormMode.Edit,
-                           Selected.Tetto
-                        )
-                    Text: =
-                    Width: =56
-                    X: =60
-                    ZIndex: =2
 
         btnSaveFormNewEdit As button:
             Height: =39

@@ -91,50 +91,6 @@ Homepage As screen:
                 Y: =40
                 ZIndex: =2
 
-        Titolo_DataCard3_1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Title"
-            Default: =ThisItem.Titolo
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Beovu - Kit prodotto'],DataSourceInfo.DisplayName,Title)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Beovu - Kit prodotto'], DataSourceInfo.MaxLength, Title)
-            Required: =false
-            Update: =DataCardValue4_1.Text
-            Width: =423
-            X: =0
-            Y: =14
-            ZIndex: =1
-
-            DataCardValue4_1 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =
-                ZIndex: =2
-
-            Intestazione_NomeCommerciale_4 As label:
-                AutoHeight: =true
-                FontWeight: =FontWeight.Bold
-                Italic: =true
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =1
-                Y: =24
-                ZIndex: =3
-
         RinunciaApplicazione_DataCard_1 As typedDataCard.blankCard:
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
@@ -641,8 +597,7 @@ Homepage As screen:
         Container2_1 As groupContainer.horizontalAutoLayoutContainer:
             LayoutMode: =LayoutMode.Auto
             Width: =423
-            X: =1
-            Y: =14
+            Y: =1
             ZIndex: =17
 
         CondizioniNegozialiEdit_DataCard_1 As typedDataCard.blankCard:
@@ -870,7 +825,7 @@ Homepage As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =110
             Width: =309
-            X: =0
+            X: =1
             Y: =1
             ZIndex: =24
 

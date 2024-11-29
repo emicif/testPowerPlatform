@@ -2186,7 +2186,6 @@ Kit_Prodotto As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey13.Y + DataCardKey13.Height + 5
                     ZIndex: =2
 
             PrezzoExFactoryEdit_DataCard As typedDataCard.numberEditCard:
@@ -2229,7 +2228,6 @@ Kit_Prodotto As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey12.Y + DataCardKey12.Height + 5
                     ZIndex: =2
 
             CanaliDistributiviEdit_DataCard As typedDataCard.textualEditCard:
@@ -2273,7 +2271,6 @@ Kit_Prodotto As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey11.Y + DataCardKey11.Height + 5
                     ZIndex: =2
 
             ConfezioniEdit_DataCard As typedDataCard.textualEditCard:
@@ -2317,7 +2314,6 @@ Kit_Prodotto As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey10.Y + DataCardKey10.Height + 5
                     ZIndex: =2
 
             AICEdit_DataCard As typedDataCard.textualEditCard:
@@ -2393,7 +2389,6 @@ Kit_Prodotto As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey6.Y + DataCardKey6.Height + 5
                     ZIndex: =2
 
                 Intestazione_ATC_1 As label:

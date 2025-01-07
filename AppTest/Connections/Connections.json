@@ -207,6 +207,9 @@
           },
           "TherapeuticArea": {
             "tableName": "7f2f73fb-a971-4922-aabd-3b18944048b9"
+          },
+          "Ultimi Documenti": {
+            "tableName": "6f9e9aed-5029-4f41-a777-26f6ba88afa6"
           }
         }
       }
@@ -234,7 +237,8 @@
       "Reti",
       "PDTA",
       "AccessGroups",
-      "Beovu - Kit prodotto"
+      "Beovu - Kit prodotto",
+      "Ultimi Documenti"
     ],
     "dependencies": {},
     "dependents": [

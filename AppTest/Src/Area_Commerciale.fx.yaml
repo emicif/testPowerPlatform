@@ -120,7 +120,9 @@ Area_Commerciale As screen:
         HeadingFontWeight: =FontWeight.Bold
         Height: =215
         HoverFill: =RGBA(255, 255, 255, 2)
-        Items: =DocumentiAreaCommerciale
+        Items: |
+            =//DocumentiAreaCommerciale
+            FirstN(Sort('Ultimi Documenti',ID,SortOrder.Descending),10)
         SelectedFill: =RGBA(255, 255, 255, 1)
         Width: =510
         X: =695

@@ -137,7 +137,7 @@ Area_Commerciale As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =1
-            Text: =ThisItem.Titolo
+            Text: =ThisItem.Nome
             Width: =140
             X: =7
             Y: =0

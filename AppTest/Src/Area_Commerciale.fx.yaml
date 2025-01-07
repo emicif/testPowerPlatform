@@ -2,6 +2,82 @@ Area_Commerciale As screen:
     BackgroundImage: ='sfondo home'
     OnVisible: =
 
+    "GalleryUltimiDoc As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+        DelayItemLoading: =true
+        Fill: |-
+            =RGBA(
+                255,
+                255,
+                255,
+                255
+            )
+        Height: =215
+        Items: ='Ultimi Documenti'
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =64
+        Width: =477
+        X: =SfondoUltimiDocumenti.X + ((SfondoUltimiDocumenti.Width - Self.Width)/2)
+        Y: =285
+        ZIndex: =1
+
+        Author As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =64
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Autore.DisplayName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =149
+            X: =328
+            ZIndex: =1
+
+        "'Data-mod' As label":
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =64
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =Text(ThisItem.'Data/ora creazione',DateTimeFormat.ShortDate)
+            VerticalAlign: =VerticalAlign.Top
+            Width: =121
+            X: =193
+            ZIndex: =2
+
+        Title9 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =64
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Titolo
+            VerticalAlign: =VerticalAlign.Top
+            Width: =135
+            X: =16
+            ZIndex: =3
+
+        Separator9 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =4
+
+        Rectangle19 As rectangle:
+            Height: =Parent.TemplateHeight - Separator9.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =5
+
     SfondoUltimiDocumenti As button:
         DisabledBorderColor: =RGBA(255, 255, 255, 1)
         DisabledColor: =
@@ -49,14 +125,14 @@ Area_Commerciale As screen:
         Width: =1079
         X: =(App.Width - SfondoGlrFarmaci.Width)/2
         Y: =525
-        ZIndex: =4
+        ZIndex: =3
 
     Header_2 As Header:
-        ZIndex: =6
+        ZIndex: =4
 
     Footer_2 As Footer:
         Y: =696
-        ZIndex: =7
+        ZIndex: =5
 
     backHome As image:
         Height: =40
@@ -65,7 +141,7 @@ Area_Commerciale As screen:
         Width: =36.05
         X: =136
         Y: =116
-        ZIndex: =8
+        ZIndex: =6
 
     Titolo As label:
         Color: =RGBA(241, 244, 249, 1)
@@ -76,7 +152,7 @@ Area_Commerciale As screen:
         Width: =273
         X: =172
         Y: =116
-        ZIndex: =9
+        ZIndex: =7
 
     Sottotitolo As label:
         Color: =RGBA(241, 244, 249, 1)
@@ -87,7 +163,7 @@ Area_Commerciale As screen:
         Width: =1079
         X: =143
         Y: =156
-        ZIndex: =10
+        ZIndex: =8
 
     rettangoloUltimiDoc As rectangle:
         Fill: =RGBA(255, 255, 255, 255)
@@ -95,7 +171,7 @@ Area_Commerciale As screen:
         Width: =477
         X: =SfondoUltimiDocumenti.X + ((SfondoUltimiDocumenti.Width - rettangoloUltimiDoc.Width)/2)
         Y: =243
-        ZIndex: =11
+        ZIndex: =9
 
     labelUltimiDoc As label:
         Color: =textColorBlu
@@ -107,7 +183,7 @@ Area_Commerciale As screen:
         Width: =191
         X: =695
         Y: =236
-        ZIndex: =12
+        ZIndex: =10
 
     DataTableDocumenti As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
@@ -124,24 +200,11 @@ Area_Commerciale As screen:
             =//DocumentiAreaCommerciale
             'Ultimi Documenti'
         SelectedFill: =RGBA(255, 255, 255, 1)
+        Visible: =false
         Width: =510
         X: =695
         Y: =285
-        ZIndex: =13
-
-        Titolo_Colonna1 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Titolo"
-            FieldName: ="Title"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =1
-            Text: =ThisItem.'Nome'
-            Width: =140
-            X: =7
-            Y: =0
-            ZIndex: =7
+        ZIndex: =11
 
         Autore_Colonna1 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
@@ -150,7 +213,7 @@ Area_Commerciale As screen:
             FieldVariantName: ="textualColumn"
             Height: =197
             LayoutHeight: =Parent.Height
-            Order: =3
+            Order: =4
             Text: =ThisItem.Autore.DisplayName
             Width: =140
             X: =0
@@ -164,12 +227,26 @@ Area_Commerciale As screen:
             FieldVariantName: ="dateTimeColumn"
             Height: =193
             LayoutHeight: =Parent.Height
-            Order: =4
+            Order: =5
             Text: =Text(ThisItem.'Data/ora creazione',DateTimeFormat.ShortDate)
             Width: =140
             X: =0
             Y: =0
             ZIndex: =10
+
+        Nome_Colonna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Titolo"
+            FieldName: ="{Name}"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Nome
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =11
 
     "glry_ultimenews As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
@@ -183,7 +260,7 @@ Area_Commerciale As screen:
         Width: =477
         X: =SfondoUltimeNews.X + ((SfondoUltimeNews.Width - glry_ultimenews.Width)/2)
         Y: =285
-        ZIndex: =14
+        ZIndex: =13
 
         Image12 As image:
             Height: =50
@@ -263,7 +340,7 @@ Area_Commerciale As screen:
         Width: =477
         X: =SfondoUltimeNews.X + ((SfondoUltimeNews.Width - rettangoloUltimiNews.Width)/2)
         Y: =243
-        ZIndex: =15
+        ZIndex: =14
 
     labelUltimeNews As label:
         Color: =textColorBlu
@@ -274,7 +351,7 @@ Area_Commerciale As screen:
         Width: =154
         X: =156
         Y: =236
-        ZIndex: =16
+        ZIndex: =15
 
     labelVediDoc As label:
         Align: =Align.Right
@@ -288,7 +365,7 @@ Area_Commerciale As screen:
         Width: =159
         X: =1050
         Y: =234
-        ZIndex: =17
+        ZIndex: =16
 
     labelVediNews As label:
         Align: =Align.Right
@@ -302,7 +379,7 @@ Area_Commerciale As screen:
         Width: =154
         X: =479
         Y: =236
-        ZIndex: =18
+        ZIndex: =17
 
     ToggleStockout_2 As toggleSwitch:
         Default: =Footer_2.Navigazione_stockout
@@ -310,7 +387,7 @@ Area_Commerciale As screen:
         Visible: =false
         X: =479
         Y: =32
-        ZIndex: =19
+        ZIndex: =18
 
     ToggleDPC_2 As toggleSwitch:
         Default: =Footer_2.Navigazione_DPC
@@ -318,7 +395,7 @@ Area_Commerciale As screen:
         Visible: =false
         X: =431
         Y: =52
-        ZIndex: =20
+        ZIndex: =19
 
     ToggleComunicazioni_2 As toggleSwitch:
         Default: =Footer_2.Navigazione_comunicazioni
@@ -326,7 +403,7 @@ Area_Commerciale As screen:
         Visible: =false
         X: =471
         Y: =92
-        ZIndex: =21
+        ZIndex: =20
 
     ToggleSostenibilita_2 As toggleSwitch:
         Default: =Footer_2.Navigazione_sostenibilita
@@ -334,7 +411,7 @@ Area_Commerciale As screen:
         Visible: =false
         X: =491
         Y: =112
-        ZIndex: =22
+        ZIndex: =21
 
     ToggleListini_2 As toggleSwitch:
         Default: =Footer_2.Navigazione_listini
@@ -342,7 +419,7 @@ Area_Commerciale As screen:
         Visible: =false
         X: =511
         Y: =132
-        ZIndex: =23
+        ZIndex: =22
 
     ToggleVaiProdotti_2 As toggleSwitch:
         Default: =Footer_2.NavigazioneVaiAiProdotti
@@ -350,7 +427,7 @@ Area_Commerciale As screen:
         Visible: =false
         X: =531
         Y: =152
-        ZIndex: =24
+        ZIndex: =23
 
     ToggleReporting_2 As toggleSwitch:
         Default: =Footer_2.Navigazione_reporting
@@ -358,7 +435,7 @@ Area_Commerciale As screen:
         Visible: =false
         X: =551
         Y: =172
-        ZIndex: =25
+        ZIndex: =24
 
     ToggleKitProdotti_2 As toggleSwitch:
         Default: =Footer_2.Navigazione_kitprodotti
@@ -366,7 +443,7 @@ Area_Commerciale As screen:
         Visible: =false
         X: =571
         Y: =192
-        ZIndex: =26
+        ZIndex: =25
 
     ButtonHome As button:
         DisabledFill: =Color.Transparent
@@ -377,7 +454,7 @@ Area_Commerciale As screen:
         PressedFill: =Color.Transparent
         Text: =
         Width: =286
-        ZIndex: =28
+        ZIndex: =26
 
     ToggleTender As toggleSwitch:
         Default: =Footer_2.Navigazione_stockout
@@ -391,7 +468,7 @@ Area_Commerciale As screen:
         Visible: =false
         X: =519
         Y: =72
-        ZIndex: =29
+        ZIndex: =27
 
     "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
@@ -406,7 +483,7 @@ Area_Commerciale As screen:
         WrapCount: =4
         X: =172
         Y: =540
-        ZIndex: =30
+        ZIndex: =28
 
         Image17 As image:
             Height: =38

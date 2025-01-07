@@ -120,9 +120,9 @@ Area_Commerciale As screen:
         HeadingFontWeight: =FontWeight.Bold
         Height: =215
         HoverFill: =RGBA(255, 255, 255, 2)
-        Items: |
+        Items: |-
             =//DocumentiAreaCommerciale
-            FirstN(Sort('Ultimi Documenti',ID,SortOrder.Descending),10)
+            'Ultimi Documenti'
         SelectedFill: =RGBA(255, 255, 255, 1)
         Width: =510
         X: =695
@@ -137,7 +137,7 @@ Area_Commerciale As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =1
-            Text: =ThisItem.Nome
+            Text: =ThisItem.'Nome'
             Width: =140
             X: =7
             Y: =0
@@ -148,7 +148,7 @@ Area_Commerciale As screen:
             FieldDisplayName: ="Autore"
             FieldName: ="Author"
             FieldVariantName: ="textualColumn"
-            Height: =241
+            Height: =197
             LayoutHeight: =Parent.Height
             Order: =3
             Text: =ThisItem.Autore.DisplayName
@@ -162,7 +162,7 @@ Area_Commerciale As screen:
             FieldDisplayName: ="Data/ora creazione"
             FieldName: ="Created"
             FieldVariantName: ="dateTimeColumn"
-            Height: =Parent.Height
+            Height: =193
             LayoutHeight: =Parent.Height
             Order: =4
             Text: =Text(ThisItem.'Data/ora creazione',DateTimeFormat.ShortDate)

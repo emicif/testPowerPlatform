@@ -28,7 +28,7 @@ Area_Commerciale As screen:
                 255,
                 255
             )
-        Height: =215
+        Height: =187
         Items: ='Ultimi Documenti'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -36,7 +36,7 @@ Area_Commerciale As screen:
         TemplateSize: =64
         Width: =477
         X: =SfondoUltimiDocumenti.X + ((SfondoUltimiDocumenti.Width - Self.Width)/2)
-        Y: =285
+        Y: =313
         ZIndex: =1
 
         OriginFolder As label:
@@ -63,13 +63,13 @@ Area_Commerciale As screen:
             PaddingTop: =0
             Text: =Text(ThisItem.'Data/ora creazione',DateTimeFormat.ShortDate)
             VerticalAlign: =VerticalAlign.Top
-            Width: =121
+            Width: =109
             X: =193
             ZIndex: =2
 
         Title9 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =64
+            Height: =56
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -77,7 +77,7 @@ Area_Commerciale As screen:
             PaddingTop: =0
             Text: =ThisItem.Titolo
             VerticalAlign: =VerticalAlign.Top
-            Width: =135
+            Width: =163
             X: =16
             ZIndex: =3
 
@@ -458,4 +458,49 @@ Area_Commerciale As screen:
             Visible: =ThisItem.IsSelected
             Width: =4
             ZIndex: =6
+
+    labelUltimiDocCartella As label:
+        AutoHeight: =true
+        Color: =textColorBlu
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =31
+        PaddingLeft: =0
+        PaddingRight: =0
+        Text: ="Cartella"
+        Width: =142
+        Wrap: =false
+        X: =1038
+        Y: =276
+        ZIndex: =29
+
+    labelUltimiDocData As label:
+        AutoHeight: =true
+        Color: =textColorBlu
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =35
+        PaddingLeft: =0
+        PaddingRight: =0
+        Text: ="Data di modifica"
+        Width: =107
+        Wrap: =false
+        X: =908
+        Y: =276
+        ZIndex: =30
+
+    labelUltimiDocTitolo As label:
+        AutoHeight: =true
+        Color: =textColorBlu
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =33
+        PaddingLeft: =0
+        PaddingRight: =0
+        Text: ="Titolo"
+        Width: =155
+        Wrap: =false
+        X: =731
+        Y: =276
+        ZIndex: =31
 

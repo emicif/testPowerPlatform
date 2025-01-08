@@ -2,6 +2,23 @@ Area_Commerciale As screen:
     BackgroundImage: ='sfondo home'
     OnVisible: =
 
+    SfondoUltimiDocumenti As button:
+        DisabledBorderColor: =RGBA(255, 255, 255, 1)
+        DisabledColor: =
+        DisabledFill: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =280
+        RadiusBottomLeft: =19
+        RadiusBottomRight: =19
+        RadiusTopLeft: =19
+        RadiusTopRight: =19
+        Text: =""
+        Width: =539
+        X: =683
+        Y: =229
+        ZIndex: =1
+
     "GalleryUltimiDoc As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
         DelayItemLoading: =true
         Fill: |-
@@ -77,23 +94,6 @@ Area_Commerciale As screen:
             Visible: =ThisItem.IsSelected
             Width: =4
             ZIndex: =5
-
-    SfondoUltimiDocumenti As button:
-        DisabledBorderColor: =RGBA(255, 255, 255, 1)
-        DisabledColor: =
-        DisabledFill: =RGBA(255, 255, 255, 1)
-        DisplayMode: =DisplayMode.View
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =280
-        RadiusBottomLeft: =19
-        RadiusBottomRight: =19
-        RadiusTopLeft: =19
-        RadiusTopRight: =19
-        Text: =""
-        Width: =539
-        X: =683
-        Y: =229
-        ZIndex: =1
 
     SfondoUltimeNews As button:
         DisabledBorderColor: =RGBA(255, 255, 255, 1)
